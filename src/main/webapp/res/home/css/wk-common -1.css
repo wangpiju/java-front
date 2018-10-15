@@ -1,0 +1,951 @@
+.mainWidth, .w1150 {
+    margin: 0 auto;
+    position: relative
+}
+
+.header .inMail, .header a i, .mainWidth, .w1150 {
+    position: relative
+}
+
+.header .betsHallBox .betsHall:hover, .header .setNickName a {
+    text-decoration: underline
+}
+
+#asideLeft h3, .fontBold {
+    font-weight: 700
+}
+
+.mainWidth {
+    width: 1100px
+}
+
+.w1150 {
+    width: 1150px
+}
+
+.fontColorTheme {
+    color: #f33
+}
+
+.fontColorGreen {
+    color: #093
+}
+
+.errorWarn, .fontColorRed {
+    color: red
+}
+
+.fontColorGray {
+    color: #999
+}
+
+.smallFont12 {
+    font-size: 12px
+}
+
+.smallFont14 {
+    font-size: 14px
+}
+
+.mediumFont16 {
+    font-size: 16px
+}
+
+.mediumFont18 {
+    font-size: 18px
+}
+
+.bigFont20 {
+    font-size: 20px
+}
+
+.bigFont22 {
+    font-size: 22px
+}
+
+.textIndent0 {
+    text-indent: 0
+}
+
+.textIndent2 {
+    text-indent: 2em
+}
+
+.textLeft {
+    text-align: left
+}
+
+.textRight {
+    text-align: right
+}
+
+.overflowTable {
+    table-layout: fixed
+}
+
+.overflowEllipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.clr {
+    zoom: 1
+}
+
+.clr:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.header .accountHide, .header .logo, .header .userBalance, .header a, .header a i, .header label {
+    display: inline-block
+}
+
+.checkboxDetail {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.checkboxDetail .checkbox {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    cursor: pointer
+}
+
+.checkboxDetail .checkbox + span {
+    line-height: 30px
+}
+
+.header {
+    width: 100%;
+    height: 92px;
+    font-size: 12px
+}
+
+.header .header-top {
+    width: 100%;
+    height: 32px;
+}
+
+.header .header-top .header-top-content {
+    width: 1000px;
+    height: 32px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header-top .header-top-content .header-top-content-nav {
+    display: flex;
+}
+
+.header-top-content-nav li span {
+    color: #D7D7D7;
+    margin: 0px 6px
+}
+
+.header .header-nav {
+    width: 100%;
+    height: 60px;
+    background: #FE7A12;
+}
+
+.header .header-nav .header-nav-content {
+    width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header-nav .header-nav-content .logo {
+    width: 133px;
+    height: 48px;
+    background: url(../images/logo.png) center no-repeat;
+}
+
+.header .header-nav .header-nav-content ul {
+
+}
+
+.header .logo {
+    float: left;
+    width: 149px;
+    height: 34px;
+    margin-right: 45px;
+    margin-top: 8px;
+    background: url(../images/logo.png) center no-repeat;
+    background-size: contain
+}
+
+.header .headerR {
+    float: right;
+    width: 200px
+}
+
+.header a {
+    color: #b4781a
+}
+
+.header a:hover {
+    color: #cd943c
+}
+
+.header a i {
+    margin-right: 4px;
+    background: url(../images/headerIcon.png) no-repeat;
+    top: 2px
+}
+
+.header label {
+    color: #fff
+}
+
+.header .inMail {
+    margin: 0 17px 0 30px
+}
+
+.header .inMail i {
+    width: 20px;
+    height: 15px;
+    background-position: -32px 0
+}
+
+.header .inMail:hover i {
+    background-position: -32px -33px
+}
+
+.header .inMail .platNoticeNum {
+    position: absolute;
+    top: 11px;
+    right: -13px;
+    height: 15px;
+    min-width: 15px;
+    line-height: 15px;
+    background: #fd526f;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center
+}
+
+.header .activityIcon i {
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    background-position: 1px 0
+}
+
+.header .activityIcon:hover i {
+    background-position: 1px -30px
+}
+
+.header .customerService i {
+    width: 18px;
+    height: 18px;
+    background-position: -62px -1px;
+    top: 3px
+}
+
+.header .customerService:hover i {
+    background-position: -62px -31px
+}
+
+.header .refresh {
+    margin: 0 15px
+}
+
+.header .refresh i {
+    width: 16px;
+    height: 16px;
+    background-position: -92px -1px
+}
+
+.header .refresh:hover i {
+    background-position: -92px -33px
+}
+
+.header .userQuit i {
+    width: 15px;
+    height: 15px;
+    background-position: -121px -1px
+}
+
+.header .userQuit:hover i {
+    background-position: -121px -34px
+}
+
+.header .drawMoney, .header .recharge {
+    width: 52px;
+    height: 27px;
+    background: url(../images/headerIcon2.png) no-repeat;
+    position: relative;
+    top: 8px
+}
+
+.header .recharge {
+    margin: 0 10px 0 15px;
+    background-position: 0 -1px
+}
+
+.header .recharge:hover {
+    background-position: 0 -33px
+}
+
+.header .drawMoney {
+    margin-right: 10px;
+    background-position: -60px -1px
+}
+
+.header .drawMoney:hover {
+    background-position: -60px -33px
+}
+
+.header .username {
+    margin: 0 15px 0 50px;
+    max-width: 80px;
+    vertical-align: top
+}
+
+.header .userBalance {
+    max-width: 90px;
+    vertical-align: top
+}
+
+.header .setNickName {
+    width: 110px;
+    height: 32px;
+    line-height: 16px;
+    position: absolute;
+    top: 35px;
+    left: 520px;
+    background: url(../images/nickNameBg.png) center no-repeat;
+    padding: 17px 15px 18px 10px;
+    z-index: 4
+}
+
+.header .setNickName a {
+    color: #fff
+}
+
+.header .setNickName span {
+    color: #fccac9;
+    white-space: normal
+}
+
+.header .accountHide {
+    width: 21px;
+    height: 12px;
+    margin-left: 3px;
+    vertical-align: middle;
+    background: url(../images/show-b.png) center no-repeat
+}
+
+.header .accountHide.active {
+    background-image: url(../images/hide-b.png)
+}
+
+.header .outstandingTopBox {
+    position: relative
+}
+
+.header .outstandingTopBox .outstandingIcon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    background: url(../images/outstandingIcon.png) no-repeat;
+    position: relative;
+    top: -2px
+}
+
+.header .outstandingTopBox .outstandingIcon:hover {
+    background-position: 0 -27px
+}
+
+.header .outstandingTopBox .outstandingNav {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100px;
+    text-align: center;
+    background: #281414;
+    line-height: 30px;
+    padding: 10px 0;
+    z-index: 2
+}
+
+.header .outstandingTopBox:hover .outstandingNav {
+    display: block
+}
+
+.header .betsHallBox {
+    float: left;
+    height: 100%
+}
+
+.header .betsHallBox .betsHall {
+    color: #fff;
+    height: 100%
+}
+
+.header .betsHallBox .allLotteryList {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    width: 1100px;
+    left: 25px;
+    overflow: hidden;
+    background: url(../images/betsHall/betsHallBg.jpg) #e8ebf2;
+    -moz-box-shadow: 0 0 16px rgba(10, 2, 4, .41);
+    -webkit-box-shadow: 0 0 16px rgba(10, 2, 4, .41);
+    box-shadow: 0 0 16px rgba(10, 2, 4, .41)
+}
+
+.header .betsHallBox .allLotteryList .hotLotteryList {
+    position: relative;
+    float: left;
+    width: 180px;
+    padding: 60px 0 8px;
+    background: #271414
+}
+
+.header .betsHallBox .allLotteryList .hotLotteryList i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 180px;
+    height: 102px;
+    background: url(../images/betsHall/hotIcon.png) no-repeat
+}
+
+.header .betsHallBox .allLotteryList .hotLotteryList a {
+    display: block;
+    width: 140px;
+    height: 84px;
+    margin: 0 auto 12px;
+    background: url(../images/betsHall/hotLott.png) no-repeat;
+    position: relative;
+    z-index: 1
+}
+
+.header .betsHallBox .allLotteryList .hotLotteryList a.asj1fcIcon {
+    background-position-y: -96px
+}
+
+.header .betsHallBox .allLotteryList .hotLotteryList a.ammcIcon {
+    background-position-y: -192px
+}
+
+.header .betsHallBox .allLotteryList .hotLotteryList a.atigerIcon {
+    background-position-y: -288px
+}
+
+.header .betsHallBox .allLotteryList .lotteryList {
+    width: 840px;
+    float: left;
+    padding: 24px 0 18px
+}
+
+.header .betsHallBox .allLotteryList .lottDetail {
+    position: relative;
+    padding: 11px 0 11px 130px
+}
+
+.header .betsHallBox .allLotteryList .lottDetail:first-child {
+    padding-top: 0
+}
+
+.header .betsHallBox .allLotteryList .lottDetail:last-child:after {
+    width: 0
+}
+
+.header .betsHallBox .allLotteryList .lottDetail:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 700px;
+    border-bottom: 1px solid #d0d3df;
+    border-top: 1px solid #fff;
+    bottom: 1px;
+    left: 130px
+}
+
+.header .betsHallBox .allLotteryList .lotteryTitle {
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    left: 45px;
+    top: 50%;
+    margin-top: -25px;
+    background: url(../images/betsHall/groupIcon.png) center 1000px no-repeat
+}
+
+.header .betsHallBox .allLotteryList .lotteryTitle.title_ssc {
+    background-position-y: 6px
+}
+
+.header .betsHallBox .allLotteryList .lotteryTitle.title_pk10 {
+    background-position-y: -82px
+}
+
+.header .betsHallBox .allLotteryList .lotteryTitle.title_k3 {
+    background-position-y: -170px
+}
+
+.header .betsHallBox .allLotteryList .lotteryTitle.title_11x5 {
+    background-position-y: -248px
+}
+
+.header .betsHallBox .allLotteryList .lotteryTitle.title_dp {
+    background-position-y: -331px
+}
+
+.header .betsHallBox .allLotteryList .lotteryGroupList {
+    overflow: hidden;
+    line-height: 30px
+}
+
+.header .betsHallBox .allLotteryList .lotteryGroupList li {
+    display: inline-block;
+    width: 110px;
+    text-align: left
+}
+
+.header .betsHallBox .allLotteryList .lottplayExplain {
+    font-size: 14px;
+    color: #777
+}
+
+.header .betsHallBox .allLotteryList .lottplayExplain:hover {
+    color: #be4751;
+    text-decoration: underline
+}
+
+.header .betsHallBox:hover .allLotteryList {
+    display: block
+}
+
+.footer {
+    width: 100%;
+    height: 180px;
+    background: url(../images/footBg.png) center no-repeat;
+    overflow: hidden;
+    position: relative
+}
+
+.footer .mainWidth {
+    margin-top: 45px
+}
+
+.footer .mainWidth a {
+    display: block;
+    color: #b4781a;
+    font-size: 14px
+}
+
+.footer .mainWidth a:hover {
+    color: #cd943c
+}
+
+.footer .mainWidth i {
+    display: block;
+    position: absolute;
+    top: 0;
+    background: url(../images/footIcon.png) no-repeat
+}
+
+.footer .mainWidth ul {
+    float: left
+}
+
+.footer .mainWidth ul.download {
+    width: 555px;
+    padding-left: 205px;
+    overflow: hidden
+}
+
+.footer .mainWidth ul.download li {
+    float: left;
+    margin: 0 13px
+}
+
+.footer .mainWidth ul.download li a {
+    position: relative;
+    width: 110px;
+    height: 85px;
+    text-align: center;
+    line-height: 145px
+}
+
+.footer .mainWidth ul.download li.pc i {
+    width: 64px;
+    height: 53px;
+    left: 23px;
+    background-position: 0 -1px
+}
+
+.footer .mainWidth ul.download li.ios i {
+    width: 46px;
+    height: 58px;
+    background-position: -105px 0;
+    left: 32px
+}
+
+.footer .mainWidth ul.download li.android i {
+    width: 48px;
+    height: 55px;
+    background-position: -190px -1px;
+    left: 31px
+}
+
+.footer .mainWidth ul.download li.auto i {
+    background: url(../images/auto1.png) no-repeat;
+    width: 50px;
+    height: 50px;
+    left: 30px
+}
+
+.footer .mainWidth ul.download li.pc a:hover i {
+    background-position: 0 -76px
+}
+
+.footer .mainWidth ul.download li.ios a:hover i {
+    background-position: -105px -71px
+}
+
+.footer .mainWidth ul.download li.android a:hover i {
+    background-position: -190px -72px
+}
+
+.footer .mainWidth ul.download li.auto a:hover i {
+    background: url(../images/auto2.png) no-repeat
+}
+
+.footer .mainWidth ul.browser {
+    width: 212px;
+    margin-top: 15px
+}
+
+.footer .mainWidth ul.browser li {
+    padding-left: 88px
+}
+
+.footer .mainWidth ul.browser li a {
+    position: relative;
+    line-height: 28px
+}
+
+.footer .mainWidth ul.browser li i {
+    width: 26px;
+    height: 26px;
+    left: -42px
+}
+
+.footer .mainWidth ul.browser li.google i {
+    background-position: -275px 1px
+}
+
+.footer .mainWidth ul.browser li.fox i {
+    background-position: -277px -33px
+}
+
+.footer .mainWidth ul.browser li.ie i {
+    background-position: -311px 0
+}
+
+.footer .mainWidth ul.footerOther {
+    width: 125px;
+    margin-top: 15px
+}
+
+.footer .mainWidth ul.footerOther a {
+    text-align: center;
+    line-height: 28px
+}
+
+.footer .mainWidth p {
+    clear: left;
+    color: #b4781a;
+    font-size: 12px;
+    margin-left: 257px
+}
+
+#asideLeft {
+    width: 180px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    background: url(../images/lottery/allGameBg.png) top no-repeat;
+    background-size: cover;
+    margin-left: -750px;
+    text-align: center;
+    z-index: 2;
+    display: none;
+}
+
+#asideLeft h3 {
+    line-height: 60px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+#asideLeft h3 i {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background: url(../images/lottery/allGameArrow.png) center no-repeat;
+    vertical-align: middle
+}
+
+#asideLeft .allGameList {
+    background: rgba(244, 243, 244, .8);
+    border-radius: 3px;
+    margin: 0 11px 12px;
+    padding: 10px 0;
+    max-height: 780px;
+    overflow-y: auto;
+    overflow-x: hidden
+}
+
+#asideLeft .allGameList li {
+    position: relative;
+    padding: 4px 0 2px
+}
+
+#asideLeft .allGameList li:first-child {
+    margin-top: 0
+}
+
+#asideLeft .allGameList li:after {
+    content: '';
+    width: 131px;
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    margin-left: -65px;
+    background: url(../images/lottery/lottTypeBorder.png) center no-repeat
+}
+
+#asideLeft .allGameList li a {
+    display: block;
+    line-height: 36px;
+    border-radius: 3px;
+    color: #601414;
+    font-size: 15px;
+    position: relative;
+    z-index: 1
+}
+
+#asideLeft .allGameList li a:hover {
+    color: #fff
+}
+
+#asideLeft .allGameList li a:hover:before {
+    content: '';
+    width: 180px;
+    height: 43px;
+    position: absolute;
+    top: 0;
+    left: -11px;
+    background: url(../images/lottery/lottTypeActive.png) center no-repeat;
+    z-index: -1
+}
+
+#asideLeft .allGameList li .hot {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    margin-top: -9px;
+    font-style: normal;
+    font-size: 12px;
+    background: #fd7150;
+    color: #f5f4f9;
+    border-radius: 3px;
+    z-index: 2
+}
+
+#asideRight {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    margin-top: -252px;
+    width: 58px;
+    height: 505px;
+    z-index: 2
+}
+
+#asideRight a {
+    display: block;
+    width: 58px;
+    height: 58px;
+    text-align: center;
+    background: url(../images/right.png) no-repeat;
+    position: absolute;
+    right: 0;
+    transition: width .3s
+}
+
+#asideRight a.active, #asideRight a:hover {
+    width: 146px
+}
+
+#asideRight a.sy {
+    top: 0;
+    background-position: -176px 0
+}
+
+#asideRight a.sy.active, #asideRight a.sy:hover {
+    background-position: 0 0
+}
+
+#asideRight a.zxgg {
+    top: 63px;
+    background-position: -176px -58px
+}
+
+#asideRight a.zxgg.active, #asideRight a.zxgg:hover {
+    background-position: 0 -58px
+}
+
+#asideRight a.yxjl {
+    top: 126px;
+    background-position: -176px -117px
+}
+
+#asideRight a.yxjl.active, #asideRight a.yxjl:hover {
+    background-position: 0 -117px
+}
+
+#asideRight a.zhjl {
+    top: 189px;
+    background-position: -176px -178px
+}
+
+#asideRight a.zhjl.active, #asideRight a.zhjl:hover {
+    background-position: 0 -178px
+}
+
+#asideRight a.glzx {
+    top: 252px;
+    background-position: -176px -237px
+}
+
+#asideRight a.glzx.active, #asideRight a.glzx:hover {
+    background-position: 0 -237px
+}
+
+#asideRight a.bbzx {
+    top: 315px;
+    background-position: -176px -296px
+}
+
+#asideRight a.bbzx.active, #asideRight a.bbzx:hover {
+    background-position: 0 -296px
+}
+
+#asideRight a.bzzx {
+    top: 378px;
+    background-position: -176px -357px
+}
+
+#asideRight a.bzzx.active, #asideRight a.bzzx:hover {
+    background-position: 0 -357px
+}
+
+#asideRight a.top {
+    top: 441px;
+    background-position: -176px -418px
+}
+
+#asideRight a.top.active, #asideRight a.top:hover {
+    background-position: 0 -418px
+}
+
+.rotated {
+    -webkit-animation: rotate 1s linear infinite;
+    -moz-animation: rotate 1s linear infinite;
+    -o-animation: rotate 1s linear infinite;
+    animation: rotate 1s linear infinite
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0)
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0)
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@-o-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0)
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes rotate {
+    from {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0)
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}

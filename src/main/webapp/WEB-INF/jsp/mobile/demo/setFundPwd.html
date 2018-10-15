@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<meta content="email=no" name="format-detection">
+    <title>设置安全密码</title>
+    <link rel="stylesheet" href="css/hs-mobile.css" />
+</head>
+<body class="bodyColorEEE">
+
+<!-- 设置安全密码 -->
+<div class="setFundPwdArea">
+    <div class="mainNav">
+        <a href="javascript:;" class="mainMenuBtn">
+            <img src="images/mainMenuIcon.png" class="mainMenuIcon" />
+        </a>
+        <span class="headerTitle">设置安全密码</span>
+    </div>
+    <div class="container">
+        <div class="setFundPwdListBox" style="display:none;">
+            <div class="listForm">
+                <div class="listDetail">
+                    <p class="detailTitle fontColorTeal">
+                        <i class="detailTitleLeft"></i>
+                        <span>安全密码</span>
+                        <span class="mustWhiteStar">*</span>
+                        <span class="detailTips fontColorGray">最小8位字符（字母及数字）</span>
+                    </p>
+                    <div class="labelCondSelect">
+                        <input type="password" class="labelCond" placeholder="提款必备验证密码，不能与登录密码重复" />
+                        <span class="inputText errorWarn" style="display:none;">格式不对请检查重新设置</span>
+                    </div>
+                </div>
+                <div class="listDetail">
+                    <p class="detailTitle fontColorTeal">
+                        <i class="detailTitleLeft"></i>
+                        <span>确认安全密码</span>
+                        <span class="mustWhiteStar">*</span>
+                    </p>
+                    <div class="labelCondSelect">
+                        <input type="password" class="labelCond" placeholder="确认安全密码，需一致" />
+                        <span class="inputText errorWarn" style="display:none;">确认安全密码不一致</span>
+                    </div>
+                </div>
+                <div class="listDetail safeQA">
+                    <p class="detailTitle fontColorTeal">
+                        <i class="detailTitleLeft"></i>
+                        <span>设置安全信息1</span>
+                        <span class="mustWhiteStar">*</span>
+                        <span class="detailTips fontColorGray">找回安全密码的重要凭证</span>
+                    </p>
+                    <div class="labelCondSelect">
+                        <select class="labelCond">
+                            <option value="">你母亲的名字叫什么？</option>
+                        </select>
+                        <i class="selectIcon"></i>
+                    </div>
+                    <div class="labelCondSelect">
+                        <input type="text" class="labelCond" />
+                        <span class="inputText">答案：</span>
+                    </div>
+                </div>
+                <div class="listDetail safeQA">
+                    <p class="detailTitle fontColorTeal">
+                        <i class="detailTitleLeft"></i>
+                        <span>设置安全信息2</span>
+                        <span class="mustWhiteStar">*</span>
+                        <span class="detailTips fontColorGray">找回安全密码的重要凭证</span>
+                    </p>
+                    <div class="labelCondSelect">
+                        <select class="labelCond">
+                            <option value="">你最喜欢的球队的名字？</option>
+                        </select>
+                        <i class="selectIcon"></i>
+                    </div>
+                    <div class="labelCondSelect">
+                        <input type="text" class="labelCond" />
+                        <span class="inputText">答案：</span>
+                    </div>
+                </div>
+            </div>
+            <div class="btnGroup">
+                <a href="javascript:;" class="btn">提交</a>
+            </div>
+        </div>
+        <div class="successBox">
+            <div class="successInfo">
+                <p>
+                    <img src="images/tk_icon1.png" class="msgIcon" alt=""/>
+                    <span class="msgText">安全密码设置成功！</span>
+                </p>
+            </div>
+            <div class="btnGroup">
+                <p class="fontColorGray">您还未绑定任何银行卡哦~</p>
+                <a href="javascript:;" class="addBankCardBtn fontColorTeal">
+                    <span class="addCardIcon">+</span>
+                    <span>添加银行卡</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

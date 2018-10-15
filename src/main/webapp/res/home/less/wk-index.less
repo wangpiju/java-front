@@ -1,0 +1,452 @@
+@import "centerCommon";
+@import "layerTip";
+@import "layerSetIntro";
+
+body {
+  background: #fff url("../images/bg.jpg") center top no-repeat;
+}
+
+//弹窗
+.layui-layer .layui-layer-title {
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  padding: 0 10px;
+  color: #fff;
+  background-color: #c9aba9;
+}
+
+.dialogBtn {
+  text-align: center;
+  .btn {
+    .redBtn;
+    width: 100px;
+  }
+}
+
+//banner
+.bannerBox {
+  background-color: #f1f1f1;
+  width: 100%;
+  min-height: 300px;
+  position: relative;
+  .userAcctBgBox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: 0;
+    a {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      filter: Alpha(opacity=0);
+      z-index: 2;
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      transition: all 1s ease-in-out;
+      &.active {
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        z-index: 3;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .userAcctBgList {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    z-index: 4;
+    width: 100%;
+    height: 4px;
+    text-align: center;
+    span {
+      width: 38px;
+      height: 4px;
+      background: #fff;
+      margin-left: 5px;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      top: -12px;
+      &.active {
+        background: #b30615;
+      }
+    }
+  }
+}
+
+//网站公告——跑马灯、中奖播报——跑马灯
+.noticeScrollArea {
+  width: 964px;
+  height: 40px;
+  margin: 20px auto 0;
+  overflow: hidden;
+}
+
+.noticeScrollTitle {
+  float: left;
+  width: 104px;
+  height: 100%;
+  line-height: 40px;
+  background: url(../images/index/noticeTitle.png) center no-repeat;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  &.webSiteNotice {
+    background-position: 0 0;
+  }
+  &.awardsNotice {
+    background-position: 0 -40px;
+  }
+
+}
+
+.noticeScrollBox {
+  float: left;
+  width: 820px;
+  height: 100%;
+  line-height: 40px;
+  background: #fff;
+  padding: 0 20px;
+  .noticeScroll {
+    overflow: hidden;
+    .noticeScrollList {
+      height: 100%;
+      overflow: hidden;
+      .notice {
+        float: left;
+        margin-left: 50px;
+        &:first-child {
+          margin-left: 0;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+        span {
+          margin-left: 10px;
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+        .lotteryName {
+          color: #36c;
+        }
+        .winAmount {
+          color: #ad0110;
+        }
+      }
+      .noticeTime {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+//热门推荐
+.lottTypeBox {
+  width: 964px;
+  height: 184px;
+  margin: 30px auto;
+  text-align: center;
+  overflow: hidden;
+  h2 {
+    float: left;
+    font-size: 16px;
+    color: #fff;
+    width: 30px;
+    height: 100%;
+    line-height: 22px;
+    padding: 48px 17px;
+    background-color: #5e5c6b;
+    border-right: 1px solid #76708b;
+  }
+  .vlott {
+    width: 162*4px;
+    height: 100%;
+    float: left;
+    a {
+      position: relative;
+      display: block;
+      width: 161px;
+      border-right: 1px solid #f1ebe2;
+      height: 100%;
+      float: left;
+      background: url("../images/index/lotteryIcon.png") no-repeat;
+      &.acqssc {
+        background-position: 0 -215px;
+        &:hover {
+          background-position: 0 -616px;
+        }
+      }
+      &.agd11x5 {
+        background-position: -237px -215px;
+        &:hover {
+          background-position: -238px -616px;
+        }
+      }
+      &.apk10 {
+        background-position: 0 -415px;
+        &:hover {
+          background-position: 0 -816px;
+        }
+      }
+      &.a3d {
+        background-position: -238px -415px;
+        &:hover {
+          background-position: -238px -816px;
+        }
+      }
+      p {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 34px;
+        line-height: 34px;
+        color: #fff;
+        font-size: 12px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+  .hlott {
+    width: 249px;
+    height: 100%;
+    float: left;
+    background: url("../images/index/lotteryIcon.png") no-repeat;
+    a {
+      float: left;
+      display: inline-block;
+      height: 92px;
+      line-height: 92px;
+      width: 50%;
+      font-size: 22px;
+      color: #fff;
+      &:hover {
+        background: url("../images/index/lotteryIcon.png") -273px -2px no-repeat;
+      }
+    }
+  }
+}
+
+//帮助中心
+.helpBox {
+  width: 964px;
+  margin: 20px auto 110px;
+  h2 {
+    position: relative;
+    width: 205px;
+    color: #324255;
+    font-size: 16px;
+    line-height: 36px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ad0110;
+    &:before {
+      content: "";
+      display: block;
+      width: 43px;
+      height: 1px;
+      background: #ad0110;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+#helpList {
+  position: relative;
+  width: 100%;
+  height: 194px;
+  overflow: hidden;
+  a {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    width: 418px;
+    height: 194px;
+    -webkit-transition: left 300ms;
+    transition: left 300ms;
+    &.item-1 {
+      z-index: 1;
+      background: #cbcbd6 linear-gradient(to left, #cbcbd6 0%, #fff 100%);
+    }
+    &.item-2 {
+      z-index: 2;
+      background: #bdbbd3 linear-gradient(to right, #bdbbd3 0%, #fff 100%);
+    }
+    &.item-3 {
+      z-index: 3;
+      background: #ebe5db linear-gradient(to right, #ebe5db 0%, #fff 100%);
+    }
+    &.item-4 {
+      z-index: 4;
+      background: #d5c5cd linear-gradient(to right, #d5c5cd 0%, #fff 100%);
+    }
+    i {
+      display: block;
+      width: 182px;
+      height: 100%;
+      background: url("../images/index/help.jpg") no-repeat;
+      -webkit-transition: background-position 300ms;
+      transition: background-position 300ms;
+    }
+  }
+  &.state-1 {
+    a {
+      &.item-1 {
+        left: 0;
+        i {
+          width: 418px;
+          background-position: 0 0;
+        }
+      }
+      &.item-2 {
+        left: 418px;
+        i {
+          background-position: -438px -208px;
+        }
+      }
+      &.item-3 {
+        left: 600px;
+        i {
+          background-position: -438px -417px;
+        }
+      }
+      &.item-4 {
+        left: 782px;
+        i {
+          background-position: -438px -626px;
+        }
+      }
+    }
+  }
+  &.state-2 {
+    a {
+      &.item-1 {
+        left: 0;
+        i {
+          background-position: -438px 0;
+        }
+      }
+      &.item-2 {
+        left: 182px;
+        i {
+          width: 418px;
+          background-position: 0px -208px;
+        }
+      }
+      &.item-3 {
+        left: 600px;
+        i {
+          background-position: -438px -417px;
+        }
+      }
+      &.item-4 {
+        left: 782px;
+        i {
+          background-position: -438px -626px;
+        }
+      }
+    }
+  }
+  &.state-3 {
+    a {
+      &.item-1 {
+        left: 0;
+        i {
+          background-position: -438px 0;
+        }
+      }
+      &.item-2 {
+        left: 182px;
+        i {
+          background-position: -438px -208px;
+        }
+      }
+      &.item-3 {
+        left: 364px;
+        i {
+          width: 418px;
+          background-position: 0 -417px;
+        }
+      }
+      &.item-4 {
+        left: 782px;
+        i {
+          background-position: -438px -626px;
+        }
+      }
+    }
+  }
+  &.state-4 {
+    a {
+      &.item-1 {
+        left: 0;
+        i {
+          background-position: -438px 0;
+        }
+      }
+      &.item-2 {
+        left: 182px;
+        i {
+          background-position: -438px -208px;
+        }
+      }
+      &.item-3 {
+        left: 364px;
+        i {
+          background-position: -438px -417px;
+        }
+      }
+      &.item-4 {
+        left: 546px;
+        i {
+          width: 418px;
+          background-position: 0 -626px;
+        }
+      }
+    }
+  }
+}
+
+//公告详情弹窗
+#platNoticeContentBox {
+  .dialogBtn {
+    padding-bottom: 20px;
+  }
+}
+
+.platNoticeWarnDialog {
+  min-height: 450px;
+  max-height: 450px;
+  overflow-x: hidden;
+  & > div {
+    padding: 20px 0;
+    margin: 0 40px;
+  }
+  .noticeDetailHeader {
+    line-height: 30px;
+    text-align: center;
+    .noticeDetailTitle {
+      font-size: 18px;
+    }
+    .noticeDetailDate {
+      font-size: 12px;
+    }
+  }
+  .noticeDetailText {
+    border-top: 1px solid #ccc;
+  }
+}

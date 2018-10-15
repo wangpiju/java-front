@@ -1,0 +1,482 @@
+@import "centerCommon";
+@import "layerTip";
+
+@red: #d52a37;
+html {
+  background-color: #d5d5d5;
+}
+
+body {
+  padding-top: 220px;
+  background: #fff url("../images/login/loginBg.jpg") center top no-repeat;
+  &.trans {
+    background-image: url("../images/login/loginBg1.jpg");
+  }
+}
+
+.w760 {
+  width: 760px;
+  margin: 0 auto;
+  position: relative;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 13.33333rem white inset;
+}
+
+.submitBtn {
+  display: block;
+  width: 240px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #e61e46;
+  margin: 30px auto 0;
+  outline: none;
+  &:hover, &:active {
+    background-color: #f5375d;
+  }
+}
+
+.layui-layer {
+  .layui-layer-title {
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 10px;
+    color: #fff;
+    background-color: #c9aba9;
+  }
+  .layerBox {
+    padding: 20px 30px;
+  }
+}
+
+.dialogBtn {
+  text-align: center;
+  .btn {
+    .redBtn;
+    width: 100px;
+  }
+}
+
+//登录区域
+.loginArea {
+  .w760;
+  height: 357px;
+  margin-bottom: 190px;
+  background-color: #fff;
+  -webkit-box-shadow: 7px 11px 58px rgba(0, 0, 0, .4);
+  box-shadow: 7px 11px 58px rgba(0, 0, 0, .4);
+  .loginLeft {
+    float: left;
+    display: block;
+    width: 302px;
+    height: 100%;
+    background: url("../images/login/left.jpg") no-repeat;
+  }
+  .loginRight {
+    float: right;
+    width: 358px;
+    padding: 35px 50px 0;
+    .loginMethod {
+      text-align: center;
+      margin-bottom: 35px;
+      a {
+        display: inline-block;
+        padding: 5px 8px;
+        border-bottom: 2px solid #fff;
+        &.active, &:hover {
+          color: @red;
+          border-bottom: 2px solid @red;
+        }
+        &.loginBtn {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+  .loginDetail {
+    margin-top: 28px;
+    position: relative;
+    i {
+      position: absolute;
+      display: block;
+      width: 22px;
+      height: 22px;
+      top: 0;
+      background: url("../images/login/icon.png") no-repeat;
+      &.userNameIcon {
+        left: 6px;
+        background-position: 0 -206px;
+      }
+      &.userPasswordIcon {
+        left: 6px;
+        background-position: -36px -205px;
+      }
+      &.userCodeIcon {
+        left: 6px;
+        background-position: 0 -239px;
+      }
+    }
+    .userCodeImg {
+      position: absolute;
+      width: 130px;
+      height: 32px;
+      right: 0;
+      bottom: 1px;
+      cursor: pointer;
+    }
+  }
+  .inputCont {
+    padding: 0 40px;
+    width: 278px;
+    color: #666;
+    border: none;
+    border-bottom: 1px solid #d2d2d2;
+    outline: none;
+  }
+  .safeInfoDetail {
+    position: relative;
+    border-radius: 4px;
+    line-height: 25px;
+    padding: 10px 0 10px 68px;
+    margin-top: -19px;
+    color: #666;
+    font-size: 12px;
+    background-color: #f3b768;
+    i {
+      position: absolute;
+      left: 19px;
+      top: 20px;
+      display: block;
+      width: 31px;
+      height: 31px;
+      background: url("../images/login/icon.png") -2px -268px no-repeat;
+    }
+    .safeInfo {
+      font-size: 14px;
+      color: #000;
+    }
+  }
+  .loginTips {
+    overflow: hidden;
+    font-size: 12px;
+    a {
+      display: inline-block;
+      line-height: 30px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .onlineServices {
+      float: right;
+      margin-right: 10px;
+      i {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        margin-right: 4px;
+        background: url(../images/login/icon.png) -37px -240px no-repeat;
+        position: relative;
+        top: 4px;
+      }
+    }
+    .forgetPassword {
+      float: right;
+      color: @red;
+    }
+    .defaultPwd {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #222;
+      font-weight: bold;
+    }
+  }
+  .errorTips {
+    line-height: 30px;
+    color: red;
+  }
+  .accountLogin {
+    margin-top: 20px;
+    a {
+      color: #ea3b70;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+//找回密码
+.findPwdMain {
+  width: 1000px;
+  margin: -100px auto 90px;
+  .findPwdHeader {
+    overflow: hidden;
+    position: relative;
+    .customerService {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      i {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        margin-right: 4px;
+        background: url(../images/login/icon.png) -37px -240px no-repeat;
+        position: relative;
+        top: 4px;
+      }
+    }
+  }
+  .findPwdArea {
+    margin-top: 10px;
+    background: #e8ebef;
+    padding: 40px 60px;
+    .findPwdTitle {
+      font-size: 18px;
+      font-weight: bold;
+      float: left;
+    }
+    .findPwdReturn {
+      float: right;
+      color: #333;
+      font-size: 16px;
+    }
+    .findPwdContent {
+      margin-top: 20px;
+      border-top: 1px solid #efcbdb;
+    }
+    .findPwdDetail {
+      margin-top: 20px;
+    }
+    .detailTitle {
+      width: 90px;
+      display: inline-block;
+      text-align: right;
+    }
+    .findPwdDetail .loginDetail {
+      position: relative;
+      display: inline-block;
+      margin-top: 0;
+      margin-left: 10px;
+      i {
+        position: absolute;
+        display: block;
+        width: 22px;
+        height: 22px;
+        top: 7px;
+        left: 8px;
+        background: url("../images/login/icon.png") no-repeat;
+        &.userNameIcon {
+          background-position: 0 -206px;
+        }
+        &.userPasswordIcon {
+          background-position: -36px -205px;
+        }
+        &.userCodeIcon {
+          background-position: 0 -239px;
+        }
+      }
+      .userCodeImg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 36px;
+        cursor: pointer;
+      }
+    }
+    .loginDetail .findInput {
+      height: 24px;
+      width: 222px;
+      border-radius: 3px;
+      padding: 5px 10px 5px 40px;
+      font-size: 16px;
+      border: 1px solid transparent;
+      outline: none;
+    }
+  }
+  .submitBtn {
+    margin-top: 20px;
+  }
+}
+
+//交易协定
+.transMain {
+  width: 1000px;
+  margin: -165px auto 90px;
+  .transHeader {
+    overflow: hidden;
+    position: relative;
+    .logo img {
+      vertical-align: middle;
+    }
+    .customerService {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      i {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        margin-right: 4px;
+        background: url(../images/login/icon.png) -37px -240px no-repeat;
+        position: relative;
+        top: 4px;
+      }
+    }
+  }
+  .transArea {
+    margin-top: 10px;
+    background: #fff;
+    padding: 20px 35px;
+    .headerTitle {
+      text-align: left;
+      line-height: 40px;
+      color: @red;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .transProtocolDetail {
+      height: 480px;
+      padding: 20px;
+      line-height: 24px;
+      background: #efefef;
+      overflow-x: hidden;
+      position: relative;
+    }
+    .transProtocolBtns {
+      margin-top: 20px;
+      text-align: center;
+      a {
+        width: 90px;
+        color: #fff;
+        height: 30px;
+        line-height: 30px;
+        &.agree {
+          margin-right: 15px;
+          background-color: #e61e46;
+          &:hover, &:active {
+            background-color: #f5375d;
+          }
+        }
+        &.disagree {
+          background-color: #ccc;
+          &:hover, &:active {
+            background-color: #bbb;
+          }
+        }
+      }
+    }
+  }
+}
+
+//底部
+.footer {
+  width: 100%;
+  height: 280px;
+  background: url("../images/login/footerBg.png") center 0 no-repeat;
+  overflow: hidden;
+  .w920 {
+    width: 820px;
+    margin: 80px auto 0;
+    position: relative;
+    .logo {
+      float: left;
+      display: block;
+      width: 64px;
+      height: 91px;
+      background: url(../images/login/logo.png) 70px 0 no-repeat;
+      padding: 0 50px 0 70px;
+      border-right: 1px solid #a9a9a9;
+    }
+    ul.download {
+      float: left;
+      width: 620px;
+      margin-left: 50px;
+      overflow: hidden;
+      i {
+        display: block;
+        position: absolute;
+        top: 0;
+        background: url("../images/login/icon.png") no-repeat;
+      }
+      li {
+        float: left;
+        margin-right: 42px;
+        a {
+          display: block;
+          position: relative;
+          width: 110px;
+          height: 85px;
+          text-align: center;
+          line-height: 145px;
+          color: #666;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        &.pc i {
+          width: 64px;
+          height: 53px;
+          left: 23px;
+          background-position: 0 0;
+        }
+        &.ios i {
+          width: 46px;
+          height: 58px;
+          background-position: 0 -67px;
+          left: 32px;
+        }
+        &.android i {
+          width: 48px;
+          height: 55px;
+          background-position: 0 -136px;
+          left: 31px;
+        }
+        &.auto i {
+          background: url("../images/login/auto.png") 0 0 no-repeat;
+          width: 50px;
+          height: 50px;
+          left: 30px;
+        }
+      }
+    }
+    p {
+      clear: left;
+      color: #ababab;
+      font-size: 12px;
+      text-align: center;
+      padding-top: 40px;
+    }
+  }
+  .dnsLink {
+    color: #ababab;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+//注册成功
+.registerSuccessBox {
+  .registerSuccessIcon {
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    background: url(../images/successIcon.png) center no-repeat;
+    vertical-align: middle;
+  }
+  .registerSuccessInfo {
+    display: inline-block;
+    line-height: 25px;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+  .dialogBtn {
+    margin-top: 25px;
+  }
+}

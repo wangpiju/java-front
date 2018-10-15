@@ -1,0 +1,352 @@
+.lotteLobby {
+    width: 100%;
+    background: #E6E6E6;
+    padding: 15px 0px;
+}
+
+.lotteBox {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.lotteBox-top {
+    width: 1000px;
+    height: 240px;
+}
+
+.lotteBox-top-banner {
+    width: 800px;
+    height: 240px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.lotteBox-top-banner ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: 240px;
+    width: 3200px;
+    position: absolute;
+}
+
+.lotteBox-top-banner ul li {
+    width: 800px;
+    height: 240px;
+}
+
+.lotteBox-top-right {
+    width: 198px;
+    height: 240px;
+    float: left;
+    background: #515860;
+}
+
+.lotteBox-top-right h3 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    border-bottom: 1px solid #EEEEEE;
+    height: 36px;
+    padding-left: 8px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.lotteBox-top #FontScroll {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.lotteBox-top #FontScroll .lotteBox-top-right-Ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.lotteBox-top #FontScroll .lotteBox-top-right-Ul li {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    height: 54px;
+}
+
+.lotteBox-top #FontScroll .lotteBox-top-right-Ul li div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+
+.lotteBox-top #FontScroll .lotteBox-top-right-Ul li div img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+
+.lotteBox-top #FontScroll .lotteBox-top-right-Ul li div p {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+.lotteBox-top #FontScroll .lotteBox-top-right-Ul li div p span {
+    color: #FFFFFF;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.lotteBox-top #FontScroll .lotteBox-top-right-Ul li div p span i {
+    color: #F63745;
+    font-style: normal;
+}
+
+/*-----*/
+.lotteryLine {
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(180deg, #7a7a7a 0, #c3c4c3);
+}
+
+.lotteryLine i {
+    display: block;
+    float: left;
+    border-right: 20px solid transparent;
+    border-top: 15px solid #E6E6E6;
+}
+
+.lotteryLine em {
+    display: inline-block;
+    border-left: 20px solid transparent;
+    border-top: 15px solid #E6E6E6;
+    float: right;
+}
+
+.fix::before {
+    content: "";
+    display: table;
+}
+
+.fix::after {
+    clear: both;
+    overflow: hidden;
+}
+
+/*全部彩种*/
+.lotteList {
+    width: 1000px;
+}
+
+.lotteList-top {
+    height: 40px;
+    background: #455467;
+}
+
+.lotteList-top ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding-left: 15px;
+}
+
+.lotteList-top ul li {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    height: 40px;
+    width: 100px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.lotteList-top ul li.active {
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    margin-top: 3px;
+    height: 37px;
+    color: #455467;
+}
+
+.lotteList-bott {
+    background: #FFFFFF;
+    padding: 10px;
+}
+
+.lotteListUl {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.lotteListUl li {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    width: 223px;
+    height: 100px;
+    border: 1px solid #e3e3e3;
+    margin: 10px;
+    position: relative;
+    box-shadow: 1px 1px 1px #8a8a8a;
+}
+
+.lotteListUl li .Nopop {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+.lotteListUl li .Nopop img {
+    width: 60px;
+    height: 60px;
+    margin: 0px 20px;
+    border-radius: 50%;
+}
+
+.lotteListUl li .Nopop div {
+    color: #516073;
+}
+
+.lotteListUl li .Nopop div p {
+    font-size: 16px;
+}
+
+.lotteListUl li .pop {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #455467;
+    display: none;
+}
+
+.lotteListUl li .pop a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -55px;
+    margin-top: -19px;
+    padding: 10px 26px;
+    color: #dfdfdf;
+    border: 1px solid #dfdfdf;
+}
+
+.lotteListUl li .pop span {
+    border: 1px solid #dfdfdf;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    color: #dfdfdf;
+    font-size: 16px;
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+}
+
+.footer {
+    margin-top: 0px;
+}

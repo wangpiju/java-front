@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #eee;
+  font-family: microsoft yahei, sans-serif;
+  font-size: 14px;
+}
+
+.checkboxDetail {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+div .fontColorBlack {
+  color: #003;
+}
+
+.smallFont14 {
+  font-size: 14px;
+}
+
+.trendContainer {
+  min-width: 1400px;
+}
+
+.trendHeaderArea, .trendSearchBarArea {
+  line-height: 30px;
+  padding: 15px 20px;
+  background: #eee;
+  color: #003;
+  overflow: hidden;
+}
+
+.trendHeaderArea > * {
+  float: left;
+}
+
+.lottsType-trend {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.lottsGroup-trend {
+  margin-left: 20px;
+  .lottsDetail-trend {
+    display: inline-block;
+    height: 30px;
+    min-width: 50px;
+    border-radius: 3px;
+    padding: 0 10px;
+    text-align: center;
+    a {
+      color: #003;
+      text-decoration: none;
+      &:hover {
+        color: #099;
+      }
+    }
+    &.active {
+      background: #099;
+    }
+    &.active a {
+      color: #fff;
+    }
+  }
+}
+
+.downloadStatementBox {
+  float: right;
+}
+
+.hideSearchBar-trend {
+  position: relative;
+  color: #003;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.hideSearchBarIcon {
+  position: absolute;
+  top: 2px;
+  left: -20px;
+  width: 16px;
+  height: 16px;
+  background: url(../images/trend/hideSearchBarIcon.jpg) no-repeat;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.active .hideSearchBarIcon {
+  -webkit-transform: rotateZ(180deg);
+  -moz-transform: rotateZ(180deg);
+  -o-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+
+/* .downloadStatement-trend {
+    margin-left: 10px;
+} */
+
+.trendSearchBarArea {
+  border-top: 1px solid #ccc;
+  padding: 15px 0;
+  .areaContainer {
+    overflow: hidden;
+    width: 450px;
+    margin: 0 auto;
+    & > div {
+      float: left;
+      margin-left: 10px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.trendSearchCheckBox .checkbox {
+  width: 16px;
+  height: 16px;
+}
+
+.latelyIssue-trend {
+  color: #003;
+  border-left: 1px solid #003;
+  line-height: 12px;
+  display: inline-block;
+  padding: 0 2px 0 5px;
+  font-size: 12px;
+  &:first-child {
+    border-left: none;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+  &.active {
+    color: #099;
+  }
+}
+
+/* .trendSearchBarBtn {
+    width: 48px;
+    font-size: 14px;
+    background: #e6f1f1;
+    color: #099;
+    border: 1px solid #099;
+} */
+.lotteryTrendArea {
+  position: relative;
+  min-width: 1400px;
+}
+
+.lottsTrendTable {
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 100%;
+  text-align: center;
+  color: #b9b9b9;
+  border-collapse: collapse;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.lottsTrendTable .listHeader {
+  line-height: 30px;
+  background: #ddd;
+  border: none;
+  color: #003;
+}
+
+.lottsTrendTable .listHeader:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+.lottsTrendTable th {
+  font-weight: normal;
+}
+
+.lottsTrendTable th,
+.lottsTrendTable .trendBorder-l {
+  border-left: 1px solid #ccc;
+}
+
+.lottsTrendTable tbody tr:nth-child(5n+6) td {
+  border-top: 1px solid #ccc;
+}
+
+.lotteryTrendNoBorder .lottsTrendTable tbody tr:nth-child(5n+6) td {
+  border-top: 1px solid #fff;
+}
+
+.lottsTrendTable [class^=trendBall],
+.trendBallExampleBox .trendBallRed {
+  background: url(../images/trend/ball-red.png) center no-repeat;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.lottsTrendTable .clustNumBallWarm,
+.lottsTrendTable .clustNumBallOverlap,
+.lottsTrendTable .numBallHot,
+.lottsTrendTable .numBallCold,
+.lottsTrendTable .numBallWarm,
+.lottsTrendTable .numBallOverlap,
+.lottsTrendTable .numBallOdd {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lottsTrendTable .numBallHot,
+.trendBallExampleBox .numBallHot {
+  background-image: url(../images/trend/ball-hot.png);
+}
+
+.lottsTrendTable .numBallCold,
+.trendBallExampleBox .numBallCold {
+  background-image: url(../images/trend/ball-cold.png);
+}
+
+.lottsTrendTable .numBallWarm,
+.trendBallExampleBox .numBallWarm,
+.lottsTrendTable .clustNumBallWarm {
+  background-image: url(../images/trend/ball-warm.png);
+}
+
+.lottsTrendTable .numBallOverlap,
+.trendBallExampleBox .numBallOverlap,
+.lottsTrendTable .clustNumBallOverlap {
+  background-image: url(../images/trend/ball-overlap.png);
+}
+
+.lottsTrendTable .numBallOdd,
+.trendBallExampleBox .numBallOdd {
+  background-image: url(../images/trend/ball-odd.png);
+}
+
+.trendNumTotal {
+  background: #ddd;
+  color: #666;
+  border-top: 1px solid #ccc;
+}
+
+.trendBg-cyan {
+  background: #e7e7e7;
+  line-height: 29px;
+  border-top: 1px solid #fff;
+}
+
+.trendBg-highCyan {
+  background: #6cc;
+  color: #fff;
+  line-height: 29px;
+  border-top: 1px solid #fff;
+}
+
+.trendBg-purple {
+  background: #66c;
+  color: #fff;
+  line-height: 29px;
+  border-top: 1px solid #fff;
+}
+
+.trendBg-red {
+  background: #f33;
+  color: #fff;
+  line-height: 29px;
+  border-top: 1px solid #fff;
+}
+
+.lottsTrendTable tbody tr:first-child td {
+  border-top: none;
+}
+
+.lotteryTrendCanvas, .lottsTrendCanvasBox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+/* 号码示例 */
+.trendBallExampleBox {
+  padding: 20px;
+  text-align: center;
+}
+
+.trendBallExampleBox label {
+  margin-left: 15px;
+  color: #003;
+}
+
+.trendBallExampleBox label:first-child {
+  margin-left: 0;
+}
+
+.trendBallExampleBox i {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-style: normal;
+}

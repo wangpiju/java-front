@@ -1,0 +1,3949 @@
+﻿* {
+
+    margin: 0;
+
+    padding: 0;
+
+    border: 0;
+
+}
+
+body {
+
+    font-family: Helvetica, microsoft yahei, sans-serif;
+
+    color: #003;
+
+    font-size: 16px;
+
+}
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    color: #666;
+
+    background: #fff;
+
+    font-size: 0.875rem;
+
+}
+
+a {
+
+    color: #333;
+
+    text-decoration: none;
+
+}
+
+a, button, input {
+
+    -ms-touch-action: manipulation; /* IE10  */
+
+    touch-action: manipulation; /* IE11+ */
+
+}
+
+textarea {
+
+    box-sizing: border-box;
+
+    width: 100%;
+
+    min-height: 150px;
+
+    outline: none;
+
+    resize: none;
+
+    padding: 10px;
+
+    font-family: microsoft yahei, sans-serif;
+
+    border-radius: 3px;
+
+    color: #333;
+
+}
+
+ul > li {
+    list-style: none;
+}
+
+ol > li {
+    list-style-position: inside;
+}
+
+.loginPlaceholder input::-webkit-input-placeholder {
+    color: #66c;
+}
+
+.loginPlaceholder input::-moz-input-placeholder {
+    color: #66c;
+}
+
+.loginPlaceholder input:-moz-input-placeholder {
+    color: #66c;
+}
+
+.loginPlaceholder input:-ms-input-placeholder {
+    color: #66c;
+}
+
+/* 閫氱敤棰滆壊 */
+
+div .fontColorRed {
+    color: #de003b;
+}
+
+div .fontColorCyan {
+    color: #00dde1;
+}
+
+div .fontColorTeal {
+    color: #099;
+}
+
+div .fontColorGray {
+    color: #999;
+}
+
+div .fontColorGreen {
+    color: #090;
+}
+
+div .fontColorBlack {
+    color: #003;
+}
+
+div .fontColorYellow {
+    color: #e89b00;
+}
+
+.fontBold {
+    font-weight: bold;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+.textRight {
+    text-align: right;
+}
+
+/* 娓呴櫎娴姩 */
+
+.cls {
+    clear: both;
+}
+
+.cls:after {
+
+    display: block;
+
+    content: '';
+
+    clear: both;
+
+}
+
+/* 瓒呭嚭鏄剧ず鐪佺暐鍙�  */
+
+.overflowTable {
+    table-layout: fixed;
+}
+
+.overflowEllipsis {
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+/* 琛ㄦ牸澶撮儴 */
+
+.tableHeader {
+
+    background: #a7b1bb;
+
+    color: #fff;
+
+    font-size: 1rem;
+
+}
+
+table th, table td {
+
+    border: 1px solid #ccc;
+
+    padding: 10px 0;
+
+    text-align: center;
+
+    /*font-weight: bold;*/
+
+}
+
+/* 瀛愬厓绱犺浆鎹负鍧楀厓绱� */
+
+.sonBreak > * {
+
+    display: block;
+
+    line-height: 1rem;
+
+}
+
+/* 閿欒璀﹀憡 */
+
+.errorWarn {
+
+    color: #de003b;
+
+    font-size: 0.9rem;
+
+}
+
+.fontSizeRem075 {
+    font-size: 0.75rem;
+}
+
+.fontSizeRem08 {
+    font-size: 0.8rem;
+}
+
+.fontSizeRem09 {
+    font-size: 0.9rem;
+}
+
+.fontSizeRem12 {
+    font-size: 1.2rem;
+}
+
+/* 澶氶�夋寜閽牱寮� */
+
+.checkboxDetail {
+
+    -webkit-user-select: none;
+
+    -moz-user-select: none;
+
+    -ms-user-select: none;
+
+    user-select: none;
+
+}
+
+.checkbox {
+
+    width: 32px;
+
+    height: 32px;
+
+    vertical-align: middle;
+
+}
+
+.checkbox + span {
+
+    vertical-align: middle;
+
+}
+
+/* 鎸夐挳鏍峰紡 */
+
+.btn {
+
+    display: inline-block;
+
+    width: 100%;
+
+    height: 3rem;
+
+    line-height: 3rem;
+
+    border-radius: 1.5rem;
+
+    background: #e61e46;
+
+    text-align: center;
+
+    color: #fff;
+
+    font-family: microsoft yahei, sans-serif;
+
+    cursor: pointer;
+
+    vertical-align: middle;
+
+    margin-top: 15px;
+
+    font-size: 1rem;
+
+}
+
+.btn:focus {
+
+    color: #fff;
+
+}
+
+div > .btn:first-child,
+label > .btn:first-child {
+
+    margin-top: 0;
+
+}
+
+.btn.disabled {
+
+    background-color: #ccc;
+
+    pointer-events: none;
+
+}
+
+.btn.gotoPlay {
+    background: #f33;
+}
+
+.btn.backPrev {
+    background: #999;
+}
+
+.btn.btnRed {
+    background: #e61e46;
+}
+
+/* input鏍峰紡 */
+
+.labelCond {
+
+    box-sizing: border-box;
+
+    border-top: 1px solid #ccc;
+
+    border-bottom: 1px solid #ccc;
+
+    width: 100%;
+
+    height: 2.75rem;
+
+    padding: 0 20px;
+
+    font-size: 0.9rem;
+
+    -webkit-appearance: none;
+
+    -moz-appearance: none;
+
+    appearance: none;
+
+}
+
+.labelCondSelect {
+    position: relative;
+}
+
+.selectNum2 {
+    overflow: hidden;
+}
+
+.selectNum2 .labelCondSelect {
+
+    float: left;
+
+    width: 50%;
+
+}
+
+.selectNum2 .labelCondSelect select {
+
+    border-right: 1px solid #ccc;
+
+}
+
+.selectNum2 .labelCondSelect:last-child select {
+
+    border-right: none;
+
+}
+
+select.labelCond {
+
+    font-family: Helvetica, microsoft yahei, sans-serif;
+
+    color: #333;
+
+    background-color: #fff;
+
+    background-size: 1.2rem;
+
+    border-radius: 0;
+
+    -webkit-appearance: none;
+
+    -moz-appearance: none;
+
+}
+
+.selectIcon {
+
+    width: 36px;
+
+    height: 100%;
+
+    position: absolute;
+
+    top: 0;
+
+    right: 10px;
+
+    pointer-events: none;
+
+}
+
+.labelCondSelect select + .selectIcon {
+
+    background: url(../images/selectIcon.png) center no-repeat;
+
+    background-size: 1.2rem;
+
+}
+
+.labelCondSelect .rightIcon {
+
+    background: url(../images/rightIcon.png) center no-repeat;
+
+    background-size: 1.5rem;
+
+}
+
+/*.labelCondSelect .wrongIcon {
+
+    background: url(../images/wrongIcon.png) center no-repeat;
+
+    background-size: 1.5rem;
+
+}*/
+
+.labelCond[readonly] {
+
+    background: #ddd;
+
+}
+
+html {
+
+    height: 100%;
+
+    width: 100%;
+
+}
+
+body {
+
+    background: url(../images/login-bg.png) #000000 center top no-repeat;
+
+    background-size: 100%;
+
+}
+
+.bodyColorEEE {
+
+    background: #eee;
+
+}
+
+/* 鐧诲綍椤� */
+
+.loginArea {
+
+    height: 300px;
+
+    width: 80%;
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    margin: 230px auto auto;
+
+}
+
+.logoBox {
+
+    text-align: center;
+
+}
+
+.logoBox img {
+
+    width: 230px;
+
+}
+
+/*.loginBox,.forgetPwdBox {*/
+
+/*margin-top: 35px;*/
+
+/*text-align: center;*/
+
+/*}*/
+
+.loginUserBar {
+
+    display: block;
+
+    margin-top: 15px;
+
+    position: relative;
+
+    font-weight: normal;
+
+}
+
+.loginUserBar:first-child {
+
+    margin-top: 0;
+
+}
+
+.loginUserBar input {
+
+    width: 100%;
+
+    height: 2.2rem;
+
+    background: transparent;
+
+    color: #999;
+
+    padding: 5px 5px 5px 45px;
+
+    outline: none;
+
+    -webkit-box-sizing: border-box;
+
+    box-sizing: border-box;
+
+    font-size: 1rem;
+
+    border-bottom: 1px solid #b19f8c;
+
+}
+
+.loginUserBar img {
+
+    height: 1.25rem;
+
+    position: absolute;
+
+    top: 7px;
+
+    left: 12px;
+
+}
+
+.loginUserBar .userCodeImg {
+
+    height: 29px;
+
+    right: 3px;
+
+    bottom: 3px;
+
+    left: auto;
+
+    top: auto;
+
+}
+
+.loginBtnBox {
+
+    display: block;
+
+    margin-top: 20px;
+
+}
+
+.btn.onlineServices {
+
+    background: #86706c;
+
+    color: #fff;
+
+}
+
+.rememberPwdBar {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+}
+
+.rememberPwdBar .rememberPwd {
+
+    width: 18px;
+
+    height: 18px;
+
+    vertical-align: middle;
+
+}
+
+.rememberPwd + span {
+
+    color: #fff;
+
+    vertical-align: middle;
+
+}
+
+.loginSloganBox {
+
+    margin-top: 35px;
+
+    text-align: center;
+
+}
+
+.loginSloganBox img {
+
+    width: 200px;
+
+}
+
+/*.forgetPwd {*/
+
+/*text-decoration: underline;*/
+
+/*font-size: 0.75rem;*/
+
+/*color: #66c;*/
+
+/*}*/
+
+/*@media screen and (orientation:landscape) and (max-height: 460px) {*/
+
+/*html {*/
+
+/*height: auto;*/
+
+/*width: auto;*/
+
+/*}*/
+
+/*.loginArea {*/
+
+/*position: relative;*/
+
+/*margin: 0 auto;*/
+
+/*padding: 20px 0;*/
+
+/*height: 100%;*/
+
+/*}*/
+
+/*}*/
+
+@media screen and (max-height: 400px) {
+
+    html {
+
+        height: auto;
+
+        width: auto;
+
+    }
+
+    .loginArea {
+
+        position: relative;
+
+        margin: 0 auto;
+
+        padding: 20px 0;
+
+        height: 100%;
+
+    }
+
+}
+
+@media screen and (min-width: 640px) {
+
+    .loginArea {
+
+        width: 450px;
+
+    }
+
+}
+
+/* 閫氱敤骞冲彴涓诲鑸�-start */
+
+.platMainNavBox {
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+}
+
+.platMainNavShow {
+
+    display: inline-block;
+
+    width: 80%;
+
+    height: 100%;
+
+    background: #423437;
+
+}
+
+.platMainNavBox a {
+
+    color: #c8b4aa;
+
+}
+
+/* 鍙敤浣欓顤� */
+
+.platMainNavTop {
+
+    width: 130px;
+
+    height: 130px;
+
+    margin: 20px auto;
+
+    color: #fff;
+
+    background: url(../images/userUsableBalance.png) center no-repeat;
+
+    background-size: 100%;
+
+}
+
+.userUsableBalance {
+
+    display: inline-block;
+
+    width: 100%;
+
+    line-height: 20px;
+
+    margin: 45px auto;
+
+    text-align: center;
+
+}
+
+.platMainNavContent {
+
+    overflow-x: hidden;
+
+    -webkit-overflow-scrolling: touch;
+
+}
+
+.platMainNavList {
+
+    border-top: 1px solid rgba(255, 255, 255, .05);
+
+}
+
+.platMainNav {
+
+    box-sizing: border-box;
+
+    display: block;
+
+    width: 100%;
+
+    line-height: 3rem;
+
+    padding: 0 20px;
+
+    position: relative;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .05);
+
+}
+
+.platMainNav i, .userQuitBox a i, .platSubNav i {
+
+    display: inline-block;
+
+    width: 20px;
+
+    height: 20px;
+
+    background-size: 100% 100%;
+
+    vertical-align: sub;
+
+    margin-right: 8px;
+
+}
+
+.userQuitBox a i {
+
+    margin-right: 3px;
+
+}
+
+.platMainNav01 {
+    background: url(../images/platMainNav01.png) center no-repeat;
+}
+
+.platMainNav02 {
+    background: url(../images/platMainNav02.png) center no-repeat;
+}
+
+.platMainNav03 {
+    background: url(../images/platMainNav03.png) center no-repeat;
+}
+
+.platMainNav05 {
+    background: url(../images/platMainNav05.png) center no-repeat;
+}
+
+.platMainNav06 {
+    background: url(../images/platMainNav06.png) center no-repeat;
+}
+
+.platMainNav07 {
+    background: url(../images/platMainNav07.png) center no-repeat;
+}
+
+.platMainNav08 {
+    background: url(../images/platMainNav08.png) center no-repeat;
+}
+
+.platMainNav09 {
+    background: url(../images/platMainNav09.png) center no-repeat;
+}
+
+.platMainNav10 {
+    background: url(../images/platMainNav10.png) center no-repeat;
+}
+
+.platMainNav11 {
+    background: url(../images/platMainNav11.png) center no-repeat;
+}
+
+.platMainNav12 {
+    background: url(../images/platMainNav12.png) center no-repeat;
+}
+
+.platMainNav13 {
+    background: url(../images/platMainNav13.png) center no-repeat;
+}
+
+.platMainNav15 {
+    background: url(../images/platMainNav15.png) center no-repeat;
+}
+
+.platMainNav16 {
+    background: url(../images/platMainNav16.png) center no-repeat;
+}
+
+.platMainNav17 {
+    background: url(../images/platMainNav17.png) center no-repeat;
+}
+
+.userQuitBox .quitIcon {
+
+    background: url(../images/platMainNav04.png) center no-repeat;
+
+    background-size: 18px;
+
+}
+
+.platMainNav .rightArrow {
+
+    background: url(../images/rightArrow.png) center no-repeat;
+
+    background-size: 10px;
+
+    transition: .2s ease-in-out;
+
+}
+
+.platMainNav.active .rightArrow {
+
+    transform: rotate(90deg);
+
+}
+
+.userSkipPc {
+
+    margin-left: 30px;
+
+}
+
+.userQuitBox .pcIcon {
+
+    background: url(../images/platMainNav14.png) center no-repeat;
+
+    background-size: 18px;
+
+}
+
+/* 骞冲彴瀛愬鑸� */
+
+.platSubNavList {
+
+    padding: 0 20px 0 50px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+
+    background: rgba(0, 0, 0, .3);
+
+}
+
+.platSubNav {
+
+    box-sizing: border-box;
+
+    display: block;
+
+    width: 100%;
+
+    line-height: 3rem;
+
+    padding: 0 10px;
+
+    border-top: 1px solid #423437;
+
+}
+
+.platSubNavDetail:first-child a {
+
+    border-top: none;
+
+}
+
+/* 骞冲彴涓诲鑸��鍑烘寜閽� */
+
+.userQuitBox {
+
+    position: absolute;
+
+    bottom: 40px;
+
+    left: 20px;
+
+}
+
+/* 骞冲彴涓诲鑸樉绀烘椂鍙充晶钂欑増 */
+
+.platMainNavMask {
+
+    position: absolute;
+
+    left: 80%;
+
+    width: 100%;
+
+    height: 100%;
+
+    /*visibility: 0;*/
+
+    z-index: 9999;
+
+}
+
+/* 骞冲彴涓诲鑸�-end */
+
+/* 閫氱敤骞冲彴鍖哄煙 */
+
+.generalPlatArea {
+
+    width: 100%;
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    transition: .2s ease-in-out;
+
+    background-color: #eee;
+
+    /* overflow: hidden; */
+
+}
+
+/* 椤甸潰瀵艰埅-start */
+
+.mainNav {
+
+    padding: 15px;
+
+    position: relative;
+
+    background: #000000;
+
+    text-align: center;
+
+}
+
+.mainNav .mainMenuBtn {
+
+    height: 20px;
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 15px;
+
+    margin-top: -10px;
+
+}
+
+.returnBtn, .lotteryNumLink {
+
+    height: 20px;
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 15px;
+
+}
+
+.mainNav a img {
+
+    height: 100%;
+
+    vertical-align: middle;
+
+}
+
+.headerTitle {
+
+    display: block;
+
+    margin: 0 30%;
+
+    color: #fff;
+
+    font-size: 1.2rem;
+
+    line-height: 20px;
+
+}
+
+.returnBtn span {
+
+    color: #fff;
+
+    vertical-align: middle;
+
+    margin-left: 5px;
+
+}
+
+.mainNav .lotteryNumLink {
+
+    color: #fff;
+
+}
+
+.headerRightBox {
+
+    position: absolute;
+
+    top: 50%;
+
+    right: 15px;
+
+    margin-top: -13px;
+
+}
+
+.userSet, .userAdd {
+
+    display: inline-block;
+
+    width: 26px;
+
+    height: 26px;
+
+    background-size: 100% 100%;
+
+    background-repeat: no-repeat;
+
+    margin-left: 5px;
+
+}
+
+.userSet {
+
+    background-image: url(../images/setIcon.png);
+
+}
+
+.userAdd {
+
+    background-image: url(../images/addIcon.png);
+
+}
+
+/* 椤甸潰瀵艰埅-end */
+
+/* 娣诲姞寮�鎴�-start */
+
+.listForm {
+
+    margin-top: 25px;
+
+}
+
+.listDetail {
+
+    margin-top: 20px;
+
+}
+
+.listDetail:first-child {
+
+    margin-top: 0;
+
+}
+
+.comChargeBox {
+
+    color: #999;
+
+    padding: 0 15px;
+
+    line-height: 24px;
+
+    font-size: 14px;
+
+}
+
+.detailTitle {
+
+    margin: 0 20px;
+
+    /*font-size: 0.875rem;*/
+
+    line-height: 1.5rem;
+
+    overflow: hidden;
+
+}
+
+.detailTitleLeft {
+
+    display: inline-block;
+
+    height: 16px;
+
+    width: 3px;
+
+    background: #e89b00;
+
+    vertical-align: middle;
+
+    border-radius: 3px;
+
+}
+
+.detailTitle span {
+
+    vertical-align: middle;
+
+}
+
+.detailTitle .mustWhiteStar {
+
+    color: red;
+
+    font-size: 1.5rem;
+
+}
+
+.detailTips {
+
+    float: right;
+
+    font-size: 0.875rem;
+
+    /*letter-spacing: 2px;*/
+
+}
+
+.btnGroup {
+
+    margin: 30px;
+
+    text-align: center;
+
+}
+
+/* 娣诲姞寮�鎴�-end */
+
+/* 骞冲彴娑堟伅-start */
+
+.platMsgDetail {
+
+    display: block;
+
+    padding: 20px;
+
+    border-bottom: 1px solid #ccc;
+
+    background: #fff;
+
+    overflow: hidden;
+
+}
+
+.platMsgTitle {
+
+    line-height: 1.2rem;
+
+    color: #003;
+
+}
+
+.platMsgContent {
+
+    font-size: 0.9rem;
+
+    padding: 5px 0;
+
+    max-height: 2rem;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 2;
+
+    line-clamp: 2;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+.platMsgDate {
+
+    display: block;
+
+    font-size: 0.75rem;
+
+    color: #b7b7b7;
+
+    margin-top: 5px;
+
+}
+
+/* 骞冲彴娑堟伅-end */
+
+/* 鎴戠殑娑堟伅璇︽儏-start*/
+
+.messageContentDiv {
+
+    padding: 10px;
+
+}
+
+.messageContentDiv p {
+
+    margin-top: 10px;
+
+}
+
+.messageContentDiv p:first-child {
+
+    margin-top: 0;
+
+}
+
+.msgUserName {
+
+    display: inline-block;
+
+    max-width: 10%;
+
+    line-height: 31px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+.messageInfo {
+
+    display: inline-block;
+
+    padding: 5px;
+
+    border-radius: 5px;
+
+    max-width: 70%;
+
+    word-break: break-all;
+
+    vertical-align: top;
+
+    text-align: left;
+
+    position: relative;
+
+}
+
+.messageLeft {
+
+    margin-left: 5px;
+
+    background: #fff;
+
+    border: 1px solid #ccc;
+
+}
+
+.messageRight {
+
+    margin-right: 5px;
+
+    background: #bed2ff;
+
+    border: 1px solid #9cacec;
+
+}
+
+.messageLeft:after {
+
+    content: '';
+
+    position: absolute;
+
+    top: 8px;
+
+    left: -7px;
+
+    width: 7px;
+
+    height: 12px;
+
+    background: url(../images/arrow-l.png) center no-repeat;
+
+    background-size: 100%;
+
+}
+
+.messageRight:after {
+
+    content: '';
+
+    position: absolute;
+
+    top: 8px;
+
+    right: -7px;
+
+    width: 7px;
+
+    height: 12px;
+
+    background: url(../images/arrow-r.png) center no-repeat;
+
+    background-size: 100%;
+
+}
+
+.msgSendContentDiv > label {
+
+    display: block;
+
+    margin: 20px 30px 0;
+
+}
+
+.msgSendContent {
+
+    min-height: 7rem;
+
+    font-size: 1rem;
+
+}
+
+.msgSendContentDiv .btnGroup {
+
+    margin-top: 10px;
+
+}
+
+.nullMsg {
+
+    margin-top: 5rem;
+
+    text-align: center;
+
+}
+
+/* 鎴戠殑娑堟伅璇︽儏-end*/
+
+/* 娲诲姩璇︽儏-start */
+
+.platMsgDetailTitle {
+
+    padding: 20px;
+
+    line-height: 1.5rem;
+
+    background: #fff;
+
+}
+
+.platMsgDetailContent {
+
+    padding: 20px;
+
+    font-size: 0.85rem;
+
+    line-height: 1.5rem;
+
+}
+
+.platMsgDetailContent p {
+
+    margin-top: 15px;
+
+}
+
+.platMsgDetailContent p:first-child {
+
+    margin-top: 0;
+
+}
+
+/* 娲诲姩璇︽儏-end */
+
+/* 璐︽埛鏄庣粏--start */
+
+.userAcctDetailBox {
+
+    background: #fff;
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid #ccc;
+
+    margin-bottom: 20px;
+
+}
+
+.userAcctInfoDiv {
+
+    display: inline-block;
+
+    width: 35%;
+
+    border-left: 1px solid #ccc;
+
+    padding: 0 30px;
+
+    margin-left: -2px;
+
+}
+
+.userAcctInfoTitle {
+
+    letter-spacing: 2px;
+
+}
+
+.userAcctInfoAmount {
+
+    font-size: 1.8rem;
+
+    margin-top: 3px;
+
+}
+
+.userDetailBox {
+
+    margin-top: 10px;
+
+}
+
+/* 璐︽埛鏄庣粏--end */
+
+/* 鎻愮幇鎴愬姛-start */
+
+.successInfo {
+
+    text-align: center;
+
+    padding: 25px;
+
+    background: #fff;
+
+    border-bottom: 1px solid #ddd;
+
+}
+
+.successInfo p {
+
+    line-height: 35px;
+
+}
+
+.successInfo .msgIcon {
+
+    display: inline-block;
+
+    width: 25px;
+
+    height: 25px;
+
+    vertical-align: middle;
+
+    margin-right: 10px;
+
+}
+
+.successInfo .msgText {
+
+    display: inline-block;
+
+    vertical-align: middle;
+
+    line-height: 25px;
+
+}
+
+/* 鎻愮幇鎴愬姛-end */
+
+/* 鍏呭��-start */
+
+.unRechargeTable {
+
+    margin-top: 15px;
+
+}
+
+.rechAfmInfo {
+
+    margin-top: 15px;
+
+    background: #fff;
+
+}
+
+.rechAfmInfoTitle {
+
+    line-height: 36px;
+
+    border-bottom: 1px solid #ccc;
+
+    padding: 0 20px;
+
+}
+
+.rechAfmInfoContent {
+
+    padding: 15px 20px;
+
+}
+
+.rechAfmInfoDetail {
+
+    margin-top: 10px;
+
+    line-height: 24px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    padding-left: 80px;
+
+}
+
+.rechAfmInfoDetail:first-child {
+
+    margin-top: 0;
+
+}
+
+.rechDetailTitle {
+
+    width: 80px;
+
+    text-align: right;
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+}
+
+.affirmInfoTips {
+
+    text-align: center;
+
+    margin-top: 10px;
+
+}
+
+.rechDetailIntro {
+
+    margin-top: 20px;
+
+    padding: 0 30px;
+
+    line-height: 28px;
+
+}
+
+.rechQRCode {
+
+    margin-top: 20px;
+
+}
+
+.rechQRCode .rechDetailTitle {
+
+    width: 100px;
+
+}
+
+.rechQRCode .rechAfmInfoDetail {
+
+    padding-left: 100px;
+
+}
+
+.rechQRCode .unRechargeTable {
+
+    margin-bottom: 10px;
+
+}
+
+.rechQRCodeImg {
+
+    width: 200px;
+
+    text-align: center;
+
+}
+
+.rechQRCodeImg img {
+
+    width: 200px;
+
+}
+
+.alipayTip {
+
+    text-align: left;
+
+    padding: 10px;
+
+}
+
+.alipayTip h3 {
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+
+    font-weight: normal;
+
+}
+
+.alipayTip p {
+
+    font-size: 12px;
+
+    line-height: 20px;
+
+    color: #f33;
+
+}
+
+/* 鍏呭��-end */
+
+/* 缁戝畾閾惰鍗�-start */
+
+.bindAfmInfoTable th,
+.bindAfmInfoTable td {
+
+    padding: 10px;
+
+    font-weight: normal;
+
+}
+
+.bindAfmInfoTable th {
+
+    text-align: right;
+
+    color: #999;
+
+}
+
+.bindAfmInfoTable td {
+
+    text-align: left;
+
+    padding-left: 20px;
+
+    padding-right: 20px;
+
+}
+
+.bankCardList {
+
+    margin-top: 20px;
+
+    background: #fff;
+
+    border-bottom: 1px solid #ddd;
+
+}
+
+.bankCardDetail {
+
+    padding: 20px;
+
+    border-top: 1px solid #ccc;
+
+}
+
+.bankCardDetail > * {
+
+    display: inline-block;
+
+    vertical-align: middle;
+
+}
+
+.bankIcon {
+
+    width: 35px;
+
+}
+
+.bankCardInfo {
+
+    margin-left: 15px;
+
+}
+
+/* 缁戝畾閾惰鍗�-end */
+
+/* 璁剧疆璧勯噾瀵嗙爜-start */
+
+.safeQA select {
+
+    background: #f7f7f7;
+
+}
+
+.safeQA input {
+
+    padding-left: 70px;
+
+    border-top: none;
+
+}
+
+.inputText {
+
+    position: absolute;
+
+    line-height: 44px;
+
+    left: 20px;
+
+    top: 0;
+
+    font-size: 0.9rem;
+
+}
+
+/* 鎴愬姛 */
+
+.addBankCardBtn {
+
+    margin-top: 10px;
+
+    display: inline-block;
+
+    border: 1px dashed #099;
+
+    width: 250px;
+
+    height: 75px;
+
+    line-height: 75px;
+
+}
+
+.addCardIcon {
+
+    font-size: 3rem;
+
+    vertical-align: middle;
+
+}
+
+/* 璁剧疆璧勯噾瀵嗙爜-end */
+
+/* 涓婚〉-start */
+
+.platIndexArea .mainNav {
+
+    padding: 12px;
+
+}
+
+.platLogo {
+
+    height: 27px;
+
+    vertical-align: middle;
+
+}
+
+/* 杞挱鍥� */
+
+.platIndexArea .container {
+
+    padding-bottom: 40px;
+
+}
+
+.picScrollBox {
+
+    overflow: hidden;
+
+}
+
+.picScrollList {
+
+    position: relative;
+
+    height: 100%;
+
+}
+
+.picScrollList a {
+
+    display: block;
+
+    height: 100%;
+
+    width: 100%;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: .3s ease-in-out;
+
+}
+
+.picScrollList a.active {
+
+    opacity: 1;
+
+    pointer-events: auto;
+
+}
+
+.picScrollList a img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+}
+
+/* 骞冲彴鍏憡 */
+
+.platNoticeListBox {
+
+    background: #fff;
+
+    overflow: hidden;
+
+}
+
+.platNoticeTitle {
+
+    height: 17px;
+
+    display: inline-block;
+
+    vertical-align: middle;
+
+    border-right: 1px solid #ccc;
+
+    line-height: 1rem;
+
+    padding: 0 10px;
+
+}
+
+.platNoticeContent {
+
+    display: inline-block;
+
+    max-width: 75%;
+
+    height: 2.5rem;
+
+    line-height: 2.5rem;
+
+    vertical-align: middle;
+
+    color: #666;
+
+    margin-left: 6px;
+
+}
+
+.platNoticeList {
+
+    position: relative;
+
+}
+
+.platNotice a {
+
+    width: 100%;
+
+    display: inline-block;
+
+}
+
+.platNoticeNew {
+
+    border: 1px solid #099;
+
+    border-radius: 3px;
+
+    padding: 1px;
+
+    color: #099;
+
+}
+
+/* 骞冲彴鍏憡鍒楄〃 */
+
+.lotteryTypeListBox {
+
+    margin-top: 10px;
+
+    background: #fff;
+
+}
+
+.lotteryTypeDetail {
+
+    border-top: 1px solid #ddd;
+
+    display: block;
+
+    overflow: hidden;
+
+    padding: 15px 0;
+
+    position: relative;
+
+}
+
+.lotteryTypeDetail > * {
+
+    float: left;
+
+}
+
+.lotteryTypeDetail .lottTypeImg {
+
+    width: 70px;
+
+    padding: 0 15px;
+
+}
+
+.contentLineBreak {
+
+    color: #ccc;
+
+}
+
+.lottTypeTitle {
+
+    color: #333;
+
+}
+
+.lottTypeTitle > * {
+
+    vertical-align: middle;
+
+}
+
+.contentLineBreak img {
+
+    display: inline-block;
+
+    height: 16px;
+
+}
+
+.rightArrow {
+
+    height: 24px;
+
+    float: none;
+
+    position: absolute;
+
+    top: 50%;
+
+    right: 15px;
+
+    margin-top: -12px;
+
+}
+
+/* 涓婚〉-end */
+
+/* 鎶曟敞椤�-start */
+
+.lotteryBetsBox {
+
+    padding-bottom: 100px;
+
+}
+
+/* 褰撳墠鐜╂硶 */
+
+.currPlayMethodDetail {
+
+    padding: 0 20px;
+
+    color: #fff;
+
+    line-height: 3rem;
+
+    background: #e89b00;
+
+}
+
+.currPlayMethod {
+
+    color: #fff;
+
+}
+
+.dropDownIcon {
+
+    display: inline-block;
+
+    width: 16px;
+
+    margin-left: 5px;
+
+    transition: .2s ease-in-out;
+
+    transform: rotate(0deg);
+
+}
+
+.currPlayMethod.active .dropDownIcon {
+
+    transform: rotate(-180deg);
+
+}
+
+.playMethodGroupList {
+
+    position: absolute;
+
+    z-index: 40;
+
+}
+
+.playMethodGroup {
+
+    background: #fff;
+
+    padding: 10px 20px;
+
+    border-bottom: 1px solid #ccc;
+
+    overflow: hidden;
+
+}
+
+.playMethodGroupTitle, .playMethodList {
+
+    float: left;
+
+}
+
+.playMethodList {
+
+    margin-top: -10px;
+
+    width: 88%;
+
+}
+
+.playMethodGroupTitle {
+
+    min-width: 12%;
+
+}
+
+.playMethod {
+
+    display: inline-block;
+
+    padding: 0 20px;
+
+    line-height: 2rem;
+
+    border: 1px solid #ccc;
+
+    margin: 10px 5px 0 0;
+
+    position: relative;
+
+}
+
+.playMethod.active {
+
+    border-color: #de003b;
+
+    color: #de003b;
+
+}
+
+.playMethod i {
+
+    display: none;
+
+    width: 15px;
+
+    height: 15px;
+
+    position: absolute;
+
+    right: 3px;
+
+    top: 50%;
+
+    margin-top: -7px;
+
+    background: url(../images/currPlayMethodIcon.png) center no-repeat;
+
+    background-size: 15px;
+
+}
+
+.playMethod.active i {
+
+    display: block;
+
+}
+
+/* 鍓╀綑鎶曟敞鏃堕棿鍊掕鏃� */
+
+.betsRemainTimeBox,
+.betsBeforeNumBox {
+
+    display: block;
+
+    background: #fff;
+
+    border-bottom: 1px solid #ddd;
+
+    line-height: 2rem;
+
+    padding: 0 15px;
+
+    overflow: hidden;
+
+}
+
+.betsBeforeNum {
+
+    float: left;
+
+}
+
+.lastSeasonNum span {
+
+    float: left;
+
+    color: #de003b;
+
+    font-weight: bold;
+
+    font-size: 1rem;
+
+    margin-left: 4px;
+
+}
+
+.lastSeasonNum span:first-child {
+
+    margin-left: 0;
+
+}
+
+/* 鎶曟敞鍙风爜 */
+
+.betsChangeNumBox {
+
+    padding: 0 20px;
+
+}
+
+.betsPlaysIntro {
+
+    color: #de003b;
+
+    font-size: 0.9rem;
+
+    margin-top: 10px;
+
+    /*overflow: hidden;*/
+
+    position: relative;
+
+}
+
+.betsPlaysIntroDetail {
+
+    float: left;
+
+}
+
+.betsPlaysIntroIcon {
+
+    display: inline-block;
+
+    width: 18px;
+
+    height: 18px;
+
+    background: url(../images/tipsIcon.png) center no-repeat;
+
+    background-size: 100%;
+
+    vertical-align: middle;
+
+}
+
+.betsPlaysIntroIcon + span {
+
+    vertical-align: middle;
+
+}
+
+.betsBonusNumber {
+
+    float: right;
+
+    color: #c99;
+
+}
+
+.betsChangeNumTips {
+
+    width: 170px;
+
+    position: absolute;
+
+    top: 28px;
+
+    left: 0;
+
+    color: #333;
+
+    background: #fff;
+
+    border-radius: 5px;
+
+    padding: 10px;
+
+    font-size: 0.5rem;
+
+    z-index: 1000;
+
+}
+
+.betsChangeNumTips:before {
+
+    content: '';
+
+    width: 0;
+
+    height: 0;
+
+    position: absolute;
+
+    top: -8px;
+
+    left: 42px;
+
+    border-left: 8px solid transparent;
+
+    border-right: 8px solid transparent;
+
+    border-bottom: 8px solid #fff;
+
+}
+
+.anySelectBox label {
+
+    margin-left: 15px;
+
+}
+
+.anySelectBox label:first-child {
+
+    margin-left: 0;
+
+}
+
+.changeNumDetail {
+
+    margin-top: 15px;
+
+    overflow: hidden;
+
+}
+
+.changeNumTitle {
+
+    overflow: hidden;
+
+    line-height: 32px;
+
+}
+
+.changeNumBtnList {
+
+    float: right;
+
+    overflow: hidden;
+
+}
+
+.changeNumBtn {
+
+    color: #de003b;
+
+    width: 24px;
+
+    line-height: 24px;
+
+    float: left;
+
+    text-align: center;
+
+    padding: 3px;
+
+    border: 1px solid transparent;
+
+    border-radius: 50%;
+
+}
+
+.changeNumBtn.active {
+
+    border-color: #099;
+
+    background: #fff;
+
+}
+
+.changeNumContent {
+
+    margin-top: 10px;
+
+    margin-left: -18px;
+
+    padding: 10px 0;
+
+    border-top: 1px solid #ddd;
+
+    overflow: hidden;
+
+}
+
+.changeNum {
+
+    float: left;
+
+    min-width: 25px;
+
+    line-height: 25px;
+
+    border: 1px solid #ccc;
+
+    font-size: 1.5rem;
+
+    margin-left: 18px;
+
+    margin-bottom: 10px;
+
+    text-align: center;
+
+    background: #fff;
+
+    color: #de003b;
+
+    padding: 10px;
+
+    border-radius: 25px;
+
+}
+
+.changeNum.active {
+
+    background: #de003b;
+
+    color: #fff;
+
+    border-color: #de003b;
+
+}
+
+/* 娓呯┖閫夊彿 */
+
+.singleTextArea {
+
+    margin-top: 10px;
+
+}
+
+.clearChangeNum img {
+
+    height: 20px;
+
+    vertical-align: middle;
+
+}
+
+.clearChangeNum span {
+
+    color: #999;
+
+    vertical-align: middle;
+
+}
+
+/* 鍏冭鍒嗐�佹姇娉ㄦ寜閽� */
+
+.startBetsBox {
+
+    position: fixed;
+
+    bottom: 0;
+
+    width: 100%;
+
+    padding: 5px 0;
+
+    box-sizing: border-box;
+
+    background: #fff;
+
+}
+
+.startBets-t {
+
+    position: absolute;
+
+    top: -8px;
+
+    width: 100%;
+
+    height: 8px;
+
+    background: url(../images/startBetsBorder.png) repeat-x;
+
+    background-size: 12px 8px;
+
+}
+
+.betsInfoDetail {
+
+    text-align: center;
+
+}
+
+.startBetsBtns {
+
+    overflow: hidden;
+
+    margin: 3px 10px 0;
+
+}
+
+.betsTypeBtns {
+
+    float: left;
+
+}
+
+.betsTypeBtns a {
+
+    display: inline-block;
+
+    width: 40px;
+
+    line-height: 33px;
+
+    text-align: center;
+
+    border: 1px solid #ccc;
+
+    color: #e61e46;
+
+    margin-right: 3px;
+
+    border-radius: 3px;
+
+}
+
+.betsTypeBtns a.active {
+
+    background: #e61e46;
+
+    color: #fff;
+
+    border-color: #e61e46;
+
+}
+
+.betsBtn {
+
+    float: right;
+
+    min-width: 35%;
+
+    max-width: 40%;
+
+    text-align: center;
+
+    line-height: 2.5rem;
+
+    border-radius: 3px;
+
+    background: #e89b00;
+
+    color: #fff;
+
+}
+
+/* 鎶曟敞椤�-end */
+
+/* 纭鎶曟敞椤�-start */
+
+.randomChangeBtnBox {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+}
+
+.randomChangeBtn {
+
+    min-width: 20%;
+
+    display: inline-block;
+
+    padding: 5px;
+
+    margin-left: 2%;
+
+    border-radius: 3px;
+
+    line-height: 24px;
+
+    background: #fff;
+
+}
+
+.randomChangeBtn:first-child {
+
+    margin-left: 0;
+
+}
+
+.randomChangeBtn i {
+
+    display: inline-block;
+
+    width: 18px;
+
+    height: 18px;
+
+    background: url(../images/randomChangeIcon.png) 0 0 no-repeat;
+
+    background-size: 36px;
+
+    vertical-align: middle;
+
+}
+
+.changeAgainBtn {
+
+    background: #e61e46;
+
+    color: #fff;
+
+}
+
+.randomChangeBtn .changeAgainIcon {
+
+    background-position: -18px 0;
+
+}
+
+.randomChangeBtn span {
+
+    vertical-align: middle;
+
+}
+
+/* 鎶曟敞鍙风爜灞曠ず */
+
+.betsNumShowBox {
+
+    margin: 10px 10px 0;
+
+    padding-bottom: 140px;
+
+    border-top: 20px solid transparent;
+
+    border-image: url(../images/betsNumBorder-t.png) 34 0;
+
+}
+
+.betsNumShowList {
+
+    margin: 0 10px;
+
+    padding: 0 10px;
+
+    background: #fff;
+
+}
+
+.betsNumInfo {
+
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 10px 0;
+
+    border-bottom: 1px dashed #ccc;
+
+    position: relative;
+
+}
+
+.clearCurrBetsNum {
+
+    position: absolute;
+
+    top: 50%;
+
+    width: 25px;
+
+    height: 25px;
+
+    margin-top: -13px;
+
+    background: url(../images/clearBetsNum.png) center no-repeat;
+
+    background-size: 25px;
+
+}
+
+.betsNumDetail {
+
+    width: 100%;
+
+    padding-left: 40px;
+
+    box-sizing: border-box;
+
+    line-height: 2rem;
+
+}
+
+.betsNum {
+
+    color: #de003b;
+
+}
+
+.betsNumIntro {
+
+    overflow: hidden;
+
+    font-size: 0.9rem;
+
+    word-spacing: -3px;
+
+}
+
+.betsNumIntro label {
+
+    float: right;
+
+}
+
+/* 娓呯┖鍒楄〃 */
+
+.betsNumShowClear {
+
+    background: #fff;
+
+    margin: 0 10px;
+
+    line-height: 2.5rem;
+
+    font-size: 0.9rem;
+
+    text-align: center;
+
+}
+
+.ashBinBtn {
+
+    display: inline-block;
+
+    width: 16px;
+
+    height: 18px;
+
+    background: url(../images/ashBin.png) center no-repeat;
+
+    background-size: 16px;
+
+    vertical-align: sub;
+
+}
+
+/* 涓嬫柟鐨勬尝绾� */
+
+.betsNumShowBorder {
+
+    display: block;
+
+    height: 3px;
+
+    background: url(../images/betsNumBorder-b.png) repeat-x;
+
+    background-size: 12px 3px;
+
+    margin: 0 10px;
+
+}
+
+/* 纭鎶曟敞鎸夐挳鍖哄煙 */
+
+.confirmBetsBox {
+
+    position: fixed;
+
+    bottom: 0;
+
+    width: 100%;
+
+}
+
+.betsOtherInfo {
+
+    background: #c7cfd5;
+
+    text-align: center;
+
+}
+
+.betsOtherDetail {
+
+    width: 145px;
+
+    position: relative;
+
+    display: inline-block;
+
+    line-height: 3.5rem;
+
+    margin-left: 5%;
+
+}
+
+.betsOtherDetail:first-child {
+
+    margin-left: 0;
+
+}
+
+.betsOtherDetail .labelCond {
+
+    width: 80px;
+
+    color: #e89b00;
+
+    font-size: 1rem;
+
+    text-align: center;
+
+    border: 1px solid #ccc;
+
+}
+
+.awardsAfterDetail {
+
+    box-sizing: border-box;
+
+    position: absolute;
+
+    left: 0;
+
+    top: -34px;
+
+    line-height: 2rem;
+
+    padding: 0 8px;
+
+    background: #fff;
+
+    border: 1px solid #999;
+
+    font-size: 0.9rem;
+
+    width: 100%;
+
+    border-radius: 3px;
+
+}
+
+.awardsAfterDetail input {
+
+    vertical-align: middle;
+
+    width: 20px;
+
+    display: inline-block;
+
+    height: 20px;
+
+}
+
+.awardsAfterIcon:before {
+
+    content: '';
+
+    width: 0;
+
+    height: 0;
+
+    position: absolute;
+
+    bottom: -12px;
+
+    left: 50%;
+
+    margin-left: -5px;
+
+    border-left: 7px solid transparent;
+
+    border-right: 7px solid transparent;
+
+    border-top: 12px solid #fff;
+
+    z-index: 3;
+
+}
+
+.awardsAfterIcon:after {
+
+    content: '';
+
+    width: 0;
+
+    height: 0;
+
+    position: absolute;
+
+    bottom: -14px;
+
+    left: 50%;
+
+    margin-left: -6px;
+
+    border-left: 8px solid transparent;
+
+    border-right: 8px solid transparent;
+
+    border-top: 14px solid #999;
+
+    z-index: 2;
+
+}
+
+.cfmBetsInfo {
+
+    overflow: hidden;
+
+    padding: 10px 20px;
+
+    background: #fff;
+
+}
+
+.cfmBetsInfoList {
+
+    float: left;
+
+}
+
+/* 纭鎶曟敞椤�-end */
+
+/* 閫忔槑閬僵 */
+
+.mask {
+
+    position: fixed;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: rgba(0, 0, 0, .3);
+
+    z-index: 9999;
+
+}
+
+/* 寮圭獥-start */
+
+/* 闁氨鏁ゅ鍦崶-鐢箑寮婚幐澶愭尦 */
+
+.dialogBox {
+
+    position: fixed;
+
+    top: 20%;
+
+    left: 50%;
+
+    width: 320px;
+
+    background: #fff;
+
+    border-radius: 3px;
+
+    margin-left: -160px;
+
+    z-index: 10000;
+
+}
+
+.dialogTitle {
+
+    margin-top: 1.5rem;
+
+    text-align: center;
+
+    font-weight: bold;
+
+}
+
+.dialogContent {
+
+    padding: 1.5rem 2rem;
+
+    line-height: 1.5rem;
+
+    font-size: 0.9rem;
+
+    text-align: center;
+
+}
+
+.cfmBetsDialogBox .dialogContent {
+
+    text-align: left;
+
+}
+
+.dialogBtns {
+
+    height: 45px;
+
+    border-top: 1px solid #ccc;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+}
+
+.dialogBtns a {
+
+    width: 50%;
+
+    height: 100%;
+
+    float: left;
+
+    line-height: 45px;
+
+    border-left: 1px solid #CCC;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+}
+
+.dialogBtns .btn100 {
+
+    width: 100%;
+
+}
+
+.dialogBtns a:first-child {
+
+    border-left: 0;
+
+}
+
+/* 閹存劕濮涘鍦崶 */
+
+.successDialogBox {
+
+    padding: 30px 0;
+
+}
+
+.successIcon, .warnIcon {
+
+    display: inline-block;
+
+    width: 25px;
+
+    height: 25px;
+
+    background: url(../images/successIcon.png) center no-repeat;
+
+    background-size: 25px;
+
+    vertical-align: middle;
+
+}
+
+.warnIcon {
+
+    background-image: url(../images/warnIcon.png);
+
+}
+
+.successIcon + span, .warnIcon + span {
+
+    vertical-align: middle;
+
+    margin-left: 10px;
+
+}
+
+/* 瀵湱鐛�-end */
+
+/* 閫氱敤搴曢儴鏍峰紡-start */
+
+.footer {
+
+    width: 100%;
+
+    position: absolute;
+
+    bottom: 0;
+
+    background: #de003b;
+
+    color: #fff;
+
+    text-align: center;
+
+    line-height: 2.5rem;
+
+    font-size: 0.9rem;
+
+}
+
+/* 閫氱敤搴曢儴鏍峰紡-end */
+
+/* 鍔犺浇鏇村 */
+
+.loadMoreBox {
+
+    margin-top: 15px;
+
+    text-align: center;
+
+}
+
+/* 娉ㄥ唽閾炬帴绠＄悊 */
+
+.regLinkDetail {
+
+    background: #fff;
+
+    border-bottom: 1px solid #ccc;
+
+}
+
+.regLinkDetail:first-child {
+
+    border-top: 1px solid #ccc;
+
+}
+
+.regLinkHeader {
+
+    display: block;
+
+    padding: 15px 0;
+
+    position: relative;
+
+}
+
+.regLinkHeader > * {
+
+    display: inline-block;
+
+    vertical-align: middle;
+
+}
+
+.regLinkLeft {
+
+    display: inline-block;
+
+    width: 12%;
+
+    min-width: 24px;
+
+    text-align: center;
+
+    padding-left: 10px;
+
+    box-sizing: border-box;
+
+}
+
+.regLinkLeft span {
+
+    display: inline-block;
+
+    width: 24px;
+
+    line-height: 24px;
+
+    background: #e89b00;
+
+    color: #fff;
+
+    text-align: center;
+
+    border-radius: 3px;
+
+    font-style: normal;
+
+}
+
+.regLinkContentBox {
+
+    display: none;
+
+    /*margin-left: 45px;*/
+
+    font-size: 0.9rem;
+
+}
+
+.regLinkLeft + .regLinkContent {
+
+    margin-left: 3px;
+
+    font-size: 0.9rem;
+
+}
+
+.regLinkTitleTips {
+
+    color: #999;
+
+}
+
+.regLinkDate {
+
+    position: absolute;
+
+    right: 15px;
+
+    top: 50%;
+
+    font-size: 0.8rem;
+
+    margin-top: -6px;
+
+    color: #c5c5c5;
+
+}
+
+.downArrow {
+
+    display: inline-block;
+
+    width: 10px;
+
+    height: 8px;
+
+    background: url(../images/selectIcon.png) center no-repeat;
+
+    background-size: 100%;
+
+    margin-left: 2px;
+
+}
+
+input[id^='clickContent-']:checked + .regLinkContentBox {
+
+    display: block;
+
+}
+
+.regLinkList .regLinkContent {
+
+    display: inline-block;
+
+    width: 85%;
+
+    border-top: 1px solid #ccc;
+
+    border-bottom: 1px solid #ccc;
+
+    padding: 10px 20px 10px 0;
+
+    box-sizing: border-box;
+
+}
+
+.regLinkInfo {
+
+    margin-top: 10px;
+
+}
+
+.regLinkInfo:first-child {
+
+    margin-top: 0;
+
+}
+
+.regLinkInfoTitle {
+
+    display: inline-block;
+
+    width: 25%;
+
+    max-width: 70px;
+
+    text-align: right;
+
+}
+
+.regLink {
+
+    display: inline-block;
+
+    width: 73%;
+
+    padding: 5px;
+
+    background: #f3f3f3;
+
+    border-radius: 3px;
+
+    color: #999;
+
+    vertical-align: top;
+
+    word-break: break-all;
+
+    box-sizing: border-box;
+
+}
+
+.copyRegLink {
+
+    font-size: 1rem;
+
+    color: #099;
+
+    border: 1px solid #099;
+
+    width: 100px;
+
+    display: inline-block;
+
+    text-align: center;
+
+    line-height: 35px;
+
+    border-radius: 3px;
+
+}
+
+.regLinkQRCode {
+
+    display: inline-block;
+
+    width: 73%;
+
+    vertical-align: top;
+
+}
+
+.QRCode {
+
+    float: left;
+
+    width: 55%;
+
+    max-width: 150px;
+
+}
+
+.QRCode canvas {
+
+    display: none;
+
+    width: 100%;
+
+    padding: 8px;
+
+    border-radius: 3px;
+
+    background: #f3f3f3;
+
+    box-sizing: border-box;
+
+}
+
+.QRCode img {
+
+    width: 100%;
+
+    padding: 8px;
+
+    border-radius: 3px;
+
+    background: #f3f3f3;
+
+    box-sizing: border-box;
+
+}
+
+.regLinkQRCode span {
+
+    float: left;
+
+    width: 40%;
+
+    font-size: 0.65rem;
+
+    margin-left: 5%;
+
+    color: #999;
+
+}
+
+.deleteCurrLink {
+
+    text-align: right;
+
+    margin-right: 30px;
+
+}
+
+.deleteLink {
+
+    line-height: 35px;
+
+    color: #999;
+
+}
+
+.deleteLinkIcon {
+
+    display: inline-block;
+
+    width: 20px;
+
+    height: 20px;
+
+    background: url(../images/ashBin.png) center no-repeat;
+
+    background-size: 100% 100%;
+
+    vertical-align: middle;
+
+}
+
+/* 閾炬帴娉ㄥ唽寮�鎴� */
+
+.registerHeaderBox {
+
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 10px;
+
+    background: url(../images/regLogin-bg.jpg) center no-repeat;
+
+    background-size: 100% 100%;
+
+    box-sizing: border-box;
+
+}
+
+.logo {
+
+    height: 170px;
+
+    background: url(../images/login-bg.png) center no-repeat;
+
+    background-size: 100%;
+
+    margin: 0 auto;
+
+}
+
+.loginDetail {
+
+    text-align: right;
+
+    color: #fff;
+
+    font-size: 0.75rem;
+
+}
+
+.login {
+
+    color: #fff;
+
+    text-decoration: underline;
+
+}
+
+.registerUserBox {
+
+    display: inline-block;
+
+    width: 100%;
+
+    background: #fff;
+
+}
+
+.regListDetail {
+
+    position: relative;
+
+}
+
+.regListTitle {
+
+    position: absolute;
+
+    line-height: 44px;
+
+    width: 50px;
+
+    padding: 0 15px;
+
+    color: #555;
+
+}
+
+.regListDetail .labelCond {
+
+    padding-left: 80px;
+
+    border-top: none;
+
+}
+
+.userCodeImg {
+
+    height: 32px;
+
+    position: absolute;
+
+    top: 50%;
+
+    right: 0;
+
+    margin-top: -16px;
+
+    cursor: pointer;
+
+}
+
+.agreeProtocolInfo {
+
+    padding: 10px 15px 0;
+
+}
+
+.agreeProCheck {
+
+    display: inline-block;
+
+    width: 18px;
+
+    height: 18px;
+
+    border: 1px solid #de003b;
+
+    border-radius: 8px;
+
+    vertical-align: middle;
+
+}
+
+.agreePro:checked + .agreeProCheck {
+
+    background: url(../images/checkbox.png) center no-repeat;
+
+    background-size: 100% 100%;
+
+}
+
+.agreeProCheck + span {
+
+    vertical-align: middle;
+
+    font-size: 0.8rem;
+
+    color: #666;
+
+}
+
+.regTips {
+
+    padding: 10px 30px;
+
+    font-size: 0.8rem;
+
+    color: #666;
+
+}
+
+.regSloganImg {
+
+    display: block;
+
+    width: 50%;
+
+    max-width: 200px;
+
+    margin: 30px auto;
+
+}
+
+/* 鐢ㄦ埛鍒楄〃 */
+
+.userListSearchBar {
+
+    padding: 10px 18px;
+
+}
+
+.userListSearchBar label {
+
+    position: relative;
+
+    display: inline-block;
+
+    width: 75%;
+
+    height: 2rem;
+
+}
+
+.userListSearchBar .labelCond {
+
+    height: 2rem;
+
+    border: none;
+
+    border-radius: 5px;
+
+    padding-right: 40px;
+
+}
+
+.searchIcon {
+
+    position: absolute;
+
+    right: 8px;
+
+    top: 50%;
+
+    width: 20px;
+
+    height: 20px;
+
+    background: url(../images/search.png) center no-repeat;
+
+    background-size: 100% 100%;
+
+    margin-top: -10px;
+
+}
+
+.searchUser {
+
+    width: 20%;
+
+    height: 2rem;
+
+    border-radius: 5px;
+
+    margin-left: 3%;
+
+    font-size: 0.9rem;
+
+    line-height: normal;
+
+    margin-top: 0;
+
+}
+
+.userListDetail {
+
+    margin-top: 10px;
+
+}
+
+.userListDetail:first-child {
+
+    margin-top: 0;
+
+}
+
+.userListTable tr {
+
+    line-height: 1.5rem;
+
+}
+
+.userListTable .listHeader {
+
+    background: #a7b1bb;
+
+    color: #fff;
+
+    font-size: 1rem;
+
+}
+
+.userListTable th, .userListTable td {
+
+    border-right: none;
+
+}
+
+.userListTable th:first-child,
+.userListTable td:first-child {
+
+    border-left: none;
+
+}
+
+.userOutlineIcon, .userOnlineIcon {
+
+    display: inline-block;
+
+    width: 16px;
+
+    height: 16px;
+
+    vertical-align: middle;
+
+}
+
+.userOutlineIcon {
+
+    background: url(../images/outline.png) center no-repeat;
+
+    background-size: 100% 100%;
+
+}
+
+.userOnlineIcon {
+
+    background: url(../images/online.png) center no-repeat;
+
+    background-size: 100% 100%;
+
+}
+
+.userListStart a {
+
+    text-decoration: underline;
+
+    color: #e89b00;
+
+}
+
+.userOperateGroup {
+
+    /*line-height: 2.5rem;*/
+
+    background: #fff;
+
+    font-size: 0.9rem;
+
+    text-align: center;
+
+}
+
+.userOperate {
+
+    display: inline-block;
+
+    width: 32%;
+
+    line-height: 1rem;
+
+    color: #e89b00;
+
+    border-left: 1px solid #e89b00;
+
+    text-align: center;
+
+}
+
+.userOperate:first-child {
+
+    border-left: none;
+
+}
+
+/* 杩旂偣璋冮厤 */
+
+.userListSetBox {
+
+    padding: 10px 15px;
+
+}
+
+.userListSetBox .listDetail td {
+
+    text-align: left;
+
+    padding: 10px 30px;
+
+}
+
+.userListSetBox .listDetail td:first-child {
+
+    width: 40%;
+
+    text-align: right;
+
+    padding: 10px;
+
+}
+
+.setReservePointForm {
+
+    margin-top: 10px;
+
+}
+
+.setPointDetail {
+
+    line-height: 2rem;
+
+    font-size: 0.9rem;
+
+    color: #666;
+
+    padding: 0 10px;
+
+}
+
+.setPoint {
+
+    display: inline-block;
+
+    width: 36px;
+
+    height: 36px;
+
+    vertical-align: middle;
+
+    background: #fff;
+
+    text-align: center;
+
+    font-size: 36px;
+
+    color: #de003b;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+}
+
+.setReservePointForm .labelCond {
+
+    width: 90px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    height: 38px;
+
+    vertical-align: middle;
+
+    text-align: center;
+
+    color: #666;
+
+}
+
+.setPoint.add {
+
+    line-height: 36px;
+
+}
+
+/* 鍒嗛厤閰嶉 */
+
+.setQuotaAllotForm {
+
+    margin-top: 10px;
+
+}
+
+.setQuotaAllotDetail {
+
+    font-size: 0.9rem;
+
+    color: #666;
+
+    background: #fff;
+
+    border: 1px solid #ccc;
+
+    border-top: none;
+
+}
+
+.setQuotaAllotDetail:first-child {
+
+    border-top: 1px solid #ccc;
+
+}
+
+.setQuotaAllotDetail p {
+
+    padding: 10px 15px;
+
+}
+
+.setQuotaAllotDetail p:first-child {
+
+    border-bottom: 1px solid #ccc;
+
+}
+
+.setQuotaAllotDetail .labelCond {
+
+    width: 150px;
+
+    height: 35px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    margin: 0 10px;
+
+}

@@ -1,0 +1,459 @@
+.countDownBox:after, .countDownBox:before, .lottNav .lottNavDetail:first-child:before, .lotteryNum.pk10 [class^=bigNum]:after {
+    content: normal
+}
+.changeNumDetail, .lotteryContent .lottChangeNumArea {
+    overflow: visible;
+}
+.main{
+    min-height:850px;
+}
+.lotteryContent .lottChangeNumArea{
+    height: 501px;
+}
+.lotteryContent .lottLeft {
+    width: 770px;
+}
+.fontColorTheme {
+    color: #EC6800;
+}
+.lotteryHeader .mainWidth {
+    width: 100%;
+    height: 110px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    overflow: visible
+}
+.lotteryHeader .explainExample {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -13px
+}
+.lotteryHeader .explainExample a {
+    display: block;
+    line-height: 24px;
+    text-align: left
+}
+.lotteryHeader .explainExample a i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../images/lott-pk10/pk10Img.png);
+    vertical-align: middle
+}
+.lotteryHeader .explainExample a i.explainLogo {
+    background-position: -202px -124px
+}
+.lotteryHeader .explainExample a i.trendLogo {
+    background-position: -225px -124px
+}
+.lotteryHeader .explainExample a span {
+    color: #ffff0f
+}
+.lotteryHeader .explainExample .tips {
+    width: 300px;
+    bottom: 50px
+}
+.lotteryLogo {
+    /*width: 146px*/
+}
+.lotteryLogo .betsType {
+    /*width: 100%;*/
+    /*padding: 0 10px;*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+.countDownBox .countDownTitle {
+    font-size: 14px;
+}
+.countDown label {
+    display: inline;
+    background: 0 0
+}
+.lotteryNumArea {
+    font-size: 16px
+}
+.lotteryNumArea p {
+    line-height: normal
+}
+.lotteryNumBox {
+    height: 38px;
+    background: 0 0;
+    padding: 0;
+    margin-top: 10px
+}
+.lotteryNumBox .lotteryNumList {
+    height: 32px;
+}
+.lotteryNum.pk10 .lottNumDetail {
+    margin-left: 5px
+}
+.lotteryNum.pk10 .lottNumDetail:first-child {
+    margin-left: 0
+}
+.lotteryNum.pk10 [class^=bigNum] {
+    width: 32px;
+    height: 31px;
+    background-image: url(../images/lott-pk10/pk10Img.png)
+}
+.lotteryNum.pk10 .bigNum01 {
+    background-position: -5px -5px
+}
+.lotteryNum.pk10 .bigNum02 {
+    background-position: -42px -5px
+}
+.lotteryNum.pk10 .bigNum03 {
+    background-position: -79px -5px
+}
+.lotteryNum.pk10 .bigNum04 {
+    background-position: -116px -5px
+}
+.lotteryNum.pk10 .bigNum05 {
+    background-position: -152px -5px
+}
+.lotteryNum.pk10 .bigNum06 {
+    background-position: -188px -5px
+}
+.lotteryNum.pk10 .bigNum07 {
+    background-position: -224px -5px
+}
+.lotteryNum.pk10 .bigNum08 {
+    background-position: -260px -5px
+}
+.lotteryNum.pk10 .bigNum09 {
+    background-position: -297px -5px
+}
+.lotteryNum.pk10 .bigNum10 {
+    background-position: -334px -5px
+}
+.lotteryContent {
+    margin-top: 10px;
+}
+.lotteryContent .lottRight {
+    width: 200px;
+}
+.lottNav .lottNavDetail:first-child, .numList {
+    margin-left: 0
+}
+.lottChangeNumBox {
+    padding: 0 10px;
+}
+.explainExample a i {
+    background: url(../images/lott-pk10/pk10Img.png)
+}
+.explainExample a i.explainLogo {
+    background-position: -346px -45px
+}
+.explainExample a i.exampleLogo {
+    width: 18px;
+    background-position: -322px -45px
+}
+.explainExample a span {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background: #5f52a0;
+    text-align: center;
+    font-size: 12px;
+}
+.explainExample a span:hover {
+    text-decoration: underline;
+    width: 80px;
+    background: #FE7A12;
+}
+.changeNumList {
+    color: #fff;
+    font-size: 14px;
+    min-height: 320px;
+    padding-left: 100px;
+}
+.changeNumList .changeNum .detailTitle {
+    position: absolute;
+    line-height: 36px;
+    left: -90px;
+    width: 80px;
+    height: 36px;
+    background: url(../images/lott-pk10/pk10Img.png) -202px -45px;
+    text-align: center;
+    padding-right: 9px
+}
+#pk10_side_gy_and.changeNumList .changeNum .detailTitle, #pk10_star2_and.changeNumList .changeNum .detailTitle {
+    display: none
+}
+#pk10_side_ds.changeNumList .changeNum .smallNum, #pk10_side_gy_and.changeNumList .changeNum .smallNum, #pk10_side_lh.changeNumList .changeNum .smallNum, #pk10_star2_and.changeNumList .changeNum .smallNum {
+    margin-top: 18px
+}
+.changeNumDetail {
+    position: relative;
+    height: 40px;
+}
+#pk10_side_ds .changeNumDetail:nth-child(2) {
+    margin-top: 0
+}
+.numList a[class^=smallNum] {
+    width: 42px;
+    height: 14px;
+    line-height: 14px;
+    background: url(../images/lott-pk10/pk10Img.png) -205px -86px;
+    margin-top: 16px;
+    position: relative
+}
+.numList a[class^=smallNum]:before {
+    position: absolute;
+    top: -16px;
+    left: 18px
+}
+.numList a[class^=smallNum].active, .numList a[class^=smallNum]:hover {
+    background-position: -202px -105px;
+    color: #e45f0f
+}
+.betsInfo > :first-child, .btnList > li:first-child {
+    margin-left: 0
+}
+.btnList > li .numBtn {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 50%;
+    background: #7b7b7b;
+    color: #fff
+}
+.btnList > li .numBtn.active, .btnList > li .numBtn:hover {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    border: none;
+    background: #e45f0f;
+    color: #fff
+}
+.changeNumSingle a.btn {
+    background: #607082
+}
+.changeNumSingle .singleNum {
+    color: #fff
+}
+.changeNumSingle .singleMsg {
+    color: #ababab
+}
+.confirmBetsBox {
+    color: #fff
+}
+.confirmBetsBox .betsInfoTips {
+    font-size: 14px;
+    margin-top: 15px
+}
+.betsInfo {
+    float: none;
+    display: block
+}
+.betsInfo .amountTypeDetail a {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    background: #dadada;
+    color: #666;
+    font-size: 14px;
+    margin-left: 5px
+}
+.betsInfo .amountTypeDetail a:first-child {
+    margin-left: 0
+}
+.betsInfo .amountTypeDetail a.active, .betsInfo .amountTypeDetail a:hover {
+    background: #e45f0f;
+    color: #fff
+}
+.betsInfo .betsInfoTypeList select.labelCond {
+    background-image: url(../images/lott-pk10/selectIcon.png);
+    background-position: 95%
+}
+.betsInfo .betsInfoTypeList select.labelCond.betsInfoType {
+    width: 180px;
+    height: 28px;
+    color: #fff;
+    background-color: #73828e
+}
+.betsInfo .changeMultDetail .inputSelectDiv .labelCond {
+    height: 18px;
+    border-radius: 15px
+}
+.betsInfo .changeMultDetail .addMult, .betsInfo .changeMultDetail .reduceMult {
+    width: 24px;
+    height: 24px;
+    top: 1px;
+    border: 1px solid #fff;
+    border-radius: 50%
+}
+.betsInfo .changeMultDetail .reduceMult {
+    left: 1px;
+    background-position: -152px -126px
+}
+.betsInfo .changeMultDetail .addMult {
+    right: 1px;
+    background-position: -176px -126px
+}
+.betsBtn .betsBtnLabel {
+    display: inline-block;
+    vertical-align: middle
+}
+.betsBtn .betsBtnLabel .btn {
+    display: block;
+    background: #607082
+}
+.betsBtn .betsBtnLabel .btn.clearNumBtn {
+    margin-top: 5px;
+    background: #8999ab
+}
+.betsBtn .betsBtnLabel .btn.clearNumBtn i {
+    width: 20px;
+    height: 22px;
+    background: url(../images/lott-pk10/pk10Img.png) -236px -148px
+}
+.lottRight .accountAndLottery .beforeLottNumBox .beforeLottNumDetail1 {
+    line-height: 50px;
+    background: 0 0;
+}
+.lottRight .accountAndLottery .beforeLottNumBox .beforeLottNumDetail1 td:first-child {
+    min-width: 43px
+}
+.lottRight .accountAndLottery .beforeLottNumBox .beforeLottNumDetail1 [class^=currLottNum] {
+    display: block;
+    width: 94px;
+    height: 24px;
+    background: url(../images/lott-pk10/pk10Img.png);
+    margin: 0 auto
+}
+.lottRight .accountAndLottery .beforeLottNumBox .beforeLottNumDetail1 .currLottNum01 {
+    background-position: -5px -45px
+}
+.lottRight .accountAndLottery .beforeLottNumBox .beforeLottNumDetail1 .currLottNum02 {
+    background-position: -5px -74px
+}
+.lottRight .accountAndLottery .beforeLottNumBox .beforeLottNumDetail1 .currLottNum03 {
+    background-position: -5px -103px
+}
+.lottRight .accountAndLottery .beforeLottNumBox .beforeLottNumDetail1 .currLottNum04 {
+    background-position: -5px -132px
+}
+.lottRight .accountAndLottery .beforeLottNumBox .beforeLottNumDetail1 .currLottNum05 {
+    background-position: -5px -161px
+}
+.lottRight .accountAndLottery .beforeLottNumBox .beforeLottNumDetail1 .currLottNum06 {
+    background-position: -104px -45px
+}
+.lottRight .accountAndLottery .beforeLottNumBox .beforeLottNumDetail1 .currLottNum07 {
+    background-position: -104px -74px
+}
+.lottRight .accountAndLottery .beforeLottNumBox .beforeLottNumDetail1 .currLottNum08 {
+    background-position: -104px -103px
+}
+.lottRight .accountAndLottery .beforeLottNumBox .beforeLottNumDetail1 .currLottNum09 {
+    background-position: -104px -132px
+}
+.lottRight .accountAndLottery .beforeLottNumBox .beforeLottNumDetail1 .currLottNum10 {
+    background-position: -104px -161px
+}
+.appNumLottListArea {
+    height: 218px;
+    margin-top: 15px;
+}
+.appNumLottListArea .appNumArea {
+    float: left;
+    width: 650px;
+    margin-top: 0;
+    padding: 0;
+    color: #fff;
+}
+.appNumLottListArea .appNumArea .appNumBox {
+    height: 156px;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+}
+.appNumLottListArea .userLotteryListArea {
+    float: right;
+    width: 310px;
+    border: 1px solid #DCDCDC;
+
+}
+.appNumHeader {
+    height: 36px;
+}
+.appNumList td {
+    line-height: 24px
+}
+.appNumList .appNumDetail {
+    color: #ababab;
+    height: 36px;
+    line-height: 36px;
+}
+.appNumList .appNumDetail:nth-child(even) {
+    background: #333d47
+}
+.appNumList .appNumDetail:nth-child(even) {
+    background: 0 0
+}
+.appNumList .appNumDetail .appNumDetailClear {
+    background: url(../images/lott-pk10/pk10Img.png) -256px -86px
+}
+.appNumList .appNumDetail .appNumDetailClear:hover {
+    background-position: -272px -86px
+}
+.confirmAppNumBox {
+    color: #555;
+}
+.confirmAppNumBox .betsBtn {
+    margin-right: 15px;
+}
+.confirmAppNumBox .betsBtn .btn.appendNumBtn {
+    background: #607082
+}
+.beforeLottNumHeader {
+    padding: 0px;
+}
+.beforeLottNumHeader .lottInfoNavDetail {
+    float: left;
+    width: 90px;
+    color: #313131;
+    text-align: center;
+}
+.beforeLottNumHeader .lottInfoNavDetail:first-child {
+    margin-left: 0
+}
+.beforeLottNumHeader .lottInfoNavDetail.active {
+    color: #FFFFFF;
+    background: #EC511E;
+    text-align: center;
+    width: 90px;
+}
+.beforeLottNumContent .listHeader {
+    background: #e8eaef;
+}
+.beforeLottNumContent .listHeader th {
+    font-weight: 400
+}
+.beforeLottNumDetail:nth-child(even) {
+    background: #e7eaef;
+}
+#selectBetPanle .appNumDetail:nth-child(even) {
+    background: #f0f2f7;
+    line-height: 36px;
+}
+#betTable .beforeLottNumDetail:hover, #traceTable .beforeLottNumDetail:hover {
+    background: #e7eaef
+}

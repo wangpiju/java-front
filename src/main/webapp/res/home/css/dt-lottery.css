@@ -1,0 +1,120 @@
+.bannerBox {
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 251px;
+    min-height: 251px;
+    position: relative
+}
+
+.bannerBox .userAcctBgBox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: 0
+}
+
+.bannerBox .userAcctBgBox a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    z-index: 2;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out
+}
+
+.bannerBox .userAcctBgBox a.active {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    z-index: 3
+}
+
+.bannerBox .userAcctBgBox img {
+    width: 100%;
+    height: 251px;
+}
+
+.bannerBox .userAcctBgList {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    z-index: 4;
+    width: 100%;
+    height: 4px;
+    text-align: center
+}
+
+.bannerBox .userAcctBgList span {
+    width: 38px;
+    height: 4px;
+    background: #fff;
+    margin-left: 5px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    top: -12px
+}
+
+.bannerBox .userAcctBgList span.active {
+    background: #FE7A12;
+}
+
+.lotteryList {
+    padding: 8px;
+    width: 100%;
+}
+
+.lotteryNow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(81, 96, 115, .9);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+    z-index: 3;
+}
+
+.lotteryNav {
+
+    height: 40px;
+    background: #455467;
+    padding-left: 10px;
+    overflow: hidden;
+
+}
+
+.lotteryNav .on a {
+
+    color: #333;
+    border-color: #fff;
+    margin-top: 10px;
+
+}
+
+.lotteryNav li a {
+
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    display: inline-block;
+    margin: 10px 0;
+    margin-top: 10px;
+    width: 100px;
+    text-align: center;
+    margin-top: 7px;
+
+}
+
+
+
+
+

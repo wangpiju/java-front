@@ -1,0 +1,2268 @@
+.blueBtn, .redBtn, .yellowBtn {
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14)
+}
+.blueBtn, .lottTipLayer .layui-layer-content .closeBtn, .redBtn, .yellowBtn {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14)
+}
+.labelCond, textarea {
+    font-family: microsoft yahei, sans-serif;
+    outline: 0
+}
+#traceSummaryList .returnPrev:hover, .beforeLottNumHeader .trend:hover, .lotteryNumArea .lotteryTrend:hover, .textUnderline:hover {
+    text-decoration: underline
+}
+.areaBigContainer {
+    background-color: rgba(255, 255, 255, .8);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#ccffffff, ff, endColorstr=#ccffffff, ff);
+    margin: 40px auto 170px
+}
+.containerFlex {
+    display: inline-flex;
+    min-height: 700px;
+    overflow: hidden
+}
+.commonIcon {
+    position: absolute;
+    display: block;
+    left: 15px;
+    top: 11px
+}
+.redBtn {
+    background-color: #bf5059;
+    background-image: -webkit-linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    background-image: linear-gradient(top, #bf5059 0, #7a3e43 100%)
+}
+.redBtn:active, .redBtn:hover {
+    background-color: #f84150;
+    background-image: -webkit-linear-gradient(top, #f84150 0, #942b34 100%);
+    background-image: linear-gradient(top, #f84150 0, #942b34 100%)
+}
+.blueBtn {
+    background-color: #5999ab;
+    background-image: -webkit-linear-gradient(top, #5999ab 0, #43656f 100%);
+    background-image: linear-gradient(top, #5999ab 0, #43656f 100%)
+}
+.blueBtn:active, .blueBtn:hover {
+    background-color: #5bb8d4;
+    background-image: -webkit-linear-gradient(top, #5bb8d4 0, #447685 100%);
+    background-image: linear-gradient(top, #5bb8d4 0, #447685 100%)
+}
+.yellowBtn {
+    background-color: #ec8939;
+    background-image: -webkit-linear-gradient(top, #ec8939 0, #915d32 100%);
+    background-image: linear-gradient(top, #ec8939 0, #915d32 100%)
+}
+.yellowBtn:active, .yellowBtn:hover {
+    background-color: #ffb163;
+    background-image: -webkit-linear-gradient(top, #ffb163 0, #9a632e 100%);
+    background-image: linear-gradient(top, #ffb163 0, #9a632e 100%)
+}
+.leftListArea {
+    float: left;
+    width: 180px;
+    background-color: #34313a;
+    color: #ab9595;
+    padding: 5px 0;
+    min-height: 690px
+}
+.leftListArea .leftListDetail .leftListBigItem {
+    display: block;
+    position: relative;
+    color: #ab9595;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 47px;
+    border-bottom: 1px solid #47444e;
+    cursor: pointer
+}
+.leftListArea .leftListDetail .leftListBigItem.active, .leftListArea .leftListDetail .leftListBigItem:hover {
+    background-color: #232029;
+    color: #d90013
+}
+.leftListArea .leftListDetail .leftListBigItem.active:before, .leftListArea .leftListDetail .leftListBigItem:hover:before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 100%;
+    background-color: #d90013;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+.leftListArea .leftListDetail .leftListItem {
+    font-size: 12px;
+    background-color: #2b2931
+}
+.leftListArea .leftListDetail .leftListItem a {
+    display: block;
+    padding-left: 47px;
+    height: 26px;
+    line-height: 26px;
+    color: #ab9595
+}
+.leftListArea .leftListDetail .leftListItem a.active, .leftListArea .leftListDetail .leftListItem a:hover {
+    color: #d90013
+}
+.rightArea {
+    float: left;
+    width: 820px;
+    min-height: 660px;
+    padding: 20px 0
+}
+.shadow {
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    display: block;
+    width: 1000px;
+    height: 200px;
+    background: url(../images/shadow.png) no-repeat
+}
+.shadow2 {
+    position: absolute;
+    bottom: -25px;
+    left: -392px;
+    display: block;
+    width: 393px;
+    height: 289px;
+    background: url(../images/shadow2.png) no-repeat
+}
+.shadow3 {
+    position: absolute;
+    bottom: -22px;
+    right: -283px;
+    display: block;
+    width: 283px;
+    height: 466px;
+    background: url(../images/shadow3.png) no-repeat
+}
+.lottTipLayer .layui-layer-content {
+    border-radius: 4px
+}
+.lottTipLayer .layui-layer-content .lottTipLayerTitle {
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 10px;
+    color: #555;
+    background-color: #fff
+}
+.lottTipLayer .layui-layer-content .lottTipBox {
+    text-align: center
+}
+.lottTipLayer .layui-layer-content .msg {
+    margin-top: 30px;
+    display: inline-block
+}
+.lottTipLayer .layui-layer-content .msg i {
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    background: url(../images/warmIcon.png) no-repeat;
+    margin-right: 20px;
+    float: left
+}
+.lottTipLayer .layui-layer-content .msg .content {
+    display: inline-block;
+    line-height: 41px;
+    max-width: 370px;
+    *width: 370px
+}
+.lottTipLayer .layui-layer-content .lottTipBtn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(175, 58, 49);
+}
+.lottTipLayer .layui-layer-content .closeBtn {
+    display: block;
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #cc0a19;
+    color: #fff;
+    border-radius: 20px;
+    /*background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .45) 0, rgba(255, 255, 255, .45) 100%);*/
+    /*background-image: linear-gradient(bottom, rgba(0, 0, 0, .45) 0, rgba(255, 255, 255, .45) 100%);*/
+    margin: 20px auto 0
+}
+.lottTipLayer .layui-layer-content .closeBtn:active, .lottTipLayer .layui-layer-content .closeBtn:hover {
+    background-color: #e50b1e
+}
+.layui-layer .layui-layer-setwin {
+    display: inline-block;
+    width: 42px;
+    height: 33px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    right: 0;
+    top: 6px
+}
+.layui-layer .layui-layer-setwin .layui-layer-close1, .layui-layer .layui-layer-setwin .layui-layer-close2 {
+    width: 31px;
+    height: 31px;
+    left: 1px;
+    top: 1px;
+    margin: 0;
+    background: url(../images/closeLayer.png) no-repeat;
+    transition: .3s ease-in-out
+}
+.layui-layer .layui-layer-setwin .layui-layer-close1:hover, .layui-layer .layui-layer-setwin .layui-layer-close2:hover {
+    background-position: 0 0;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+textarea {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    padding: 10px
+}
+.labelTitle {
+    width: 120px;
+    display: inline-block;
+    text-align: right
+}
+.labelTitle strong {
+    margin-right: 5px;
+    vertical-align: middle;
+    font-size: 20px
+}
+.labelCond {
+    width: 168px;
+    height: 18px;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    padding: 5px
+}
+.labelCond[readonly] {
+    background: #eee;
+    cursor: no-drop;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+select.labelCond {
+    width: 180px;
+    height: 30px;
+    font-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(../images/lottery/selectIcon.png) right no-repeat;
+    border: none
+}
+select.labelCond::-ms-expand {
+    display: none
+}
+select.labelCond option {
+    font-size: 12px
+}
+.labelCond .Wdate {
+    width: 100px;
+    border: 1px solid #d9d9d9;
+    background: url(../images/calendar.png) 95% no-repeat #fff
+}
+.main {
+    width: 984px;
+    margin: 0 auto;
+    padding: 14px 0px 14px 14px;
+    margin-top: 16px;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+}
+.main .playId_11x5{
+    width: 1084px !important;
+    margin: 0 auto !important;
+    padding: 14px !important;
+    padding-right: 0px !important;
+    margin-top: 16px !important;
+    background: #FFFFFF !important;
+    border: 1px solid #E6E6E6 !important;
+}
+/*.lotteryHeader {*/
+/*margin-top: 16px*/
+/*}*/
+.lotteryHeader{
+    border-radius: 10px;
+    width: 970px;
+}
+.lotteryHeader .mainWidth {
+    height: 110px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    background: #F5F5F5;
+    background-size: contain;
+    color: #fff;
+    border-color: #393e6b
+}
+.countDownBox, .lotteryLogo, .lotteryNumArea {
+    float: left;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative
+}
+.lotteryLogo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    padding-left: 34px;
+    width: 260px;
+    height: 110px;
+}
+.lotteryLogo span {
+    color: #404040;
+    font-weight: 700;
+    font-size: 26px;
+    margin-left: 10px;
+}
+.lotteryLogo .betsType.logo3d, .lotteryLogo .betsType.logopl3 {
+    margin-top: 55px
+}
+.lotteryLogo .betsType.logof1_11x5, .lotteryLogo .betsType.logof3_11x5, .lotteryLogo .betsType.logof5_11x5, .lotteryLogo .betsType.logogd11x5, .lotteryLogo .betsType.logojx11x5, .lotteryLogo .betsType.logosd11x5 {
+    margin-top: 40px
+}
+.countDownBox {
+    width: 300px;
+    padding-top: 15px;
+    text-align: center
+}
+.countDownBox:after, .countDownBox:before {
+    content: '';
+    height: 68px;
+    width: 1px;
+    position: absolute;
+    top: 50%;
+    margin-top: -34px;
+    background: rgba(190, 71, 81, .3);
+    box-shadow: 1px 0 rgba(255, 255, 255, .5)
+}
+.countDownBox:before {
+    left: 0
+}
+.countDownBox:after {
+    right: 0
+}
+.countDown {
+    overflow: hidden
+}
+.countDown label {
+    text-align: center;
+    position: relative
+}
+.countDown label span {
+    font-size: 36px;
+    color: #000;
+}
+.countDown label a {
+    font-size: 36px;
+    cursor: default;
+}
+.countDown .tips {
+    position: absolute;
+    top: 0;
+    right: -16px;
+    font-size: 12px;
+    color: #be0d34
+}
+.currLottNumBox {
+    margin-top: 12px
+}
+.currLottNumBox .currLottNum {
+    background: #d7c4d7;
+    border-radius: 3px;
+    padding: 5px 3px
+}
+.currLottNumBox .currLottNum .openCount {
+    font-weight: 700
+}
+.currLottNumBox .currLottNum .openCount#openCount {
+    color: #00b050
+}
+.currLottNumBox .currLottNum .openCount#remainCount {
+    color: red
+}
+.currLottNumBox .audioCountBox {
+    margin-left: 5px
+}
+.currLottNumBox .audioCountBox .audioCount {
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    background: url(../images/lottery/audioOn.png) center no-repeat;
+    vertical-align: middle;
+    background-size: 100%
+}
+.currLottNumBox .audioCountBox .audioCount.off {
+    background-image: url(../images/lottery/audioOff.png)
+}
+.lotteryNumArea {
+    width: 400px;
+    padding-top: 15px;
+    text-align: center
+}
+.countDownBox .countDownTitle {
+    color: #373737;
+    font-size: 14px;
+}
+.countDownBox .countDownTitle .fontColorTheme{
+    color: #EC6800;
+}
+.lotteryNumArea p {
+    color: #373737;
+    font-size: 14px;
+}
+.lotteryNumArea p .fontColorTheme{
+    color: #EC6800;
+}
+
+.lotteryNumArea p .lottTypeInfo {
+    margin: 0 15px
+}
+.lotteryNumArea .lotteryTrend {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+.lotteryNumBox {
+    height: 70px;
+    /*margin: 0 25px;*/
+}
+.lotteryNumBox .lotteryNumList {
+    height: 50px;
+    overflow: hidden
+}
+.lotteryNum {
+    text-align: center;
+    font-size: 0
+}
+.lotteryNum .lottNumDetail {
+    display: inline-block;
+    vertical-align: top
+}
+.lotteryNum .lottNumDetail:first-child {
+    margin-left: 0
+}
+.lotteryNum.pk10 .lottNumDetail {
+    margin-left: 4px
+}
+.lotteryNum [class^=bigNum] {
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 32px;
+    font-family: Arial;
+    text-align: center;
+}
+.bigNum0:after {
+    content: '0'
+}
+.bigNum1:after {
+    content: '1'
+}
+.bigNum2:after {
+    content: '2'
+}
+.bigNum3:after {
+    content: '3'
+}
+.bigNum4:after {
+    content: '4'
+}
+.bigNum5:after {
+    content: '5'
+}
+.bigNum6:after {
+    content: '6'
+}
+.bigNum7:after {
+    content: '7'
+}
+.bigNum8:after {
+    content: '8'
+}
+.bigNum9:after {
+    content: '9'
+}
+.bigNum10:after {
+    content: '10'
+}
+.bigNum11:after {
+    content: '11'
+}
+.bigNum01:after {
+    content: '01'
+}
+.bigNum02:after {
+    content: '02'
+}
+.bigNum03:after {
+    content: '03'
+}
+.bigNum04:after {
+    content: '04'
+}
+.bigNum05:after {
+    content: '05'
+}
+.bigNum06:after {
+    content: '06'
+}
+.bigNum07:after {
+    content: '07'
+}
+.bigNum08:after {
+    content: '08'
+}
+.bigNum09:after {
+    content: '09'
+}
+.lotteryContent {
+    margin-top: 10px
+}
+.lotteryNum.k3 .bigNum1:after {
+    content: '1';
+    display: none;
+}
+.lotteryNum.k3 .bigNum2:after {
+    content: '2';
+    display: none;
+}
+.lotteryNum.k3 .bigNum3:after {
+    content: '3';
+    display: none;
+}
+.lotteryNum.k3 .bigNum4:after {
+    content: '4';
+    display: none;
+}
+.lotteryNum.k3 .bigNum5:after {
+    content: '5';
+    display: none;
+}
+.lotteryNum.k3 .bigNum6:after {
+    content: '6';
+    display: none;
+}
+.lotteryContent .lottChangeNumArea {
+    display: inline-flex;
+    width: 100%;
+    font-size: 12px;
+    box-sizing: border-box;
+    overflow: hidden
+}
+.lotteryContent .lottLeft {
+    float: left;
+    width: 730px;
+    background: rgba(255, 255, 255, .8)
+}
+.lotteryContent .lottRight {
+    display: inline-flex;
+    float: right;
+    width: 252px
+}
+.lottNav {
+    width: 100%;
+    font-size: 0
+}
+.lottNav .lottNavDetail {
+    display: inline-block;
+    font-size: 14px
+}
+.lottNav .lottNavDetail a {
+    display: inline-block;
+    width: 70px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center
+}
+.lottNav .active a {
+    position: relative
+}
+.lottNav .active a:after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: -2px
+}
+.lottTypeBox {
+    padding: 8px 26px 12px
+}
+.lottTypeList {
+    margin-top: 8px
+}
+.lottTypeList .lottTypeTitle {
+    display: inline-block;
+    min-width: 55px
+}
+.lottType {
+    display: inline-block
+}
+.lottType .lottTypeDetail {
+    display: inline-block;
+    margin-left: 6px
+}
+.lottType .lottTypeDetail a {
+    display: inline-block;
+    min-width: 68px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0 5px;
+    text-align: center
+}
+.lottType .lottTypeDetail:first-child {
+    margin-left: 0
+}
+.lottChangeNumBox {
+    padding: 0 6px 0 0px
+}
+#playBonus {
+    color: #FE7A12;
+}
+.explainExample {
+    position: relative;
+}
+.explainExample i {
+    background: url(../images/lottery/indexImg.png)
+}
+.explainExample i.explainLogo {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    float: left;
+    margin-right: 10px;
+}
+.explainExample a i.exampleLogo {
+    display: inline-block;
+    width: 13px;
+    height: 15px;
+    vertical-align: middle
+}
+.explainExample a span {
+    font-size: 16px;
+    vertical-align: middle
+}
+.explainExample a:hover + .tips {
+    display: block
+}
+.explainExample .tips {
+    display: inline;
+}
+.explainExample .changeNumExample {
+    margin-left: 15px
+}
+.explainExample .singleMaxBonus {
+    margin-left: 15px
+}
+.changeNumList {
+    min-height: 110px;
+    margin-top: 10px
+}
+.changeNumList .changeNum {
+    float: left;
+    overflow: hidden
+}
+.changeNumList .changeNum .detailTitle {
+    display: inline;
+    float: left;
+    line-height: 40px
+}
+.changeNumDetail {
+    margin-top: 20px;
+    overflow: hidden
+}
+.changeNumDetail:first-child {
+    margin-top: 0
+}
+.changeNumDetail.same {
+    display: inline-block
+}
+.changeNumDetail.same .numList > li {
+    display: block;
+    float: none;
+    margin-top: 3px
+}
+.confirmBetsBox, .singleBtns {
+    margin-top: 15px
+}
+.changeNumDetail.changeNumDouble {
+    display: inline-block;
+    width: 48%
+}
+.numList {
+    display: inline-block;
+    margin-left: 10px;
+    overflow: hidden
+}
+.numList > li {
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    text-align: center
+}
+.changeNumDetail.same .numList > li, .numList > li:first-child {
+    margin-left: 0
+}
+.numList a[class^=smallNum] {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial
+}
+.numList .smallNum.smallNum-dd, .numList .smallNum.smallNum-ds, .numList .smallNum.smallNum-xd, .numList .smallNum.smallNum-xs {
+    width: 48px
+}
+.smallNum0:before {
+    content: '0'
+}
+.smallNum1:before {
+    content: '1'
+}
+.smallNum2:before {
+    content: '2'
+}
+.smallNum3:before {
+    content: '3'
+}
+.smallNum4:before {
+    content: '4'
+}
+.smallNum5:before {
+    content: '5'
+}
+.smallNum6:before {
+    content: '6'
+}
+.smallNum7:before {
+    content: '7'
+}
+.smallNum8:before {
+    content: '8'
+}
+.smallNum9:before {
+    content: '9'
+}
+.smallNum10:before {
+    content: '10'
+}
+.smallNum11:before {
+    content: '11'
+}
+.smallNum12:before {
+    content: '12'
+}
+.smallNum13:before {
+    content: '13'
+}
+.smallNum14:before {
+    content: '14'
+}
+.smallNum15:before {
+    content: '15'
+}
+.smallNum16:before {
+    content: '16'
+}
+.smallNum17:before {
+    content: '17'
+}
+.smallNum18:before {
+    content: '18'
+}
+.smallNum19:before {
+    content: '19'
+}
+.smallNum20:before {
+    content: '20'
+}
+.smallNum21:before {
+    content: '21'
+}
+.smallNum22:before {
+    content: '22'
+}
+.smallNum23:before {
+    content: '23'
+}
+.smallNum24:before {
+    content: '24'
+}
+.smallNum25:before {
+    content: '25'
+}
+.smallNum26:before {
+    content: '26'
+}
+.smallNum27:before {
+    content: '27'
+}
+.smallNum28:before {
+    content: '28';
+}
+.smallNum29:before {
+    content: '29';
+}
+.smallNum30:before {
+    content: '30';
+}
+.smallNum-B:before {
+    content: '大'
+}
+.smallNum-S:before {
+    content: '小'
+}
+.smallNum-O:before {
+    content: '单'
+}
+.smallNum-E:before {
+    content: '双'
+}
+.smallNum-dd:before {
+    content: '大单'
+}
+.smallNum-xd:before {
+    content: '小单'
+}
+.smallNum-ds:before {
+    content: '大双'
+}
+.smallNum-xs:before {
+    content: '小双'
+}
+.smallNum-LONG:before {
+    content: '龙'
+}
+.smallNum-HU:before {
+    content: '虎'
+}
+.smallNum-HE:before {
+    content: '和'
+}
+.smallNum01:before {
+    content: '01'
+}
+.smallNum02:before {
+    content: '02'
+}
+.smallNum03:before {
+    content: '03'
+}
+.smallNum04:before {
+    content: '04'
+}
+.smallNum05:before {
+    content: '05'
+}
+.smallNum06:before {
+    content: '06'
+}
+.smallNum07:before {
+    content: '07'
+}
+.smallNum08:before {
+    content: '08'
+}
+.smallNum09:before {
+    content: '09'
+}
+.smallNum牛1:before {
+    content: '牛1';
+}
+.smallNum牛2:before {
+    content: '牛2';
+}
+.smallNum牛3:before {
+    content: '牛3';
+}
+.smallNum牛4:before {
+    content: '牛4';
+}
+.smallNum牛5:before {
+    content: '牛5';
+}
+.smallNum牛6:before {
+    content: '牛6';
+}
+.smallNum牛7:before {
+    content: '牛7';
+}
+.smallNum牛8:before {
+    content: '牛8';
+}
+.smallNum牛9:before {
+    content: '牛9';
+}
+.smallNum牛牛:before {
+    content: '牛牛';
+}
+.smallNum无点:before {
+    content: '无点';
+}
+.smallNum5单0双:before {
+    content: '5单0双';
+}
+.smallNum4单1双:before {
+    content: '4单1双';
+}
+.smallNum3单2双:before {
+    content: '3单2双';
+}
+.smallNum2单3双:before {
+    content: '2单3双';
+}
+.smallNum1单4双:before {
+    content: '1单4双';
+}
+.smallNum0单5双:before {
+    content: '0单5双';
+}
+.changeNumBtn {
+    float: right;
+    line-height: 40px
+}
+.btnList > li {
+    display: inline-block
+}
+.btnList > li .numBtn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center
+}
+.btnList > li .numBtn.active, .btnList > li .numBtn:hover {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid;
+    border-radius: 50%
+}
+.importBetList a.btn {
+    font-size: 12px;
+    line-height: 30px;
+    padding: 0 10px
+}
+.singleNumBox {
+    position: relative
+}
+.singleNumBox .singleNum {
+    display: block;
+    width: 100%;
+    height: 160px;
+    border: 1px solid;
+    border-radius: 3px;
+    resize: none;
+    margin-top: 15px;
+    padding: 10px 30px;
+    outline: 0;
+    font-size: 16px;
+    font-family: microsoft yahei, sans-serif
+}
+.singleNumBox .singleMsg {
+    line-height: 20px;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 40px;
+    padding-top: 20px;
+    cursor: text
+}
+.singleBtns .btn {
+    font-size: 12px;
+    margin-left: 10px;
+    padding: 0 5px;
+    line-height: 25px
+}
+.singleBtns .btn:first-child {
+    margin-left: 0
+}
+.singleBtns .btn .msg {
+    margin-left: 10px;
+    color: red
+}
+.confirmBetsBox {
+    padding: 0 20px;
+    overflow: hidden
+}
+.confirmBetsBox .betsBtn {
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+}
+.modifyBets .changeMultDetail {
+    height: 34px;
+    display: inline-block;
+    float: left;
+    padding-top: 6px;
+}
+.confirmBetsBox .betsBtn .btn {
+    margin-left: 20px
+}
+.betsInfoBox {
+    float: left
+}
+.betsInfo {
+    padding: 5px 0;
+    overflow: hidden
+}
+.betsInfo > * {
+    float: left;
+    line-height: 28px;
+    margin-right: 5px
+}
+.betsInfo .betsInfoTips {
+    min-width: 180px;
+    margin-left: 0
+}
+.betsInfo .betsInfoTypeList select.betsInfoType {
+    width: 160px;
+    height: 20px;
+    border-radius: 3px;
+    padding: 0 10px
+}
+.betsAmountTypeList {
+    float: right;
+    overflow: hidden
+}
+.betsAmountTypeList > * {
+    float: left;
+    margin-left: 5px
+}
+.amountTypeDetail .amountType {
+    float: left;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 2px;
+    border-radius: 50%
+}
+.changeMultDetail > * {
+    line-height: 28px;
+    float: left;
+    margin-left: 5px;
+}
+.changeMultDetail .addMult, .changeMultDetail .reduceMult {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 1px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 28px;
+    border-radius: 9px
+}
+.betsBtn .btn, .modifyBets .betsInfo > * {
+    line-height: 28px
+}
+.changeMultDetail .reduceMult {
+    left: 2px
+}
+.changeMultDetail .addMult {
+    right: 2px
+}
+.betsBtn {
+    float: right
+}
+.betsBtn .btn {
+    width: 120px;
+    height: 40px;
+    padding: 0 5px
+}
+.betsBtn .btn i {
+    display: inline-block;
+    vertical-align: middle
+}
+.betsBtn .confirmBets {
+    margin-left: 8px
+}
+.inputSelectDiv {
+    position: relative
+}
+.inputSelectDiv .labelCond {
+    height: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    text-align: center
+}
+.modifyBets .betsInfo .betsInfoTips .fontColorTheme {
+    font-size: 16px
+}
+.modifyBets .betsInfo .betsInfoTypeList select.betsInfoType {
+    height: 28px
+}
+.modifyBets .amountTypeDetail .amountType {
+    width: 54px;
+    height: 28px;
+    border-radius: 3px;
+    padding: 5px 13px
+}
+.modifyBets .inputSelectDiv .labelCond {
+    height: 16px;
+    border-radius: 13px
+}
+.modifyBets .changeMultDetail .addMult, .modifyBets .changeMultDetail .reduceMult {
+    width: 24px;
+    height: 24px;
+    top: 2px
+}
+.modifyBets .btn {
+    height: 40px;
+    line-height: 38px
+}
+.appNumDetail td, .appNumList .appNumHeader {
+    line-height: 30px
+}
+.modifyBets .btn.allBet {
+    background-color: #5f52a0
+}
+.modifyBets .btn.quotaBetBtn {
+    background-color: #ff6565
+}
+.modifyBets .btn.appendNumBtn {
+    background-color: #5f52a0;
+}
+.modifyBets .btn.confirmBets {
+    width: 120px;
+    font-size: 17px
+}
+.modifyBets .appNumInfo .fontColorTheme {
+    font-size: 16px
+}
+.appNumArea {
+    margin-top: 20px;
+    padding: 0 20px;
+    overflow: hidden
+}
+.appNumArea .appNumBox {
+    width: 100%;
+    height: 150px;
+    border: 1px solid;
+    overflow-x: hidden
+}
+.appNumList {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    table-layout: fixed
+}
+.appNumDetail td {
+    font-size: 12px
+}
+.appNumDetail td.appNum {
+    min-width: 150px
+}
+.appNumDetail td .appNumDetailClear {
+    display: block;
+    width: 11px;
+    height: 11px;
+    background: url(../images/lottery/indexImg.png) -140px -49px;
+    margin: 0 auto
+}
+.confirmAppNumBox {
+    padding: 15px 0px 0px;
+    overflow: hidden
+}
+.confirmAppNumBox .appNumInfo {
+    float: left;
+    line-height: 40px
+}
+.accountAndLottery {
+    width: 100%
+}
+.beforeLottNumBox {
+    border-top: 1px solid #DCDCDC;
+}
+.beforeLottNumBox .zzzzz{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.beforeLottNumBox:first-child {
+    margin-top: 0
+}
+.beforeLottNumHeader {
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    padding-left: 18px;
+    position: relative
+}
+.lottRight .beforeLottNumHeader a {
+    width: 80px;
+    float: right;
+    color: #FFFFFF;
+    background: #5f52a0;
+    text-align: center;
+}
+.lottRight .beforeLottNumHeader a:hover {
+    width: 80px;
+    background: #FE7A12;
+    text-decoration: inherit;
+}
+.beforeLottNumHeader .beforeLottIcon, .beforeLottNumHeader .lotteryListIcon {
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    background: url(../images/lottery/indexImg.png);
+    vertical-align: middle
+}
+.accountLottInfo, .beforeLottNumList {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center
+}
+.fontColorTheme.beforeLottForm span.min, .fontColorTheme.beforeLottForm span.even {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background: #FF961F;
+    color: #FFFFFF;
+    border-radius: 2px;
+    margin-top: 4px;
+}
+.fontColorTheme.beforeLottForm span.max, .fontColorTheme.beforeLottForm span.odd {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background: #5691D7;
+    color: #FFFFFF;
+    border-radius: 2px;
+    margin-top: 4px;
+}
+.fontColorGreen {
+    color: #093;
+}
+.fontColorGray {
+    color: #000;
+}
+.fontColorRed {
+    color: red;
+}
+.beforeLottNum span {
+    display: inline-block;
+    color: #FF961F;
+}
+.beforeLottNumHeader .beforeLottIcon {
+    background-position: -145px -23px
+}
+.beforeLottNumHeader .lotteryListIcon {
+    background-position: -167px -23px
+}
+.beforeLottNumHeader .trend {
+    line-height: 16px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #4c79d1
+}
+.lotteryListReport {
+    height: 150px;
+    overflow: hidden
+}
+.beforeLottNumDetail, .beforeLottNumList .listHeader {
+    line-height: 30px;
+    font-size: 14px;
+}
+.beforeLottNumDetail > td:first-child {
+    min-width: 80px
+}
+
+.fontColorTheme.beforeLottForm.kaijiang {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 50px !important;
+}
+#betTable .beforeLottNumDetail > td:first-child, #traceTable .beforeLottNumDetail > td:first-child {
+    min-width: 80px
+}
+#rewardList .beforeLottNumDetail > td:first-child {
+    min-width: 30px
+}
+#betTable .beforeLottNumDetail, #traceTable .beforeLottNumDetail {
+    cursor: pointer
+}
+#betTable .beforeLottNumDetail:hover, #traceTable .beforeLottNumDetail:hover {
+    background: #ddd
+}
+.lotteryListImg img {
+    height: 26px;
+    vertical-align: middle
+}
+.betListLottName, .betListPlayName {
+    display: table-cell;
+    max-width: 36px;
+    min-width: 0;
+    padding: 0 5px
+}
+.accountLottInfo {
+    table-layout: fixed;
+    box-sizing: border-box
+}
+.accountLottInfo .lottInfoNavDetail {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px
+}
+.footer {
+    margin-top: 20px
+}
+.generalLayer #generalDetailArea, .generalLayer #traceSummaryList {
+    padding: 15px 30px 32px;
+    background-image: -webkit-linear-gradient(bottom, #c7c0bd 0, #f9f3f3 100%);
+    background-image: linear-gradient(bottom, #c7c0bd 0, #f9f3f3 100%)
+}
+.generalLayer .detailHeaderBox {
+    position: relative;
+    padding: 21px 30px;
+    overflow: hidden
+}
+.generalLayer .detailHeaderTitle {
+    font-size: 16px;
+    font-weight: 700
+}
+.generalLayer .headerDetail {
+    float: left;
+    width: 300px
+}
+.generalLayer .headerDetail p {
+    margin-top: 15px;
+    font-size: 12px
+}
+.generalLayer .detailNumBox {
+    float: left
+}
+.generalLayer .detailNumBox .detailNumTextArea {
+    width: 340px;
+    height: 75px;
+    resize: none;
+    padding: 10px;
+    outline: 0;
+    display: block;
+    margin-top: 10px;
+    background-color: #d3cdcb;
+    border-radius: 4px
+}
+.generalLayer .detailNumBox span {
+    position: relative;
+    padding-left: 25px;
+    color: #6b96ea
+}
+.generalLayer .detailNumBox span i {
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 22px;
+    background: url(../images/game/betIcon.png) no-repeat
+}
+.generalLayer .detailBody {
+    max-height: 330px;
+    overflow-x: hidden
+}
+.generalLayer table {
+    width: 100%
+}
+.generalLayer table td, .generalLayer table th {
+    text-align: center;
+    line-height: 40px
+}
+.generalLayer .dialogBtn .btn.againBtn, .generalLayer .dialogBtn .btn.repealOrder {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);
+    width: 100px
+}
+.generalLayer table th {
+    background-color: #ddd0cd;
+    font-weight: 400
+}
+.generalLayer table th:nth-child(even) {
+    background-color: #d4c6c3
+}
+.generalLayer table td {
+    background-color: #e2dcda
+}
+.generalLayer table td:nth-child(even) {
+    background-color: #dad4d1
+}
+.generalLayer .dialogBtn .btn {
+    margin-top: 24px;
+    margin-right: 10px
+}
+.generalLayer .dialogBtn .btn.repealOrder {
+    background-color: #5999ab;
+    background-image: -webkit-linear-gradient(top, #5999ab 0, #43656f 100%);
+    background-image: linear-gradient(top, #5999ab 0, #43656f 100%)
+}
+.generalLayer .dialogBtn .btn.repealOrder:active, .generalLayer .dialogBtn .btn.repealOrder:hover {
+    background-color: #5bb8d4;
+    background-image: -webkit-linear-gradient(top, #5bb8d4 0, #447685 100%);
+    background-image: linear-gradient(top, #5bb8d4 0, #447685 100%)
+}
+.generalLayer .dialogBtn .btn.againBtn {
+    background-color: #ec8939;
+    background-image: -webkit-linear-gradient(top, #ec8939 0, #915d32 100%);
+    background-image: linear-gradient(top, #ec8939 0, #915d32 100%)
+}
+.generalLayer .dialogBtn .btn.againBtn:active, .generalLayer .dialogBtn .btn.againBtn:hover {
+    background-color: #ffb163;
+    background-image: -webkit-linear-gradient(top, #ffb163 0, #9a632e 100%);
+    background-image: linear-gradient(top, #ffb163 0, #9a632e 100%)
+}
+.layui-layer .layui-layer-title {
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 10px;
+    color: #fff;
+    background-color: rgb(175, 58, 49);
+}
+#traceSummaryList .detailBody #summaryListTable td, #traceSummaryList .detailBody #summaryListTable th, #traceSummaryList .headerDetail .detailHeader-c table td, #traceSummaryList .headerDetail .detailHeader-c table th, .dialogBtn .btn {
+    line-height: 30px
+}
+.dialogBtn {
+    text-align: center
+}
+.dialogBtn .btn {
+    height: 30px;
+    background-color: #EC511E;
+    color: #fff;
+    border-radius: 15px;
+    /*box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);*/
+    /*background-image: -webkit-linear-gradient(top, #EC511E 0, #7a3e43 100%);*/
+    /*background-image: linear-gradient(top, #EC511E 0, #7a3e43 100%);*/
+    width: 100px
+}
+.dialogBtn .btn:active, .dialogBtn .btn:hover {
+    background-color: #f84150;
+    background-image: -webkit-linear-gradient(top, #EC511E 0, #942b34 100%);
+    background-image: linear-gradient(top, #EC511E 0, #942b34 100%)
+}
+#traceSummaryList {
+    position: relative;
+    padding: 0 30px
+}
+#traceSummaryList .areaTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #a96c50
+}
+#traceSummaryList .returnPrev {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    font-size: 16px;
+    color: #333
+}
+#traceSummaryList .detailHeaderBox {
+    padding: 0
+}
+#traceSummaryList .headerDetail {
+    float: none;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px
+}
+#traceSummaryList .headerDetail > *, .appNumNavList li, .appendIssue li {
+    float: left
+}
+#traceSummaryList .headerDetail .detailHeader-l {
+    width: 110px;
+    font-size: 16px;
+    font-weight: 700
+}
+#traceSummaryList .headerDetail .detailHeader-r p:first-child {
+    margin-top: 0
+}
+#traceSummaryList .headerDetail .detailHeader-r label {
+    width: 224px;
+    display: inline-block
+}
+#traceSummaryList .headerDetail .detailHeader-c {
+    width: 771px;
+    height: 100px;
+    border: 1px solid #ccc;
+    overflow-x: hidden
+}
+#traceSummaryList .headerDetail .detailHeader-c table th {
+    background-color: #d5ccc8;
+    color: #222;
+    font-weight: 400
+}
+#traceSummaryList .headerDetail .detailHeader-c table td:nth-child(even) {
+    background: #e2dcda
+}
+#traceSummaryList .headerDetail p {
+    margin-top: 15px;
+    font-size: 12px
+}
+#traceSummaryList .detailBody {
+    height: 180px;
+    overflow-x: hidden;
+    background: #e2dcda;
+    margin-top: 10px
+}
+.gameLottListCont {
+    display: inline-block;
+    max-width: 130px;
+    vertical-align: middle
+}
+#contentDetailsArea {
+    padding: 15px 30px
+}
+#contentDetailsArea .detailNumTextArea {
+    width: 340px;
+    height: 75px;
+    resize: none;
+    border: 1px solid #ddd;
+    padding: 10px;
+    outline: 0;
+    display: block;
+    margin-top: 10px
+}
+.appNumNavList {
+    overflow: hidden;
+    border-radius: 3px;
+    width: 332px;
+    border: 1px solid
+}
+.appNumNavList li .appNumNav {
+    display: block;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    border-left: 1px solid;
+    line-height: 30px;
+    color: #333
+}
+.appNumNavList li:first-child a {
+    border-left: none
+}
+.cfmAppNumTableBox, .multipleAppNumBox, .profitAppNumBox, .sameMultAppNumBox {
+    margin-top: 20px
+}
+.appendIssue {
+    display: inline-block;
+    width: 177px;
+    vertical-align: middle;
+    overflow: hidden
+}
+.appendIssue li a {
+    display: block;
+    width: 43px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid;
+    margin-right: -1px
+}
+.appendIssue li a.active, .appendIssue li a:hover {
+    position: relative
+}
+.createAppNumBar label {
+    margin-left: 5px
+}
+.createAppNumBar label .selectedIssue {
+    width: 58px;
+    text-align: center
+}
+.createAppNumBar label .inputSelectDiv {
+    display: inline-block;
+    height: 30px;
+    vertical-align: middle
+}
+.createAppNumBar label .inputSelectDiv .labelCond {
+    height: 18px;
+    border: 1px solid;
+    border-radius: 3px
+}
+.createAppNumBar .createAppNum.btn {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    margin-top: 0;
+    margin-left: 10px
+}
+.createAppNumBar .appNumWarn {
+    font-size: 12px;
+    float: right;
+    line-height: 30px
+}
+.labelCond.selectedMult {
+    width: 70px
+}
+.cfmAppNumTableBox {
+    height: 250px;
+    overflow-x: hidden
+}
+.cfmAppNumTable {
+    width: 100%;
+    border-collapse: collapse
+}
+.cfmAppNumTable tr {
+    line-height: 40px;
+    text-align: center
+}
+.cfmAppNumTable tr.listHeader {
+    border-bottom: none;
+    background: #ebebeb
+}
+.cfmAppNumTable tr.listDetail {
+    border-bottom: 1px dashed #eee;
+    font-size: 12px
+}
+.cfmAppNumTable tr.listDetail input[type=checkbox] {
+    vertical-align: middle
+}
+.cfmAppNumTable tr.listDetail .labelCond {
+    width: 33px;
+    height: 10px;
+    text-align: center
+}
+.cfmAppNumInfo {
+    overflow: hidden
+}
+.cfmAppNumInfo .cfmAppNumInfoDetail {
+    float: left;
+    text-align: center;
+    width: 146px;
+    border: 1px solid #dfdfdf;
+    background: #f2f2f2;
+    margin-right: -1px;
+    padding: 10px 5px
+}
+.cfmAppNumInfo .cfmAppNumInfoDetail > * {
+    display: block
+}
+.cfmAppNumBtn {
+    margin-top: 20px;
+    text-align: center
+}
+.cfmAppNumBtn .btn {
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 0;
+    vertical-align: middle;
+    border-radius: 20px
+}
+.cfmAppNumBtn label {
+    display: inline-block;
+    margin-left: 10px
+}
+.layerBox {
+    padding: 20px 30px
+}
+.layerBox.betConfirmBox p {
+    line-height: 30px
+}
+.layerBox.betConfirmBox p label {
+    margin-left: 20px
+}
+.layerBox.betConfirmBox p label:first-child {
+    margin-left: 0
+}
+.layerBox.betConfirmBox .cfmBetsTable tr {
+    line-height: 22px
+}
+.layerBox.betConfirmBox .cfmBetsTable td {
+    background: #fff;
+    text-align: left;
+    word-break: break-all
+}
+.layerBox.betConfirmBox .cfmBetsTable td:first-child {
+    vertical-align: top
+}
+.awardsGameMultDetail, .awardsLottBtn .labelCond + span, .awardsLottLogo, .awardsLottTitle > *, .quotaBetBox .labelCond {
+    vertical-align: middle
+}
+.betInDivBox p {
+    line-height: normal
+}
+.betInDivBox .headerDetail p:first-child {
+    margin-top: 0
+}
+.betCfmDetail {
+    overflow: hidden;
+    margin-top: 15px
+}
+.betCfmDetail .betCfmDetailTitle {
+    float: left
+}
+.betCfmDetail .cfmBetsTableBox {
+    float: left;
+    width: 325px;
+    overflow-x: hidden;
+    border: 1px solid #ccc;
+    height: 150px;
+    padding: 15px
+}
+.awardsMsgGroup {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+    z-index: 100
+}
+.awardsLottDialog, .awardsMsgBox {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out
+}
+.awardsMsgBox {
+    width: 300px;
+    color: #003;
+    margin-top: 5px;
+    transition: all .5s ease-in-out;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    pointer-events: none
+}
+.awardsMsgBox:first-child {
+    margin-top: 0
+}
+.awardsMsgBox.awardsShowBox {
+    filter: alpha(opacity=100);
+    -moz-opacity: 100;
+    opacity: 100;
+    pointer-events: auto
+}
+.awardsMsgTitle {
+    overflow: hidden;
+    line-height: 26px;
+    position: relative;
+    padding: 0 10px
+}
+.awardsMsgTitle .closeAwardsMsg {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    background: url(../images/closeLayer.png) center no-repeat;
+    background-size: 20px
+}
+.awardsMsgContent {
+    background: #fff;
+    text-align: center;
+    padding: 40px 10px;
+    position: relative
+}
+.awardsMsgTime {
+    position: absolute;
+    bottom: 5px;
+    right: 8px;
+    font-size: 12px;
+    color: #999
+}
+.awardsLottListBox {
+    width: 308px;
+    margin: 0 31px 1px;
+    position: relative
+}
+.awardsLottDetail {
+    width: 84px;
+    height: 32px;
+    font-size: 12px;
+    padding: 10px 8px 5px;
+    cursor: pointer;
+    position: absolute;
+    display: none;
+    transition: all .5s ease-in-out
+}
+.closeAwardsDialogBtn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    background: url(../images/closeLayer.png) center no-repeat;
+    background-size: 100%;
+    cursor: pointer
+}
+.awardsLottDialog {
+    width: 370px;
+    transition: all .5s ease-in-out;
+    border-radius: 6px;
+    overflow: hidden
+}
+.awardsLottTitle {
+    overflow: hidden;
+    line-height: 42px;
+    position: relative;
+    padding: 0 10px
+}
+.awardsLottLogo {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    background: url(../images/awardsMsgLogo.png) center no-repeat;
+    margin-right: 5px
+}
+.awardsCountDown {
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 700;
+    padding-right: 20px
+}
+.closeAwardsLott {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    background: url(../images-acct/closeDialog.png) center no-repeat;
+    background-size: 20px;
+    cursor: pointer;
+    margin-top: -10px
+}
+.awardsLottContent {
+    margin: 0 5px;
+    background: #fff;
+    border-radius: 0 0 5px 5px
+}
+.awardsGameArea {
+    overflow: hidden;
+    border-top: 1px solid
+}
+.awardsGameArea:first-child {
+    border-top: none
+}
+.awardsGameTitle {
+    float: left;
+    width: 17px;
+    line-height: 14px;
+    padding: 11px 5px;
+    font-size: 12px;
+    text-align: center;
+    background: #ededed;
+    color: #bbb
+}
+.awardsGameContent {
+    float: left;
+    width: 333px
+}
+.awardsGameTypeList {
+    width: 310px;
+    height: 67px;
+    margin: 14px auto 0;
+    overflow: hidden
+}
+.awardsGameType {
+    float: left;
+    position: relative;
+    cursor: pointer;
+    margin-left: 10px
+}
+.awardsGameType:first-child {
+    margin-left: 0
+}
+.awardsGameType.disabled {
+    pointer-events: none;
+    cursor: default
+}
+.gameAmountDetail {
+    line-height: 48px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    word-spacing: -2px;
+    width: 52px;
+    height: 55px;
+    border: 1px solid;
+    border-radius: 6px;
+    cursor: pointer
+}
+.disabled .gameAmountDetail, .disabled.awardsGameType:hover .gameAmountDetail {
+    background: #d4d4d4;
+    border-color: #d4d4d4;
+    color: #a1a1a1
+}
+.disabled .gameAmountDetail {
+    cursor: default
+}
+.gameAmount {
+    font-size: 20px
+}
+.awardsBtn {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -23px;
+    width: 45px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 9px;
+    border: 1px solid
+}
+.disabled .awardsBtn {
+    background: #a1a1a1;
+    border-color: #a1a1a1
+}
+.disabled.awardsGameType:hover .awardsBtn {
+    background: #a1a1a1;
+    border-color: #a1a1a1;
+    color: #fff
+}
+.awardsGameMultBox {
+    text-align: center;
+    margin-top: 8px;
+    line-height: 33px
+}
+.awardsGameMultDetail {
+    display: inline-block;
+    width: 146px;
+    height: 40px;
+    /*background: url(../images/game-bg.png) center no-repeat;*/
+    position: relative
+}
+.awardsGameMult {
+    width: 31px;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+    position: absolute;
+    top: 4px;
+    font-size: 16px
+}
+.awardsGame-l {
+    left: 8px
+}
+.awardsGame-c {
+    left: 53px
+}
+.awardsGame-r {
+    left: 90px
+}
+.currGameTitle {
+    padding: 2px 5px
+}
+.awardsGameResult {
+    line-height: 56px;
+    text-align: center;
+    font-size: 12px
+}
+.awardsGameResult label {
+    margin: 0 10px
+}
+.awardsResultAmount {
+    font-size: 22px
+}
+.awardsLottResultDetail {
+    float: left;
+    width: 25%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-left: 1px solid;
+    font-size: 12px;
+    box-sizing: border-box;
+    cursor: pointer
+}
+.awardsLottResultDetail.remainAmount {
+    width: 50%;
+    border-left: none;
+    cursor: default
+}
+.currResultAmount {
+    font-size: 14px
+}
+.awardsGameRule {
+    padding: 0 20px 15px;
+    font-size: 12px
+}
+.awardsRuleBtn {
+    display: block;
+    height: 20px;
+    background: url(../images/gameRule.png) center no-repeat;
+    cursor: pointer
+}
+.awardsWarnDialog.awardsLottContent {
+    height: 161px;
+    margin-bottom: 5px;
+    padding: 30px
+}
+.awardsLottWarnInfo {
+    margin-top: 20px
+}
+.awardsLottBtn {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 12px
+}
+.awardsNoticeDialog {
+    height: 280px
+}
+.awardsLottNotice .awardsLottTitle, .awardsNoticeDialog .awardsLottTitle {
+    height: 35px
+}
+.awardsNoticeTitle {
+    padding: 0 25px
+}
+.currAwardsNotice {
+    margin-top: -5px;
+    position: relative
+}
+.playAwardsLottery {
+    display: block;
+    width: 170px;
+    height: 173px;
+    margin: 5px auto
+}
+.awardsLottTips {
+    text-align: center;
+    position: relative;
+    line-height: 25px
+}
+.afterAlert {
+    position: absolute;
+    right: 20px;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 12px
+}
+.dialogBox .awardsLottNotice {
+    height: 280px;
+    width: 370px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    border-radius: 6px;
+    overflow: hidden
+}
+.awardsNoticeContent {
+    padding: 0 30px;
+    font-size: 12px
+}
+.awardsNoticeInfo {
+    margin-top: 20px;
+    text-indent: 2em
+}
+.friendTips {
+    margin-top: 20px
+}
+.awardsLottNotice .awardsLottBtn {
+    margin-top: 24px;
+    margin-left: 75px
+}
+.awardsLottNotice .btn {
+    font-size: 14px
+}
+.btn.playAwardsSwitch, .btn.stopAwardsSwitch {
+    width: 60px
+}
+.awardsLottBtn label {
+    margin-left: 5px;
+    text-align: center;
+    cursor: pointer
+}
+.awardsLottBtn .labelCond {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    cursor: pointer
+}
+.quotaBetBox p {
+    margin-top: 10px
+}
+.quotaBetBox p:first-child {
+    margin-top: 0
+}
+.quotaBetBox .labelCond {
+    width: 120px
+}
+.quotaBetBox .dialogBtn {
+    margin-left: 20px
+}
+.lottNavList {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 36px;
+    background: rgba(218,212,206,.35);
+}
+.lottNavList span {
+    width: 36px;
+    height: 36px;
+    background: #F5F5F5;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+}
+.lottNavList span i {
+    font-size: 24px;
+}
+.lottNavList .lottNavListScoll {
+    width: 660px;
+    height: 36px;
+    overflow: hidden;
+    position: relative;
+    background: #FFF;
+}
+.lottNavList .lottNavListScoll ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    position: absolute;
+    height: 36px;
+}
+.lottNavList .lottNavListScoll ul li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    /*float: left;*/
+    height: 36px;
+    min-width: 120px;
+    border-top: 1px solid #DCDCDC;
+    border-right: 1px solid #DCDCDC;
+    font-size: 16px;
+}
+.lottNavList .lottNavListScoll ul li a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 36px;
+    padding: 0px 10px;
+}
+.lottNavList .lottNavListScoll ul li.active {
+    background: #EC511E;
+    border-top: 1px solid #EC511E;
+    border-right: 1px solid #EC511E;
+    color: #FFFFFF;
+}

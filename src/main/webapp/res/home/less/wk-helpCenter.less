@@ -1,0 +1,149 @@
+@import "centerCommon";
+
+//帮助中心主区域右侧
+.rightArea {
+  .indexBox {
+    padding: 0 30px;
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .helpCenterIndex-l {
+      float: left;
+      width: 580px;
+      padding-right: 30px;
+    }
+    .autoServicesBox {
+      border-bottom: 1px dashed #ccc;
+      .autoServices {
+        padding: 20px 50px;
+        overflow: hidden;
+      }
+      .autoServiceDetail {
+        float: left;
+        width: 120px;
+        text-align: center;
+        color: #666;
+        i {
+          display: block;
+          width: 66px;
+          height: 66px;
+          border-radius: 50%;
+          margin: 10px auto;
+          &.lock-white {
+            background: #e4c1bf url('../images/helpCenter/lock-white.png') center no-repeat;
+          }
+          &.money-white {
+            background: #e4c1bf url('../images/helpCenter/money-white.png') center no-repeat;
+          }
+          &.qq-white {
+            background: #e4c1bf url('../images/helpCenter/qq-white.png') center no-repeat;
+          }
+          &.msg-white {
+            background: #e4c1bf url('../images/helpCenter/msg-white.png') center no-repeat;
+          }
+        }
+        &:hover i {
+          background-color: #c9aba9;
+        }
+      }
+    }
+    .focusQuestionsBox {
+      margin-top: 30px;
+      .focusQuestions {
+        margin-top: 15px;
+        color: #666;
+        line-height: 35px;
+      }
+      li {
+        list-style-position: inside;
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .helpCenterIndex-r {
+      float: left;
+      width: 219px;
+      padding-left: 30px;
+      border-left: 1px solid #eee;
+      color: #666;
+      line-height: 24px;
+      & > * {
+        margin-top: 15px;
+        display: block;
+      }
+      .helpOnlineService {
+        width: 207px;
+        height: 130px;
+        background: url('../images/helpCenter/helpOnlineService-bg.jpg') no-repeat;
+        position: relative;
+        .btn {
+          width: 100%;
+          height: 30px;
+          line-height: 30px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: #c9aba9;
+          color: #fff;
+          &:hover {
+            background-color: #e4c1bf;
+          }
+        }
+      }
+      .onlineServicePersons {
+        overflow: hidden;
+        margin-left: -25px;
+        margin-top: 0;
+      }
+      label {
+        float: left;
+        text-align: center;
+        margin-left: 26px;
+        margin-top: 10px;
+        img {
+          display: block;
+          width: 55px;
+          height: 55px;
+        }
+      }
+    }
+  }
+  .helpCenterCommonDetail {
+    padding: 0 30px 110px;
+    h3 {
+      font-size: 1.17em;
+      font-weight: bold;
+    }
+    .helpCenterCommonTitle {
+      padding-bottom: 30px;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      line-height: 22px;
+      span {
+        color: #999;
+        font-size: 12px;
+      }
+    }
+    .helpCenterCommonContent {
+      margin-top: 30px;
+      line-height: 26px;
+    }
+    .helpCenterCommonBtn {
+      position: absolute;
+      bottom: 30px;
+      text-align: center;
+      width: 780px;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+      font-size: 12px;
+      color: #999;
+      .btn {
+        .redBtn;
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+  }
+}

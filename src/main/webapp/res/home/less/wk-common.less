@@ -1,0 +1,809 @@
+.mainWidth {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.w1150 {
+  width: 1150px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.fontColorTheme {
+  color: #f33;
+}
+
+.fontColorGreen {
+  color: #093;
+}
+
+.fontColorRed {
+  color: #b2525a;
+}
+
+.errorWarn, .fontColorRed {
+  color: red;
+}
+
+.fontColorGray {
+  color: #999;
+}
+
+/* 通用字体大小 */
+.smallFont12 {
+  font-size: 12px;
+}
+
+.smallFont14 {
+  font-size: 14px;
+}
+
+.mediumFont16 {
+  font-size: 16px;
+}
+
+.mediumFont18 {
+  font-size: 18px;
+}
+
+.bigFont20 {
+  font-size: 20px;
+}
+
+.bigFont22 {
+  font-size: 22px;
+}
+
+.textIndent0 {
+  text-indent: 0;
+}
+
+.textIndent2 {
+  text-indent: 2em;
+}
+
+.fontBold {
+  font-weight: bold;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.textRight {
+  text-align: right;
+}
+
+/* 通用表格-超出隐藏-前提  */
+.overflowTable {
+  table-layout: fixed;
+}
+
+.overflowEllipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+//清除浮动
+.clr {
+  zoom: 1;
+}
+
+.clr:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* 通用多选按钮样式 */
+.checkboxDetail {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  .checkbox {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    cursor: pointer;
+    & + span {
+      line-height: 30px;
+    }
+  }
+}
+
+//头部
+.header {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #281414;
+  font-size: 12px;
+  .logo {
+    float: left;
+    display: inline-block;
+    width: 149px;
+    height: 34px;
+    margin-right: 45px;
+    margin-top: 8px;
+    background: url("../images/logo.png") center no-repeat;
+    background-size: contain;
+  }
+  .headerR {
+    float: right;
+    width: 200px;
+  }
+  a {
+    display: inline-block;
+    color: #95525d;
+    &:hover {
+      color: #b96977;
+    }
+    i {
+      display: inline-block;
+      margin-right: 4px;
+      background: url("../images/headerIcon.png") no-repeat;
+      position: relative;
+      top: 2px;
+    }
+  }
+  label {
+    color: #fff;
+    display: inline-block;
+  }
+  .inMail {
+    position: relative;
+    margin: 0 17px 0 30px;
+    i {
+      width: 20px;
+      height: 15px;
+      background-position: -32px 0;
+    }
+    &:hover i {
+      background-position: -32px -33px
+    }
+    .platNoticeNum {
+      position: absolute;
+      top: 11px;
+      right: -13px;
+      height: 15px;
+      min-width: 15px;
+      line-height: 15px;
+      background: #fd526f;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+    }
+  }
+  .activityIcon {
+    i {
+      top: 4px;
+      width: 20px;
+      height: 20px;
+      background-position: 1px 0;
+    }
+    &:hover i {
+      background-position: 1px -30px;
+    }
+  }
+  .customerService {
+    i {
+      width: 18px;
+      height: 18px;
+      background-position: -62px -1px;
+      top: 3px;
+    }
+    &:hover i {
+      background-position: -62px -31px
+    }
+  }
+  .refresh {
+    margin: 0 15px;
+    i {
+      width: 16px;
+      height: 16px;
+      background-position: -92px -1px;
+    }
+    &:hover i {
+      background-position: -92px -33px
+    }
+  }
+  .userQuit {
+    i {
+      width: 15px;
+      height: 15px;
+      background-position: -121px -1px;
+    }
+    &:hover i {
+      background-position: -121px -34px
+    }
+  }
+  .recharge, .drawMoney {
+    width: 52px;
+    height: 27px;
+    background: url("../images/headerIcon2.png") no-repeat;
+    position: relative;
+    top: 8px;
+  }
+  .recharge {
+    margin: 0 10px 0 15px;
+    background-position: 0 -1px;
+    &:hover {
+      background-position: 0 -33px;
+    }
+  }
+  .drawMoney {
+    margin-right: 10px;
+    background-position: -60px -1px;
+    &:hover {
+      background-position: -60px -33px;
+    }
+  }
+  .username {
+    margin: 0 15px 0 50px;
+    max-width: 80px;
+    vertical-align: top;
+  }
+  .userBalance {
+    display: inline-block;
+    max-width: 90px;
+    vertical-align: top;
+  }
+  .setNickName {
+    width: 110px;
+    height: 32px;
+    line-height: 16px;
+    position: absolute;
+    top: 35px;
+    left: 520px;
+    background: url(../images/nickNameBg.png) center no-repeat;
+    padding: 17px 15px 18px 10px;
+    z-index: 4;
+    a {
+      text-decoration: underline;
+      color: #fff;
+    }
+    span {
+      color: #fccac9;
+      white-space: normal;
+    }
+  }
+  .accountHide {
+    display: inline-block;
+    width: 21px;
+    height: 12px;
+    margin-left: 3px;
+    vertical-align: middle;
+    background: url(../images/show-b.png) center no-repeat;
+    &.active {
+      background-image: url(../images/hide-b.png);
+    }
+  }
+  //催未到账
+  .outstandingTopBox {
+    position: relative;
+    .outstandingIcon {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      vertical-align: middle;
+      background: url("../images/outstandingIcon.png") no-repeat;
+      position: relative;
+      top: -2px;
+      &:hover {
+        background-position: 0 -27px;
+      }
+    }
+    .outstandingNav {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100px;
+      text-align: center;
+      background: #281414;
+      line-height: 30px;
+      padding: 10px 0;
+      z-index: 2;
+    }
+    &:hover .outstandingNav {
+      display: block;
+    }
+  }
+  //所有游戏
+  .betsHallBox {
+    float: left;
+    height: 100%;
+    .betsHall {
+      color: #fff;
+      height: 100%;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .allLotteryList {
+      display: none;
+      position: absolute;
+      z-index: 10;
+      width: 1100px;
+      left: 25px;
+      overflow: hidden;
+      background: #e8ebf2 url("../images/betsHall/betsHallBg.jpg");
+      -moz-box-shadow: 0 0 16px rgba(10, 2, 4, .41);
+      -webkit-box-shadow: 0 0 16px rgba(10, 2, 4, .41);
+      box-shadow: 0 0 16px rgba(10, 2, 4, .41);
+      .hotLotteryList {
+        position: relative;
+        float: left;
+        width: 180px;
+        padding: 60px 0 8px;
+        background: #271414;
+        i {
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: block;
+          width: 180px;
+          height: 102px;
+          background: url("../images/betsHall/hotIcon.png") no-repeat;
+        }
+      }
+      .hotLotteryList a {
+        display: block;
+        width: 140px;
+        height: 84px;
+        margin: 0 auto 12px;
+        background: url('../images/betsHall/hotLott.png') 0 0 no-repeat;
+        position: relative;
+        z-index: 1;
+      }
+      .hotLotteryList a.asj1fcIcon {
+        background-position-y: -96px;
+      }
+      .hotLotteryList a.ammcIcon {
+        background-position-y: -192px;
+      }
+      .hotLotteryList a.atigerIcon {
+        background-position-y: -288px;
+      }
+      .lotteryList {
+        width: 840px;
+        float: left;
+        padding: 24px 0 18px;
+      }
+      .lottDetail {
+        position: relative;
+        padding: 11px 0 11px 130px;
+        &:first-child {
+          padding-top: 0;
+        }
+        &:last-child:after {
+          width: 0;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 700px;
+          border-bottom: 1px solid #d0d3df;
+          border-top: 1px solid #fff;
+          bottom: 1px;
+          left: 130px;
+        }
+      }
+      .lotteryTitle {
+        display: block;
+        position: absolute;
+        width: 60px;
+        height: 50px;
+        left: 45px;
+        top: 50%;
+        margin-top: -25px;
+        background: url('../images/betsHall/groupIcon.png') center 1000px no-repeat;
+      }
+      .lotteryTitle.title_ssc {
+        background-position-y: 6px;
+      }
+      .lotteryTitle.title_pk10 {
+        background-position-y: -82px;
+      }
+      .lotteryTitle.title_k3 {
+        background-position-y: -170px;
+      }
+      .lotteryTitle.title_11x5 {
+        background-position-y: -248px;
+      }
+      .lotteryTitle.title_dp {
+        background-position-y: -331px;
+      }
+      .lotteryGroupList {
+        overflow: hidden;
+        line-height: 30px;
+      }
+      .lotteryGroupList li {
+        display: inline-block;
+        width: 110px;
+        text-align: left;
+      }
+      .lottplayExplain {
+        font-size: 14px;
+        color: #777;
+      }
+      .lottplayExplain:hover {
+        color: #be4751;
+        text-decoration: underline;
+      }
+    }
+    &:hover .allLotteryList {
+      display: block;
+    }
+  }
+}
+
+//底部
+.footer {
+  width: 100%;
+  height: 180px;
+  background: url("../images/footBg.png") center no-repeat;
+  overflow: hidden;
+  position: relative;
+  .mainWidth {
+    margin-top: 45px;
+    a {
+      display: block;
+      color: #95525d;
+      font-size: 14px;
+      &:hover {
+        color: #b96977;
+      }
+    }
+    i {
+      display: block;
+      position: absolute;
+      top: 0;
+      background: url("../images/footIcon.png") no-repeat;
+    }
+    ul {
+      float: left;
+      &.download {
+        width: 555px;
+        padding-left: 205px;
+        overflow: hidden;
+        li {
+          float: left;
+          margin: 0 13px;
+          a {
+            position: relative;
+            width: 110px;
+            height: 85px;
+            text-align: center;
+            line-height: 145px;
+          }
+          &.pc i {
+            width: 64px;
+            height: 53px;
+            left: 23px;
+            background-position: 0 -1px;
+          }
+          &.ios i {
+            width: 46px;
+            height: 58px;
+            background-position: -105px 0;
+            left: 32px;
+          }
+          &.android i {
+            width: 48px;
+            height: 55px;
+            background-position: -190px -1px;
+            left: 31px;
+          }
+          &.auto i {
+            background: url("../images/auto1.png") no-repeat;
+            width: 50px;
+            height: 50px;
+            left: 30px;
+          }
+          &.pc a:hover i {
+            background-position: 0 -76px;
+          }
+          &.ios a:hover i {
+            background-position: -105px -71px;
+          }
+          &.android a:hover i {
+            background-position: -190px -72px;
+          }
+          &.auto a:hover i {
+            background: url("../images/auto2.png") no-repeat;
+          }
+        }
+      }
+      &.browser {
+        width: 212px;
+        margin-top: 15px;
+        li {
+          padding-left: 88px;
+          a {
+            position: relative;
+            line-height: 28px;
+          }
+          i {
+            width: 26px;
+            height: 26px;
+            left: -42px;
+          }
+          &.google i {
+            background-position: -275px 1px;
+          }
+          &.fox i {
+            background-position: -277px -33px;
+          }
+          &.ie i {
+            background-position: -311px 0;
+          }
+        }
+      }
+      &.footerOther {
+        width: 125px;
+        margin-top: 15px;
+        a {
+          text-align: center;
+          line-height: 28px;
+        }
+      }
+    }
+    p {
+      clear: left;
+      color: #95525d;
+      font-size: 12px;
+      margin-left: 257px;
+    }
+  }
+}
+
+//左侧导航
+#asideLeft {
+  width: 180px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  background: url(../images/lottery/allGameBg.png) top no-repeat;
+  background-size: cover;
+  margin-left: -750px;
+  text-align: center;
+  z-index: 2;
+  h3 {
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    i {
+      display: inline-block;
+      width: 19px;
+      height: 19px;
+      background: url(../images/lottery/allGameArrow.png) center no-repeat;
+      vertical-align: middle;
+    }
+  }
+  .allGameList {
+    background: rgba(244, 243, 244, .8);
+    border-radius: 3px;
+    margin: 0 11px 12px;
+    padding: 10px 0;
+    max-height: 780px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    li {
+      position: relative;
+      padding: 4px 0 2px;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:after {
+        content: '';
+        width: 131px;
+        height: 2px;
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        margin-left: -65px;
+        background: url(../images/lottery/lottTypeBorder.png) center no-repeat;
+      }
+      a {
+        display: block;
+        line-height: 36px;
+        border-radius: 3px;
+        color: #601414;
+        font-size: 15px;
+        position: relative;
+        z-index: 1;
+
+        &:hover {
+          color: #fff;
+          &:before {
+            content: '';
+            width: 180px;
+            height: 43px;
+            position: absolute;
+            top: 0;
+            left: -11px;
+            background: url(../images/lottery/lottTypeActive.png) center no-repeat;
+            z-index: -1;
+          }
+        }
+      }
+      .hot {
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        margin-top: -9px;
+        font-style: normal;
+        font-size: 12px;
+        background: #fd7150;
+        color: #f5f4f9;
+        border-radius: 3px;
+        z-index: 2;
+      }
+    }
+  }
+}
+
+//右侧导航
+#asideRight {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  margin-top: -252px;
+  width: 58px;
+  height: 505px;
+  z-index: 2;
+  a {
+    display: block;
+    width: 58px;
+    height: 58px;
+    text-align: center;
+    background: url("../images/right.png") no-repeat;
+    position: absolute;
+    right: 0;
+    transition: width 0.3s;
+    &:hover, &.active {
+      width: 146px;
+    }
+    &.sy {
+      top: 0;
+      background-position: -176px 0;
+      &:hover, &.active {
+        background-position: 0 0;
+      }
+    }
+    &.zxgg {
+      top: 63px;
+      background-position: -176px -58px;
+      &:hover, &.active {
+        background-position: 0 -58px;
+      }
+    }
+    &.yxjl {
+      top: 63*2px;
+      background-position: -176px -117px;
+      &:hover, &.active {
+        background-position: 0 -117px;
+      }
+    }
+    &.zhjl {
+      top: 63*3px;
+      background-position: -176px -178px;
+      &:hover, &.active {
+        background-position: 0 -178px;
+      }
+    }
+    &.glzx {
+      top: 63*4px;
+      background-position: -176px -237px;
+      &:hover, &.active {
+        background-position: 0 -237px;
+      }
+    }
+    &.bbzx {
+      top: 63*5px;
+      background-position: -176px -296px;
+      &:hover, &.active {
+        background-position: 0 -296px;
+      }
+    }
+    &.bzzx {
+      top: 63*6px;
+      background-position: -176px -357px;
+      &:hover, &.active {
+        background-position: 0 -357px;
+      }
+    }
+    &.top {
+      top: 63*7px;
+      background-position: -176px -418px;
+      &:hover, &.active {
+        background-position: 0 -418px;
+      }
+    }
+  }
+}
+
+/* 旋转360度 */
+.rotated {
+  -webkit-animation: rotate 1s linear infinite;
+  -moz-animation: rotate 1s linear infinite;
+  -o-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,944 @@
+.blueBtn, .redBtn, .yellowBtn {
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14)
+}
+.blueBtn, .lottTipLayer .layui-layer-content .closeBtn, .redBtn, .yellowBtn {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14)
+}
+.cfmRechSecond, .changeBankBox, .confirmRechargeBox, .containerFlex, .depositBox .depositChangeBank, .layui-layer.setSafePswLayer .improveContent, .layui-layer.userImproveInfoLayer .improveContent {
+    overflow: hidden
+}
+.bankImg, .btnRadio, .comChargeBox i, .finishTitle, .rechargeBank, .smileFace {
+    vertical-align: middle
+}
+body {
+    background: url(../images/bg.jpg)
+}
+.areaBigContainer {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, .8);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#ccffffff, ff, endColorstr=#ccffffff, ff);
+    margin: 40px auto 170px
+}
+.containerFlex {
+    display: inline-flex;
+    min-height: 700px
+}
+.commonIcon {
+    position: absolute;
+    display: block;
+    left: 15px;
+    top: 11px
+}
+.redBtn {
+    background-color: #bf5059;
+    background-image: -webkit-linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    background-image: linear-gradient(top, #bf5059 0, #7a3e43 100%)
+}
+.redBtn:active, .redBtn:hover {
+    background-color: #f84150;
+    background-image: -webkit-linear-gradient(top, #f84150 0, #942b34 100%);
+    background-image: linear-gradient(top, #f84150 0, #942b34 100%)
+}
+.blueBtn {
+    background-color: #5999ab;
+    background-image: -webkit-linear-gradient(top, #5999ab 0, #43656f 100%);
+    background-image: linear-gradient(top, #5999ab 0, #43656f 100%)
+}
+.blueBtn:active, .blueBtn:hover {
+    background-color: #5bb8d4;
+    background-image: -webkit-linear-gradient(top, #5bb8d4 0, #447685 100%);
+    background-image: linear-gradient(top, #5bb8d4 0, #447685 100%)
+}
+.yellowBtn {
+    background-color: #ec8939;
+    background-image: -webkit-linear-gradient(top, #ec8939 0, #915d32 100%);
+    background-image: linear-gradient(top, #ec8939 0, #915d32 100%)
+}
+.yellowBtn:active, .yellowBtn:hover {
+    background-color: #ffb163;
+    background-image: -webkit-linear-gradient(top, #ffb163 0, #9a632e 100%);
+    background-image: linear-gradient(top, #ffb163 0, #9a632e 100%)
+}
+.leftListArea {
+    float: left;
+    width: 180px;
+    background-color: #FFF;
+    color: #ab9595;
+    min-height: 690px
+}
+.leftListArea .leftListDetail {
+    background: rgb(174, 152, 128);
+}
+.leftListArea .leftListDetail .leftListBigItem {
+    display: block;
+    position: relative;
+    color: #414141;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 47px;
+    border-bottom: 1px solid #e8eaef;
+    cursor: pointer
+}
+.leftListArea .leftListDetail .leftListBigItem.active, .leftListArea .leftListDetail .leftListBigItem:hover {
+    background-color: rgb(175, 58, 49);
+    color: #FFF;
+}
+.leftListArea .leftListDetail .leftListItem {
+    font-size: 12px;
+    background-color: #FFF;
+}
+.leftListArea .leftListDetail .leftListItem a {
+    display: block;
+    padding-left: 47px;
+    height: 32px;
+    line-height: 32px;
+    color: #414141;
+    margin-bottom: 1px;
+}
+.leftListArea .leftListDetail .leftListItem a.active, .leftListArea .leftListDetail .leftListItem a:hover {
+    color: #FFF;
+    background: #ED635D;
+}
+.rightArea {
+    float: left;
+    width: 820px;
+    min-height: 660px;
+    padding: 20px 0
+}
+.shadow {
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    display: block;
+    width: 1100px;
+    height: 200px;
+    background: url(../images/shadow.png) no-repeat
+}
+.shadow2 {
+    position: absolute;
+    bottom: -25px;
+    left: -392px;
+    display: block;
+    width: 393px;
+    height: 289px;
+    background: url(../images/shadow2.png) no-repeat
+}
+.shadow3 {
+    position: absolute;
+    bottom: -22px;
+    right: -283px;
+    display: block;
+    width: 283px;
+    height: 466px;
+    background: url(../images/shadow3.png) no-repeat
+}
+.lottTipLayer .layui-layer-content {
+    border-radius: 4px
+}
+.lottTipLayer .layui-layer-content .lottTipLayerTitle {
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 10px;
+    color: #555;
+    background-color: #fff
+}
+.lottTipLayer .layui-layer-content .lottTipBox {
+    text-align: center
+}
+.lottTipLayer .layui-layer-content .msg {
+    margin-top: 30px;
+    display: inline-block
+}
+.lottTipLayer .layui-layer-content .msg i {
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    background: url(../images/warmIcon.png) no-repeat;
+    margin-right: 20px;
+    float: left
+}
+.lottTipLayer .layui-layer-content .msg .content {
+    display: inline-block;
+    line-height: 41px;
+    max-width: 370px;
+    *width: 370px
+}
+.lottTipLayer .layui-layer-content .lottTipBtn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #ddd2d2
+}
+.lottTipLayer .layui-layer-content .closeBtn {
+    display: block;
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #cc0a19;
+    color: #fff;
+    border-radius: 20px;
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .45) 0, rgba(255, 255, 255, .45) 100%);
+    background-image: linear-gradient(bottom, rgba(0, 0, 0, .45) 0, rgba(255, 255, 255, .45) 100%);
+    margin: 20px auto 0
+}
+.lottTipLayer .layui-layer-content .closeBtn:active, .lottTipLayer .layui-layer-content .closeBtn:hover {
+    background-color: #e50b1e
+}
+.layui-layer .layui-layer-setwin {
+    display: inline-block;
+    width: 42px;
+    height: 33px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    right: 0;
+    top: 6px
+}
+.layui-layer .layui-layer-setwin .layui-layer-close1, .layui-layer .layui-layer-setwin .layui-layer-close2 {
+    width: 31px;
+    height: 31px;
+    left: 1px;
+    top: 1px;
+    margin: 0;
+    background: url(../images/closeLayer.png) no-repeat;
+    transition: .3s ease-in-out
+}
+.layui-layer .layui-layer-setwin .layui-layer-close1:hover, .layui-layer .layui-layer-setwin .layui-layer-close2:hover {
+    background-position: 0 0;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+.layui-layer.setSafePswLayer, .layui-layer.userImproveInfoLayer {
+    background: #eee
+}
+.layui-layer.setSafePswLayer .improveHeader, .layui-layer.userImproveInfoLayer .improveHeader {
+    padding: 20px 50px;
+    overflow: hidden;
+    background: #c9aba9
+}
+.layui-layer.setSafePswLayer .improveLogoBox, .layui-layer.userImproveInfoLayer .improveLogoBox {
+    float: left
+}
+.layui-layer.setSafePswLayer .improveLogo, .layui-layer.userImproveInfoLayer .improveLogo {
+    display: block;
+    width: 51px;
+    height: 51px;
+    background: url(../images/improveLogo.png) center no-repeat
+}
+.layui-layer.setSafePswLayer .improveHeaderInfo, .layui-layer.userImproveInfoLayer .improveHeaderInfo {
+    float: left;
+    margin-left: 15px
+}
+.layui-layer.setSafePswLayer .improveHeaderTitle, .layui-layer.userImproveInfoLayer .improveHeaderTitle {
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    line-height: 32px
+}
+.layui-layer.setSafePswLayer .improveHeaderTips, .layui-layer.userImproveInfoLayer .improveHeaderTips {
+    font-size: 12px;
+    color: #fff
+}
+.layui-layer.setSafePswLayer .improveInfoForm, .layui-layer.userImproveInfoLayer .improveInfoForm {
+    width: 560px;
+    margin: 30px auto 35px;
+    line-height: 46px
+}
+.layui-layer.setSafePswLayer .labelDiv, .layui-layer.userImproveInfoLayer .labelDiv {
+    color: #333
+}
+.layui-layer.setSafePswLayer .labelTitle, .layui-layer.userImproveInfoLayer .labelTitle {
+    width: 120px;
+    display: inline-block;
+    text-align: right
+}
+.changeBankBtn, .rechAmountInfo-c {
+    text-align: center
+}
+.layui-layer.setSafePswLayer .labelCond, .layui-layer.userImproveInfoLayer .labelCond {
+    width: 220px;
+    height: 24px;
+    line-height: 24px;
+    padding: 2px 10px;
+    margin-left: 6px;
+    border-radius: 12px;
+    font-size: 12px;
+    border: none;
+    outline: 0;
+    box-shadow: inset 0 1px 5px rgba(168, 168, 168, .75), inset 0 0 4px rgba(255, 255, 255, .2);
+    background-color: #e5e5e5
+}
+.layui-layer.setSafePswLayer .selectCond, .layui-layer.userImproveInfoLayer .selectCond {
+    width: 240px;
+    height: 28px;
+    line-height: 28px;
+    padding: 2px 10px;
+    margin-left: 6px;
+    border-radius: 12px;
+    font-size: 12px;
+    border: none;
+    outline: 0;
+    background-color: #e5e5e5;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .4), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .2);
+    background-image: linear-gradient(bottom, rgba(75, 75, 75, .33) 0, rgba(160, 160, 160, .33) 100%)
+}
+.btn, .layui-layer.setSafePswLayer .btn, .layui-layer.userImproveInfoLayer .btn {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14)
+}
+.layui-layer.setSafePswLayer .formBtns, .layui-layer.userImproveInfoLayer .formBtns {
+    margin-top: 25px
+}
+.layui-layer.setSafePswLayer .btn, .layui-layer.userImproveInfoLayer .btn {
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #cc0a19;
+    color: #fff;
+    border-radius: 20px;
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .45) 0, rgba(255, 255, 255, .45) 100%);
+    background-image: linear-gradient(bottom, rgba(0, 0, 0, .45) 0, rgba(255, 255, 255, .45) 100%)
+}
+.layui-layer.setSafePswLayer .btn:active, .layui-layer.setSafePswLayer .btn:hover, .layui-layer.userImproveInfoLayer .btn:active, .layui-layer.userImproveInfoLayer .btn:hover {
+    background-color: #e50b1e
+}
+.errorWarm {
+    font-size: 12px
+}
+.depositA i {
+    background-position: 1px -23px;
+    top: 9px
+}
+.outstandingA.active i, .outstandingA:hover i, .rechargeA.active i, .rechargeA:hover i {
+    background-position: -25px -1px
+}
+.depositA.active i, .depositA:hover i {
+    background-position: -25px -24px
+}
+.accountCentreContent {
+    padding: 20px 10px
+}
+.stepBox {
+    width: 600px;
+    margin: 0 auto;
+    position: relative
+}
+.stepBox .stepBar {
+    width: 100%;
+    background-color: #b5b5b5;
+    height: 38px
+}
+.stepBox .stepBar li {
+    float: left
+}
+.stepBox .stepBar .step {
+    display: block;
+    padding: 0 35px;
+    position: relative;
+    width: 170px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff
+}
+.stepBox .stepBar .step i {
+    font-style: normal;
+    font-size: 16px;
+    color: #fff;
+    background-color: #b5b5b5;
+    display: block;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    border: 3px solid #7e7e7e;
+    position: absolute;
+    left: -23px;
+    top: -3px
+}
+.userMsg, .userMsg span {
+    font-size: 12px
+}
+.stepBox .stepBar .step i:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -27px;
+    top: 13px;
+    border-style: solid;
+    border-width: 6px 10px;
+    border-color: transparent transparent transparent #fff
+}
+.stepBox .stepBar .step-1.active {
+    background-color: #e79a13
+}
+.stepBox .stepBar .step-1.active i {
+    background-color: #e79a13;
+    border-color: #fff
+}
+.stepBox .stepBar .step-2 {
+    width: 120px
+}
+.stepBox .stepBar .step-2.active {
+    background-color: #e77c13
+}
+.stepBox .stepBar .step-2.active i {
+    background-color: #e77c13;
+    border-color: #fff
+}
+.stepBox .stepBar .step-3 {
+    width: 100px
+}
+.stepBox .stepBar .step-3.active {
+    background-color: #e74513
+}
+.stepBox .stepBar .step-3.active i {
+    background-color: #e74513;
+    border-color: #fff
+}
+.stepBox .stepBar .step-3:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 19px solid;
+    border-color: transparent transparent transparent #b5b5b5;
+    right: -38px;
+    top: 0
+}
+.bank, .comChargeBox i, .rechAmountDetail {
+    display: inline-block
+}
+.stepBox .rechTeach {
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    color: #999;
+    margin-top: -10px;
+    text-decoration: underline
+}
+.stepBox .rechTeach:hover {
+    color: #006ab4
+}
+.bank {
+    padding: 0 6px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    height: 42px;
+    line-height: 42px;
+}
+.changeBankBox {
+    margin: 30px auto 0px;
+    width: 770px
+}
+.changeBankBox .bank-l {
+    float: left
+}
+.changeBankBox .bank-r {
+    float: left;
+    width: 670px;
+    min-height: 76px;
+    max-height: 114px;
+    overflow: hidden;
+}
+.changeBankBox .bank-r .bankBorder {
+    border-color: #00c000
+}
+.changeBankToggleBank {
+    text-align: right;
+    margin: 0 auto;
+    width: 770px;
+}
+.changeBankToggleBank .toggleBank {
+    border: 1px solid rgb(175, 58, 49);
+    background: rgb(175, 58, 49);
+    outline: none;
+    padding: 8px 20px;
+    margin-right: 4px;
+    color: #FFF;
+    cursor:pointer;
+}
+.changeSumBox {
+    margin: 30px auto;
+    width: 670px;
+}
+.comChargeBox, .userMsg {
+    margin-left: 105px;
+    margin-top: 10px;
+    color: #999
+}
+.userMsg {
+    padding: 10px 20px;
+    border: 1px solid #d9d9d9;
+    background: #f4f9f9
+}
+.comChargeBox i {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background: url(../images/recharge/tipIcon.png) no-repeat
+}
+.comChargeBox em {
+    font-style: normal;
+    color: #c63
+}
+.rechAmountDetail {
+    position: relative
+}
+.rechAmountInfo {
+    display: none;
+    position: absolute;
+    top: -70px;
+    left: -5px
+}
+.rechAmountInfo-l, .rechAmountInfo-r {
+    height: 63px;
+    position: absolute;
+    top: 0
+}
+.rechAmountInfo-l {
+    width: 10px;
+    left: -10px;
+    background: url(../images/recharge/rechAmount-l.png) center no-repeat
+}
+.rechAmountInfo-r {
+    width: 15px;
+    right: -15px;
+    background: url(../images/recharge/rechAmount-r.png) center no-repeat
+}
+.rechAmountInfo-c {
+    display: block;
+    min-width: 30px;
+    height: 63px;
+    line-height: 60px;
+    background: url(../images/recharge/rechAmount-c.png) repeat-x;
+    color: #e00015;
+    font-size: 30px;
+    font-weight: 700
+}
+.alipayBox .rechQRCode, .depositBox .warnIcon, .labelTitle, .postscript i, .smileFace {
+    display: inline-block
+}
+.depositBox .bank span, .labelCond {
+    font-size: 12px
+}
+.rechAmountInfo-b {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: -6px;
+    left: 15px;
+    background: url(../images/recharge/rechAmount-b.png) center no-repeat
+}
+.btn {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 15px;
+    background-color: #5999ab;
+    background-image: -webkit-linear-gradient(top, #5999ab 0, #43656f 100%);
+    background-image: linear-gradient(top, #5999ab 0, #43656f 100%);
+    width: 100px
+}
+.btn:active, .btn:hover {
+    background-color: #5bb8d4;
+    background-image: -webkit-linear-gradient(top, #5bb8d4 0, #447685 100%);
+    background-image: linear-gradient(top, #5bb8d4 0, #447685 100%)
+}
+.labelTitle {
+    width: 100px;
+    text-align: right
+}
+.alipayBox h2, .cfmRechSecond .rechRight, .confirmRechargeBtn, .dialogBtn, .finishBtn, .rechargeTime, .tableBoxNone table tr {
+    text-align: center
+}
+.labelCond {
+    width: 180px;
+    height: 22px;
+    line-height: 22px;
+    padding: 2px 10px;
+    border-radius: 12px;
+    border: none;
+    outline: 0;
+    box-shadow: inset 0 1px 5px rgba(168, 168, 168, .75), inset 0 0 4px rgba(255, 255, 255, .2)
+}
+.depositBox {
+    width: 590px;
+    margin: 40px auto
+}
+.depositBox p {
+    line-height: 60px
+}
+.depositBox .btn {
+    margin-top: 20px
+}
+.depositBox .bank {
+    margin-bottom: 0;
+    margin-top: 5px;
+    line-height: 40px;
+    width: 100%
+}
+.depositBox .bank:first-child {
+    margin-top: 0
+}
+.depositBox .depositAmount {
+    width: 100px
+}
+.depositBox .warnIcon {
+    width: 41px;
+    height: 41px;
+    background: url(../images/warmIcon.png) no-repeat;
+    margin-right: 10px;
+    position: relative;
+    top: 12px
+}
+.depositsafeBox {
+    margin: 20px 0 0 240px
+}
+.depositMsg {
+    margin: 0
+}
+.depositChangeBank .depositBanks, .depositChangeBank .labelTitle {
+    float: left;
+    line-height: 46px
+}
+.depositChangeBank .depositBanks {
+    width: 465px
+}
+.depositFinish {
+    width: 370px;
+    margin: 100px auto
+}
+.finishInfo p {
+    line-height: 40px
+}
+.finishInfo .userMsg, .finishInfo .userMsg p {
+    line-height: 24px;
+    margin: 0
+}
+.finishInfo .labelTitle {
+    margin-left: 90px
+}
+.finishTitle {
+    font-size: 18px;
+    margin-left: 22px
+}
+.smileFace {
+    width: 42px;
+    height: 42px;
+    background: url(../images/recharge/smileFace.png)
+}
+.depositFinish .tips {
+    margin-left: 58px
+}
+.finishBtn {
+    margin-top: 30px
+}
+.confirmRechargeBox {
+    position: relative;
+    width: 875px;
+    margin: 30px 0 0 -10px;
+    padding: 30px 0 50px;
+    border: 1px solid #cbcbcb;
+    background: #fff
+}
+.confirmRechargeBox span {
+    font-size: 12px
+}
+.confirmRechargeBox .rechQRCode {
+    float: none;
+    text-align: center;
+    margin-top: 30px
+}
+.confirmRechargeBox .userMsg {
+    width: 100%;
+    margin: 20px 0;
+    background: 0 0;
+    border: none;
+    padding: 0
+}
+.confirmRechargeBox .userMsg img {
+    width: 100%
+}
+.confirmRechargeBox h3 {
+    font-size: 1.17em;
+    font-weight: 700
+}
+.onlineServiceCtn {
+    color: red;
+    text-decoration: underline
+}
+.alipayBox .confirmRechargeBox {
+    position: relative;
+    width: auto;
+    min-height: 0;
+    margin: 30px auto 0;
+    padding: 30px 29px 50px
+}
+.alipayBox h2 {
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 50px;
+    font-weight: 700
+}
+.alipayBox .postscriptCont {
+    display: inline-block;
+    padding: 5px;
+    background: #eee
+}
+.alipayBox .rechQRCode {
+    margin-top: 0
+}
+.alipayBox .rechQRCode img {
+    width: 180px;
+    height: 180px
+}
+.alipayBox .confirmRechargeBtn {
+    clear: both;
+    width: 100%
+}
+.cfmRechSecond > div {
+    float: left
+}
+.cfmRechSecond .rechLeft {
+    width: 563px
+}
+.bankRech .cfmRechSecond .rechLeft {
+    float: none;
+    width: auto
+}
+.cfmRechSecond .rechLeft .rechLeftInfo {
+    border: 1px dashed #ccc;
+    padding: 30px 0;
+    margin-top: 23px;
+    border-radius: 3px;
+    position: relative
+}
+.cfmRechSecond .rechLeft .rechLeftInfo:first-child {
+    margin-top: 0
+}
+.bankRech .cfmRechSecond .rechLeft .rechLeftInfo {
+    padding: 30px 110px
+}
+.bankRech .cfmRechSecond {
+    overflow: visible
+}
+.cfmRechSecond .rechRight {
+    width: 215px;
+    height: 290px;
+    margin-left: 20px;
+    border: 1px dashed #ccc;
+    border-radius: 3px;
+    background: url(../images/recharge/qrcodeTitleBg.png) top repeat-x #f1f1f1
+}
+.cfmRechSecond .rechRight .rechQRCodeBox {
+    margin-top: 60px
+}
+.cfmRechSecond .rechRight .rechQRCodeBox > span {
+    font-size: 18px;
+    line-height: 35px
+}
+.infoDetail {
+    line-height: 35px;
+    margin-top: 10px;
+    overflow: hidden
+}
+.infoDetail:first-child {
+    margin-top: 0
+}
+.infoDetail .labelTitle {
+    width: 85px;
+    font-weight: 700;
+    padding: 0 5px
+}
+.copy {
+    float: right;
+    color: #099;
+    margin-right: 270px
+}
+.alipayRechAmount .copy, .bankRechAmount .copy {
+    margin-right: 360px
+}
+.alipayNameTips {
+    width: 220px;
+    height: 155px;
+    position: absolute;
+    top: -27px;
+    right: 30px;
+    background: url(../images/recharge/alipayNameTips.png) center no-repeat
+}
+.bankRech .alipayNameTips {
+    right: 130px
+}
+.alipayAmountTips {
+    width: 341px;
+    height: 132px;
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    background: url(../images/recharge/alipayAmountTips.png) center no-repeat
+}
+.bankRech .alipayAmountTips {
+    right: 110px
+}
+.postscript i {
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: url(../images/recharge/find.png) no-repeat
+}
+.postscript i:hover img {
+    display: block
+}
+.postscript i img {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 226px;
+    width: 656px;
+    z-index: 2
+}
+.confirmRechargeBtn {
+    margin-top: 20px
+}
+.confirmRechargeBtn .btn {
+    width: 210px
+}
+.confirmRechargeBtn .endImproveInfo {
+    margin-left: 10px;
+    background-color: #fd526f;
+    background-image: -webkit-linear-gradient(top, #fd526f 0, #ff143c 100%);
+    background-image: linear-gradient(top, #fd526f 0, #43656f 100%)
+}
+.confirmRechargeBtn .endImproveInfo:active, .confirmRechargeBtn .endImproveInfo:hover {
+    background-color: #ff728a;
+    background-image: -webkit-linear-gradient(top, #ff728a 0, #ff3155 100%);
+    background-image: linear-gradient(top, #ff728a 0, #ff3155 100%)
+}
+.loginBankRechBox {
+    position: relative;
+    margin-top: 20px
+}
+.loginBankRechBox .btn {
+    position: absolute;
+    right: 0
+}
+.layerBox {
+    padding: 20px 30px
+}
+.layerBox .labelDiv {
+    margin-top: 15px;
+    color: #333
+}
+.layerBox .labelDiv:first-child {
+    margin-top: 0
+}
+.layerBox .labelDiv .labelTitle {
+    width: 120px
+}
+#confirmRechargeDialog .btn {
+    margin-top: 15px
+}
+.rechargeFinish {
+    width: 470px;
+    margin: 100px auto
+}
+.rechargeInfo {
+    width: 320px;
+    padding: 30px 7px
+}
+.payeeInfo {
+    width: 360px;
+    border-left: 1px solid #cbcbcb;
+    border-right: 1px solid #cbcbcb;
+    padding: 30px 7px
+}
+.payeeExplain span {
+    float: right;
+    width: 340px;
+    border: 1px dashed #ccc;
+    color: #ccc;
+    padding: 5px;
+    line-height: 20px
+}
+.rechargeTime {
+    padding: 30px 10px
+}
+.rechargeCountDown {
+    margin-top: 80px
+}
+.rechargeCountDown span {
+    font-size: 36px
+}
+.rechTimeIntro {
+    margin-top: 50px
+}
+#depOutForm, #rechOutForm {
+    line-height: 45px;
+    margin: 50px 0 0 210px
+}
+#depOutForm .labelTitle, #rechOutForm .labelTitle {
+    width: 120px
+}
+#depOutForm .radioLabel, #rechOutForm .radioLabel {
+    margin-right: 8px
+}
+.outstandingMsg {
+    margin: 150px 0 0;
+    font-size: 14px
+}
+.layui-layer .layui-layer-title {
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 10px;
+    color: #fff;
+    background-color: #c9aba9
+}
+.dialogBtn .btn, .tableBoxNone p {
+    line-height: 30px
+}
+.dialogBtn .btn {
+    height: 30px;
+    background-color: #bf5059;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);
+    background-image: -webkit-linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    background-image: linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    width: 100px
+}
+.dialogBtn .btn:active, .dialogBtn .btn:hover {
+    background-color: #f84150;
+    background-image: -webkit-linear-gradient(top, #f84150 0, #942b34 100%);
+    background-image: linear-gradient(top, #f84150 0, #942b34 100%)
+}
+.tableBoxNone {
+    padding: 15px 30px 30px
+}
+.tableBoxNone table {
+    width: 100%
+}
+.tableBoxNone table tr {
+    line-height: 40px;
+    background: #f9f9f9
+}
+.tableBoxNone table a {
+    color: #006ab4;
+    text-decoration: underline
+}
+.tableBoxNone .dialogBtn {
+    margin: 18px 0 10px
+}

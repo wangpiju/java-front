@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+    <!-- 因换肤原因：活动、公告页面暂不使用模板，将头部底部直接加到页面内部 -->
+    <mapping decorator="/WEB-INF/jsp/home/layout.jsp" path="/lotts/*/index"/>
+    <mapping decorator="/WEB-INF/jsp/home/layoutSlot.jsp" path="/lotts/tiger/index"/>
+    <mapping decorator="/WEB-INF/jsp/home/layout.jsp" path="/report/index"/>
+    <mapping decorator="/WEB-INF/jsp/home/layout.jsp" path="/game/index"/>
+    <mapping decorator="/WEB-INF/jsp/home/layout.jsp" path="/helpCenter/*"/>
+    <mapping decorator="/WEB-INF/jsp/home/layout.jsp" path="/notice/index"/>
+    <mapping decorator="/WEB-INF/jsp/home/layout.jsp" path="/user/*"/>
+    <mapping decorator="/WEB-INF/jsp/home/layout.jsp" path="/recharge/*"/>
+    <mapping decorator="/WEB-INF/jsp/home/layout.jsp" path="/rechargeNew/*"/>
+    <mapping decorator="/WEB-INF/jsp/home/layout.jsp" path="/deposit/*"/>
+    <mapping decorator="/WEB-INF/jsp/home/layout.jsp" path="/contract/*"/>
+    <mapping decorator="/WEB-INF/jsp/home/layout.jsp" path="/activity/*"/>
+    <mapping decorator="/WEB-INF/jsp/home/layout.jsp" path="/lottery/*"/>
+    <mapping decorator="/WEB-INF/jsp/home/layout.jsp" path="/aappdown/*"/>
+    <mapping decorator="/WEB-INF/jsp/home/layout.jsp" path="/upload/*"/>
+    <mapping exclue="true" path="/login"/>
+    <mapping exclue="true" path="/domain"/>
+    <mapping exclue="true" path="/recharge/rechargePayNotice/*"/>
+    <mapping exclue="true" path="/recharge/rechargePayJuBaoNotice"/>
+    <mapping exclue="true" path="/recharge/rechargePayFinish/*"/>
+    <mapping exclue="true" path="/recharge/rechargePayForward"/>
+    <mapping exclue="true" path="/deposit/*/requestWithdrawApproveInformation"/>
+    <mapping exclue="true" path="/deposit/*/withdrawalResult"/>
+
+    <!-- 	<content-processor> -->
+    <!-- 		<tag-rule-bundle class="com.hs3home.utils.ExtHtmlTagRuleBundle" /> -->
+    <!-- 	</content-processor> -->
+</sitemesh>

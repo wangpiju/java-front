@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<meta content="email=no" name="format-detection">
+    <title>确认投注页</title>
+    <link rel="stylesheet" href="css/hs-mobile.css" />
+</head>
+<body class="bodyColorEEE">
+
+<!-- 平台主菜单 -->
+<div class="platMainNavBox">
+    <div class="platMainNavShow">
+        <div class="platMainNavTop">
+            <div class="userUsableBalance">
+                <p class="fontSizeRem09">可用余额</p>
+                <p>52384.000</p>
+            </div>
+        </div>
+        <div class="platMainNavContent">
+            <ul class="platMainNavList">
+                <li class="platMainNavDetail">
+                    <a href="javascript:;" class="platMainNav">
+                        <i class="platMainNav01"></i>
+                        <span>彩种大厅</span>
+                        <i class="rightArrow"></i>
+                    </a>
+                </li>
+                <li class="platMainNavDetail">
+                    <a href="javascript:;" class="platMainNav">
+                        <i class="platMainNav02"></i>
+                        <span>账户中心</span>
+                        <i class="rightArrow"></i>
+                    </a>
+                    <ul class="platSubNavList" style="display: none;">
+                        <li class="platSubNavDetail">
+                            <a href="javascript:;" class="platSubNav">
+                                <i class="platMainNav05"></i>
+                                <span>账户充值</span>
+                            </a>
+                        </li>
+                        <li class="platSubNavDetail">
+                            <a href="javascript:;" class="platSubNav">
+                                <i class="platMainNav06"></i>
+                                <span>提款申请</span>
+                            </a>
+                        </li>
+                        <li class="platSubNavDetail">
+                            <a href="javascript:;" class="platSubNav">
+                                <i class="platMainNav07"></i>
+                                <span>银行卡绑定</span>
+                            </a>
+                        </li>
+                        <li class="platSubNavDetail">
+                            <a href="javascript:;" class="platSubNav">
+                                <i class="platMainNav08"></i>
+                                <span>账户明细</span>
+                            </a>
+                        </li>
+                        <li class="platSubNavDetail">
+                            <a href="javascript:;" class="platSubNav">
+                                <i class="platMainNav09"></i>
+                                <span>投注记录</span>
+                            </a>
+                        </li>
+                        <li class="platSubNavDetail">
+                            <a href="javascript:;" class="platSubNav">
+                                <i class="platMainNav10"></i>
+                                <span>账户安全</span>
+                            </a>
+                        </li>
+                        <li class="platSubNavDetail">
+                            <a href="javascript:;" class="platSubNav">
+                                <i class="platMainNav11"></i>
+                                <span>开设账户</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="platMainNavDetail">
+                    <a href="javascript:;" class="platMainNav">
+                        <i class="platMainNav03"></i>
+                        <span>平台消息</span>
+                        <i class="rightArrow"></i>
+                    </a>
+                    <ul class="platSubNavList" style="display: none;">
+                        <li class="platSubNavDetail">
+                            <a href="javascript:;" class="platSubNav">
+                                <i class="platMainNav12"></i>
+                                <span>公告及活动</span>
+                            </a>
+                        </li>
+                        <li class="platSubNavDetail">
+                            <a href="javascript:;" class="platSubNav">
+                                <i class="platMainNav13"></i>
+                                <span>我的消息</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="userQuitBox">
+        <a href="javascript:;" class="userQuit">
+            <i class="quitIcon"></i>
+            <span>退出</span>
+        </a>
+    </div>
+</div>
+
+<!-- 确认投注页 -->
+<div class="generalPlatArea cfmBetsArea">
+    <div class="mainNav">
+        <a href="javascript:;" class="mainMenuBtn" id="mainMenuBtn">
+            <img src="images/mainMenuIcon.png" class="mainMenuIcon" />
+        </a>
+        <span class="headerTitle">重庆时时彩</span>
+        <a href="javascript:;" class="lotteryNumLink">
+            <span>开奖号码</span>
+        </a>
+    </div>
+    <div class="container">
+        <div class="cfmBetsBox">
+
+            <!-- 剩余投注时间倒计时-start -->
+            <div class="betsRemainTimeBox fontSizeRem08">
+                <p class="betsRemainTime">
+                    <span>第</span>
+                    <span class="fontColorTeal">20150702012</span>
+                    <span>期剩余投注时间：</span>
+                    <span class="fontColorTeal">0</span>
+                    <span>时</span>
+                    <span class="fontColorTeal">0</span>
+                    <span>分</span>
+                    <span class="fontColorTeal">0</span>
+                    <span>秒</span>
+                </p>
+            </div><!-- 剩余投注时间倒计时-end -->
+
+            <!-- 随机选号按钮-start -->
+            <div class="randomChangeBtnBox">
+                <a href="javascript:;" class="randomChangeBtn">
+                    <i></i>
+                    <span>机选1注</span>
+                </a>
+                <a href="javascript:;" class="randomChangeBtn">
+                    <i></i>
+                    <span>机选5注</span>
+                </a>
+                <a href="javascript:;" class="randomChangeBtn changeAgainBtn">
+                    <i class="changeAgainIcon"></i>
+                    <span>继续选号</span>
+                </a>
+            </div><!-- 随机选号按钮-end -->
+
+            <!-- 确认投注信息-start -->
+            <div class="betsNumShowBox">
+                <div class="betsNumShowList">
+                    <div class="betsNumInfo">
+                        <a href="javascript:;" class="clearCurrBetsNum"></a>
+                        <div class="betsNumDetail">
+                            <p class="betsNum overflowEllipsis">0123456789,2,-,-,-</p>
+                            <p class="betsNumIntro">
+                                <span>定位胆</span>
+                                <label>
+                                    <span class="fontColorRed">20</span>
+                                    <span>注X</span>
+                                    <span>0.2</span>
+                                    <span>元=</span>
+                                    <span class="fontColorRed">1200</span>
+                                    <span>元</span>
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="betsNumInfo">
+                        <a href="javascript:;" class="clearCurrBetsNum"></a>
+                        <div class="betsNumDetail">
+                            <p class="betsNum overflowEllipsis">0123456789,0123456789,0123456789,0123456789</p>
+                            <p class="betsNumIntro">
+                                <span>五星直选</span>
+                                <label>
+                                    <span class="fontColorRed">20</span>
+                                    <span>注X</span>
+                                    <span>0.2</span>
+                                    <span>元=</span>
+                                    <span class="fontColorRed">1200</span>
+                                    <span>元</span>
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="betsNumInfo">
+                        <a href="javascript:;" class="clearCurrBetsNum"></a>
+                        <div class="betsNumDetail">
+                            <p class="betsNum overflowEllipsis">0123456789,0123456789,0123456789,0123456789</p>
+                            <p class="betsNumIntro">
+                                <span>五星直选</span>
+                                <label>
+                                    <span class="fontColorRed">20</span>
+                                    <span>注X</span>
+                                    <span>0.2</span>
+                                    <span>元=</span>
+                                    <span class="fontColorRed">1200</span>
+                                    <span>元</span>
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="betsNumInfo">
+                        <a href="javascript:;" class="clearCurrBetsNum"></a>
+                        <div class="betsNumDetail">
+                            <p class="betsNum overflowEllipsis">0123456789,0123456789,0123456789,0123456789</p>
+                            <p class="betsNumIntro">
+                                <span>五星直选</span>
+                                <label>
+                                    <span class="fontColorRed">20</span>
+                                    <span>注X</span>
+                                    <span>0.2</span>
+                                    <span>元=</span>
+                                    <span class="fontColorRed">1200</span>
+                                    <span>元</span>
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="betsNumInfo">
+                        <a href="javascript:;" class="clearCurrBetsNum"></a>
+                        <div class="betsNumDetail">
+                            <p class="betsNum overflowEllipsis">0123456789,0123456789,0123456789,0123456789</p>
+                            <p class="betsNumIntro">
+                                <span>五星直选</span>
+                                <label>
+                                    <span class="fontColorRed">20</span>
+                                    <span>注X</span>
+                                    <span>0.2</span>
+                                    <span>元=</span>
+                                    <span class="fontColorRed">1200</span>
+                                    <span>元</span>
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="betsNumInfo">
+                        <a href="javascript:;" class="clearCurrBetsNum"></a>
+                        <div class="betsNumDetail">
+                            <p class="betsNum overflowEllipsis">0123456789,0123456789,0123456789,0123456789</p>
+                            <p class="betsNumIntro">
+                                <span>五星直选</span>
+                                <label>
+                                    <span class="fontColorRed">20</span>
+                                    <span>注X</span>
+                                    <span>0.2</span>
+                                    <span>元=</span>
+                                    <span class="fontColorRed">1200</span>
+                                    <span>元</span>
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="betsNumShowClear">
+                    <a href="javascript:;" class="clearChangeList">
+                        <i class="ashBinBtn"></i>
+                        <span>清空列表</span>
+                    </a>
+                </div>
+                <i class="betsNumShowBorder"></i>
+            </div><!-- 确认投注信息-end -->
+
+        </div>
+
+        <!-- 确认投注-start -->
+        <div class="confirmBetsBox">
+            <div class="betsOtherInfo">
+                <label class="betsOtherDetail">
+                    <span>投</span>
+                    <input type="text" class="labelCond" value="5" />
+                    <span>期</span>
+                </label>
+                <label class="betsOtherDetail">
+                    <span>追</span>
+                    <input type="text" class="labelCond" value="5" />
+                    <span>期</span>
+                    <p class="awardsAfterDetail">
+                        <input type="checkbox" checked />
+                        <span>中奖后停止追号</span>
+                        <i class="awardsAfterIcon"></i>
+                    </p>
+                </label>
+            </div>
+            <div class="cfmBetsInfo">
+                <div class="cfmBetsInfoList fontSizeRem09">
+                    <p>
+                        <span>共</span>
+                        <span>400</span>
+                        <span>注，共</span>
+                        <span class="fontColorRed">800000</span>
+                        <span>元</span>
+                    </p>
+                    <p class="fontColorGray">
+                        <span>可用余额</span>
+                        <span class="fontBold">218</span>
+                        <span>元</span>
+                    </p>
+                </div>
+                <a href="javascript:;" class="confirmBetsBtn">确认投注</a>
+            </div>
+        </div><!-- 开始投注-end -->
+
+    </div>
+</div>
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/hs-mobile.js"></script>
+</body>
+</html>

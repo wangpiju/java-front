@@ -1,0 +1,228 @@
+@import "layerTip";
+
+html {
+  background-color: #f4f4f4;
+}
+
+.main {
+  position: relative;
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 170px;
+  overflow: hidden;
+  background: #efeeee url("../images/activity/activityHead.png") no-repeat;
+  h1 {
+    position: relative;
+    font-size: 28px;
+    margin-left: 160px;
+    height: 80px;
+    line-height: 80px;
+    font-family: "黑体";
+    .circle {
+      position: absolute;
+      top: 27px;
+      left: -54px;
+      display: block;
+      width: 28px;
+      height: 28px;
+      background-color: #e60012;
+      border-radius: 50%;
+      z-index: 2;
+    }
+  }
+  .line {
+    position: absolute;
+    left: 120px;
+    top: 50px;
+    display: block;
+    height: 100%;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #cfcfcf;
+  }
+}
+
+.activityList {
+  margin-left: 160px;
+  li {
+    position: relative;
+    padding: 6px;
+    margin-bottom: 35px;
+    width: 872px;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 4px 8px 1px rgba(0, 0, 0, .26);
+    box-shadow: 3px 4px 8px 1px rgba(0, 0, 0, .26);
+    .circle {
+      position: absolute;
+      top: 90px;
+      left: -55px;
+      display: block;
+      width: 32px;
+      height: 32px;
+      z-index: 2;
+      background: url("../images/activity/circle.jpg") no-repeat;
+    }
+    .arrow {
+      position: absolute;
+      left: -22px;
+      top: 96px;
+      display: block;
+      border: 11px solid;
+      border-color: transparent #fff transparent transparent;
+    }
+    .time {
+      position: absolute;
+      left: -150px;
+      top: 52px;
+      display: block;
+      width: 94px;
+      height: 43px;
+      line-height: 30px;
+      text-align: center;
+      color: #fff;
+      background: url("../images/activity/timeBg.png") no-repeat;
+    }
+    .banner {
+      width: 100%;
+      position: relative;
+      img {
+        width: 100%;
+        height: 200px;
+      }
+      a {
+        position: absolute;
+        right: 2px;
+        bottom: 15px;
+        display: block;
+        padding-left: 45px;
+        padding-right: 20px;
+        height: 34px;
+        line-height: 34px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #ec590b;
+        border-radius: 4px;
+        z-index: 2;
+        i {
+          position: absolute;
+          left: 14px;
+          top: 11px;
+          display: inline-block;
+          width: 18px;
+          height: 12px;
+          background: url(../images/activity/arrow.png) 0 -18px no-repeat;
+        }
+        &.active {
+          i {
+            background-position: 0 0;
+          }
+        }
+      }
+    }
+    .content {
+      padding: 0 20px;
+    }
+  }
+}
+
+.activityNoticeBtn {
+  text-align: center;
+  .btn {
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #bf5059;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);
+    background-image: -webkit-linear-gradient(top, #bf5059 0%, #7a3e43 100%);
+    background-image: linear-gradient(top, #bf5059 0%, #7a3e43 100%);
+    &:hover, &:active {
+      background-color: #f84150;
+      background-image: -webkit-linear-gradient(top, #f84150 0%, #942b34 100%);
+      background-image: linear-gradient(top, #f84150 0%, #942b34 100%);
+    }
+  }
+}
+
+//签到送
+.signBox {
+  margin-bottom: 40px;
+  h3 {
+    color: #E53333;
+    font-size: 16px;
+  }
+  .tableBox {
+    position: relative;
+    width: 460px;
+    height: 432px;
+    margin: 0 auto;
+    padding: 0 45px 0 80px;
+    background: url("../images/activity/signBg.png") no-repeat;
+    .tableTitle {
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+      height: 65px;
+      line-height: 56px;
+    }
+    table {
+      width: 100%;
+      tr {
+        height: 42px;
+        line-height: 42px;
+        border-bottom: 1px dashed #a6a5a5;
+        &.active {
+          .gold {
+            background-position: 0 -26px;
+          }
+        }
+      }
+      tbody tr:last-child {
+        border-bottom: none;
+      }
+      th {
+        font-weight: normal;
+        &:last-child {
+          padding-left: 20px;
+        }
+      }
+      .gold {
+        display: inline-block;
+        width: 29px;
+        height: 24px;
+        float: left;
+        position: relative;
+        top: 9px;
+        margin-right: 5px;
+        background: url("../images/activity/gold.png") 0 0 no-repeat;
+      }
+      .btn {
+        width: 110px;
+        height: 32px;
+        display: inline-block;
+        cursor: default;
+        background: url("../images/activity/btns.png") 0 0 no-repeat;
+        &.getRewarding {
+          position: relative;
+          background-position: 0 -78px;
+          cursor: pointer;
+          &:before {
+            content: "";
+            position: absolute;
+            right: -138px;
+            top: -14px;
+            display: block;
+            width: 128px;
+            height: 42px;
+            background: url("../images/activity/tip.png") no-repeat;
+          }
+        }
+        &.getRewarded {
+          background-position: 0 -39px;
+        }
+      }
+    }
+  }
+}

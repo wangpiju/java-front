@@ -1,0 +1,79 @@
+body {
+    min-width: 1000px;
+    height: 100%;
+}
+
+.appDownload {
+    width: 100%;
+    min-width: 1000px;
+    min-height: 655px;
+    background-image: url("../images/appbg.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    overflow: hidden;
+    position: relative;
+}
+
+.appDownload .appBox {
+    width: 1000px;
+    height: 655px;
+    min-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.appDownload .appBox p {
+    font-size: 34px;
+    font-weight: 700;
+    height: 40px;
+    line-height: 40px;
+    color: #FD5757;
+    user-select: text;
+    position: absolute;
+    top: 246px;
+    left: 22px;
+    z-index: 10;
+}
+
+.appBox .imgBox {
+    background: #FFFFFF;
+    padding: 7px;
+    position: absolute;
+    top: 363px;
+    left: 17px;
+}
+.appBox .imgBoxa {
+    background: #FFFFFF;
+    padding: 7px;
+    position: absolute;
+    top: 363px;
+    left: 208px;
+}
+
+.appBox img {
+    width: 106px;
+    height: 106px;
+    user-select: none;
+    z-index: 6;
+}
+
+.appDownloadTitle{
+    width: 100%;
+    position: absolute;
+    top: 500px;
+    font-size: 24px;
+    color: #FFF;
+}
+.appDownloadTitle span:nth-child(1){
+    margin-left: 30px;
+}
+.appDownloadTitle span:nth-child(2){
+    margin-left: 128px;
+}

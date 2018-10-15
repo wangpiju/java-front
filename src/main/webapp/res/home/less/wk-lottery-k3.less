@@ -1,0 +1,265 @@
+//--------------安徽快三
+body {
+  background-image: url(../images/lott-k3/k3-bg.jpg);
+}
+
+//主页面-头部
+.lotteryHeader .mainWidth {
+  background: url(../images/lott-k3/lottNumBg-k3.jpg) #440700 right no-repeat;
+  background-size: contain;
+  color: #fff;
+  border-color: #393e6b;
+}
+
+.lotteryLogo .betsType {
+  margin-top: 45px;
+}
+
+.countDownBox, .lotteryNumArea {
+  padding-top: 10px;
+  .fontColorTheme {
+    color: #fff;
+  }
+}
+
+.countDownBox {
+  &:before, &:after {
+    background: rgba(181, 181, 181, .3);
+    box-shadow: 1px 0 rgba(255, 255, 255, .15);
+  }
+}
+
+.countDown {
+  margin-top: 20px;
+  label {
+    background: url(../images/lott-k3/countDown-k3.png);
+    a {
+      color: #b8feff;
+      background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#ff89a8));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .tips {
+    color: #ffd3cf;
+  }
+}
+
+.lotteryNumBox {
+  width: 445px;
+  background: rgba(72, 17, 9, .8);
+  padding: 0;
+  border-radius: 50px;
+  margin: 20px auto 0;
+}
+
+.lotteryNum [class^='bigNum'] {
+  background: url(../images/lott-k3/bigNum-k3.png) center no-repeat;
+  color: #800c00;
+}
+
+//选号导航
+.lotteryContent .lottRight {
+  width: 255px;
+  margin-left: 5px;
+}
+
+.lottNav {
+  background: url(../images/lott-k3/lottNav-k3.png) #450700 center no-repeat;
+  .lottNavDetail {
+    a {
+      color: #fff;
+      &:hover {
+        color: #fe4343;
+      }
+    }
+    &.active a {
+      color: #fe4343;
+    }
+  }
+}
+
+//选号
+.changeNumList.k3 {
+  display: table;
+  width: 100%;
+  padding: 20px 0;
+  .changeNumCell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .changeNumDetail {
+    margin-top: 0;
+  }
+  .changeNum {
+    float: none;
+  }
+  li.last {
+    text-align: center;
+    font-size: 0;
+    margin-top: 15px;
+    .smallNumBtn {
+      display: inline-block;
+    }
+  }
+  .last .smallNumBtn, .numList .smallNum {
+    width: auto;
+    height: 34px;
+    line-height: 34px;
+    color: #837485;
+    background: none;
+    padding: 4px;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    span {
+      float: left;
+      width: 34px;
+      height: 34px;
+      background: url(../images/lott-k3/k3-3.png) center no-repeat;
+      background-size: 100%;
+      margin-left: 2px;
+      position: relative;
+    }
+  }
+  .single {
+    .numList > li {
+      margin-left: 3px;
+    }
+    .smallNum {
+      width: 71px;
+      height: 71px;
+      line-height: 71px;
+      font-size: 36px;
+      color: #837485;
+      padding: 8px;
+      span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        background: url(../images/lott-k3/k3-1.png) center no-repeat;
+        background-size: 100%;
+        &.k3-1:after {
+          background: url(../images/lott-k3/k3numB-1.png) center no-repeat;
+        }
+        &.k3-2:after {
+          background: url(../images/lott-k3/k3numB-2.png) center no-repeat;
+        }
+        &.k3-3:after {
+          background: url(../images/lott-k3/k3numB-3.png) center no-repeat;
+        }
+        &.k3-4:after {
+          background: url(../images/lott-k3/k3numB-4.png) center no-repeat;
+        }
+        &.k3-5:after {
+          background: url(../images/lott-k3/k3numB-5.png) center no-repeat;
+        }
+        &.k3-6:after {
+          background: url(../images/lott-k3/k3numB-6.png) center no-repeat;
+        }
+      }
+    }
+  }
+  .and {
+    &:extend(.changeNumList.k3 .single .numList > li);
+    .smallNum {
+      width: 67px;
+      height: 67px;
+      line-height: 67px;
+      font-size: 36px;
+      color: #555;
+      background: url(../images/lott-k3/k3-2.png) center no-repeat;
+      padding: 8px;
+      span {
+        &:extend(.changeNumList.k3 .single .smallNum span);
+      }
+    }
+  }
+  .numList {
+    margin-left: 0;
+    a:hover {
+      border-radius: 10px;
+      background-color: #dcdcdc;
+    }
+    a.active {
+      border-radius: 10px;
+      background-color: #b5b5b5;
+    }
+  }
+  .smallNum span, .smallNumBtn span {
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &.k3-1:after, &.k3-1:after {
+      background: url(../images/lott-k3/k3num-1.png) center no-repeat;
+    }
+    &.k3-2:after, &.k3-2:after {
+      background: url(../images/lott-k3/k3num-2.png) center no-repeat;
+    }
+    &.k3-3:after, &.k3-3:after {
+      background: url(../images/lott-k3/k3num-3.png) center no-repeat;
+    }
+    &.k3-4:after, &.k3-4:after {
+      background: url(../images/lott-k3/k3num-4.png) center no-repeat;
+    }
+    &.k3-5:after, &.k3-5:after {
+      background: url(../images/lott-k3/k3num-5.png) center no-repeat;
+    }
+    &.k3-6:after, &.k3-6:after {
+      background: url(../images/lott-k3/k3num-6.png) center no-repeat;
+    }
+  }
+}
+
+.beforeLottNum.k3 {
+  line-height: 10px;
+  span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/lott-k3/k3-3.png) center no-repeat;
+    background-size: 100%;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &.k3-1:after {
+      background: url(../images/lott-k3/k3num-1.png) center no-repeat;
+      background-size: 100%;
+    }
+    &.k3-2:after {
+      background: url(../images/lott-k3/k3num-2.png) center no-repeat;
+      background-size: 100%;
+    }
+    &.k3-3:after {
+      background: url(../images/lott-k3/k3num-3.png) center no-repeat;
+      background-size: 100%;
+    }
+    &.k3-4:after {
+      background: url(../images/lott-k3/k3num-4.png) center no-repeat;
+      background-size: 100%;
+    }
+    &.k3-5:after {
+      background: url(../images/lott-k3/k3num-5.png) center no-repeat;
+      background-size: 100%;
+    }
+    &.k3-6:after {
+      background: url(../images/lott-k3/k3num-6.png) center no-repeat;
+      background-size: 100%;
+    }
+  }
+}

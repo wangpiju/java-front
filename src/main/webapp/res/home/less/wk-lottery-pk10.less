@@ -1,0 +1,671 @@
+//北京赛车
+.fontColorTheme {
+  color: #e45f0f;
+}
+
+.inputSelectDiv .labelCond {
+  background: #73828e;
+  color: #fff;
+}
+
+.lotteryHeader {
+  margin-top: 50px;
+  .mainWidth {
+    width: 1100px;
+    height: 100px;
+    border: none;
+    border-radius: 0;
+    background: url(../images/lott-pk10/lotteryHeader-bg.jpg) center no-repeat;
+    color: #fff;
+    overflow: visible;
+  }
+  //玩法介绍
+  .explainExample {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -13px;
+    a {
+      display: block;
+      line-height: 24px;
+      text-align: left;
+      i {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background: url(../images/lott-pk10/pk10Img.png);
+        vertical-align: middle;
+        &.explainLogo {
+          background-position: -202px -124px;
+        }
+        &.trendLogo {
+          background-position: -225px -124px;
+        }
+      }
+      span {
+        color: #ffff0f;
+      }
+    }
+    .tips {
+      width: 300px;
+      bottom: 50px;
+    }
+  }
+}
+
+//logo
+.lotteryLogo {
+  width: 146px;
+  .betsType {
+    width: 100%;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+//倒计时
+.countDownBox, .lotteryNumArea {
+  .fontColorTheme {
+    color: #fff;
+  }
+}
+
+.countDownBox {
+  width: 353px;
+  padding: 26px 0;
+  background: url(../images/lott-pk10/countDown-bg.png) center no-repeat;
+  &:before, &:after {
+    content: normal;
+  }
+}
+
+.countDown {
+  margin-top: 0;
+  label {
+    display: inline;
+    background: none;
+    a {
+      color: #ffe40e;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: normal;
+      margin-left: 0;
+    }
+    .tips {
+      top: -2px;
+      right: -8px;
+      color: #ffe40e;
+    }
+  }
+}
+
+//开奖号码
+.lotteryNumArea {
+  width: 420px;
+  padding: 17px 0;
+  font-size: 16px;
+  p {
+    line-height: normal;
+  }
+}
+
+.lotteryNumBox {
+  height: 38px;
+  background: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.lotteryNum.pk10 {
+  .lottNumDetail {
+    margin-left: 5px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  [class^=bigNum] {
+    width: 32px;
+    height: 31px;
+    background-image: url(../images/lott-pk10/pk10Img.png);
+    &:after {
+      content: normal;
+    }
+  }
+  .bigNum01 {
+    background-position: -5px -5px;
+  }
+  .bigNum02 {
+    background-position: -42px -5px;
+  }
+  .bigNum03 {
+    background-position: -79px -5px;
+  }
+  .bigNum04 {
+    background-position: -116px -5px;
+  }
+  .bigNum05 {
+    background-position: -152px -5px;
+  }
+  .bigNum06 {
+    background-position: -188px -5px;
+  }
+  .bigNum07 {
+    background-position: -224px -5px;
+  }
+  .bigNum08 {
+    background-position: -260px -5px;
+  }
+  .bigNum09 {
+    background-position: -297px -5px;
+  }
+  .bigNum10 {
+    background-position: -334px -5px;
+  }
+}
+
+//彩种导航
+.lotteryContent {
+  margin-top: 0;
+  .lottChangeNumArea {
+    overflow: visible;
+  }
+  .lottLeft {
+    width: 875px;
+    background: rgba(45, 33, 32, .95);
+    padding-bottom: 35px;
+  }
+  .lottRight {
+    width: 225px;
+    background: rgba(39, 30, 26, .9);
+  }
+}
+
+.lottNav {
+  padding: 17px 0;
+  background: url(../images/lott-pk10/lottNav-pk10.jpg) center no-repeat;
+  .lottNavDetail {
+    width: 80px;
+    padding: 0 5px;
+    margin-left: 21px;
+    position: relative;
+    &:first-child {
+      margin-left: 0;
+      &:before {
+        content: normal;
+      }
+    }
+    &:before {
+      content: '';
+      width: 21px;
+      height: 28px;
+      position: absolute;
+      top: 50%;
+      left: -21px;
+      margin-top: -14px;
+      background: url(../images/lott-pk10/pk10Img.png);
+      background-position: -296px -45px;
+    }
+    a {
+      width: 80px;
+      height: 28px;
+      line-height: 28px;
+      font-size: 16px;
+      color: #fff;
+      &:hover {
+        background: url(../images/lott-pk10/pk10Img.png);
+        background-position: -296px -78px;
+        color: #e34b21;
+      }
+    }
+    &.active a {
+      color: #e34b21;
+      background: url(../images/lott-pk10/pk10Img.png);
+      background-position: -296px -78px;
+      &:after {
+        content: normal;
+      }
+    }
+  }
+}
+
+//玩法
+.lottTypeTitle {
+  color: #fff;
+  font-size: 14px;
+}
+
+.lottType {
+  .lottTypeDetail {
+    a {
+      color: #fff;
+      border-color: #fff;
+      &:hover {
+        color: #fff;
+        background: #757575;
+      }
+    }
+    &.active a {
+      background: #e45f0f;
+    }
+  }
+}
+
+/* 选号 */
+.lottChangeNumBox {
+  padding: 0 25px 0 90px;
+}
+
+//玩法说明
+.explainExample {
+  a {
+    i {
+      background: url(../images/lott-pk10/pk10Img.png);
+      &.explainLogo {
+        background-position: -346px -45px;
+      }
+      &.exampleLogo {
+        width: 18px;
+        background-position: -322px -45px;
+      }
+    }
+    span {
+      color: #c9c9c9;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .tips {
+    color: #555;
+    background: rgba(255, 255, 255, .7);
+    border-color: #cecece;
+  }
+  .singleMaxBonus {
+    color: #c9c9c9;
+  }
+}
+
+.changeNumList {
+  color: #fff;
+  font-size: 14px;
+  min-height: 320px;
+  .changeNum {
+    .detailTitle {
+      position: absolute;
+      line-height: 36px;
+      left: -100px;
+      bottom: 0;
+      width: 80px;
+      height: 36px;
+      background: url(../images/lott-pk10/pk10Img.png);
+      background-position: -202px -45px;
+      text-align: center;
+      padding-right: 9px;
+      #pk10_side_gy_and&, #pk10_star2_and& {
+        display: none;
+      }
+    }
+    #pk10_side_lh& .smallNum,
+    #pk10_side_ds& .smallNum,
+    #pk10_side_gy_and& .smallNum,
+    #pk10_star2_and& .smallNum {
+      margin-top: 18px;
+    }
+  }
+}
+
+.changeNumDetail {
+  overflow: visible;
+  position: relative;
+  #pk10_side_ds &:nth-child(2) {
+    margin-top: 0;
+  }
+}
+
+//号码列表
+.numList {
+  margin-left: 0;
+  & > li {
+    &:first-child {
+      margin-left: 5px;
+    }
+  }
+  /* 选号区域 - 小球 */
+  a[class^='smallNum'] {
+    width: 47px;
+    height: 14px;
+    line-height: 14px;
+    background: url(../images/lott-pk10/pk10Img.png);
+    background-position: -202px -86px;
+    color: #adadad;
+    margin-top: 16px;
+    position: relative;
+    &:before {
+      position: absolute;
+      top: -16px;
+      left: 18px;
+    }
+    &:hover, &.active {
+      background-position: -202px -105px;
+      color: #e45f0f;
+    }
+  }
+}
+
+.btnList > li {
+  margin-left: 5px;
+  &:first-child {
+    margin-left: 0;
+  }
+  .numBtn {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 50%;
+    background: #7b7b7b;
+    color: #fff;
+    &.active, &:hover {
+      width: 26px;
+      height: 26px;
+      line-height: 26px;
+      border: none;
+      background: #e45f0f;
+      color: #fff;
+    }
+  }
+}
+
+//单式
+.changeNumSingle {
+  a.btn {
+    background: #607082;
+  }
+  .singleNum {
+    color: #fff;
+  }
+  .singleMsg {
+    color: #ababab;
+  }
+}
+
+//投注确认区域
+.confirmBetsBox {
+  color: #fff;
+  .betsInfoTips {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+}
+
+.betsInfo {
+  float: none;
+  display: block;
+  & > *:first-child {
+    margin-left: 0;
+  }
+  .amountTypeDetail a {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    background: #dadada;
+    color: #666;
+    font-size: 14px;
+    margin-left: 5px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &.active, &:hover {
+      background: #e45f0f;
+      color: #fff;
+    }
+  }
+  .betsInfoTypeList {
+    select.labelCond {
+      background-image: url(../images/lott-pk10/selectIcon.png);
+      background-position: 95%;
+      &.betsInfoType {
+        width: 180px;
+        height: 28px;
+        color: #fff;
+        background-color: #73828e;
+      }
+    }
+  }
+  .changeMultDetail {
+    .inputSelectDiv .labelCond {
+      height: 18px;
+      border-radius: 15px;
+    }
+    .reduceMult, .addMult {
+      width: 24px;
+      height: 24px;
+      top: 1px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+    }
+    .reduceMult {
+      left: 1px;
+      background-position: -152px -126px;
+    }
+    .addMult {
+      right: 1px;
+      background-position: -176px -126px;
+    }
+  }
+}
+
+//立即投注按钮
+.betsBtn {
+  .betsBtnLabel {
+    display: inline-block;
+    vertical-align: middle;
+    .btn {
+      display: block;
+      background: #607082;
+      &.clearNumBtn {
+        margin-top: 5px;
+        background: #8999ab;
+        i {
+          width: 20px;
+          height: 22px;
+          background: url(../images/lott-pk10/pk10Img.png);
+          background-position: -236px -148px;
+        }
+      }
+    }
+  }
+  .btn.confirmBets {
+    height: 65px;
+    background: #e45f0f;
+    margin-left: 3px;
+    i {
+      display: block;
+      width: 29px;
+      height: 28px;
+      background: url(../images/lott-pk10/pk10Img.png);
+      background-position: -202px -148px;
+      margin: 5px auto 0;
+    }
+  }
+}
+
+//当前期开奖排行
+.lottRight .accountAndLottery {
+  box-shadow: inset 0 5px 15px rgba(0, 0, 0, .5);
+  .beforeLottNumBox {
+    background: url(../images/lott-pk10/currLottNum-bg.png) top repeat-y;
+    .beforeLottNumDetail {
+      line-height: 50px;
+      background: none;
+      color: #fff;
+      td:first-child {
+        min-width: 43px;
+      }
+      [class^=currLottNum] {
+        display: block;
+        width: 94px;
+        height: 24px;
+        background: url(../images/lott-pk10/pk10Img.png);
+        margin: 0 auto;
+      }
+      .currLottNum01 {
+        background-position: -5px -45px;
+      }
+      .currLottNum02 {
+        background-position: -5px -74px;
+      }
+      .currLottNum03 {
+        background-position: -5px -103px;
+      }
+      .currLottNum04 {
+        background-position: -5px -132px;
+      }
+      .currLottNum05 {
+        background-position: -5px -161px;
+      }
+      .currLottNum06 {
+        background-position: -104px -45px;
+      }
+      .currLottNum07 {
+        background-position: -104px -74px;
+      }
+      .currLottNum08 {
+        background-position: -104px -103px;
+      }
+      .currLottNum09 {
+        background-position: -104px -132px;
+      }
+      .currLottNum10 {
+        background-position: -104px -161px;
+      }
+    }
+  }
+}
+
+//追号区域
+.appNumLottListArea {
+  padding: 0 15px;
+  background: #473839;
+  .appNumArea {
+    float: left;
+    width: 630px;
+    margin-top: 0;
+    padding: 0;
+    color: #fff;
+    .appNumBox {
+      height: 176px;
+      padding: 15px;
+      border: 1px solid #5f4d4a;
+      border-radius: 8px;
+      box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .3);
+      box-sizing: border-box;
+    }
+  }
+  .userLotteryListArea {
+    float: left;
+    width: 430px;
+    margin-left: 10px;
+    margin-top: 8px;
+  }
+}
+
+.appNumList {
+  td {
+    line-height: 24px;
+  }
+  .appNumHeader {
+    background: none;
+    color: #fff;
+    font-size: 12px;
+    line-height: 24px;
+    .appNumClear {
+      color: #fff;
+    }
+  }
+  .appNumDetail {
+    color: #ababab;
+    &:nth-child(odd) {
+      background: #333d47;
+    }
+    &:nth-child(even) {
+      background: none;
+    }
+    .appNumDetailClear {
+      background: url(../images/lott-pk10/pk10Img.png);
+      background-position: -256px -86px;
+    }
+    .appNumDetailClear:hover {
+      background-position: -272px -86px;
+    }
+  }
+}
+
+//追号按钮
+.confirmAppNumBox {
+  .betsBtn {
+    color: #e4e3e3;
+    .btn {
+      line-height: 30px;
+      &.appendNumBtn {
+        background: #607082;
+      }
+      &.confirmBets {
+        height: 30px;
+      }
+    }
+  }
+}
+
+//开奖列表、最近投注、最近追号等
+.beforeLottNumHeader {
+  height: 30px;
+  width: 420px;
+  line-height: 30px;
+  margin-left: 10px;
+  padding: 0;
+  text-align: center;
+  border-bottom: 1px solid #1f2730;
+  .lottInfoNavDetail {
+    float: left;
+    width: 90px;
+    color: #999;
+    background: url(../images/lott-pk10/pk10Img.png);
+    background-position: -296px -111px;
+    margin-left: -10px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &.active {
+      color: #1f2730;
+      background-position: -296px -146px;
+    }
+  }
+}
+
+.beforeLottNumContent {
+  margin-top: 4px;
+  padding: 0 15px 15px;
+  background: rgba(29, 18, 19, .3);
+  border-radius: 8px;
+  .listHeader {
+    color: #fff;
+    th {
+      font-weight: normal;
+    }
+  }
+}
+
+.beforeLottNumDetail {
+  line-height: 24px;
+  color: #ababab;
+  &:nth-child(odd) {
+    background: #2c211f;
+  }
+  #betTable &, #traceTable & {
+    &:hover {
+      background: #614a44;
+    }
+  }
+}

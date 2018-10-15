@@ -1,0 +1,163 @@
+//个人中心，帮助中心左侧导航，背景等。
+body {
+  background: url("../images/bg.jpg") repeat;
+}
+
+.areaBigContainer {
+  background-color: rgba(255, 255, 255, 0.8);
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#ccffffff, endColorstr=#ccffffff);
+  margin: 40px auto 170px;
+}
+
+.containerFlex {
+  display: inline-flex;
+  min-height: 700px;
+  overflow: hidden;
+}
+
+.commonIcon {
+  position: absolute;
+  display: block;
+  left: 15px;
+  top: 11px;
+}
+
+.redBtn {
+  width: 135px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #bf5059;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);
+  background-image: -webkit-linear-gradient(top, #bf5059 0%, #7a3e43 100%);
+  background-image: linear-gradient(top, #bf5059 0%, #7a3e43 100%);
+  &:hover, &:active {
+    background-color: #f84150;
+    background-image: -webkit-linear-gradient(top, #f84150 0%, #942b34 100%);
+    background-image: linear-gradient(top, #f84150 0%, #942b34 100%);
+  }
+}
+
+.blueBtn {
+  width: 135px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 15px;
+  background-color: #5999ab;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);
+  background-image: -webkit-linear-gradient(top, #5999ab 0%, #43656f 100%);
+  background-image: linear-gradient(top, #5999ab 0%, #43656f 100%);
+  &:hover, &:active {
+    background-color: #5bb8d4;
+    background-image: -webkit-linear-gradient(top, #5bb8d4 0%, #447685 100%);
+    background-image: linear-gradient(top, #5bb8d4 0%, #447685 100%);
+  }
+}
+
+.yellowBtn {
+  width: 135px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 15px;
+  background-color: #ec8939;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);
+  background-image: -webkit-linear-gradient(top, #ec8939 0%, #915d32 100%);
+  background-image: linear-gradient(top, #ec8939 0%, #915d32 100%);
+  &:hover, &:active {
+    background-color: #ffb163;
+    background-image: -webkit-linear-gradient(top, #ffb163 0%, #9a632e 100%);
+    background-image: linear-gradient(top, #ffb163 0%, #9a632e 100%);
+  }
+}
+
+//主区域左侧导航
+.leftListArea {
+  float: left;
+  width: 180px;
+  background-color: #34313a;
+  color: #ab9595;
+  padding: 5px 0;
+  min-height: 690px;
+  .leftListDetail {
+    .leftListBigItem {
+      display: block;
+      position: relative;
+      color: #ab9595;
+      height: 38px;
+      line-height: 38px;
+      padding-left: 47px;
+      border-bottom: 1px solid #47444e;
+      cursor: pointer;
+      &:hover, &.active {
+        background-color: #232029;
+        color: #d90013;
+        &:before {
+          content: "";
+          display: block;
+          width: 4px;
+          height: 100%;
+          background-color: #d90013;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+    .leftListItem {
+      font-size: 12px;
+      background-color: #2b2931;
+      a {
+        display: block;
+        padding-left: 47px;
+        height: 26px;
+        line-height: 26px;
+        color: #ab9595;
+        &:hover, &.active {
+          color: #d90013;
+        }
+      }
+    }
+  }
+}
+
+//主区域右侧
+.rightArea {
+  float: left;
+  width: 820px;
+  min-height: 660px;
+  padding: 20px 0;
+}
+
+//阴影
+.shadow {
+  position: absolute;
+  bottom: -200px;
+  left: 0;
+  display: block;
+  width: 1000px;
+  height: 200px;
+  background: url("../images/shadow.png") no-repeat;
+}
+
+.shadow2 {
+  position: absolute;
+  bottom: -25px;
+  left: -392px;
+  display: block;
+  width: 393px;
+  height: 289px;
+  background: url("../images/shadow2.png") no-repeat;
+}
+
+.shadow3 {
+  position: absolute;
+  bottom: -22px;
+  right: -283px;
+  display: block;
+  width: 283px;
+  height: 466px;
+  background: url("../images/shadow3.png") no-repeat;
+}

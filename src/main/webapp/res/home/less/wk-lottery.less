@@ -1,0 +1,2115 @@
+@import "centerCommon";
+@import "layerTip";
+
+.textUnderline:hover {
+  text-decoration: underline;
+}
+
+textarea {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  resize: none;
+  padding: 10px;
+  font-family: microsoft yahei, sans-serif;
+}
+
+/* label样式 包括input select */
+.labelTitle {
+  width: 120px;
+  display: inline-block;
+  text-align: right;
+  strong {
+    margin-right: 5px;
+    vertical-align: middle;
+    font-size: 20px;
+  }
+}
+
+.labelCond {
+  width: 168px;
+  height: 18px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  padding: 5px;
+  outline: none;
+  font-family: microsoft yahei, sans-serif;
+  &[readonly] {
+    background: #eee;
+    cursor: no-drop;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  select& {
+    width: 180px;
+    height: 30px;
+    font-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(../images/lottery/selectIcon.png) no-repeat right;
+    border: none;
+    &::-ms-expand {
+      display: none;
+    }
+    option {
+      font-size: 12px;
+    }
+  }
+  /*隐藏IE的默认下拉框样式*/
+  .Wdate {
+    width: 100px;
+    border: 1px solid #d9d9d9;
+    background: url(../images/calendar.png) #fff no-repeat 95%;
+  }
+}
+
+/* 主页面 */
+.lotteryHeader {
+  margin-top: 16px;
+  .mainWidth {
+    width: 1098px;
+    height: 155px;
+    border: 1px solid;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
+
+/* 彩种信息 */
+.lotteryLogo, .lotteryNumArea, .countDownBox {
+  float: left;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.lotteryLogo {
+  width: 180px;
+  height: 100%;
+  & > * {
+    display: block;
+    margin: 0 auto;
+  }
+  .betsType {
+    margin-top: 28px;
+    &.logo3d, &.logopl3 {
+      margin-top: 55px;
+    }
+    &.logogd11x5, &.logosd11x5, &.logojx11x5,
+    &.logof1_11x5, &.logof3_11x5, &.logof5_11x5 {
+      margin-top: 40px;
+    }
+  }
+}
+
+/* 倒计时 */
+.countDownBox {
+  width: 360px;
+  padding-top: 15px;
+  text-align: center;
+  &:before, &:after {
+    content: '';
+    height: 68px;
+    width: 1px;
+    position: absolute;
+    top: 50%;
+    margin-top: -34px;
+    background: rgba(190, 71, 81, .3);
+    box-shadow: 1px 0 rgba(255, 255, 255, .5);
+  }
+  &:before {
+    left: 0;
+  }
+  &:after {
+    right: 0;
+  }
+}
+
+.countDown {
+  margin-top: 8px;
+  overflow: hidden;
+  label {
+    display: inline-block;
+    width: 89px;
+    height: 66px;
+    text-align: center;
+    position: relative;
+    a {
+      font-size: 36px;
+      line-height: 66px;
+      cursor: default;
+      letter-spacing: 27px;
+      margin-left: 12px;
+    }
+  }
+  .minute, .second {
+    margin-left: 15px;
+  }
+  .tips {
+    position: absolute;
+    top: 0;
+    right: -16px;
+    font-size: 12px;
+    color: #be0d34;
+  }
+}
+
+.currLottNumBox {
+  margin-top: 12px;
+  .currLottNum {
+    background: rgb(215, 196, 215);
+    border-radius: 3px;
+    padding: 5px 3px;
+    .openCount {
+      font-weight: bold;
+      &#openCount {
+        color: #00b050;
+      }
+      &#remainCount {
+        color: #f00;
+      }
+    }
+  }
+  .audioCountBox {
+    margin-left: 5px;
+    .audioCount {
+      display: inline-block;
+      width: 50px;
+      height: 26px;
+      background: url(../images/lottery/audioOn.png) center no-repeat;
+      vertical-align: middle;
+      background-size: 100%;
+      &.off {
+        background-image: url(../images/lottery/audioOff.png);
+      }
+    }
+  }
+}
+
+/* 开奖区域 */
+.lotteryNumArea {
+  width: 558px;
+  padding-top: 15px;
+  text-align: center;
+  p {
+    line-height: 25px;
+    .lottTypeInfo {
+      margin: 0 15px;
+    }
+  }
+  .lotteryTrend {
+    position: absolute;
+    top: 0;
+    right: 0;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.lotteryNumBox {
+  height: 67px;
+  margin: 0 25px;
+  padding: 8px 50px 9px;
+  .lotteryNumList {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.lotteryNum {
+  text-align: center;
+  font-size: 0;
+  .lottNumDetail {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  &.pk10 .lottNumDetail {
+    margin-left: 4px;
+  }
+  [class^='bigNum'] {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 32px;
+    font-family: "Arial";
+    text-align: center;
+    margin: 3px 0 4px; /*开奖号码动画*/
+  }
+}
+
+.bigNum0:after {
+  content: '0';
+}
+
+.bigNum1:after {
+  content: '1';
+}
+
+.bigNum2:after {
+  content: '2';
+}
+
+.bigNum3:after {
+  content: '3';
+}
+
+.bigNum4:after {
+  content: '4';
+}
+
+.bigNum5:after {
+  content: '5';
+}
+
+.bigNum6:after {
+  content: '6';
+}
+
+.bigNum7:after {
+  content: '7';
+}
+
+.bigNum8:after {
+  content: '8';
+}
+
+.bigNum9:after {
+  content: '9';
+}
+
+.bigNum10:after {
+  content: '10';
+}
+
+.bigNum11:after {
+  content: '11';
+}
+
+.bigNum01:after {
+  content: '01';
+}
+
+.bigNum02:after {
+  content: '02';
+}
+
+.bigNum03:after {
+  content: '03';
+}
+
+.bigNum04:after {
+  content: '04';
+}
+
+.bigNum05:after {
+  content: '05';
+}
+
+.bigNum06:after {
+  content: '06';
+}
+
+.bigNum07:after {
+  content: '07';
+}
+
+.bigNum08:after {
+  content: '08';
+}
+
+.bigNum09:after {
+  content: '09';
+}
+
+/* 彩种区域 */
+.lotteryContent {
+  margin-top: 10px;
+  /* 彩种玩法 选号区域 */
+  .lottChangeNumArea {
+    display: inline-flex;
+    width: 100%;
+    font-size: 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .lottLeft {
+    float: left;
+    width: 840px;
+    background: rgba(255, 255, 255, .8);
+  }
+  .lottRight {
+    display: inline-flex;
+    float: right;
+    width: 260px;
+  }
+}
+
+.lottNav {
+  width: 100%;
+  font-size: 0;
+  .lottNavDetail {
+    display: inline-block;
+    font-size: 14px;
+    a {
+      display: inline-block;
+      width: 70px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+    }
+  }
+  .active a {
+    position: relative;
+    &:after {
+      content: "";
+      width: 100%;
+      height: 4px;
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+    }
+  }
+}
+
+/* 彩种类型 玩法 */
+.lottTypeBox {
+  padding: 8px 26px 12px;
+}
+
+.lottTypeList {
+  margin-top: 8px;
+  .lottTypeTitle {
+    display: inline-block;
+    min-width: 55px;
+  }
+}
+
+.lottType {
+  display: inline-block;
+  .lottTypeDetail {
+    display: inline-block;
+    margin-left: 6px;
+    a {
+      display: inline-block;
+      min-width: 68px;
+      height: 24px;
+      line-height: 24px;
+      border: 1px solid;
+      border-radius: 5px;
+      padding: 0 5px;
+      text-align: center;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+/* 选号 */
+.lottChangeNumBox {
+  padding: 0 30px 0 50px;
+}
+
+.explainExample {
+  position: relative;
+  text-align: right;
+  a {
+    i {
+      background: url(../images/lottery/indexImg.png);
+      &.explainLogo {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        vertical-align: middle;
+      }
+      &.exampleLogo {
+        display: inline-block;
+        width: 13px;
+        height: 15px;
+        vertical-align: middle;
+      }
+    }
+    span {
+      font-size: 12px;
+      vertical-align: middle;
+    }
+    &:hover + .tips {
+      display: block;
+    }
+  }
+  .tips {
+    display: none;
+    line-height: 18px;
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: 1px solid;
+    font-size: 12px;
+    border-radius: 3px;
+    z-index: 2;
+    text-align: left;
+  }
+  .changeNumExample {
+    margin-left: 15px;
+  }
+  .singleMaxBonus {
+    vertical-align: middle;
+    margin-left: 15px;
+  }
+}
+
+/* 选号列表 */
+.changeNumList {
+  min-height: 110px;
+  margin-top: 10px;
+  .changeNum {
+    float: left;
+    overflow: hidden;
+    .detailTitle {
+      display: inline;
+      float: left;
+      line-height: 40px;
+    }
+  }
+}
+
+.changeNumDetail {
+  margin-top: 20px;
+  overflow: hidden;
+  &:first-child {
+    margin-top: 0;
+  }
+  &.same {
+    display: inline-block;
+    .numList > li {
+      display: block;
+      float: none;
+      margin-top: 3px;
+      &:extend(.numList>li:first-child);
+    }
+  }
+  &.changeNumDouble {
+    display: inline-block;
+    width: 48%;
+  }
+}
+
+//号码列表
+.numList {
+  display: inline-block;
+  margin-left: 20px;
+  overflow: hidden;
+  & > li {
+    display: inline;
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  /* 选号区域 - 小球 */
+  a[class^='smallNum'] {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Arial";
+  }
+  .smallNum.smallNum-dd,
+  .smallNum.smallNum-xd,
+  .smallNum.smallNum-ds,
+  .smallNum.smallNum-xs {
+    width: 48px;
+  }
+}
+
+.smallNum0:before {
+  content: '0';
+}
+
+.smallNum1:before {
+  content: '1';
+}
+
+.smallNum2:before {
+  content: '2';
+}
+
+.smallNum3:before {
+  content: '3';
+}
+
+.smallNum4:before {
+  content: '4';
+}
+
+.smallNum5:before {
+  content: '5';
+}
+
+.smallNum6:before {
+  content: '6';
+}
+
+.smallNum7:before {
+  content: '7';
+}
+
+.smallNum8:before {
+  content: '8';
+}
+
+.smallNum9:before {
+  content: '9';
+}
+
+.smallNum10:before {
+  content: '10';
+}
+
+.smallNum11:before {
+  content: '11';
+}
+
+.smallNum12:before {
+  content: '12';
+}
+
+.smallNum13:before {
+  content: '13';
+}
+
+.smallNum14:before {
+  content: '14';
+}
+
+.smallNum15:before {
+  content: '15';
+}
+
+.smallNum16:before {
+  content: '16';
+}
+
+.smallNum17:before {
+  content: '17';
+}
+
+.smallNum18:before {
+  content: '18';
+}
+
+.smallNum19:before {
+  content: '19';
+}
+
+.smallNum20:before {
+  content: '20';
+}
+
+.smallNum21:before {
+  content: '21';
+}
+
+.smallNum22:before {
+  content: '22';
+}
+
+.smallNum23:before {
+  content: '23';
+}
+
+.smallNum24:before {
+  content: '24';
+}
+
+.smallNum25:before {
+  content: '25';
+}
+
+.smallNum26:before {
+  content: '26';
+}
+
+.smallNum27:before {
+  content: '27';
+}
+.smallNum28:before {
+  content: '28';
+}
+.smallNum29:before {
+  content: '29';
+}
+.smallNum30:before {
+  content: '30';
+}
+.smallNum牛1:before {
+  content: '牛1';
+}
+.smallNum牛2:before {
+  content: '牛2';
+}
+.smallNum牛3:before {
+  content: '牛3';
+}
+.smallNum牛4:before {
+  content: '牛4';
+}
+.smallNum牛5:before {
+  content: '牛5';
+}
+.smallNum牛6:before {
+  content: '牛6';
+}
+.smallNum牛7:before {
+  content: '牛7';
+}
+.smallNum牛8:before {
+  content: '牛8';
+}
+.smallNum牛9:before {
+  content: '牛9';
+}
+.smallNum牛牛:before {
+  content: '牛牛';
+}
+.smallNum无点:before {
+  content: '无点';
+}
+.smallNum5单0双:before {
+  content: '5单0双';
+}
+.smallNum4单1双:before {
+  content: '4单1双';
+}
+.smallNum3单2双:before {
+  content: '3单2双';
+}
+.smallNum2单3双:before {
+  content: '2单3双';
+}
+.smallNum1单4双:before {
+  content: '1单4双';
+}
+.smallNum0单5双:before {
+  content: '0单5双';
+}
+
+
+.smallNum-B:before {
+  content: '大';
+}
+
+.smallNum-S:before {
+  content: '小';
+}
+
+.smallNum-O:before {
+  content: '单';
+}
+
+.smallNum-E:before {
+  content: '双';
+}
+
+.smallNum-dd:before {
+  content: '大单';
+}
+
+.smallNum-xd:before {
+  content: '小单';
+}
+
+.smallNum-ds:before {
+  content: '大双';
+}
+
+.smallNum-xs:before {
+  content: '小双';
+}
+
+.smallNum-LONG:before {
+  content: '龙';
+}
+
+.smallNum-HU:before {
+  content: '虎';
+}
+
+.smallNum-HE:before {
+  content: '和';
+}
+
+.smallNum01:before {
+  content: '01';
+}
+
+.smallNum02:before {
+  content: '02';
+}
+
+.smallNum03:before {
+  content: '03';
+}
+
+.smallNum04:before {
+  content: '04';
+}
+
+.smallNum05:before {
+  content: '05';
+}
+
+.smallNum06:before {
+  content: '06';
+}
+
+.smallNum07:before {
+  content: '07';
+}
+
+.smallNum08:before {
+  content: '08';
+}
+
+.smallNum09:before {
+  content: '09';
+}
+
+// 选号右侧操作按钮
+.changeNumBtn {
+  float: right;
+  line-height: 40px;
+}
+
+.btnList > li {
+  display: inline-block;
+  .numBtn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    &.active, &:hover {
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+      border: 1px solid;
+      border-radius: 50%;
+    }
+  }
+}
+
+/* 单式投注 */
+.importBetList a.btn {
+  font-size: 12px;
+  line-height: 30px;
+  padding: 0 10px;
+}
+
+.singleNumBox {
+  position: relative;
+  .singleNum {
+    display: block;
+    width: 100%;
+    height: 160px;
+    border: 1px solid;
+    border-radius: 3px;
+    resize: none;
+    margin-top: 15px;
+    padding: 10px 30px;
+    outline: none;
+    font-size: 16px;
+    font-family: microsoft yahei, sans-serif;
+  }
+  .singleMsg {
+    line-height: 20px;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 40px;
+    padding-top: 20px;
+    cursor: text;
+  }
+}
+
+.singleBtns {
+  margin-top: 15px;
+  .btn {
+    font-size: 12px;
+    margin-left: 10px;
+    padding: 0 5px;
+    line-height: 25px;
+    &:first-child {
+      margin-left: 0;
+    }
+    .msg {
+      margin-left: 10px;
+      color: #f00;
+    }
+  }
+}
+
+/* 确认投注 */
+.confirmBetsBox {
+  padding: 0 20px;
+  margin-top: 15px;
+  overflow: hidden;
+  .betsBtn {
+    float: none;
+    text-align: right;
+    margin-top: 10px;
+    .btn {
+      margin-left: 20px;
+    }
+  }
+}
+
+.betsInfoBox {
+  float: left;
+}
+
+.betsInfo {
+  //float: left;
+  padding: 5px 0;
+  overflow: hidden;
+  & > * {
+    float: left;
+    line-height: 28px;
+    margin-left: 5px;
+  }
+  .betsInfoTips {
+    min-width: 180px;
+    margin-left: 0;
+  }
+  .betsInfoTypeList {
+    select.betsInfoType {
+      width: 160px;
+      height: 20px;
+      border-radius: 3px;
+      padding: 0 10px;
+    }
+  }
+}
+
+.betsAmountTypeList {
+  float: right;
+  overflow: hidden;
+  & > * {
+    float: left;
+    margin-left: 5px;
+  }
+}
+
+.amountTypeDetail {
+  .amountType {
+    float: left;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 2px;
+    border-radius: 50%;
+  }
+}
+
+.changeMultDetail {
+  & > * {
+    float: left;
+    margin-left: 5px;
+  }
+  .reduceMult, .addMult {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 1px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 28px;
+    border-radius: 9px;
+  }
+  .reduceMult {
+    left: 2px;
+  }
+  .addMult {
+    right: 2px;
+  }
+}
+
+.betsBtn {
+  float: right;
+  .btn {
+    width: 100px;
+    height: 30px;
+    line-height: 28px;
+    padding: 0 5px;
+    i {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .confirmBets {
+    margin-left: 8px;
+  }
+}
+
+/* 可输入下拉框  */
+.inputSelectDiv {
+  position: relative;
+  .labelCond {
+    height: 10px;
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+  }
+}
+
+/* 通用投注页-修改20170327 */
+.modifyBets {
+  .betsInfo {
+    & > * {
+      line-height: 28px;
+    }
+    .betsInfoTips {
+      .fontColorTheme {
+        font-size: 16px;
+      }
+    }
+    .betsInfoTypeList {
+      select.betsInfoType {
+        height: 28px;
+      }
+    }
+  }
+  .amountTypeDetail {
+    .amountType {
+      width: 54px;
+      height: 28px;
+      border-radius: 3px;
+      padding: 5px 13px;
+    }
+  }
+  .inputSelectDiv .labelCond {
+    height: 16px;
+    border-radius: 13px;
+  }
+  .changeMultDetail {
+    .reduceMult, .addMult {
+      width: 24px;
+      height: 24px;
+      top: 2px;
+    }
+  }
+  .btn {
+    height: 40px;
+    line-height: 38px;
+    &.allBet {
+      background-color: #5f52a0;
+    }
+    &.quotaBetBtn {
+      background-color: #ff6565;
+    }
+    &.appendNumBtn {
+      background-color: #ca7d75;
+    }
+    &.confirmBets {
+      width: 120px;
+      font-size: 17px;
+    }
+  }
+  .appNumInfo {
+    .fontColorTheme {
+      font-size: 16px;
+    }
+  }
+}
+
+/* 追号模块 */
+.appNumArea {
+  margin-top: 20px;
+  padding: 0 20px;
+  overflow: hidden;
+  .appNumBox {
+    width: 100%;
+    height: 150px;
+    border: 1px solid;
+    overflow-x: hidden;
+  }
+}
+
+.appNumList {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  table-layout: fixed;
+  .appNumHeader {
+    line-height: 30px;
+  }
+}
+
+.appNumDetail td {
+  font-size: 12px;
+  line-height: 30px;
+  &.appNum {
+    min-width: 150px;
+  }
+  .appNumDetailClear {
+    display: block;
+    width: 11px;
+    height: 11px;
+    background: url(../images/lottery/indexImg.png);
+    background-position: -140px -49px;
+    margin: 0 auto;
+  }
+}
+
+.confirmAppNumBox {
+  padding: 15px 0;
+  overflow: hidden;
+  .appNumInfo {
+    float: left;
+    line-height: 30px;
+  }
+}
+
+/* 最近开奖号码、中奖排行、最近投注、最近追号 */
+.accountAndLottery {
+  width: 100%;
+}
+
+/* 往期开奖号码 */
+.beforeLottNumBox {
+  margin-top: 10px;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.beforeLottNumHeader {
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  padding: 0 18px;
+  position: relative;
+  &:before {
+    content: '';
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+  }
+  .beforeLottIcon, .lotteryListIcon {
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    background: url(../images/lottery/indexImg.png);
+    vertical-align: middle;
+  }
+  .beforeLottIcon {
+    background-position: -145px -23px;
+  }
+  .lotteryListIcon {
+    background-position: -167px -23px;
+  }
+  .trend {
+    line-height: 16px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #4c79d1;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.lotteryListReport {
+  height: 150px;
+  overflow: hidden;
+}
+
+.beforeLottNumList {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  .listHeader {
+    line-height: 30px;
+  }
+}
+
+.beforeLottNumDetail {
+  line-height: 30px;
+  & > td:first-child {
+    min-width: 80px;
+    #betTable &, #traceTable & {
+      min-width: 0;
+    }
+    /* 中奖排行 */
+    #rewardList & {
+      min-width: 30px;
+    }
+  }
+  #betTable &, #traceTable & {
+    cursor: pointer;
+    &:hover {
+      background: #ddd;
+    }
+  }
+}
+
+.lotteryListImg img {
+  height: 26px;
+  vertical-align: middle;
+}
+
+/* 最近投注追号 */
+.betListLottName, .betListPlayName {
+  display: table-cell;
+  max-width: 15px;
+  min-width: 0;
+  padding: 0 5px;
+}
+
+/* 最近投注、追号 */
+.accountLottInfo {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  table-layout: fixed;
+  box-sizing: border-box;
+  .lottInfoNavDetail {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+  }
+}
+
+/* 底部 */
+.footer {
+  margin-top: 20px;
+}
+
+//游戏记录详情弹框
+.generalLayer {
+  #generalDetailArea, #traceSummaryList {
+    padding: 15px 30px 32px;
+    background-image: -webkit-linear-gradient(bottom, #c7c0bd 0%, #f9f3f3 100%);
+    background-image: linear-gradient(bottom, #c7c0bd 0%, #f9f3f3 100%);
+  }
+  .detailHeaderBox {
+    position: relative;
+    padding: 21px 30px;
+    overflow: hidden;
+  }
+  .detailHeaderTitle {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .headerDetail {
+    float: left;
+    width: 300px;
+    p {
+      margin-top: 15px;
+      font-size: 12px;
+    }
+  }
+  .detailNumBox {
+    float: left;
+    .detailNumTextArea {
+      width: 340px;
+      height: 75px;
+      resize: none;
+      padding: 10px;
+      outline: none;
+      display: block;
+      margin-top: 10px;
+      background-color: #d3cdcb;
+      border-radius: 4px;
+    }
+    span {
+      position: relative;
+      padding-left: 25px;
+      color: #6b96ea;
+      i {
+        position: absolute;
+        display: block;
+        width: 16px;
+        height: 22px;
+        background: url("../images/game/betIcon.png") no-repeat;
+      }
+    }
+  }
+  .detailBody {
+    max-height: 330px;
+    overflow-x: hidden;
+  }
+  table {
+    width: 100%;
+    th, td {
+      text-align: center;
+      line-height: 40px;
+    }
+    th {
+      background-color: #ddd0cd;
+      font-weight: normal;
+      &:nth-child(even) {
+        background-color: #d4c6c3;
+      }
+    }
+    td {
+      background-color: #e2dcda;
+      &:nth-child(even) {
+        background-color: #dad4d1;
+      }
+    }
+  }
+  .dialogBtn .btn {
+    margin-top: 24px;
+    margin-right: 10px;
+    &.repealOrder {
+      .blueBtn;
+      width: 100px;
+    }
+    &.againBtn {
+      .yellowBtn;
+      width: 100px;
+    }
+  }
+}
+
+.layui-layer .layui-layer-title {
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  padding: 0 10px;
+  color: #fff;
+  background-color: #c9aba9;
+}
+
+.dialogBtn {
+  text-align: center;
+  .btn {
+    .redBtn;
+    width: 100px;
+  }
+}
+
+//追号详情
+#traceSummaryList {
+  position: relative;
+  padding: 0 30px;
+  .areaTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #a96c50;
+  }
+  .returnPrev {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    font-size: 16px;
+    color: #333;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .detailHeaderBox {
+    padding: 0;
+  }
+  .headerDetail {
+    float: none;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    & > * {
+      float: left;
+    }
+    .detailHeader-l {
+      width: 110px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .detailHeader-r {
+      & p:first-child {
+        margin-top: 0;
+      }
+      label {
+        width: 224px;
+        display: inline-block;
+      }
+    }
+    .detailHeader-c {
+      width: 771px;
+      height: 100px;
+      border: 1px solid #ccc;
+      overflow-x: hidden;
+      table {
+        th, td {
+          line-height: 30px;
+        }
+        th {
+          background-color: #d5ccc8;
+          color: #222;
+          font-weight: 400;
+        }
+        td {
+          &:nth-child(even) {
+            background: #e2dcda;
+          }
+        }
+      }
+    }
+    p {
+      margin-top: 15px;
+      font-size: 12px;
+    }
+  }
+  .detailBody {
+    height: 180px;
+    overflow-x: hidden;
+    background: #e2dcda;
+    margin-top: 10px;
+    #summaryListTable {
+      th, td {
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+.gameLottListCont {
+  display: inline-block;
+  max-width: 130px;
+  vertical-align: middle;
+}
+
+#contentDetailsArea {
+  padding: 15px 30px;
+  .detailNumTextArea {
+    width: 340px;
+    height: 75px;
+    resize: none;
+    border: 1px solid #ddd;
+    padding: 10px;
+    outline: none;
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+/* 追号弹窗 */
+.appNumNavList {
+  overflow: hidden;
+  border-radius: 3px;
+  width: 332px;
+  border: 1px solid;
+  li {
+    float: left;
+    .appNumNav {
+      display: block;
+      width: 110px;
+      height: 30px;
+      text-align: center;
+      border-left: 1px solid;
+      line-height: 30px;
+      color: #333;
+    }
+    &:first-child a {
+      border-left: none;
+    }
+  }
+}
+
+.sameMultAppNumBox, .cfmAppNumTableBox,
+.profitAppNumBox, .multipleAppNumBox {
+  margin-top: 20px;
+}
+
+.appendIssue {
+  display: inline-block;
+  width: 177px;
+  vertical-align: middle;
+  overflow: hidden;
+  li {
+    float: left;
+    a {
+      display: block;
+      width: 43px;
+      height: 28px;
+      line-height: 28px;
+      text-align: center;
+      border: 1px solid;
+      margin-right: -1px;
+      &.active, &:hover {
+        position: relative;
+      }
+    }
+  }
+}
+
+.createAppNumBar {
+  label {
+    margin-left: 5px;
+    .selectedIssue {
+      width: 58px;
+      text-align: center;
+    }
+    .inputSelectDiv {
+      display: inline-block;
+      height: 30px;
+      vertical-align: middle;
+      .labelCond {
+        height: 18px;
+        border: 1px solid;
+        border-radius: 3px;
+      }
+    }
+  }
+  .createAppNum.btn {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    margin-top: 0;
+    margin-left: 10px;
+  }
+  .appNumWarn {
+    font-size: 12px;
+    float: right;
+    line-height: 30px;
+  }
+}
+
+.labelCond.selectedMult {
+  width: 70px;
+}
+
+.cfmAppNumTableBox {
+  height: 250px;
+  overflow-x: hidden;
+}
+
+.cfmAppNumTable {
+  width: 100%;
+  border-collapse: collapse;
+  tr {
+    line-height: 40px;
+    text-align: center;
+    &.listHeader {
+      border-bottom: none;
+      background: #ebebeb;
+    }
+    &.listDetail {
+      border-bottom: 1px dashed #eee;
+      font-size: 12px;
+      input[type='checkbox'] {
+        vertical-align: middle;
+      }
+      .labelCond {
+        width: 33px;
+        height: 10px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.cfmAppNumInfo {
+  overflow: hidden;
+  .cfmAppNumInfoDetail {
+    float: left;
+    text-align: center;
+    width: 146px;
+    border: 1px solid #dfdfdf;
+    background: #f2f2f2;
+    margin-right: -1px;
+    padding: 10px 5px;
+    & > * {
+      display: block;
+    }
+  }
+}
+
+.cfmAppNumBtn {
+  margin-top: 20px;
+  text-align: center;
+  .btn {
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 0;
+    vertical-align: middle;
+    border-radius: 20px;
+  }
+  label {
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+
+/* 投注确认窗口 */
+.layerBox {
+  padding: 20px 30px;
+  &.betConfirmBox {
+    p {
+      line-height: 30px;
+      label {
+        margin-left: 20px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+    .cfmBetsTable {
+      tr {
+        line-height: 22px;
+      }
+      td {
+        background: #fff;
+        text-align: left;
+        word-break: break-all;
+        &:first-child {
+          vertical-align: top;
+        }
+      }
+    }
+  }
+}
+
+.betInDivBox p {
+  line-height: normal;
+}
+
+.betInDivBox .headerDetail p:first-child {
+  margin-top: 0;
+}
+
+.betCfmDetail {
+  overflow: hidden;
+  margin-top: 15px;
+  .betCfmDetailTitle {
+    float: left;
+  }
+  .cfmBetsTableBox {
+    float: left;
+    width: 325px;
+    overflow-x: hidden;
+    border: 1px solid #ccc;
+    height: 150px;
+    padding: 15px;
+  }
+}
+
+/* 中奖弹窗 */
+.awardsMsgGroup {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  z-index: 100;
+}
+
+.awardsMsgBox {
+  width: 300px;
+  color: #003;
+  margin-top: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  opacity: 0;
+  pointer-events: none;
+  &:first-child {
+    margin-top: 0;
+  }
+  &.awardsShowBox {
+    filter: alpha(opacity=100);
+    -moz-opacity: 100;
+    opacity: 100;
+    pointer-events: auto;
+  }
+}
+
+.awardsMsgTitle {
+  overflow: hidden;
+  line-height: 26px;
+  position: relative;
+  padding: 0 10px;
+  .closeAwardsMsg {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    background: url(../images/closeLayer.png) center no-repeat;
+    background-size: 20px;
+  }
+}
+
+.awardsMsgContent {
+  background: #fff;
+  text-align: center;
+  padding: 40px 10px;
+  position: relative;
+}
+
+.awardsMsgTime {
+  position: absolute;
+  bottom: 5px;
+  right: 8px;
+  font-size: 12px;
+  color: #999;
+}
+
+/* 彩中彩 */
+.awardsLottListBox {
+  width: 308px;
+  margin: 0 31px 1px;
+  position: relative;
+}
+
+.awardsLottDetail {
+  width: 84px;
+  height: 32px;
+  font-size: 12px;
+  padding: 10px 8px 5px;
+  cursor: pointer;
+  position: absolute;
+  display: none;
+  transition: all .5s ease-in-out;
+}
+
+.closeAwardsDialogBtn {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  background: url(../images/closeLayer.png) center no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.awardsLottDialog {
+  width: 370px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.awardsLottTitle {
+  overflow: hidden;
+  line-height: 42px;
+  position: relative;
+  padding: 0 10px;
+  & > * {
+    vertical-align: middle;
+  }
+}
+
+.awardsLottLogo {
+  display: inline-block;
+  width: 60px;
+  height: 20px;
+  background: url(../images/awardsMsgLogo.png) center no-repeat;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.awardsCountDown {
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.closeAwardsLott {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  background: url(../images-acct/closeDialog.png) center no-repeat;
+  background-size: 20px;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.awardsLottContent {
+  margin: 0 5px;
+  background: #fff;
+  border-radius: 0 0 5px 5px;
+}
+
+.awardsGameArea {
+  overflow: hidden;
+  border-top: 1px solid;
+  &:first-child {
+    border-top: none;
+  }
+}
+
+.awardsGameTitle {
+  float: left;
+  width: 17px;
+  line-height: 14px;
+  padding: 11px 5px;
+  font-size: 12px;
+  text-align: center;
+  background: #ededed;
+  color: #bbb;
+}
+
+.awardsGameContent {
+  float: left;
+  width: 333px;
+}
+
+.awardsGameTypeList {
+  width: 310px;
+  height: 67px;
+  margin: 14px auto 0;
+  overflow: hidden;
+}
+
+.awardsGameType {
+  float: left;
+  position: relative;
+  cursor: pointer;
+  margin-left: 10px;
+  &:first-child {
+    margin-left: 0;
+  }
+  &.disabled {
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+.gameAmountDetail {
+  line-height: 48px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  word-spacing: -2px;
+  width: 52px;
+  height: 55px;
+  border: 1px solid;
+  border-radius: 6px;
+  /*background: #fff;*/
+  /*color: #099;*/
+  cursor: pointer;
+}
+
+.disabled {
+  .gameAmountDetail {
+    background: #d4d4d4;
+    border-color: #d4d4d4;
+    color: #a1a1a1;
+    cursor: default;
+  }
+  &.awardsGameType:hover .gameAmountDetail {
+    background: #d4d4d4;
+    border-color: #d4d4d4;
+    color: #a1a1a1;
+  }
+}
+
+.gameAmount {
+  font-size: 20px;
+}
+
+.awardsBtn {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -23px;
+  width: 45px;
+  height: 18px;
+  line-height: 18px;
+  /*background: #099;*/
+  /*color: #fff;*/
+  text-align: center;
+  border-radius: 9px;
+  border: 1px solid;
+  .disabled & {
+    background: #a1a1a1;
+    border-color: #a1a1a1;
+  }
+  .disabled.awardsGameType:hover & {
+    background: #a1a1a1;
+    border-color: #a1a1a1;
+    color: #fff;
+  }
+}
+
+.awardsGameMultBox {
+  /*color: #000;*/
+  text-align: center;
+  margin-top: 8px;
+  line-height: 33px;
+}
+
+.awardsGameMultDetail {
+  display: inline-block;
+  width: 146px;
+  height: 40px;
+  //background: url(../images/game-bg.png) center no-repeat;
+  position: relative;
+  vertical-align: middle;
+}
+
+.awardsGameMult {
+  width: 31px;
+  height: 32px;
+  line-height: 32px;
+  overflow: hidden;
+  position: absolute;
+  top: 4px;
+  font-size: 16px;
+  /* color: #fff; */
+}
+
+.awardsGame-l {
+  left: 8px;
+}
+
+.awardsGame-c {
+  left: 53px;
+}
+
+.awardsGame-r {
+  left: 90px;
+}
+
+.currGameTitle {
+  padding: 2px 5px;
+}
+
+.awardsGameResult {
+  line-height: 56px;
+  text-align: center;
+  /*color: #000;*/
+  font-size: 12px;
+  label {
+    margin: 0 10px;
+  }
+}
+
+.awardsResultAmount {
+  font-size: 22px;
+  /*color: #c00;*/
+}
+
+.awardsLottResultDetail {
+  float: left;
+  width: 25%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  /*background: #ededed;*/
+  /*color: #979292;*/
+  border-left: 1px solid;
+  font-size: 12px;
+  box-sizing: border-box;
+  cursor: pointer;
+  &.remainAmount {
+    width: 50%;
+    border-left: none;
+    cursor: default;
+  }
+}
+
+.currResultAmount {
+  font-size: 14px;
+  /*color: #666;*/
+}
+
+.awardsGameRule {
+  padding: 0 20px 15px;
+  font-size: 12px;
+  /*color: #fff;*/
+}
+
+.awardsRuleBtn {
+  display: block;
+  height: 20px;
+  background: url(../images/gameRule.png) center no-repeat;
+  cursor: pointer;
+}
+
+/* 彩中彩警告窗口 */
+/*.awardsWarnDialog {*/
+/*position: absolute;*/
+/*bottom: 0;*/
+/*right: 0;*/
+/*}*/
+.awardsWarnDialog.awardsLottContent {
+  height: 161px;
+  margin-bottom: 5px;
+  padding: 30px;
+}
+
+.awardsLottWarnInfo {
+  margin-top: 20px;
+}
+
+.awardsLottBtn {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* 中奖弹窗，点击参加彩中彩游戏 */
+.awardsNoticeDialog {
+  height: 280px;
+}
+
+.awardsNoticeDialog .awardsLottTitle,
+.awardsLottNotice .awardsLottTitle {
+  height: 35px;
+}
+
+.awardsNoticeTitle {
+  padding: 0 25px;
+}
+
+.currAwardsNotice {
+  margin-top: -5px;
+  position: relative;
+}
+
+.playAwardsLottery {
+  display: block;
+  width: 170px;
+  height: 173px;
+  margin: 5px auto;
+}
+
+.awardsLottTips {
+  text-align: center;
+  position: relative;
+  line-height: 25px;
+}
+
+.afterAlert {
+  position: absolute;
+  right: 20px;
+  width: 50px;
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid;
+  border-radius: 3px;
+  /* color: #033; */
+  font-size: 12px;
+}
+
+/* 彩中彩游戏，每日提醒一次 */
+.dialogBox .awardsLottNotice {
+  height: 280px;
+  width: 370px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.awardsNoticeContent {
+  padding: 0 30px;
+  font-size: 12px;
+}
+
+.awardsNoticeInfo {
+  margin-top: 20px;
+  text-indent: 2em;
+}
+
+.friendTips {
+  margin-top: 20px;
+}
+
+.awardsLottNotice .awardsLottBtn {
+  margin-top: 24px;
+  margin-left: 75px;
+}
+
+.awardsLottNotice .btn {
+  font-size: 14px;
+}
+
+.btn.playAwardsSwitch {
+  width: 60px;
+}
+
+.btn.stopAwardsSwitch {
+  width: 60px;
+}
+
+.awardsLottBtn label {
+  margin-left: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.awardsLottBtn .labelCond {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.awardsLottBtn .labelCond + span {
+  vertical-align: middle;
+}
+
+//定额投注弹窗
+.quotaBetBox {
+  p {
+    margin-top: 10px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .labelCond {
+    width: 120px;
+    vertical-align: middle;
+  }
+  .dialogBtn {
+    margin-left: 20px;
+  }
+}

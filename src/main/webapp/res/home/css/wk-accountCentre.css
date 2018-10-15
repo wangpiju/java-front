@@ -1,0 +1,2481 @@
+.blueBtn, .redBtn, .yellowBtn {
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14)
+}
+
+.blueBtn, .lottTipLayer .layui-layer-content .closeBtn, .redBtn, .yellowBtn {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14)
+}
+
+#myContractArea .contractTip dd a, #myContractArea .contractTip dd a:hover, #traceSummaryList .returnPrev:hover, .dailyLayer #modifyDailyLayer .checkBtn:hover, .msgUserContactLayer .msgBox .checkBtn:hover, .remarkLayer #remarkDiv .checkBtn:hover, .setContractHeader #showContractRule:hover, .tableBox table td .userOption a:hover {
+    text-decoration: underline
+}
+
+body {
+    background: url(../images/bg.jpg)
+}
+
+.areaBigContainer {
+    width: 1000px;
+    background-color:#fff;
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#ccffffff, ff, endColorstr=#ccffffff, ff);
+    margin: 40px auto 0px
+}
+
+.containerFlex {
+    display: inline-flex;
+    min-height: 700px;
+    overflow: hidden
+}
+
+.commonIcon {
+    position: absolute;
+    display: block;
+    left: 15px;
+    top: 11px
+}
+
+.redBtn {
+    background-color: #bf5059;
+    background-image: -webkit-linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    background-image: linear-gradient(top, #bf5059 0, #7a3e43 100%)
+}
+
+.redBtn:active, .redBtn:hover {
+    background-color: #f84150;
+    background-image: -webkit-linear-gradient(top, #f84150 0, #942b34 100%);
+    background-image: linear-gradient(top, #f84150 0, #942b34 100%)
+}
+
+.blueBtn {
+    background-color: #5999ab;
+    background-image: -webkit-linear-gradient(top, #5999ab 0, #43656f 100%);
+    background-image: linear-gradient(top, #5999ab 0, #43656f 100%)
+}
+
+.blueBtn:active, .blueBtn:hover {
+    background-color: #5bb8d4;
+    background-image: -webkit-linear-gradient(top, #5bb8d4 0, #447685 100%);
+    background-image: linear-gradient(top, #5bb8d4 0, #447685 100%)
+}
+
+.yellowBtn {
+    background-color: #ec8939;
+    background-image: -webkit-linear-gradient(top, #ec8939 0, #915d32 100%);
+    background-image: linear-gradient(top, #ec8939 0, #915d32 100%)
+}
+
+.yellowBtn:active, .yellowBtn:hover {
+    background-color: #ffb163;
+    background-image: -webkit-linear-gradient(top, #ffb163 0, #9a632e 100%);
+    background-image: linear-gradient(top, #ffb163 0, #9a632e 100%)
+}
+
+.leftListArea {
+    float: left;
+    width: 180px;
+    border-bottom: 1px solid #E6E6E6;
+    border-top: 1px solid #E6E6E6;
+    color: #ab9595;
+    min-height: 690px;
+}
+
+.leftListArea .leftListDetail .leftListBigItem {
+    display: block;
+    position: relative;
+    color: #414141;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 47px;
+    border-bottom: 1px solid #e8eaef;
+    background: rgb(174,152,128);
+    cursor: pointer;
+}
+
+.leftListArea .leftListDetail .leftListBigItem.active, .leftListArea .leftListDetail .leftListBigItem:hover {
+    background-color:#AF3A31;
+    color: #FFF;
+}
+
+.leftListArea .leftListDetail .leftListItem {
+    font-size: 12px;
+}
+
+.leftListArea .leftListDetail .leftListItem a {
+    display: block;
+    padding-left: 47px;
+    height: 26px;
+    line-height: 26px;
+    color: #414141;
+}
+
+.leftListArea .leftListDetail .leftListItem a.active, .leftListArea .leftListDetail .leftListItem a:hover {
+    color: #FFFFFF;
+    background: #ED635D;
+}
+
+.rightArea {
+    position: relative;
+    float: left;
+    width: 800px;
+    min-height: 660px;
+    padding: 20px 10px 50px;
+}
+
+.lottTipLayer .layui-layer-content {
+    border-radius: 4px
+}
+
+.lottTipLayer .layui-layer-content .lottTipLayerTitle {
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 10px;
+    color: #555;
+    background-color: #fff
+}
+
+.lottTipLayer .layui-layer-content .lottTipBox {
+    text-align: center
+}
+
+.lottTipLayer .layui-layer-content .msg {
+    margin-top: 30px;
+    display: inline-block
+}
+
+.lottTipLayer .layui-layer-content .msg i {
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    background: url(../images/warmIcon.png) no-repeat;
+    margin-right: 20px;
+    float: left
+}
+
+.lottTipLayer .layui-layer-content .msg .content {
+    display: inline-block;
+    line-height: 41px;
+    max-width: 370px;
+    *width: 370px
+}
+
+.lottTipLayer .layui-layer-content .lottTipBtn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #ddd2d2
+}
+
+.lottTipLayer .layui-layer-content .closeBtn {
+    display: block;
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #cc0a19;
+    color: #fff;
+    border-radius: 20px;
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .45) 0, rgba(255, 255, 255, .45) 100%);
+    background-image: linear-gradient(bottom, rgba(0, 0, 0, .45) 0, rgba(255, 255, 255, .45) 100%);
+    margin: 20px auto 0
+}
+
+.lottTipLayer .layui-layer-content .closeBtn:active, .lottTipLayer .layui-layer-content .closeBtn:hover {
+    background-color: #e50b1e
+}
+
+.layui-layer .layui-layer-setwin {
+    display: inline-block;
+    width: 42px;
+    height: 33px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    right: 0;
+    top: 6px
+}
+
+.layui-layer .layui-layer-setwin .layui-layer-close1, .layui-layer .layui-layer-setwin .layui-layer-close2 {
+    width: 31px;
+    height: 31px;
+    left: 1px;
+    top: 1px;
+    margin: 0;
+    background: url(../images/closeLayer.png) no-repeat;
+    transition: .3s ease-in-out
+}
+
+.layui-layer .layui-layer-setwin .layui-layer-close1:hover, .layui-layer .layui-layer-setwin .layui-layer-close2:hover {
+    background-position: 0 0;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.layui-layer.setSafePswLayer, .layui-layer.userImproveInfoLayer {
+    background: #eee
+}
+
+.layui-layer.setSafePswLayer .improveHeader, .layui-layer.userImproveInfoLayer .improveHeader {
+    padding: 20px 50px;
+    overflow: hidden;
+    background: #c9aba9
+}
+
+.layui-layer.setSafePswLayer .improveLogoBox, .layui-layer.userImproveInfoLayer .improveLogoBox {
+    float: left
+}
+
+.layui-layer.setSafePswLayer .improveLogo, .layui-layer.userImproveInfoLayer .improveLogo {
+    display: block;
+    width: 51px;
+    height: 51px;
+    background: url(../images/improveLogo.png) center no-repeat
+}
+
+.layui-layer.setSafePswLayer .improveHeaderInfo, .layui-layer.userImproveInfoLayer .improveHeaderInfo {
+    float: left;
+    margin-left: 15px
+}
+
+.layui-layer.setSafePswLayer .improveHeaderTitle, .layui-layer.userImproveInfoLayer .improveHeaderTitle {
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    line-height: 32px
+}
+
+.layui-layer.setSafePswLayer .improveHeaderTips, .layui-layer.userImproveInfoLayer .improveHeaderTips {
+    font-size: 12px;
+    color: #fff
+}
+
+.layui-layer.setSafePswLayer .improveContent, .layui-layer.userImproveInfoLayer .improveContent {
+    overflow: hidden
+}
+
+.layui-layer.setSafePswLayer .improveInfoForm, .layui-layer.userImproveInfoLayer .improveInfoForm {
+    width: 560px;
+    margin: 30px auto 35px;
+    line-height: 46px
+}
+
+.fontColorRed{
+    color: red !important;
+}
+
+.errorWarn{
+   color: red !important;
+}
+
+.layui-layer.setSafePswLayer .labelDiv, .layui-layer.userImproveInfoLayer .labelDiv {
+    color: #333
+}
+
+.layui-layer.setSafePswLayer .labelTitle, .layui-layer.userImproveInfoLayer .labelTitle {
+    width: 120px;
+    display: inline-block;
+    text-align: right
+}
+
+.layui-layer.setSafePswLayer .labelCond, .layui-layer.userImproveInfoLayer .labelCond {
+    width: 220px;
+    height: 24px;
+    line-height: 24px;
+    padding: 2px 10px;
+    margin-left: 6px;
+    border-radius: 12px;
+    font-size: 12px;
+    border: none;
+    outline: 0;
+    box-shadow: inset 0 1px 5px rgba(168, 168, 168, .75), inset 0 0 4px rgba(255, 255, 255, .2);
+    background-color: #e5e5e5
+}
+
+.layui-layer.setSafePswLayer .selectCond, .layui-layer.userImproveInfoLayer .selectCond {
+    width: 240px;
+    height: 28px;
+    line-height: 28px;
+    padding: 2px 10px;
+    margin-left: 6px;
+    border-radius: 12px;
+    font-size: 12px;
+    border: none;
+    outline: 0;
+    background-color: #e5e5e5;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .4), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .2);
+    background-image: linear-gradient(bottom, rgba(75, 75, 75, .33) 0, rgba(160, 160, 160, .33) 100%)
+}
+
+.layui-layer.setSafePswLayer .btn, .layui-layer.userImproveInfoLayer .btn, .searchBar .btn {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14)
+}
+
+.layui-layer.setSafePswLayer .formBtns, .layui-layer.userImproveInfoLayer .formBtns {
+    margin-top: 25px
+}
+
+.layui-layer.setSafePswLayer .btn, .layui-layer.userImproveInfoLayer .btn {
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #cc0a19;
+    color: #fff;
+    border-radius: 20px;
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .45) 0, rgba(255, 255, 255, .45) 100%);
+    background-image: linear-gradient(bottom, rgba(0, 0, 0, .45) 0, rgba(255, 255, 255, .45) 100%)
+}
+
+.layui-layer.setSafePswLayer .btn:active, .layui-layer.setSafePswLayer .btn:hover, .layui-layer.userImproveInfoLayer .btn:active, .layui-layer.userImproveInfoLayer .btn:hover {
+    background-color: #e50b1e
+}
+
+.pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    line-height: 28px;
+    width: 100%
+}
+
+.pagination .page-l {
+    position: absolute;
+    left: 0
+}
+
+.pagination .page-r {
+    text-align: center
+}
+
+.pagination .page-r div {
+    display: inline-block
+}
+
+.pagination .page-list {
+    position: relative
+}
+
+.pagination .page-list .pageDone {
+    position: absolute;
+    top: 2px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    font-family: '宋体';
+    border: 1px solid #989898;
+    color: #989898;
+    background-color: #e5e5e5
+}
+
+.pagination .page-list .pageDone:hover {
+    color: #fff;
+    background-color: #afafaf
+}
+
+.pagination .page-list .pagePrevious {
+    left: 1px
+}
+
+.pagination .page-list .pageNext {
+    right: 1px
+}
+
+.pagination .endPage, .pagination .homePage {
+    text-decoration: underline;
+    margin: 0 5px
+}
+
+.pagination .labelCond {
+    width: 60px;
+    padding: 2px 5px;
+    border-radius: 10px
+}
+
+.pagination .page-list input {
+    width: 40px;
+    padding: 2px 25px;
+    text-align: center
+}
+
+.headerTitle {
+    font-size: 16px;
+    color: #006ab4
+}
+
+.leftListBigItem i {
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url(../images/navIcon.png) -7px -84px no-repeat
+}
+
+.gameBetListA i {
+    background-position: -5px -6px
+}
+
+.gameBetListA.active i, .gameBetListA:hover i {
+    background-position: -44px -6px
+}
+
+.finRechargeA i {
+    background-position: -5px -160px;
+    top: 6px;
+    left: 14px
+}
+
+.finRechargeA.active i, .finRechargeA:hover i {
+    background-position: -44px -160px
+}
+
+.finDepositA i {
+    background-position: -8px -202px;
+    top: 9px
+}
+
+.finDepositA.active i, .finDepositA:hover i {
+    background-position: -47px -202px
+}
+
+.settlementA i {
+    background-position: -7px -240px;
+    left: 15px;
+    top: 9px
+}
+
+.settlementA.active i, .settlementA:hover i {
+    background-position: -46px -240px
+}
+
+.teamReportListA i, .userCenterA i {
+    background-position: -8px -121px
+}
+
+.teamReportListA.active i, .teamReportListA:hover i, .userCenterA.active i, .userCenterA:hover i {
+    background-position: -47px -121px
+}
+
+.msgA i, .traceA i {
+    background-position: -6px -46px
+}
+
+.msgA.active i, .msgA:hover i, .traceA.active i, .traceA:hover i {
+    background-position: -45px -46px
+}
+
+.betListA.active i, .betListA:hover i, .teamManageA.active i, .teamManageA:hover i {
+    background-position: -45px -84px
+}
+
+.searchBar {
+    padding: 0 20px 20px 5px
+}
+
+.searchBar label {
+    display: inline-block;
+    line-height: 40px;
+    margin-left: 15px
+}
+
+.searchBar .btn {
+    height: 30px;
+    line-height: 30px;
+    background-color: #bf5059;
+    color: #fff;
+    border-radius: 15px;
+    background-image: -webkit-linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    background-image: linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    width: 70px;
+    margin-left: 15px
+}
+
+.searchBar .btn:active, .searchBar .btn:hover {
+    background-color: #f84150;
+    background-image: -webkit-linear-gradient(top, #f84150 0, #942b34 100%);
+    background-image: linear-gradient(top, #f84150 0, #942b34 100%)
+}
+
+.labelTitle {
+    font-size: 12px;
+    color: #222
+}
+
+.labelCond {
+    width: 100px;
+    height: 22px;
+    line-height: 22px;
+    padding: 2px 10px;
+    border-radius: 12px;
+    background-color: #e5e5e5;
+    font-size: 12px;
+    border: none;
+    outline: 0;
+    box-shadow: inset 0 1px 5px rgba(168, 168, 168, .75), inset 0 0 4px rgba(255, 255, 255, .2)
+}
+
+.tableBox table td .userOption a, .tableBox table tr {
+    line-height: 30px;
+    text-align: center
+}
+
+.tableBox table td, .tableBox table th {
+    padding: 0 5px;
+    white-space: nowrap
+}
+
+.selectCond {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .4), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .2);
+    background-image: linear-gradient(bottom, rgba(75, 75, 75, .33) 0, rgba(160, 160, 160, .33) 100%);
+    width: 110px;
+    text-align: center;
+    height: 26px
+}
+
+.checkbox {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    cursor: pointer
+}
+
+.labelCond.Wdate {
+    border: none;
+    height: 22px;
+    background: url(../images/calendar.png) 95% no-repeat #e5e5e5
+}
+
+.tableBox {
+    margin-top: 10px
+}
+
+.tableBox table {
+    width: 100%;
+    font-size: 12px;
+    color: #555
+}
+
+.tableBox table th {
+    background-color: #d5ccc8;
+    color: #222;
+    font-weight: 400
+}
+
+.tableBox table td a.fontColorTheme {
+    color: #006ab4
+}
+
+.tableBox .listDetail:nth-child(even) {
+    background: #e6e0de
+}
+
+.tableBox .userListBox {
+    margin-top: 8px
+}
+
+.userOperateList {
+    padding: 0;
+    position: relative
+}
+
+.tableBox table td .userOption {
+    position: absolute;
+    right: 2px;
+    bottom: 25px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    z-index: 10
+}
+
+.tableBox table td .userOption:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: 14px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #fff;
+    z-index: 2
+}
+
+.tableBox table td .userOption a {
+    display: block;
+    padding: 0 10px;
+    color: #333
+}
+
+.tableBox table td .userOption a:hover {
+    color: #006ab4
+}
+
+.nullMsg {
+    width: 255px;
+    margin: 140px auto;
+    text-align: center
+}
+
+.nullMsg .nullMsgImg {
+    display: block;
+    width: 61px;
+    height: 75px;
+    margin: 0 auto;
+    background: url(../images/userCenter/nofound.png) center no-repeat
+}
+
+.nullMsg span {
+    display: block;
+    margin-top: 10px
+}
+
+.userListSearch .userName {
+    width: 80px
+}
+
+.userListSearch .searchAmount {
+    width: 55px
+}
+
+.addUserBox, .linkOpenAcctBox {
+    margin: 0 30px 30px;
+    padding: 30px 40px 15px;
+    -moz-box-shadow: 3px 4px 6px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 3px 4px 6px rgba(0, 0, 0, .2);
+    box-shadow: 3px 4px 6px rgba(0, 0, 0, .2);
+    background-image: -webkit-linear-gradient(bottom, #c7c0bd 0, #f0e8e7 100%);
+    background-image: linear-gradient(bottom, #c7c0bd 0, #f0e8e7 100%);
+    overflow: hidden
+}
+
+.addUserBox form, .linkOpenAcctBox form {
+    width: 320px;
+    float: left;
+    line-height: 40px
+}
+
+.addUserBox form div, .linkOpenAcctBox form div {
+    margin-bottom: 10px
+}
+
+.addUserBox form .labelTitle, .linkOpenAcctBox form .labelTitle {
+    display: inline-block;
+    width: 70px;
+    text-align: left
+}
+
+.addUserBox form .selectCond, .linkOpenAcctBox form .selectCond {
+    width: 120px
+}
+
+.addUserBox form .btn, .linkOpenAcctBox form .btn {
+    height: 30px;
+    line-height: 30px;
+    background-color: #bf5059;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);
+    background-image: -webkit-linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    background-image: linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    width: 134px;
+    margin-left: 30px
+}
+
+.addUserBox form .btn:active, .addUserBox form .btn:hover, .linkOpenAcctBox form .btn:active, .linkOpenAcctBox form .btn:hover {
+    background-color: #f84150;
+    background-image: -webkit-linear-gradient(top, #f84150 0, #942b34 100%);
+    background-image: linear-gradient(top, #f84150 0, #942b34 100%)
+}
+
+.addUserBox .myQuotaBox, .addUserBox .openAcctExplainBox, .linkOpenAcctBox .myQuotaBox, .linkOpenAcctBox .openAcctExplainBox {
+    float: left;
+    width: 420px;
+    min-height: 220px;
+    background-color: #d4cecb;
+    border-radius: 4px
+}
+
+.addUserBox .myQuotaBox table, .addUserBox .openAcctExplainBox table, .linkOpenAcctBox .myQuotaBox table, .linkOpenAcctBox .openAcctExplainBox table {
+    width: 100%
+}
+
+.addUserBox .myQuotaBox table td, .addUserBox .myQuotaBox table th, .addUserBox .openAcctExplainBox table td, .addUserBox .openAcctExplainBox table th, .linkOpenAcctBox .myQuotaBox table td, .linkOpenAcctBox .myQuotaBox table th, .linkOpenAcctBox .openAcctExplainBox table td, .linkOpenAcctBox .openAcctExplainBox table th {
+    font-weight: 400;
+    height: 36px;
+    line-height: 36px;
+    text-align: center
+}
+
+.addUserBox .myQuotaBox table .myQuotaTitle, .addUserBox .openAcctExplainBox table .myQuotaTitle, .linkOpenAcctBox .myQuotaBox table .myQuotaTitle, .linkOpenAcctBox .openAcctExplainBox table .myQuotaTitle {
+    color: #006ab4;
+    background-color: #dbdbdb
+}
+
+#extCode .headerTitle {
+    line-height: 1;
+    margin-bottom: 15px;
+    margin-left: 64px;
+    margin-top: -10px
+}
+
+#extCode .openAcctExplainBox {
+    padding: 15px;
+    min-height: inherit;
+    margin-top: 25px
+}
+
+#extCode .openAcctExplainBox p {
+    text-indent: 2em;
+    font-size: 12px;
+    line-height: 24px
+}
+
+#extCode .beforeOpenAcctBox {
+    margin: 0 30px
+}
+
+#extCode .beforeOpenAcctBox .beforeTitle {
+    font-size: 16px;
+    color: #006ab4
+}
+
+#extCode .beforeOpenAcctBox .acctLinkNum {
+    font-size: 36px;
+    color: #999;
+    width: 48px;
+    text-align: center;
+    border-right: 1px dotted #aaa
+}
+
+#extCode .beforeOpenAcctBox .acctLinkContent {
+    padding-left: 17px
+}
+
+#extCode .beforeOpenAcctBox tr {
+    border-bottom: 1px dotted #aaa
+}
+
+#extCode .beforeOpenAcctBox p {
+    font-size: 12px
+}
+
+#extCode .beforeOpenAcctBox p .fontColorTeal {
+    color: #006ab4
+}
+
+#extCode .beforeOpenAcctBox .acctLinkQRcode {
+    width: 140px;
+    padding: 5px
+}
+
+#extCode .beforeOpenAcctBox .copyBtn, #extCode .beforeOpenAcctBox .deleteBtn {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);
+    width: 100px
+}
+
+#extCode .beforeOpenAcctBox .acctLinkQRcode canvas {
+    float: right
+}
+
+#extCode .beforeOpenAcctBox .acctLinkBtn {
+    margin-left: 90px
+}
+
+#extCode .beforeOpenAcctBox .btn {
+    margin-top: 6px
+}
+
+#extCode .beforeOpenAcctBox .copyBtn {
+    background-color: #bf5059;
+    background-image: -webkit-linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    background-image: linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    margin-right: 10px
+}
+
+#extCode .beforeOpenAcctBox .copyBtn:active, #extCode .beforeOpenAcctBox .copyBtn:hover {
+    background-color: #f84150;
+    background-image: -webkit-linear-gradient(top, #f84150 0, #942b34 100%);
+    background-image: linear-gradient(top, #f84150 0, #942b34 100%)
+}
+
+#extCode .beforeOpenAcctBox .deleteBtn {
+    background-color: #5999ab;
+    background-image: -webkit-linear-gradient(top, #5999ab 0, #43656f 100%);
+    background-image: linear-gradient(top, #5999ab 0, #43656f 100%)
+}
+
+#extCode .beforeOpenAcctBox .deleteBtn:active, #extCode .beforeOpenAcctBox .deleteBtn:hover {
+    background-color: #5bb8d4;
+    background-image: -webkit-linear-gradient(top, #5bb8d4 0, #447685 100%);
+    background-image: linear-gradient(top, #5bb8d4 0, #447685 100%)
+}
+
+.contactBOSSBtn {
+    text-align: right
+}
+
+.contactBOSSBtn a {
+    display: inline-block;
+    width: 108px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 3px;
+    color: #006ab4;
+    border: 1px solid #006ab4
+}
+
+#lottInfo table td, #lottInfo table th, .tableBox .teamBalanceTable td, .tableBox .teamBalanceTable th {
+    border: 1px solid #d9d9d9
+}
+
+#lottInfo table .listDetail:nth-child(even) {
+    background-color: transparent
+}
+
+.tableBox .teamBalanceTable {
+    margin: 0 30px;
+    width: 860px
+}
+
+#personInfo {
+    margin-top: 70px
+}
+
+#setInformation {
+    width: 360px;
+    margin: 0 auto;
+    line-height: 50px
+}
+
+#setInformation .labelTitle {
+    width: 62px;
+    display: inline-block
+}
+
+#setInformation .labelCond {
+    width: 130px
+}
+
+#setInformation .btn, .firstBindCard .btn {
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);
+    width: 100px
+}
+
+#setInformation .btn {
+    color: #fff;
+    background-color: #5999ab;
+    background-image: -webkit-linear-gradient(top, #5999ab 0, #43656f 100%);
+    background-image: linear-gradient(top, #5999ab 0, #43656f 100%);
+    margin-left: 10px
+}
+
+#setInformation .btn:active, #setInformation .btn:hover {
+    background-color: #5bb8d4;
+    background-image: -webkit-linear-gradient(top, #5bb8d4 0, #447685 100%);
+    background-image: linear-gradient(top, #5bb8d4 0, #447685 100%)
+}
+
+.firstBindCard {
+    text-align: center;
+    margin-top: 220px
+}
+
+.firstBindCard p {
+    font-size: 12px;
+    color: #ab9595
+}
+
+.firstBindCard .btn {
+    color: #fff;
+    background-color: #5999ab;
+    background-image: -webkit-linear-gradient(top, #5999ab 0, #43656f 100%);
+    background-image: linear-gradient(top, #5999ab 0, #43656f 100%);
+    margin-top: 20px;
+    margin-left: 45px
+}
+
+.firstBindCard .btn:active, .firstBindCard .btn:hover {
+    background-color: #5bb8d4;
+    background-image: -webkit-linear-gradient(top, #5bb8d4 0, #447685 100%);
+    background-image: linear-gradient(top, #5bb8d4 0, #447685 100%)
+}
+
+.bindCardInfo, .historyCardVerify {
+    padding: 0 45px
+}
+
+.bindCardInfo .userMsgBox, .historyCardVerify .userMsgBox {
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 4px;
+    background-color: #e3dfdd
+}
+
+.confirmCardInfo, .myCardInfo {
+    padding: 0 45px
+}
+
+.bindCardInfo form, .historyCardVerify form {
+    line-height: 50px;
+    margin-left: 190px
+}
+
+.bindCardInfo .fontGrey, .historyCardVerify .fontGrey {
+    color: #999
+}
+
+.bindCardInfo .labelTitle, .historyCardVerify .labelTitle {
+    display: inline-block;
+    width: 98px
+}
+
+.bindCardInfo .labelCond, .historyCardVerify .labelCond {
+    width: 135px
+}
+
+.bindCardInfo .selectCond, .historyCardVerify .selectCond {
+    width: 155px;
+    margin-right: 5px
+}
+
+.bindCardInfo .btnReturn, .bindCardInfo .nextBtn, .historyCardVerify .btnReturn, .historyCardVerify .nextBtn {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);
+    width: 100px
+}
+
+.bindCardInfo .nextBtn, .historyCardVerify .nextBtn {
+    background-color: #5999ab;
+    background-image: -webkit-linear-gradient(top, #5999ab 0, #43656f 100%);
+    background-image: linear-gradient(top, #5999ab 0, #43656f 100%);
+    margin-right: 10px
+}
+
+.bindCardInfo .nextBtn:active, .bindCardInfo .nextBtn:hover, .historyCardVerify .nextBtn:active, .historyCardVerify .nextBtn:hover {
+    background-color: #5bb8d4;
+    background-image: -webkit-linear-gradient(top, #5bb8d4 0, #447685 100%);
+    background-image: linear-gradient(top, #5bb8d4 0, #447685 100%)
+}
+
+.bindCardInfo .btnReturn, .historyCardVerify .btnReturn {
+    background-color: #bf5059;
+    background-image: -webkit-linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    background-image: linear-gradient(top, #bf5059 0, #7a3e43 100%)
+}
+
+.bindCardInfo .btnReturn:active, .bindCardInfo .btnReturn:hover, .historyCardVerify .btnReturn:active, .historyCardVerify .btnReturn:hover {
+    background-color: #f84150;
+    background-image: -webkit-linear-gradient(top, #f84150 0, #942b34 100%);
+    background-image: linear-gradient(top, #f84150 0, #942b34 100%)
+}
+
+.confirmCardInfo table {
+    margin-top: 15px
+}
+
+.confirmCardInfo table td, .confirmCardInfo table th {
+    border: 1px solid #d9d9d9
+}
+
+.confirmCardInfo .cfrBindCardBtn .btnReturn, .confirmCardInfo .cfrBindCardBtn .btnSubmit {
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);
+    line-height: 30px;
+    width: 100px;
+    color: #fff
+}
+
+.confirmCardInfo .cfrBindCardBtn {
+    text-align: center;
+    margin-top: 30px
+}
+
+.confirmCardInfo .cfrBindCardBtn .btnSubmit {
+    background-color: #bf5059;
+    background-image: -webkit-linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    background-image: linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    margin-right: 10px
+}
+
+.confirmCardInfo .cfrBindCardBtn .btnSubmit:active, .confirmCardInfo .cfrBindCardBtn .btnSubmit:hover {
+    background-color: #f84150;
+    background-image: -webkit-linear-gradient(top, #f84150 0, #942b34 100%);
+    background-image: linear-gradient(top, #f84150 0, #942b34 100%)
+}
+
+.confirmCardInfo .cfrBindCardBtn .btnReturn {
+    background-color: #5999ab;
+    background-image: -webkit-linear-gradient(top, #5999ab 0, #43656f 100%);
+    background-image: linear-gradient(top, #5999ab 0, #43656f 100%)
+}
+
+.confirmCardInfo .cfrBindCardBtn .btnReturn:active, .confirmCardInfo .cfrBindCardBtn .btnReturn:hover {
+    background-color: #5bb8d4;
+    background-image: -webkit-linear-gradient(top, #5bb8d4 0, #447685 100%);
+    background-image: linear-gradient(top, #5bb8d4 0, #447685 100%)
+}
+
+.myCardInfo {
+    margin-top: 25px
+}
+
+.myCardInfo table td, .myCardInfo table th {
+    border: 1px solid #d9d9d9
+}
+
+#findSafeByQa .btn, #modAccountPwd .btn, #modLoginPwd .btn, #safeQA .btn, .myCardInfo .myCardBtn .bindCard, .myCardInfo .myCardBtn .lockCard {
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14)
+}
+
+.myCardInfo .myCardBtn {
+    text-align: center;
+    margin-top: 30px
+}
+
+.myCardInfo .myCardBtn .bindCard {
+    line-height: 30px;
+    background-color: #bf5059;
+    color: #fff;
+    background-image: -webkit-linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    background-image: linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    width: 100px;
+    margin-right: 10px
+}
+
+.myCardInfo .myCardBtn .bindCard:active, .myCardInfo .myCardBtn .bindCard:hover {
+    background-color: #f84150;
+    background-image: -webkit-linear-gradient(top, #f84150 0, #942b34 100%);
+    background-image: linear-gradient(top, #f84150 0, #942b34 100%)
+}
+
+.myCardInfo .myCardBtn .lockCard {
+    line-height: 30px;
+    color: #fff;
+    background-color: #5999ab;
+    background-image: -webkit-linear-gradient(top, #5999ab 0, #43656f 100%);
+    background-image: linear-gradient(top, #5999ab 0, #43656f 100%);
+    width: 100px
+}
+
+.myCardInfo .myCardBtn .lockCard:active, .myCardInfo .myCardBtn .lockCard:hover {
+    background-color: #5bb8d4;
+    background-image: -webkit-linear-gradient(top, #5bb8d4 0, #447685 100%);
+    background-image: linear-gradient(top, #5bb8d4 0, #447685 100%)
+}
+
+.myCardInfo .userMsg {
+    margin-top: 60px;
+    font-size: 12px;
+    line-height: 25px
+}
+
+#modAccountPwd, #modLoginPwd {
+    margin: 75px 0 0 270px;
+    line-height: 50px
+}
+
+#modAccountPwd .labelTitle, #modLoginPwd .labelTitle {
+    display: inline-block;
+    width: 105px
+}
+
+#modAccountPwd .labelCond, #modLoginPwd .labelCond {
+    width: 130px
+}
+
+#modAccountPwd .btn, #modLoginPwd .btn {
+    line-height: 30px;
+    color: #fff;
+    background-color: #5999ab;
+    background-image: -webkit-linear-gradient(top, #5999ab 0, #43656f 100%);
+    background-image: linear-gradient(top, #5999ab 0, #43656f 100%);
+    width: 100px
+}
+
+#modAccountPwd .btn:active, #modAccountPwd .btn:hover, #modLoginPwd .btn:active, #modLoginPwd .btn:hover {
+    background-color: #5bb8d4;
+    background-image: -webkit-linear-gradient(top, #5bb8d4 0, #447685 100%);
+    background-image: linear-gradient(top, #5bb8d4 0, #447685 100%)
+}
+
+.modifyPwd .headerR {
+    width: auto
+}
+
+.firstModifyPwdBox {
+    width: 1060px;
+    min-height: 600px;
+    margin: 30px auto 150px;
+    padding: 20px;
+    background: #fff
+}
+
+.firstModifyPwdBox .firstModifyPwdTips {
+    margin-top: 40px;
+    text-align: center
+}
+
+#findSafeQa, #safeQAForm {
+    margin: 10px 0 0 10px
+}
+
+#findSafeByQa, #safeQA {
+    line-height: 50px
+}
+
+#findSafeByQa .labelTitle, #safeQA .labelTitle {
+    display: inline-block;
+    width: 85px
+}
+
+#findSafeByQa .labelCond, #safeQA .labelCond {
+    width: 140px
+}
+
+#findSafeByQa .selectCond, #safeQA .selectCond {
+    width: 160px
+}
+
+#findSafeByQa .errorWarn, #safeQA .errorWarn {
+    color: #9f9f9f
+}
+
+#findSafeByQa .btn, #safeQA .btn {
+    line-height: 30px;
+    color: #fff;
+    background-color: #5999ab;
+    background-image: -webkit-linear-gradient(top, #5999ab 0, #43656f 100%);
+    background-image: linear-gradient(top, #5999ab 0, #43656f 100%);
+    width: 100px
+}
+
+#findSafeByQa .btn:active, #findSafeByQa .btn:hover, #safeQA .btn:active, #safeQA .btn:hover {
+    background-color: #5bb8d4;
+    background-image: -webkit-linear-gradient(top, #5bb8d4 0, #447685 100%);
+    background-image: linear-gradient(top, #5bb8d4 0, #447685 100%)
+}
+
+#findSafeByQa .userSafeMsg, #safeQA .userSafeMsg {
+    font-size: 12px;
+    margin-left: 40px;
+    margin-top: 20px
+}
+
+.setContractHeader {
+    position: relative;
+    line-height: 40px;
+    padding: 0 20px;
+    color: #666;
+    background-color: #d5ccc8;
+    margin: 0 30px;
+    font-size: 13px;
+    overflow: hidden
+}
+
+.setContractHeader label {
+    padding-right: 45px
+}
+
+.setContractHeader span {
+    color: #333
+}
+
+.setContractHeader #showContractRule {
+    float: right;
+    color: #c67
+}
+
+.setContractContent {
+    overflow: hidden;
+    margin-top: 30px;
+    padding: 0 30px;
+    font-size: 13px
+}
+
+.setContractContent h2 {
+    float: left;
+    width: 75px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 17px
+}
+
+.setContractContent form {
+    float: left;
+    width: 775px
+}
+
+.setContractContent li {
+    position: relative;
+    line-height: 50px;
+    padding-left: 55px;
+    border-bottom: 1px dotted #ccc;
+    overflow: hidden
+}
+
+.setContractContent li .listTitle {
+    font-weight: 700
+}
+
+.setContractContent li .inputBox {
+    padding-right: 25px
+}
+
+.setContractContent li .inputBox label {
+    width: 95px;
+    text-align: right;
+    display: inline-block
+}
+
+.setContractContent li .inputBox .labelCond {
+    width: 60px
+}
+
+.setContractContent li > * {
+    float: left
+}
+
+.setContractContent .addBtn, .setContractContent li a {
+    position: absolute;
+    left: 13px;
+    top: 11px;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url(../images/userCenter/contractIcon.png) no-repeat
+}
+
+.setContractContent li a.removeBtn {
+    background-position: 0 -64px
+}
+
+.setContractContent li a.active {
+    background-position: 0 -26px;
+    cursor: default
+}
+
+.setContractContent p.error, .setContractContent p.ruleError {
+    clear: left;
+    line-height: 22px;
+    color: red;
+    position: relative;
+    top: -8px
+}
+
+.setContractContent .addBox {
+    position: relative
+}
+
+.setContractContent .addBox .addBtn {
+    background-position: 0 -101px;
+    position: static;
+    margin: 11px 13px;
+    width: 68px;
+    text-align: right;
+    line-height: 28px
+}
+
+.setContractContent .btnBox #cancelBtn, .setContractContent .btnBox #modifyBtn, .setContractContent .btnBox .btn {
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px
+}
+
+.setContractContent .btnBox {
+    margin-top: 20px;
+    text-align: center
+}
+
+.setContractContent .btnBox .btn {
+    background-color: #bf5059;
+    color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);
+    background-image: -webkit-linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    background-image: linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    margin-left: 10px
+}
+
+.setContractContent .btnBox .btn:active, .setContractContent .btnBox .btn:hover {
+    background-color: #f84150;
+    background-image: -webkit-linear-gradient(top, #f84150 0, #942b34 100%);
+    background-image: linear-gradient(top, #f84150 0, #942b34 100%)
+}
+
+.setContractContent .btnBox .btn:disabled, .setContractContent .btnBox .btn:disabled:active, .setContractContent .btnBox .btn:disabled:hover {
+    cursor: no-drop;
+    background: #ddd;
+    box-shadow: none;
+    color: #000
+}
+
+.setContractContent .btnBox #modifyBtn {
+    color: #fff;
+    background-color: #5999ab;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);
+    background-image: -webkit-linear-gradient(top, #5999ab 0, #43656f 100%);
+    background-image: linear-gradient(top, #5999ab 0, #43656f 100%)
+}
+
+.setContractContent .btnBox #modifyBtn:active, .setContractContent .btnBox #modifyBtn:hover {
+    background-color: #5bb8d4;
+    background-image: -webkit-linear-gradient(top, #5bb8d4 0, #447685 100%);
+    background-image: linear-gradient(top, #5bb8d4 0, #447685 100%)
+}
+
+.setContractContent .btnBox #modifyBtn:disabled, .setContractContent .btnBox #modifyBtn:disabled:active, .setContractContent .btnBox #modifyBtn:disabled:hover {
+    cursor: no-drop;
+    background: #ddd;
+    box-shadow: none;
+    color: #000
+}
+
+.setContractContent .btnBox #cancelBtn {
+    color: #fff;
+    background-color: #ec8939;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);
+    background-image: -webkit-linear-gradient(top, #ec8939 0, #915d32 100%);
+    background-image: linear-gradient(top, #ec8939 0, #915d32 100%)
+}
+
+.setContractContent .btnBox #cancelBtn:active, .setContractContent .btnBox #cancelBtn:hover {
+    background-color: #ffb163;
+    background-image: -webkit-linear-gradient(top, #ffb163 0, #9a632e 100%);
+    background-image: linear-gradient(top, #ffb163 0, #9a632e 100%)
+}
+
+.setContractContent .btnBox #cancelBtn:disabled, .setContractContent .btnBox #cancelBtn:disabled:active, .setContractContent .btnBox #cancelBtn:disabled:hover {
+    cursor: no-drop;
+    background: #ddd;
+    box-shadow: none;
+    color: #000
+}
+
+.contractRuleList {
+    height: 500px;
+    padding: 0 20px;
+    overflow-x: hidden;
+    font-size: 13px;
+    color: #333
+}
+
+.contractRuleList dt {
+    font-weight: 700;
+    line-height: 40px
+}
+
+.contractRuleList dd {
+    line-height: 24px
+}
+
+#myContractArea .contractTip {
+    overflow: hidden;
+    padding: 16px 22px;
+    line-height: 22px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #d5ccc8;
+    margin: 0 30px
+}
+
+#myContractArea .contractTip dt {
+    width: 86px;
+    float: left;
+    font-weight: 700
+}
+
+#myContractArea .contractTip dt i {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+    background: url(../images/userCenter/contractIcon.png) no-repeat
+}
+
+#myContractArea .contractTip dd {
+    width: 500px;
+    float: left
+}
+
+#myContractArea .contractTip dd a {
+    padding-left: 4px;
+    color: #c67
+}
+
+#myContractArea .contractRule {
+    margin: 0 30px
+}
+
+#myContractArea .contractRule h3 {
+    position: relative;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 13px;
+    margin-top: 10px;
+    font-size: 17px;
+    color: #c67;
+    font-weight: 700
+}
+
+#myContractArea .contractRule h3 .time {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 400;
+    color: #333;
+    font-size: 13px
+}
+
+#myContractArea .contractRule li {
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    border-radius: 5px
+}
+
+#myContractArea .contractRule .contractRuleTitle {
+    display: inline-block;
+    padding: 0 11px;
+    color: #fff;
+    background-color: #98a0af;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px
+}
+
+#myContractArea .contractRule .contractRuleDetail {
+    display: inline-block;
+    padding-left: 21px;
+    color: #666
+}
+
+#myContractArea .contractRule .contractRuleDetail strong {
+    color: #c67;
+    font-weight: 400
+}
+
+#myContractArea .bonusCircleBox {
+    margin: 20px 90px;
+    overflow: hidden
+}
+
+#myContractArea .bonusCircleBox .bonusCircleCommon {
+    width: 343px;
+    height: 233px;
+    border: 1px solid #ccc;
+    border-radius: 5px
+}
+
+#myContractArea .bonusCircleBox .bonusCircleCommon h3 {
+    height: 35px;
+    line-height: 35px;
+    font-size: 17px;
+    text-align: center
+}
+
+#myContractArea .bonusCircleBox .bonusCircleCommon ul {
+    padding: 8px 15px 0
+}
+
+#myContractArea .bonusCircleBox .bonusCircleCommon li {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dotted #ccc
+}
+
+#myContractArea .bonusCircleBox .bonusCircleCommon li span:first-child {
+    color: #666
+}
+
+#myContractArea .bonusCircleBox .bonusCircleCommon p {
+    padding: 0 15px;
+    font-weight: 700;
+    line-height: 35px
+}
+
+#myContractArea .bonusCircleBox .currentBonusCircle {
+    float: left
+}
+
+#myContractArea .bonusCircleBox .currentBonusCircle h3 {
+    background-color: #98a0af
+}
+
+#myContractArea .bonusCircleBox .lastBonusCircle {
+    float: right
+}
+
+#myContractArea .bonusCircleBox .lastBonusCircle h3 {
+    background-color: #c4a8b3
+}
+
+#myContractArea .btnBox {
+    text-align: center;
+    margin-top: 20px
+}
+
+#myContractArea .signBtn {
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #bf5059;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);
+    background-image: -webkit-linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    background-image: linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    margin-right: 10px
+}
+
+#myContractArea .signBtn:active, #myContractArea .signBtn:hover {
+    background-color: #f84150;
+    background-image: -webkit-linear-gradient(top, #f84150 0, #942b34 100%);
+    background-image: linear-gradient(top, #f84150 0, #942b34 100%)
+}
+
+#myContractArea .signBtn:disabled, #myContractArea .signBtn:disabled:active, #myContractArea .signBtn:disabled:hover {
+    cursor: no-drop;
+    background: #ddd;
+    box-shadow: none;
+    color: #000
+}
+
+#myContractArea .refuseBtn, .dialogBtn .btn {
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14)
+}
+
+#myContractArea .refuseBtn {
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #5999ab;
+    background-image: -webkit-linear-gradient(top, #5999ab 0, #43656f 100%);
+    background-image: linear-gradient(top, #5999ab 0, #43656f 100%)
+}
+
+#myContractArea .refuseBtn:active, #myContractArea .refuseBtn:hover {
+    background-color: #5bb8d4;
+    background-image: -webkit-linear-gradient(top, #5bb8d4 0, #447685 100%);
+    background-image: linear-gradient(top, #5bb8d4 0, #447685 100%)
+}
+
+#lowerDividend .selectCond {
+    width: 120px
+}
+
+.layui-layer .layui-layer-title {
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 10px;
+    color: #fff;
+    background-color: #c9aba9
+}
+
+.dialogBtn {
+    text-align: center
+}
+
+.dialogBtn .btn {
+    height: 30px;
+    line-height: 30px;
+    background-color: #bf5059;
+    color: #fff;
+    background-image: -webkit-linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    background-image: linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    width: 100px
+}
+
+.dialogBtn .btn:active, .dialogBtn .btn:hover {
+    background-color: #f84150;
+    background-image: -webkit-linear-gradient(top, #f84150 0, #942b34 100%);
+    background-image: linear-gradient(top, #f84150 0, #942b34 100%)
+}
+
+.dailyLayer #modifyDailyLayer, .msgUserContactLayer .msgBox, .remarkLayer #remarkDiv {
+    padding: 25px 45px 15px
+}
+
+.dailyLayer #modifyDailyLayer .labelTitle, .msgUserContactLayer .msgBox .labelTitle, .remarkLayer #remarkDiv .labelTitle {
+    display: inline-block;
+    width: 60px;
+    text-align: right;
+    margin-right: 5px;
+    line-height: 28px;
+    float: left
+}
+
+.dailyLayer #modifyDailyLayer div, .msgUserContactLayer .msgBox div, .remarkLayer #remarkDiv div {
+    margin-bottom: 15px;
+    overflow: hidden
+}
+
+.dailyLayer #modifyDailyLayer .labelCond, .msgUserContactLayer .msgBox .labelCond, .remarkLayer #remarkDiv .labelCond {
+    background-color: #fff;
+    box-shadow: none;
+    border: 1px solid #ccc
+}
+
+.dailyLayer #modifyDailyLayer textarea, .msgUserContactLayer .msgBox textarea, .remarkLayer #remarkDiv textarea {
+    float: left;
+    width: 270px;
+    height: 70px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: 0;
+    resize: none;
+    padding: 10px;
+    border-radius: 5px
+}
+
+.dailyLayer #modifyDailyLayer .msgErrorWarn, .msgUserContactLayer .msgBox .msgErrorWarn, .remarkLayer #remarkDiv .msgErrorWarn {
+    margin-bottom: 15px;
+    margin-left: 0;
+    text-align: center
+}
+
+.dailyLayer #modifyDailyLayer .msgSendTitle, .msgUserContactLayer .msgBox .msgSendTitle, .remarkLayer #remarkDiv .msgSendTitle {
+    width: 250px
+}
+
+.dailyLayer #modifyDailyLayer .checkBtn, .msgUserContactLayer .msgBox .checkBtn, .remarkLayer #remarkDiv .checkBtn {
+    color: #006ab4
+}
+
+.dailyLayer #modifyDailyLayer .labelTitle {
+    width: 100px
+}
+
+.dailyLayer #modifyDailyLayer .selectCond {
+    width: 122px
+}
+
+.msgDetailsLayer #messageDetailDiv {
+    padding: 15px 30px
+}
+
+.msgDetailsLayer .messageContentDiv {
+    padding: 10px;
+    height: 260px;
+    overflow-x: hidden;
+    background: #f0f0f0
+}
+
+.msgDetailsLayer .messageContentDiv .textRight {
+    text-align: right
+}
+
+.msgDetailsLayer .messageContentDiv p {
+    margin-top: 10px
+}
+
+.msgDetailsLayer .messageContentDiv p:first-child {
+    margin-top: 0
+}
+
+.msgDetailsLayer .messageContentDiv .messageInfo {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 230px;
+    word-break: break-all;
+    vertical-align: top;
+    text-align: left;
+    position: relative
+}
+
+.msgDetailsLayer .messageContentDiv .messageLeft {
+    margin-left: 5px;
+    background: #fff
+}
+
+.msgDetailsLayer .messageContentDiv .messageLeft:after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -12px;
+    border: 6px solid;
+    border-color: transparent #fff transparent transparent
+}
+
+.msgDetailsLayer .messageContentDiv .messageRight {
+    margin-right: 5px;
+    background: #bed2ff
+}
+
+.msgDetailsLayer .messageContentDiv .messageRight:after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: -12px;
+    border: 6px solid;
+    border-color: transparent transparent transparent #bed2ff
+}
+
+.msgDetailsLayer .messageContentDiv .msgUserName {
+    display: inline-block;
+    max-width: 60px;
+    line-height: 31px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.msgDetailsLayer .msgSendContentDiv {
+    overflow: hidden;
+    margin-top: 10px
+}
+
+.quotaDistLayer .layui-layer-content .dialogBtn, .setQueryRebateLayer .layui-layer-content .dialogBtn {
+    margin-top: 20px
+}
+
+.msgDetailsLayer textarea {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: 0;
+    resize: none;
+    padding: 10px;
+    float: left;
+    height: 70px;
+    width: 315px;
+    margin-left: 0
+}
+
+.msgDetailsLayer .showMessageReply {
+    width: 63px;
+    height: 70px;
+    line-height: 70px;
+    margin-left: 10px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #cc0a19;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .45) 0, rgba(255, 255, 255, .45) 100%);
+    background-image: linear-gradient(bottom, rgba(0, 0, 0, .45) 0, rgba(255, 255, 255, .45) 100%)
+}
+
+.msgDetailsLayer .showMessageReply:active, .msgDetailsLayer .showMessageReply:hover {
+    background-color: #e50b1e
+}
+
+.setQueryRebateLayer .layui-layer-content {
+    background: #ededf1;
+    padding: 15px 30px 30px
+}
+
+.setQueryRebateLayer .layui-layer-content table {
+    width: 100%;
+    background-color: #fff
+}
+
+.setQueryRebateLayer .layui-layer-content table label {
+    margin-left: 50px
+}
+
+.setQueryRebateLayer .layui-layer-content table label:first-child {
+    margin-left: 0
+}
+
+.setQueryRebateLayer .layui-layer-content td {
+    border: 1px solid #d9d9d9;
+    position: relative;
+    text-align: left;
+    padding: 0 15px;
+    line-height: 40px
+}
+
+.setQueryRebateLayer .layui-layer-content td:first-child {
+    text-align: right
+}
+
+.setQueryRebateLayer .layui-layer-content .ui-corner-all {
+    width: 90px
+}
+
+.quotaDistLayer .layui-layer-content {
+    background: #ededf1;
+    padding: 15px 30px 30px
+}
+
+.quotaDistLayer .layui-layer-content table {
+    width: 100%;
+    background-color: #fff
+}
+
+.quotaDistLayer .layui-layer-content tr {
+    border: 1px solid #d9d9d9
+}
+
+.quotaDistLayer .layui-layer-content td {
+    line-height: 40px;
+    padding: 0 15px
+}
+
+.quotaDistLayer .layui-layer-content .selfRebateTotal {
+    width: 90px;
+    text-align: center
+}
+
+.accountRegLowerLayer .layui-layer-content {
+    padding: 30px
+}
+
+.accountRegLowerLayer .layui-layer-content form {
+    overflow: hidden
+}
+
+.accountRegLowerLayer .layui-layer-content .labelTitle {
+    width: 100px;
+    display: inline-block;
+    text-align: right
+}
+
+.accountRegLowerLayer .layui-layer-content .labelCond[readonly] {
+    background: #eee;
+    cursor: no-drop;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.accountRegLowerLayer .layui-layer-content .labelCond {
+    width: 168px;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    box-shadow: none
+}
+
+.accountRegLowerLayer .layui-layer-content .labelCond.selectCond {
+    width: 190px
+}
+
+.accountRegLowerLayer .layui-layer-content .changeBankArea {
+    width: 300px;
+    float: left
+}
+
+.accountRegLowerLayer .layui-layer-content .changeBankArea .changeSumBox {
+    margin-bottom: 10px
+}
+
+.accountRegLowerLayer .layui-layer-content .purposeArea {
+    width: 473px;
+    float: left
+}
+
+.accountRegLowerLayer .layui-layer-content .purposeArea .titleBold {
+    font-weight: 700
+}
+
+.accountRegLowerLayer .layui-layer-content .purposeArea p {
+    white-space: nowrap;
+    text-align: left;
+    margin: 0 0 10px
+}
+
+.accountRegLowerLayer .layui-layer-content .purposeArea label {
+    float: left;
+    text-align: left
+}
+
+.accountRegLowerLayer .layui-layer-content .purposeRadioList {
+    display: inline-block;
+    width: 260px
+}
+
+.accountRegLowerLayer .layui-layer-content .purposeRadioList li {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    text-align: left;
+    line-height: 28px
+}
+
+.accountRegLowerLayer .layui-layer-content .purposeRadioList li.last {
+    width: 100%
+}
+
+.accountRegLowerLayer .layui-layer-content .purposeRadioList input[type=radio] {
+    margin-bottom: 12px
+}
+
+.accountRegLowerLayer .layui-layer-content .dialogBtn {
+    text-align: left;
+    margin: 5px 5px 0 130px
+}
+
+.userBreadCrumb {
+    padding-left: 20px
+}
+
+#reportCenterArea .searchTeamBtn, #reportCenterArea .searchTeamBtns {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    font-style: normal;
+    font-size: 12px;
+    width: 100px;
+    margin-right: 10px;
+    color: #fff;
+    background-color: #999
+}
+
+#reportCenterArea .searchTeamBtn.active, #reportCenterArea .searchTeamBtn:hover, #reportCenterArea .searchTeamBtns.active, #reportCenterArea .searchTeamBtns:hover {
+    background-color: #087192;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .45) 0, rgba(255, 255, 255, .45) 100%);
+    background-image: linear-gradient(bottom, rgba(0, 0, 0, .45) 0, rgba(255, 255, 255, .45) 100%)
+}
+
+#reportCenterArea .searchTeamBtns {
+    width: 70px
+}
+
+#traceSummaryList {
+    position: relative;
+    padding: 0 30px
+}
+
+#traceSummaryList .areaTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #a96c50
+}
+
+#traceSummaryList .returnPrev {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    font-size: 16px;
+    color: #333
+}
+
+#traceSummaryList .detailHeaderBox {
+    margin-top: 10px;
+    padding: 20px 30px;
+    background: #fafafa
+}
+
+#traceSummaryList .headerDetail {
+    position: relative;
+    overflow: hidden
+}
+
+#traceSummaryList .headerDetail > * {
+    float: left
+}
+
+#traceSummaryList .headerDetail .detailHeader-l {
+    width: 110px;
+    font-size: 16px;
+    font-weight: 700
+}
+
+#traceSummaryList .headerDetail .detailHeader-r p:first-child {
+    margin-top: 0
+}
+
+#traceSummaryList .headerDetail .detailHeader-r label {
+    width: 224px;
+    display: inline-block
+}
+
+#traceSummaryList .headerDetail .detailHeader-c {
+    width: 70%;
+    height: 100px;
+    border: 1px solid #ddd;
+    overflow-x: hidden;
+    background: #fff
+}
+
+#traceSummaryList .headerDetail .detailHeader-c table {
+    width: 100%
+}
+
+#traceSummaryList .headerDetail .headerBtn {
+    position: absolute;
+    bottom: 0;
+    right: 0
+}
+
+#traceSummaryList .headerDetail .headerBtn .btn {
+    height: 30px;
+    line-height: 30px;
+    background-color: #bf5059;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);
+    background-image: -webkit-linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    background-image: linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    width: 100px
+}
+
+#traceSummaryList .headerDetail .headerBtn .btn:active, #traceSummaryList .headerDetail .headerBtn .btn:hover {
+    background-color: #f84150;
+    background-image: -webkit-linear-gradient(top, #f84150 0, #942b34 100%);
+    background-image: linear-gradient(top, #f84150 0, #942b34 100%)
+}
+
+#traceSummaryList .headerDetail p {
+    margin-top: 15px;
+    font-size: 12px
+}
+
+.gameLottListCont {
+    display: inline-block;
+    max-width: 130px;
+    vertical-align: middle
+}
+
+#contentDetailsArea {
+    padding: 15px 30px
+}
+
+#contentDetailsArea .detailNumTextArea {
+    width: 340px;
+    height: 75px;
+    resize: none;
+    border: 1px solid #ddd;
+    padding: 10px;
+    outline: 0;
+    display: block;
+    margin-top: 10px
+}
+
+.generalLayer #betInDiv, .generalLayer #generalDetailArea {
+    padding: 15px 30px 32px;
+    background-image: -webkit-linear-gradient(bottom, #c7c0bd 0, #f9f3f3 100%);
+    background-image: linear-gradient(bottom, #c7c0bd 0, #f9f3f3 100%)
+}
+
+.generalLayer #betInDiv .headerDetail p:first-child {
+    margin-top: 0
+}
+
+.generalLayer .detailHeaderBox {
+    position: relative;
+    padding: 21px 30px;
+    overflow: hidden
+}
+
+.generalLayer .detailHeaderTitle {
+    font-size: 16px;
+    font-weight: 700
+}
+
+.generalLayer .headerDetail {
+    float: left;
+    width: 300px
+}
+
+.generalLayer .headerDetail p {
+    margin-top: 15px;
+    font-size: 12px
+}
+
+.generalLayer .detailNumBox {
+    float: left
+}
+
+.generalLayer .detailNumBox .detailNumTextArea {
+    width: 340px;
+    height: 75px;
+    resize: none;
+    padding: 10px;
+    outline: 0;
+    display: block;
+    margin-top: 10px;
+    background-color: #d3cdcb;
+    border-radius: 4px
+}
+
+.generalLayer .detailNumBox span {
+    position: relative;
+    padding-left: 25px;
+    color: #6b96ea
+}
+
+.generalLayer .detailNumBox span i {
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 22px;
+    background: url(../images/game/betIcon.png) no-repeat
+}
+
+.dailyBox #dailyForm .btnBox .btn, .dailyBox .tabBox .btn, .generalLayer .dialogBtn .btn.againBtn, .generalLayer .dialogBtn .btn.repealOrder {
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14)
+}
+
+.generalLayer .detailBody {
+    max-height: 330px;
+    overflow-x: hidden
+}
+
+.generalLayer table {
+    width: 100%
+}
+
+.generalLayer table td, .generalLayer table th {
+    text-align: center;
+    line-height: 40px
+}
+
+.generalLayer table th {
+    background-color: #ddd0cd;
+    font-weight: 400
+}
+
+.generalLayer table th:nth-child(even) {
+    background-color: #d4c6c3
+}
+
+.generalLayer table td {
+    background-color: #e2dcda
+}
+
+.generalLayer table td:nth-child(even) {
+    background-color: #dad4d1
+}
+
+.generalLayer .dialogBtn .btn {
+    margin-top: 24px;
+    margin-right: 10px
+}
+
+.generalLayer .dialogBtn .btn.repealOrder {
+    line-height: 30px;
+    color: #fff;
+    background-color: #5999ab;
+    background-image: -webkit-linear-gradient(top, #5999ab 0, #43656f 100%);
+    background-image: linear-gradient(top, #5999ab 0, #43656f 100%);
+    width: 100px
+}
+
+.generalLayer .dialogBtn .btn.repealOrder:active, .generalLayer .dialogBtn .btn.repealOrder:hover {
+    background-color: #5bb8d4;
+    background-image: -webkit-linear-gradient(top, #5bb8d4 0, #447685 100%);
+    background-image: linear-gradient(top, #5bb8d4 0, #447685 100%)
+}
+
+.generalLayer .dialogBtn .btn.againBtn {
+    line-height: 30px;
+    color: #fff;
+    background-color: #ec8939;
+    background-image: -webkit-linear-gradient(top, #ec8939 0, #915d32 100%);
+    background-image: linear-gradient(top, #ec8939 0, #915d32 100%);
+    width: 100px
+}
+
+.generalLayer .dialogBtn .btn.againBtn:active, .generalLayer .dialogBtn .btn.againBtn:hover {
+    background-color: #ffb163;
+    background-image: -webkit-linear-gradient(top, #ffb163 0, #9a632e 100%);
+    background-image: linear-gradient(top, #ffb163 0, #9a632e 100%)
+}
+
+.searchBar .dailyManagerBtn {
+    width: 100px
+}
+
+.dailyManagerTips {
+    color: red;
+    font-size: 12px;
+    margin-left: 15px
+}
+
+.dailyBox .tabBox {
+    margin: 0 20px;
+    overflow: hidden
+}
+
+.dailyBox .tabBox .btn {
+    width: 135px;
+    line-height: 30px;
+    background-color: #bf5059;
+    color: #fff;
+    background-image: -webkit-linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    background-image: linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    margin: 0 30px 0 0
+}
+
+.dailyBox .tabBox .btn:active, .dailyBox .tabBox .btn:hover {
+    background-color: #f84150;
+    background-image: -webkit-linear-gradient(top, #f84150 0, #942b34 100%);
+    background-image: linear-gradient(top, #f84150 0, #942b34 100%)
+}
+
+.dailyBox .tabBox .btn.active {
+    background-color: #7a43f1;
+    background-image: -webkit-linear-gradient(top, #7a43f1 0, #26007d 100%);
+    background-image: linear-gradient(top, #7a43f1 0, #26007d 100%)
+}
+
+.dailyBox .tabBox #dailyManagerBack {
+    float: right;
+    color: #006ab4;
+    line-height: 30px
+}
+
+.dailyBox h2 {
+    padding: 8px 20px;
+    background-color: #eee;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px 0
+}
+
+.dailyBox .tableBox {
+    margin: 0 30px
+}
+
+.dailyBox .dailyDetailsBox {
+    margin-top: 40px
+}
+
+.dailyBox #dailyForm {
+    margin-left: 60px
+}
+
+.dailyBox #dailyForm div {
+    margin-bottom: 20px
+}
+
+.dailyBox #dailyForm .labelTitle {
+    display: inline-block;
+    width: 110px;
+    text-align: right;
+    padding-right: 5px
+}
+
+.dailyBox #dailyForm .btnBox {
+    margin-left: 120px;
+    margin-top: 30px
+}
+
+.dailyBox #dailyForm .btnBox .btn {
+    width: 135px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #5999ab;
+    background-image: -webkit-linear-gradient(top, #5999ab 0, #43656f 100%);
+    background-image: linear-gradient(top, #5999ab 0, #43656f 100%)
+}
+
+.dailyBox #dailyForm .btnBox .btn:active, .dailyBox #dailyForm .btnBox .btn:hover {
+    background-color: #5bb8d4;
+    background-image: -webkit-linear-gradient(top, #5bb8d4 0, #447685 100%);
+    background-image: linear-gradient(top, #5bb8d4 0, #447685 100%)
+}
+
+.searchBar .searchCondition {
+    display: block;
+    margin-bottom: 10px
+}
+
+.searchBar .searchCondition .btn {
+    width: 135px
+}
+
+.searchBar .changeTime {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle
+}
+
+.searchBar .changeTime a {
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #ccc;
+    background: #f1f1f1;
+    margin-left: -1px;
+    padding: 0 5px;
+    position: relative
+}
+
+.searchBar .changeTime a:first-child {
+    border-radius: 15px 0 0 15px
+}
+
+.searchBar .changeTime a:last-child {
+    border-radius: 0 15px 15px 0
+}
+
+.searchBar .changeTime a.active, .searchBar .changeTime a:hover {
+    border-color: #c67;
+    background: #fef1f1;
+    color: #c67;
+    z-index: 1
+}
+
+#teamReportList .tableBox {
+    padding: 0 20px;
+    margin-bottom: 40px
+}
+
+#teamReportList .tableBox h2 {
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 700
+}
+
+
+.safeCenterBox{
+    border: 1px solid #ddd;
+}
+.safeCenterBox .newTab{
+    margin-top: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.safeCenterBox .newTab ul{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    margin-left: 15px;
+    height: 30px;
+}
+.safeCenterBox .newTab ul li{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    height: 30px;
+    padding: 0px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.safeCenterBox .newTab ul li.active{
+    border-bottom: 1px solid #fff;
+    color: #e4393c;
+}
+.safeCenterBox .agentSech{
+    padding: 20px;
+}
+.safeCenterBox .agentSech input{
+    height: 20px;
+    line-height: 20px;
+    padding: 5px;
+    border: 1px solid #cecece;
+    width: 150px;
+    color: #666;
+}
+.safeCenterBox .agentSech button{
+    background: #2e4158;
+    border: 1px solid #2e4158;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 0px 10px;
+}
+.safeCenterBox .agentList{
+    padding: 0px 20px 20px;
+}
+.safeCenterBox .agentList ul{
+    margin-bottom:10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+}
+.safeCenterBox .agentList ul li{
+    text-align: center;
+    border-left:1px dotted #ddd;
+    width: 25%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+.safeCenterBox .agentList ul li:nth-child(1){
+    border-left:0px dotted #ddd;
+}
+.safeCenterBox .agentList ul li em{
+    color: #4aa9db;
+    font-size: 18px;
+    font-style: normal;
+}
+.safeCenterBox .agentList ul li span{
+    color: #666;
+}

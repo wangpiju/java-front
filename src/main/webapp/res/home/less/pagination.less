@@ -1,0 +1,60 @@
+//分页
+.pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  line-height: 28px;
+  width: 100%;
+  .page-l {
+    position: absolute;
+    left: 0;
+  }
+  .page-r {
+    text-align: center;
+    div {
+      display: inline-block;
+    }
+  }
+  .page-list {
+    position: relative;
+    .pageDone {
+      position: absolute;
+      top: 2px;
+      display: block;
+      width: 22px;
+      height: 22px;
+      line-height: 22px;
+      text-align: center;
+      border-radius: 50%;
+      font-weight: bold;
+      font-family: '宋体';
+      border: 1px solid #989898;
+      color: #989898;
+      background-color: #e5e5e5;
+      &:hover {
+        color: #fff;
+        background-color: #afafaf;
+      }
+    }
+    .pagePrevious {
+      left: 1px;
+    }
+    .pageNext {
+      right: 1px;
+    }
+  }
+  .homePage, .endPage {
+    text-decoration: underline;
+    margin: 0 5px;
+  }
+  .labelCond {
+    width: 60px;
+    padding: 2px 5px;
+    border-radius: 10px;
+  }
+  .page-list input {
+    width: 40px;
+    padding: 2px 25px;
+    text-align: center;
+  }
+}

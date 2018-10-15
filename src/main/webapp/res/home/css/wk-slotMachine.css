@@ -1,0 +1,742 @@
+.inputSelectDiv, .lotteryHeader {
+    position: relative
+}
+
+body {
+    background: url(../images/lott-tiger/tiger-bg.jpg) top no-repeat
+}
+
+.main {
+    padding-top: 10px
+}
+
+.fontColorTheme {
+    color: #fff600
+}
+
+.inputSelectDiv .labelCond {
+    height: 10px;
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    background: #ece2e2;
+    color: #555
+}
+
+select.labelCond {
+    width: 180px;
+    height: 30px;
+    font-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(../images/lottery/selectIcon.png) right no-repeat #ece2e2;
+    color: #555;
+    border: none
+}
+
+.animateBox {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.overflowEllipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.lotteryHeaderBox {
+    width: 1230px;
+    height: 220px;
+    margin: 0 auto;
+    background: url(../images/lott-tiger/lotteryHeader.png) center no-repeat;
+    padding: 34px 160px 53px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.lotteryHeader {
+    height: 120px;
+    font-size: 16px
+}
+
+.currLottNumBox {
+    color: #f39;
+    position: absolute;
+    top: 5px;
+    left: 360px
+}
+
+.lotteryNumArea {
+    height: 80px;
+    width: 470px;
+    position: absolute;
+    top: 35px;
+    left: 240px
+}
+
+.lotteryNumBox {
+    height: 100%;
+    overflow: hidden
+}
+
+.lotteryNumBox .lotteryNum {
+    text-align: center
+}
+
+.lotteryNumBox .lotteryNum li {
+    float: left;
+    margin-left: 7px
+}
+
+.lotteryNumBox .lotteryNum li:first-child {
+    margin-left: 0
+}
+
+.lotteryNumBox .lotteryNum li p {
+    width: 80px;
+    height: 80px
+}
+
+.lotteryNumBox .lotteryNum li span {
+    display: inline-block;
+    width: 76px;
+    height: 76px;
+    line-height: 76px;
+    font-size: 40px;
+    color: #fff;
+    background: url(../images/lott-tiger/tigerImg.png) -203px -16px no-repeat;
+    border-radius: 50%;
+    margin: 2px 0
+}
+
+.lottery, .lotteryContent {
+    border-radius: 8px
+}
+
+.topThree {
+    width: 180px;
+    position: absolute;
+    right: 0;
+    top: 20px
+}
+
+.lotteryContent, .singleNumBox {
+    position: relative
+}
+
+.topThree ul {
+    padding: 0 10px
+}
+
+.topThree ul .openedNumDetail {
+    color: #ffed00;
+    border-bottom: 1px dashed #ff5aaf;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 5px
+}
+
+.lottery {
+    width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+    background: url(../images/lott-tiger/lotteryArea.png);
+    -webkit-box-shadow: inset 3px 6px 8px rgba(0, 0, 0, .3);
+    -moz-box-shadow: inset 3px 6px 8px rgba(0, 0, 0, .3);
+    box-shadow: inset 3px 6px 8px rgba(0, 0, 0, .3);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.lotteryContent .lotteryTypeArea {
+    display: inline-block;
+    position: relative
+}
+
+.lottNavBox li {
+    float: left;
+    background: #951029;
+    border-radius: 3px;
+    border-bottom: 3px solid #6a0000
+}
+
+.lottNavBox li.active, .lottNavBox li:hover {
+    background: #6b142b
+}
+
+.lottNavBox li a {
+    display: block;
+    width: 70px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff
+}
+
+.lottTypeGroup {
+    width: 880px;
+    padding: 15px;
+    color: #fff;
+    box-sizing: border-box
+}
+
+.lottTypeGroup dl.lottTypeList {
+    overflow: hidden;
+    margin-top: 10px
+}
+
+.lottTypeGroup dl.lottTypeList:first-child {
+    margin-top: 0
+}
+
+.lottTypeGroup dl.lottTypeList dt {
+    float: left;
+    line-height: 24px;
+    min-width: 70px
+}
+
+.lottTypeGroup dl.lottTypeList .lottTypeDetail {
+    display: inline-block;
+    width: 80px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center
+}
+
+.lottTypeGroup dl.lottTypeList .lottTypeDetail.active, .lottTypeGroup dl.lottTypeList .lottTypeDetail:hover {
+    background: #009461
+}
+
+.lottChangeNumBox {
+    padding: 10px 0 60px
+}
+
+.changeNumListBox {
+    padding: 2px;
+    background: #dd3e5c;
+    border: 1px solid #832133;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, .7)
+}
+
+.changeNumListBox .changeNumList {
+    min-height: 110px;
+    background: url(../images/lott-tiger/selectNum-bg.png);
+    padding: 15px;
+    box-shadow: inset 3px 3px 15px rgba(0, 0, 0, .8);
+    border-radius: 5px
+}
+
+.importBetList a.btn, .singleBtns .btn {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3)
+}
+
+.anySelectBox {
+    margin-bottom: 15px
+}
+
+.changeNumDetail {
+    overflow: hidden;
+    margin-top: 5px
+}
+
+.changeNumDetail .changeNum {
+    float: left;
+    overflow: hidden
+}
+
+.changeNumDetail .changeNum .detailTitle {
+    float: left;
+    width: 57px;
+    line-height: 20px;
+    margin: 7px 0;
+    background: #950000;
+    color: #fff;
+    text-align: center;
+    font-size: 12px
+}
+
+.changeNumDouble {
+    display: inline-block;
+    width: 48%
+}
+
+.numList {
+    float: left;
+    overflow: hidden
+}
+
+.numList li {
+    float: left;
+    margin-left: 8px;
+    text-align: center
+}
+
+.numList li a {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    line-height: 32px;
+    font-size: 18px;
+    color: #2d0013;
+    border-radius: 50%;
+    background: url(../images/lott-tiger/tigerImg.png) -72px -108px
+}
+
+.numList li a.smallNum-dd, .numList li a.smallNum-ds, .numList li a.smallNum-xd, .numList li a.smallNum-xs {
+    width: 48px;
+    border-radius: 16px;
+    background-position: 0 -70px
+}
+
+.numList li a.smallNum-dd.active, .numList li a.smallNum-dd:hover, .numList li a.smallNum-ds.active, .numList li a.smallNum-ds:hover, .numList li a.smallNum-xd.active, .numList li a.smallNum-xd:hover, .numList li a.smallNum-xs.active, .numList li a.smallNum-xs:hover {
+    background-position: -148px -107px
+}
+
+.numList li a.active, .numList li a:hover {
+    color: #fff000;
+    background-position: -110px -108px
+}
+
+.numList li p {
+    color: #2c355e
+}
+
+.btnList {
+    float: right;
+    overflow: hidden;
+    line-height: 40px
+}
+
+.btnList li {
+    float: left
+}
+
+.btnList li a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 32px;
+    margin-left: 6px;
+    border-radius: 3px;
+    color: #2d0013;
+    background: url(../images/lott-tiger/tigerImg.png) 0 -108px;
+    text-align: center
+}
+
+.btnList li a:hover {
+    color: #fff000;
+    background-position: -36px -108px
+}
+
+.importBetList a.btn {
+    font-size: 12px;
+    line-height: 30px;
+    padding: 0 10px;
+    color: #fff;
+    background: #951029;
+    border-radius: 5px
+}
+
+.singleNumBox .singleNum {
+    display: block;
+    width: 100%;
+    height: 160px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    resize: none;
+    margin-top: 15px;
+    padding: 10px 30px;
+    outline: 0;
+    font-size: 16px;
+    font-family: microsoft yahei, sans-serif;
+    color: #fff;
+    background: 0 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.singleNumBox .singleMsg {
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 40px;
+    padding-top: 20px;
+    font-size: 12px;
+    cursor: text;
+    color: #fff
+}
+
+.singleBtns {
+    margin-top: 15px
+}
+
+.singleBtns .btn {
+    font-size: 12px;
+    margin-left: 10px;
+    padding: 0 5px;
+    line-height: 25px;
+    color: #fff;
+    background: #951029;
+    border-radius: 5px
+}
+
+.singleBtns .btn:first-child {
+    margin-left: 0
+}
+
+.singleBtns .btn .msg {
+    margin-left: 10px;
+    color: red
+}
+
+.confirmBetsBox {
+    padding: 20px;
+    color: #fff;
+    position: relative
+}
+
+.betsBtn {
+    text-align: center
+}
+
+.betsBtn a {
+    display: inline-block;
+    width: 227px;
+    height: 52px;
+    line-height: 38px;
+    color: #fff;
+    background: url(../images/lott-tiger/betsBtn.png)
+}
+
+.betsBtn a.appendNumBtn {
+    background-position: 0 0;
+    color: #6f0000
+}
+
+.betsBtn a.appendNumBtn:hover {
+    background-position: 0 -52px
+}
+
+.betsBtn a.confirmBets {
+    width: 74px;
+    height: 74px;
+    line-height: 74px;
+    position: absolute;
+    right: 65px;
+    top: 10px;
+    background-position: 0 -104px;
+    border-radius: 50%
+}
+
+.betsBtn a.confirmBets:hover {
+    background-position: -73px -104px
+}
+
+.betsInfo {
+    margin-top: 20px;
+    font-size: 12px;
+    overflow: hidden;
+    position: relative
+}
+
+.betsInfo > * {
+    float: left;
+    line-height: 20px;
+    margin-left: 10px
+}
+
+.betsInfo .betsInfoTips {
+    min-width: 160px
+}
+
+.betsInfo .betsInfoTypeList select.betsInfoType {
+    width: 120px;
+    height: 20px;
+    border-radius: 3px;
+    padding: 0 10px
+}
+
+.amountTypeDetail .amountType {
+    float: left;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 8px;
+    border-radius: 50%;
+    background: #fff;
+    color: #555
+}
+
+.amountTypeDetail .amountType.active, .amountTypeDetail .amountType:hover {
+    background: #fb5b15;
+    color: #fffefe
+}
+
+.changeMultDetail {
+    margin-left: 10px
+}
+
+.changeMultDetail > * {
+    float: left;
+    margin-left: 5px
+}
+
+.changeMultDetail .addMult, .changeMultDetail .reduceMult {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 1px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 28px;
+    border-radius: 9px;
+    background: url(../images/lottery/indexImg.png)
+}
+
+.changeMultDetail .reduceMult {
+    left: 2px;
+    background-position: -95px -20px
+}
+
+.changeMultDetail .addMult {
+    right: 2px;
+    background-position: -119px -20px
+}
+
+.traceNum {
+    position: absolute;
+    right: 10px;
+    top: 0
+}
+
+.traceNum .labelCond {
+    width: 50px;
+    height: 20px;
+    border-radius: 3px;
+    padding: 0 16px;
+    background-color: #5a0000;
+    color: #fff600
+}
+
+.appNumBox {
+    height: 165px;
+    padding: 10px;
+    background: url(../images/lott-tiger/appNumArea.png);
+    border-radius: 8px;
+    box-shadow: inset 3px 3px 15px rgba(0, 0, 0, .8);
+    overflow-x: hidden
+}
+
+.lottNotWinBtn a, .lottTipBox, .lottWinBtn a, .yesBtn {
+    border-radius: 5px
+}
+
+.appNumList {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed
+}
+
+.appNumList td, .appNumList th {
+    line-height: 30px;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    font-size: 12px
+}
+
+.appNumList .appNumDetailClear {
+    display: block;
+    width: 11px;
+    height: 11px;
+    background: url(../images/lottery/indexImg.png) -122px -49px;
+    margin: 0 auto
+}
+
+.lottWinBtn, .lottWinInfo {
+    width: 100%;
+    text-align: center
+}
+
+.appNumList .appNum {
+    max-width: 140px
+}
+
+.footer {
+    margin-top: 120px
+}
+
+.layui-layer .layui-layer-title {
+    border-bottom: none;
+    height: 0
+}
+
+.lottWinInfo {
+    height: 185px;
+    background-color: #2970c1;
+    background: linear-gradient(#286ebf 0, #0e4e97 100%)
+}
+
+.lottWinInfo h1 {
+    font-size: 28px;
+    color: #fff;
+    padding: 47px 0 10px
+}
+
+.lottWinInfo p {
+    color: #003
+}
+
+.lottWinInfo p .highLight {
+    font-size: 24px
+}
+
+.lottWinBtn {
+    height: 35px;
+    padding: 25px 0
+}
+
+.lottWinBtn a {
+    font-size: 14px;
+    width: 95px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff
+}
+
+.lottWinBtn a.againBtn {
+    background-color: #f60
+}
+
+.lottWinBtn a.againBtn:hover {
+    background-color: #e65e03
+}
+
+.lottWinBtn a.returnBtn {
+    background-color: #256bbb;
+    margin-left: 45px
+}
+
+.lottWinBtn a.returnBtn:hover {
+    background-color: #1c60ad
+}
+
+.lottNotWinBox h1 {
+    text-align: center;
+    color: #555;
+    font-size: 20px;
+    padding-top: 58px
+}
+
+.lottNotWinBtn {
+    margin: 20px 0;
+    text-align: center
+}
+
+.lottNotWinBtn a {
+    width: 145px;
+    height: 55px;
+    line-height: 55px;
+    margin: 0 0 10px;
+    font-size: 14px
+}
+
+.lottNotWinBtn a.againBtn {
+    background-color: #29a4ce
+}
+
+.lottNotWinBtn a.againBtn:hover {
+    background-color: #2593b9
+}
+
+.lottNotWinBtn a.againBtnX2 {
+    background-color: #fd7a51;
+    margin-left: 10px
+}
+
+.lottNotWinBtn a.againBtnX2:hover {
+    background-color: #e36e49
+}
+
+.lottNotWinBtn a.againBtnX5 {
+    background-color: #f66
+}
+
+.lottNotWinBtn a.againBtnX5:hover {
+    background-color: #e55c5c
+}
+
+.lottNotWinBtn a.returnBtn {
+    background-color: #5dc35d;
+    margin-left: 10px
+}
+
+.lottNotWinBtn a.returnBtn:hover {
+    background-color: #54af54
+}
+
+.lottTipLayer {
+    color: #003;
+    background-color: #2970c1;
+    background: linear-gradient(#2970c1 0, #0e4e97 100%)
+}
+
+.lottTipLayer .lottTipLayerTitle {
+    height: 43px;
+    line-height: 43px;
+    padding-left: 20px
+}
+
+.lottTipBox {
+    width: 330px;
+    height: 104px;
+    margin: 0 auto;
+    padding-top: 24px;
+    background-color: #fff;
+    text-align: center
+}
+
+.lottTipBox p {
+    line-height: 32px
+}
+
+.lottTipBox .highLight {
+    font-size: large;
+    color: #f60;
+    font-weight: 700;
+    padding: 0 4px
+}
+
+#asideRight a, .yesBtn {
+    color: #fff
+}
+
+.yesBtn {
+    display: block;
+    width: 95px;
+    margin: 20px auto 0;
+    height: 35px;
+    line-height: 35px;
+    background-color: #256bbb;
+    font-size: 14px
+}
+
+.yesBtn:hover {
+    background-color: #1c60ad
+}

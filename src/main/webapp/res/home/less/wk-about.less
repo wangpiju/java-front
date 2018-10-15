@@ -1,0 +1,80 @@
+//关于我们
+body {
+  background: url(../images/userBg.jpg);
+}
+
+.aboutUsMain {
+  background-color: rgba(255, 255, 255, .8);
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#ccffffff, ff, endColorstr=#ccffffff, ff);
+  margin: 40px auto 170px;
+}
+
+.aboutHeader {
+  background-color: #d5ccc8;
+  .titleBar {
+    padding: 20px 0 0 30px;
+    .titleLeft {
+      display: inline-block;
+      width: 5px;
+      height: 18px;
+      background: #fd526f;
+      border-radius: 3px 0 0 3px;
+      vertical-align: middle;
+    }
+    .titleRight {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 18px;
+      vertical-align: middle;
+      color: #333;
+    }
+  }
+  .centreNav {
+    font-size: 0;
+    padding: 0 30px;
+    margin-top: 15px;
+    & .active a {
+      height: 36px;
+      line-height: 32px;
+      border-top: 4px solid #e5d8d8;
+      background: #eeeeee;
+      color: #333333;
+    }
+  }
+  .centreNavDetail {
+    display: inline-block;
+    border-right: 1px solid #e5d8d8;
+    a {
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 18px;
+      text-align: center;
+      background: rgba(255, 176, 176, 0.2);
+      font-size: 16px;
+      position: relative;
+    }
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+.contentBox {
+  padding: 30px;
+  .headerTitle {
+    text-align: left;
+    margin-left: 15px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  .aboutUsDetail {
+    padding: 30px 25px;
+    background: #fff;
+    line-height: 22px;
+    overflow: hidden;
+    position: relative;
+  }
+}

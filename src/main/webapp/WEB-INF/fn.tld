@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://java.sun.com/xml/ns/j2ee"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+    <description>JSTL 1.1 functions library</description>
+    <display-name>JSTL functions sys</display-name>
+    <tlib-version>1.1</tlib-version>
+    <short-name>fn</short-name>
+    <uri>http://www.sjc168.com/fn</uri>
+
+    <function>
+        <description>短的奖期</description>
+        <name>getShortSeasonId</name>
+        <function-class>com.hs3.lotts.LotteryUtils</function-class>
+        <function-signature>java.lang.String getShortSeasonId(java.lang.String)</function-signature>
+        <example>${fn:getShortSeasonId(seasonId)}</example>
+    </function>
+
+    <function>
+        <description>获取号码对应的英文名</description>
+        <name>getTitle</name>
+        <function-class>com.hs3.lotts.LotteryUtils</function-class>
+        <function-signature>java.lang.String getTitle(java.lang.String)</function-signature>
+        <example>${fn:getTitle(key)}</example>
+    </function>
+
+    <function>
+        <description>是否需要到时开启动画</description>
+        <name>getSelf</name>
+        <function-class>com.hs3.lotts.LotteryUtils</function-class>
+        <function-signature>java.lang.Boolean getSelf(java.lang.String)</function-signature>
+        <example>${fn:getSelf(key)}</example>
+    </function>
+
+    <function>
+        <description>是否需要到时开启动画</description>
+        <name>toListByLength</name>
+        <function-class>com.hs3.lotts.LotteryUtils</function-class>
+        <function-signature>java.util.List toListByLength(java.lang.String,java.lang.Integer)</function-signature>
+        <example>${fn:toListByLength(str,len)}</example>
+    </function>
+
+    <function>
+        <description>无返点奖金</description>
+        <name>getMaxBonus</name>
+        <function-class>com.hs3.lotts.LotteryUtils</function-class>
+        <function-signature>java.lang.String
+            getMaxBonus(java.lang.String,java.math.BigDecimal,java.math.BigDecimal,java.math.BigDecimal,java.math.BigDecimal)
+        </function-signature>
+        <example>${fn:getMaxBonus(key,b1,b2,b3,b4)}</example>
+    </function>
+    <function>
+        <description>有返点的奖金</description>
+        <name>getMinBonus</name>
+        <function-class>com.hs3.lotts.LotteryUtils</function-class>
+        <function-signature>java.lang.String getMinBonus(java.lang.String,java.math.BigDecimal)</function-signature>
+        <example>${fn:getMinBonus(key)}</example>
+    </function>
+</taglib>

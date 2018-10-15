@@ -1,0 +1,711 @@
+@import "centerCommon";
+@import "layerTip";
+@import "layerSetIntro";
+
+.errorWarm {
+  font-size: 12px;
+}
+
+.rechargeA i, .depositA i, .outstandingA i {
+  position: absolute;
+  left: 16px;
+  top: 10px;
+  display: block;
+  width: 21px;
+  height: 22px;
+  background: url(../images/recharge/rechNavIcon.png) -1px -1px no-repeat;
+}
+
+.depositA i {
+  background-position: 1px -23px;
+  top: 9px;
+}
+
+.rechargeA:hover i, .rechargeA.active i, .outstandingA:hover i, .outstandingA.active i {
+  background-position: -25px -1px;
+}
+
+.depositA:hover i, .depositA.active i {
+  background-position: -25px -24px
+}
+
+//充值提现
+.accountCentreContent {
+  padding: 20px 30px;
+}
+
+.stepBox {
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+  .stepBar {
+    width: 100%;
+    background-color: #b5b5b5;
+    height: 38px;
+    li {
+      float: left;
+    }
+    .step {
+      display: block;
+      padding: 0 35px;
+      position: relative;
+      width: 170px;
+      height: 38px;
+      line-height: 38px;
+      text-align: center;
+      color: #fff;
+      i {
+        font-style: normal;
+        font-size: 16px;
+        color: #fff;
+        background-color: #b5b5b5;
+        display: block;
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+        border: 3px solid #7e7e7e;
+        position: absolute;
+        left: -23px;
+        top: -3px;
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          right: -27px;
+          top: 13px;
+          border-style: solid;
+          border-width: 6px 10px;
+          border-color: transparent transparent transparent #fff;
+        }
+      }
+    }
+    .step-1 {
+      &.active {
+        background-color: #e79a13;
+        & i {
+          background-color: #e79a13;
+          border-color: #fff;
+        }
+      }
+    }
+    .step-2 {
+      width: 120px;
+      &.active {
+        background-color: #e77c13;
+        & i {
+          background-color: #e77c13;
+          border-color: #fff;
+        }
+      }
+    }
+    .step-3 {
+      width: 100px;
+      &.active {
+        background-color: #e74513;
+        & i {
+          background-color: #e74513;
+          border-color: #fff;
+        }
+      }
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        border: 19px solid;
+        border-color: transparent transparent transparent #b5b5b5;
+        right: -38px;
+        top: 0;
+      }
+    }
+  }
+  .rechTeach {
+    position: absolute;
+    top: 50%;
+    right: -120px;
+    color: #999;
+    margin-top: -10px;
+    text-decoration: underline;
+    &:hover {
+      color: #006ab4;
+    }
+  }
+}
+
+.bank {
+  display: inline-block;
+  padding: 0 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
+
+.changeBankBox {
+  margin: 30px auto;
+  overflow: hidden;
+  width: 770px;
+  .bank-l {
+    float: left;
+  }
+  .bank-r {
+    float: left;
+    width: 670px;
+    .bankBorder {
+      border-color: #00c000;
+    }
+  }
+}
+
+.btnRadio, .bankImg {
+  vertical-align: middle;
+}
+
+.changeSumBox {
+  margin: 30px auto;
+  width: 770px;
+}
+
+.userMsg {
+  margin-left: 105px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 12px;
+  border: 1px solid #d9d9d9;
+  color: #999;
+  background: #f4f9f9;
+  span {
+    font-size: 12px;
+  }
+}
+
+.comChargeBox {
+  margin-left: 105px;
+  margin-top: 10px;
+  color: #999;
+  i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 5px;
+    background: url("../images/recharge/tipIcon.png") no-repeat;
+  }
+  em {
+    font-style: normal;
+    color: #c63;
+  }
+}
+
+.rechAmountDetail {
+  position: relative;
+  display: inline-block;
+}
+
+.rechAmountInfo {
+  display: none;
+  position: absolute;
+  top: -70px;
+  left: -5px;
+}
+
+.rechAmountInfo-l, .rechAmountInfo-r {
+  height: 63px;
+  position: absolute;
+  top: 0;
+}
+
+.rechAmountInfo-l {
+  width: 10px;
+  left: -10px;
+  background: url(../images/recharge/rechAmount-l.png) center no-repeat;
+}
+
+.rechAmountInfo-r {
+  width: 15px;
+  right: -15px;
+  background: url(../images/recharge/rechAmount-r.png) center no-repeat;
+}
+
+.rechAmountInfo-c {
+  display: block;
+  min-width: 30px;
+  height: 63px;
+  line-height: 60px;
+  background: url(../images/recharge/rechAmount-c.png) repeat-x;
+  color: #e00015;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.rechAmountInfo-b {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: -6px;
+  left: 15px;
+  background: url(../images/recharge/rechAmount-b.png) center no-repeat;
+}
+
+.changeBankBtn {
+  text-align: center;
+}
+
+.btn {
+  .blueBtn;
+  width: 100px;
+}
+
+.labelTitle {
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+}
+
+.labelCond {
+  width: 180px;
+  height: 22px;
+  line-height: 22px;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  box-shadow: inset 0 1px 5px rgba(168, 168, 168, .75), inset 0 0 4px rgba(255, 255, 255, .2);
+}
+
+//提现
+.depositBox {
+  width: 590px;
+  margin: 40px auto;
+  p {
+    line-height: 60px;
+  }
+  .depositChangeBank {
+    overflow: hidden;
+  }
+  .btn {
+    margin-top: 20px;
+  }
+  .bank {
+    margin-bottom: 0;
+    margin-top: 5px;
+    line-height: 40px;
+    width: 100%;
+    &:first-child {
+      margin-top: 0;
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+  .depositAmount {
+    width: 100px;
+  }
+  .warnIcon {
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    background: url("../images/warmIcon.png") no-repeat;
+    margin-right: 10px;
+    position: relative;
+    top: 12px;
+  }
+}
+
+.depositsafeBox {
+  margin: 20px 0 0 240px;
+}
+
+.depositMsg {
+  margin: 0;
+}
+
+.depositChangeBank .labelTitle, .depositChangeBank .depositBanks {
+  float: left;
+  line-height: 46px;
+}
+
+.depositChangeBank .depositBanks {
+  width: 465px;
+}
+
+//提现结果页面
+.depositFinish {
+  width: 370px;
+  margin: 100px auto;
+}
+
+.finishInfo p {
+  line-height: 40px;
+}
+
+.finishInfo .userMsg, .finishInfo .userMsg p {
+  line-height: 24px;
+  margin: 0;
+}
+
+.finishInfo .labelTitle {
+  margin-left: 90px;
+}
+
+.finishTitle {
+  font-size: 18px;
+  margin-left: 22px;
+  vertical-align: middle;
+}
+
+.smileFace {
+  width: 42px;
+  height: 42px;
+  background: url(../images/recharge/smileFace.png);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.depositFinish .tips {
+  margin-left: 58px;
+}
+
+.finishBtn {
+  margin-top: 30px;
+  text-align: center;
+}
+
+//二級支付掃碼頁面
+.confirmRechargeBox {
+  position: relative;
+  width: 875px;
+  margin: 30px 0 0 -10px;
+  padding: 30px 0 50px;
+  border: 1px solid #cbcbcb;
+  background: #fff;
+  overflow: hidden;
+  span {
+    font-size: 12px;
+  }
+  .rechQRCode {
+    float: none;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .userMsg {
+    width: 100%;
+    margin: 20px 0;
+    background: none;
+    border: none;
+    padding: 0;
+    img {
+      width: 100%;
+    }
+  }
+  h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+  }
+}
+
+.onlineServiceCtn {
+  color: red;
+  text-decoration: underline;
+}
+
+.alipayBox {
+  .confirmRechargeBox {
+    position: relative;
+    width: auto;
+    min-height: 0;
+    margin: 30px auto 0;
+    padding: 30px 29px 50px;
+  }
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 50px;
+    font-weight: bold;
+  }
+  .postscriptCont {
+    display: inline-block;
+    padding: 5px;
+    background: #eee;
+  }
+  .rechQRCode {
+    margin-top: 0;
+    display: inline-block;
+    img {
+      width: 180px;
+      height: 180px;
+    }
+  }
+  .confirmRechargeBtn {
+    clear: both;
+    width: 100%;
+  }
+}
+
+.cfmRechSecond {
+  overflow: hidden;
+  & > div {
+    float: left;
+  }
+  .rechLeft {
+    width: 563px;
+    .bankRech & {
+      float: none;
+      width: auto;
+    }
+    .rechLeftInfo {
+      border: 1px dashed #ccc;
+      padding: 30px 0;
+      margin-top: 23px;
+      border-radius: 3px;
+      position: relative;
+      &:first-child {
+        margin-top: 0;
+      }
+      .bankRech & {
+        padding: 30px 110px;
+      }
+    }
+  }
+  .bankRech & {
+    overflow: visible;
+  }
+  .rechRight {
+    width: 215px;
+    height: 290px;
+    margin-left: 20px;
+    border: 1px dashed #ccc;
+    text-align: center;
+    border-radius: 3px;
+    background: url(../images/recharge/qrcodeTitleBg.png) #f1f1f1 top repeat-x;
+    .rechQRCodeBox {
+      margin-top: 60px;
+      & > span {
+        font-size: 18px;
+        line-height: 35px;
+      }
+    }
+  }
+}
+
+.infoDetail {
+  line-height: 35px;
+  margin-top: 10px;
+  overflow: hidden;
+  &:first-child {
+    margin-top: 0;
+  }
+  .labelTitle {
+    width: 85px;
+    font-weight: bold;
+    padding: 0 5px;
+  }
+}
+
+.copy {
+  float: right;
+  color: #099;
+  margin-right: 270px;
+  .bankRechAmount &, .alipayRechAmount & {
+    margin-right: 360px;
+  }
+}
+
+.alipayNameTips {
+  width: 220px;
+  height: 155px;
+  position: absolute;
+  top: -27px;
+  right: 30px;
+  background: url(../images/recharge/alipayNameTips.png) center no-repeat;
+  .bankRech & {
+    right: 130px;
+  }
+}
+
+.alipayAmountTips {
+  width: 341px;
+  height: 132px;
+  position: absolute;
+  top: 10px;
+  right: -5px;
+  background: url(../images/recharge/alipayAmountTips.png) center no-repeat;
+  .bankRech & {
+    right: 110px;
+  }
+}
+
+.postscript i {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: url(../images/recharge/find.png) no-repeat;
+  &:hover {
+    img {
+      display: block;
+    }
+  }
+  img {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 226px;
+    width: 656px;
+    z-index: 2;
+  }
+}
+
+.confirmRechargeBtn {
+  text-align: center;
+  margin-top: 20px;
+  .btn {
+    width: 210px;
+  }
+  .endImproveInfo {
+    margin-left: 10px;
+    background-color: #fd526f;
+    background-image: -webkit-linear-gradient(top, #fd526f 0, #ff143c 100%);
+    background-image: linear-gradient(top, #fd526f 0, #43656f 100%);
+    &:active, &:hover {
+      background-color: #ff728a;
+      background-image: -webkit-linear-gradient(top, #ff728a 0, #ff3155 100%);
+      background-image: linear-gradient(top, #ff728a 0, #ff3155 100%);
+    }
+  }
+}
+
+.loginBankRechBox {
+  position: relative;
+  margin-top: 20px;
+  .btn {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.layerBox {
+  padding: 20px 30px;
+  .labelDiv {
+    margin-top: 15px;
+    color: #333;
+    &:first-child {
+      margin-top: 0;
+    }
+    .labelTitle {
+      width: 120px;
+    }
+  }
+}
+
+#confirmRechargeDialog .btn {
+  margin-top: 15px;
+}
+
+.rechargeFinish {
+  width: 470px;
+  margin: 100px auto;
+}
+
+//二級銀行頁面
+.rechargeInfo {
+  width: 320px;
+  padding: 30px 7px;
+}
+
+.payeeInfo {
+  width: 360px;
+  border-left: 1px solid #cbcbcb;
+  border-right: 1px solid #cbcbcb;
+  padding: 30px 7px;
+}
+
+.rechargeBank {
+  vertical-align: middle;
+}
+
+.payeeExplain span {
+  float: right;
+  width: 340px;
+  border: 1px dashed #ccc;
+  color: #ccc;
+  padding: 5px;
+  line-height: 20px;
+}
+
+.rechargeTime {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.rechargeCountDown {
+  margin-top: 80px;
+  span {
+    font-size: 36px;
+  }
+}
+
+.rechTimeIntro {
+  margin-top: 50px;
+}
+
+//未到账
+#rechOutForm, #depOutForm {
+  line-height: 45px;
+  margin: 50px 0 0 210px;
+  .labelTitle {
+    width: 120px;
+  }
+  .radioLabel {
+    margin-right: 8px;
+  }
+}
+
+.outstandingMsg {
+  margin: 150px 0 0;
+  font-size: 14px;
+}
+
+//有尚未完成充值彈框
+.layui-layer .layui-layer-title {
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  padding: 0 10px;
+  color: #fff;
+  background-color: #c9aba9;
+}
+
+.dialogBtn {
+  text-align: center;
+  .btn {
+    .redBtn;
+    width: 100px;
+  }
+}
+
+.tableBoxNone {
+  padding: 15px 30px 30px;
+  p {
+    line-height: 30px;
+  }
+  table {
+    width: 100%;
+    tr {
+      line-height: 40px;
+      text-align: center;
+      background: #f9f9f9;
+    }
+    a {
+      color: #006ab4;
+      text-decoration: underline;
+    }
+  }
+  .dialogBtn {
+    margin: 18px 0 10px;
+  }
+}

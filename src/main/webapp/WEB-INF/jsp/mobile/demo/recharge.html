@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<meta content="email=no" name="format-detection">
+    <title>账户充值</title>
+    <link rel="stylesheet" href="css/hs-mobile.css" />
+</head>
+<body class="bodyColorEEE">
+
+<!-- 账户充值 -->
+<div class="userRechargeArea">
+    <div class="mainNav">
+        <a href="javascript:;" class="mainMenuBtn">
+            <img src="images/mainMenuIcon.png" class="mainMenuIcon" />
+        </a>
+        <span class="headerTitle">充值</span>
+    </div>
+    <div class="container">
+        <div class="userRechargeListBox" style="display:none;">
+            <div class="listForm">
+                <div class="listDetail">
+                    <p class="detailTitle fontColorTeal">
+                        <i class="detailTitleLeft"></i>
+                        <span>充值方式</span>
+                    </p>
+                    <div class="labelCondSelect">
+                        <select name="userType-rech" class="labelCond">
+                            <option value="">提款必备验证密码，不能与登录密码重复</option>
+                        </select>
+                        <i class="selectIcon"></i>
+                    </div>
+                </div>
+                <div class="listDetail">
+                    <p class="detailTitle fontColorTeal">
+                        <i class="detailTitleLeft"></i>
+                        <span>充值银行</span>
+                    </p>
+                    <div class="labelCondSelect">
+                        <select name="userType-rech" class="labelCond">
+                            <option value="">已绑定的银行卡</option>
+                        </select>
+                        <i class="selectIcon"></i>
+                    </div>
+                </div>
+                <div class="listDetail">
+                    <p class="detailTitle fontColorTeal">
+                        <i class="detailTitleLeft"></i>
+                        <span>充值金额</span>
+                        <span class="detailTips fontColorGray">单次充值最小金额2元，最大20000元</span>
+                    </p>
+                    <div class="labelCondSelect">
+                        <input type="text" class="labelCond" />
+                        <i class="selectIcon rightIcon"></i>
+                        <i class="selectIcon wrongIcon"></i>
+                    </div>
+                </div>
+                <div class="listDetail">
+                    <p class="detailTitle fontColorTeal">
+                        <i class="detailTitleLeft"></i>
+                        <span>安全密码</span>
+                        <span class="detailTips errorWarn">安全密码输入不正确</span>
+                    </p>
+                    <input type="password" class="labelCond" />
+                </div>
+            </div>
+            <div class="btnGroup">
+                <a href="javascript:;" class="btn">充值</a>
+            </div>
+        </div>
+        <div class="userRechAfmInfoBox" style="display:none;">
+            <div class="rechAfmInfo">
+                <div class="rechAfmInfoTitle">
+                    <span class="fontColorTeal">充值信息</span>
+                </div>
+                <div class="rechAfmInfoContent">
+                    <div class="rechAfmInfoDetail">
+                        <span class="rechDetailTitle">充值方式：</span>
+                        <span class="fontColorGray">银行卡转账</span>
+                    </div>
+                    <div class="rechAfmInfoDetail">
+                        <span class="rechDetailTitle">充值银行：</span>
+                        <span class="fontColorGray bank">中国建设银行<br/>6222 5209 1210 7600 001</span>
+                    </div>
+                    <div class="rechAfmInfoDetail">
+                        <span class="rechDetailTitle">开户姓名：</span>
+                        <span class="fontColorGray">杨洋</span>
+                    </div>
+                    <div class="rechAfmInfoDetail">
+                        <span class="rechDetailTitle">充值金额：</span>
+                        <span class="fontColorRed">1000.00元</span>
+                    </div>
+                </div>
+            </div>
+            <div class="rechAfmInfo">
+                <div class="rechAfmInfoTitle">
+                    <span class="fontColorTeal">收款账号</span>
+                </div>
+                <div class="rechAfmInfoContent">
+                    <div class="rechAfmInfoDetail">
+                        <span class="rechDetailTitle">收款银行：</span>
+                        <span class="fontColorGray">中国建设银行<br/>6222 5209 1210 7600 001</span>
+                    </div>
+                    <div class="rechAfmInfoDetail">
+                        <span class="rechDetailTitle">开户姓名：</span>
+                        <span class="fontColorGray">杨洋</span>
+                    </div>
+                    <div class="rechAfmInfoDetail">
+                        <span class="rechDetailTitle">附言：</span>
+                        <span class="fontColorRed">1000.00元</span>
+                    </div>
+                </div>
+            </div>
+            <div class="rechAfmInfoTips">
+                <span class="errorWarn fontSizeRem12">请于15分钟内完成充值</span>
+            </div>
+            <div class="btnGroup">
+                <a href="javascript:;" class="btn">确认充值</a>
+            </div>
+        </div>
+        <div class="rechargeSuccessBox">
+            <div class="depoRechSuccessInfo">
+                <p>
+                    <img src="images/tk_icon1.png" class="msgIcon" alt=""/>
+                    <span class="msgText">恭喜您，充值成功！</span>
+                </p>
+            </div>
+            <div class="rechDetailIntro">
+                <p>
+                    <span>充值金额：</span>
+                    <span class="fontColorRed">1000元</span>
+                </p>
+                <p>
+                    <span>充值方式：</span>
+                    <span>银行转账</span>
+                </p>
+                <p>
+                    <span>订单编号：</span>
+                    <span>201512562HJD8H</span>
+                </p>
+            </div>
+            <div class="btnGroup">
+                <a href="javascript:;" class="btn">查看账户明细</a>
+                <a href="javascript:;" class="btn gotoPlay">选择彩种投注</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

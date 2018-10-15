@@ -1,0 +1,89 @@
+@layerColor: #ddd2d2;
+//通用提示弹框
+.lottTipLayer {
+  .layui-layer-content {
+    border-radius: 4px;
+    .lottTipLayerTitle {
+      height: 45px;
+      line-height: 45px;
+      font-size: 16px;
+      padding: 0 10px;
+      color: #555;
+      background-color: #fff;
+    }
+    .lottTipBox {
+      text-align: center;
+    }
+    .msg {
+      margin-top: 30px;
+      display: inline-block;
+      i {
+        display: inline-block;
+        width: 41px;
+        height: 41px;
+        background: url(../images/warmIcon.png) no-repeat;
+        margin-right: 20px;
+        float: left;
+      }
+      .content {
+        display: inline-block;
+        line-height: 41px;
+        max-width: 370px;
+        *width: 370px;
+      }
+    }
+    .lottTipBtn {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 70px;
+      width: 100%;
+      background-color: @layerColor;
+    }
+    .closeBtn {
+      display: block;
+      width: 135px;
+      height: 30px;
+      line-height: 30px;
+      background-color: #cc0a19;
+      color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14);
+      background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .45) 0, rgba(255, 255, 255, .45) 100%);
+      background-image: linear-gradient(bottom, rgba(0, 0, 0, .45) 0, rgba(255, 255, 255, .45) 100%);
+      margin: 20px auto 0;
+      &:hover, &:active {
+        background-color: #e50b1e;
+      }
+    }
+  }
+}
+
+.layui-layer .layui-layer-setwin {
+  display: inline-block;
+  width: 42px;
+  height: 33px;
+  //background-color:@layerColor;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  right: 0;
+  top: 6px;
+}
+
+.layui-layer .layui-layer-setwin .layui-layer-close2, .layui-layer .layui-layer-setwin .layui-layer-close1 {
+  width: 31px;
+  height: 31px;
+  left: 1px;
+  top: 1px;
+  margin: 0;
+  background: url("../images/closeLayer.png") 0 0 no-repeat;
+  transition: .3s ease-in-out;
+  &:hover {
+    background-position: 0 0;
+    -webkit-transform: rotate(180deg); /* Safari 和 Chrome */
+    -moz-transform: rotate(180deg); /* Firefox */
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -o-transform: rotate(180deg); /* Opera */
+    transform: rotate(180deg);
+  }
+}

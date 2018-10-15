@@ -1,0 +1,342 @@
+.blueBtn, .redBtn, .yellowBtn {
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14)
+}
+
+.blueBtn, .redBtn, .rightArea .helpCenterCommonDetail .helpCenterCommonBtn .btn, .yellowBtn {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 0 4px rgba(255, 255, 255, .14)
+}
+
+body {
+    /*background: url(../images/bg.jpg)*/
+    background: #ECE4F1;
+}
+
+.areaBigContainer {
+    width: 1000px;
+    background-color: rgba(255, 255, 255, .8);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#ccffffff, ff, endColorstr=#ccffffff, ff);
+    margin: 40px auto 170px
+}
+
+.containerFlex {
+    display: inline-flex;
+    min-height: 700px;
+    overflow: hidden
+}
+
+.commonIcon {
+    position: absolute;
+    display: block;
+    left: 15px;
+    top: 11px
+}
+
+.redBtn {
+    background-color: #bf5059;
+    background-image: -webkit-linear-gradient(top, #bf5059 0, #7a3e43 100%);
+    background-image: linear-gradient(top, #bf5059 0, #7a3e43 100%)
+}
+
+.redBtn:active, .redBtn:hover {
+    background-color: #f84150;
+    background-image: -webkit-linear-gradient(top, #f84150 0, #942b34 100%);
+    background-image: linear-gradient(top, #f84150 0, #942b34 100%)
+}
+
+.blueBtn {
+    background-color: #5999ab;
+    background-image: -webkit-linear-gradient(top, #5999ab 0, #43656f 100%);
+    background-image: linear-gradient(top, #5999ab 0, #43656f 100%)
+}
+
+.blueBtn:active, .blueBtn:hover {
+    background-color: #5bb8d4;
+    background-image: -webkit-linear-gradient(top, #5bb8d4 0, #447685 100%);
+    background-image: linear-gradient(top, #5bb8d4 0, #447685 100%)
+}
+
+.yellowBtn {
+    background-color: #ec8939;
+    background-image: -webkit-linear-gradient(top, #ec8939 0, #915d32 100%);
+    background-image: linear-gradient(top, #ec8939 0, #915d32 100%)
+}
+
+.yellowBtn:active, .yellowBtn:hover {
+    background-color: #ffb163;
+    background-image: -webkit-linear-gradient(top, #ffb163 0, #9a632e 100%);
+    background-image: linear-gradient(top, #ffb163 0, #9a632e 100%)
+}
+
+.leftListArea {
+    float: left;
+    width: 180px;
+    border: 1px solid #E6E6E6;
+    color: #ab9595;
+    min-height: 690px;
+}
+
+.leftListArea .leftListDetail .leftListBigItem {
+    display: block;
+    position: relative;
+    color: #414141;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 47px;
+    border-bottom: 1px solid #e8eaef;
+    background: rgb(174,152,128);
+    cursor: pointer;
+}
+
+.shadow, .shadow2, .shadow3 {
+    position: absolute;
+    display: block
+}
+
+.leftListArea .leftListDetail .leftListBigItem.active, .leftListArea .leftListDetail .leftListBigItem:hover {
+    background-color: rgb(175,58,49);
+    color: #FFFFFF;
+}
+
+.leftListArea .leftListDetail .leftListItem {
+    font-size: 12px;
+}
+
+.leftListArea .leftListDetail .leftListItem a {
+    display: block;
+    padding-left: 47px;
+    height: 32px;
+    line-height: 32px;
+    color: #414141;
+    margin-bottom: 1px;
+}
+
+.leftListArea .leftListDetail .leftListItem a.active, .leftListArea .leftListDetail .leftListItem a:hover {
+    color: #FFFFFF;
+    background: #ED635D;
+}
+
+.rightArea {
+    float: left;
+    width: 816px;
+    min-height: 660px;
+    padding: 20px 0
+}
+
+.shadow {
+    bottom: -200px;
+    left: 0;
+    width: 1100px;
+    height: 200px;
+    background: url(../images/shadow.png) no-repeat
+}
+
+.shadow2 {
+    bottom: -25px;
+    left: -392px;
+    width: 393px;
+    height: 289px;
+    background: url(../images/shadow2.png) no-repeat
+}
+
+.shadow3 {
+    bottom: -22px;
+    right: -283px;
+    width: 283px;
+    height: 466px;
+    background: url(../images/shadow3.png) no-repeat
+}
+
+.rightArea .indexBox {
+    padding: 0 30px
+}
+
+.rightArea .indexBox h3 {
+    font-size: 18px;
+    font-weight: 700
+}
+
+.rightArea .indexBox .helpCenterIndex-l {
+    float: left;
+    width: 496px;
+    padding-right: 10px
+}
+
+.rightArea .indexBox .autoServicesBox {
+    border-bottom: 1px dashed #ccc
+}
+
+.rightArea .indexBox .autoServicesBox .autoServices {
+    padding: 20px 0px;
+    overflow: hidden
+}
+
+.rightArea .indexBox .autoServicesBox .autoServiceDetail {
+    float: left;
+    width: 120px;
+    text-align: center;
+    color: #666
+}
+
+.rightArea .indexBox .autoServicesBox .autoServiceDetail i {
+    display: block;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    margin: 10px auto
+}
+
+.rightArea .indexBox .autoServicesBox .autoServiceDetail i.lock-white {
+    background: url(../images/helpCenter/lock-white.png) center no-repeat #e4c1bf
+}
+
+.rightArea .indexBox .autoServicesBox .autoServiceDetail i.money-white {
+    background: url(../images/helpCenter/money-white.png) center no-repeat #e4c1bf
+}
+
+.rightArea .indexBox .autoServicesBox .autoServiceDetail i.qq-white {
+    background: url(../images/helpCenter/qq-white.png) center no-repeat #e4c1bf
+}
+
+.rightArea .indexBox .autoServicesBox .autoServiceDetail i.msg-white {
+    background: url(../images/helpCenter/msg-white.png) center no-repeat #e4c1bf
+}
+
+.rightArea .indexBox .autoServicesBox .autoServiceDetail:hover i {
+    background-color: #c9aba9
+}
+
+.rightArea .indexBox .focusQuestionsBox {
+    margin-top: 30px
+}
+
+.rightArea .indexBox .focusQuestionsBox .focusQuestions {
+    margin-top: 15px;
+    color: #666;
+    line-height: 35px
+}
+
+.rightArea .indexBox .focusQuestionsBox li {
+    list-style-position: inside
+}
+
+.rightArea .indexBox .focusQuestionsBox li a:hover {
+    text-decoration: underline
+}
+
+.rightArea .indexBox .helpCenterIndex-r {
+    float: left;
+    width: 219px;
+    padding-left: 13px;
+    border-left: 1px solid #eee;
+    color: #666;
+    line-height: 24px
+}
+
+.rightArea .indexBox .helpCenterIndex-r > * {
+    margin-top: 15px;
+    display: block
+}
+
+.rightArea .indexBox .helpCenterIndex-r .helpOnlineService {
+    width: 207px;
+    height: 130px;
+    background: url(../images/helpCenter/helpOnlineService-bg.jpg) no-repeat;
+    position: relative
+}
+
+.rightArea .indexBox .helpCenterIndex-r .helpOnlineService .btn {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #c9aba9;
+    color: #fff
+}
+
+.rightArea .indexBox .helpCenterIndex-r .helpOnlineService .btn:hover {
+    background-color: #e4c1bf
+}
+
+.rightArea .indexBox .helpCenterIndex-r .onlineServicePersons {
+    overflow: hidden;
+    margin-left: -25px;
+    margin-top: 0
+}
+
+.rightArea .indexBox .helpCenterIndex-r label {
+    float: left;
+    text-align: center;
+    margin-left: 26px;
+    margin-top: 10px
+}
+
+.rightArea .indexBox .helpCenterIndex-r label img {
+    display: block;
+    width: 55px;
+    height: 55px
+}
+
+.rightArea .helpCenterCommonDetail {
+    padding: 0 30px 110px
+}
+
+.rightArea .helpCenterCommonDetail h3 {
+    font-size: 1.17em;
+    font-weight: 700
+}
+
+.rightArea .helpCenterCommonDetail .helpCenterCommonTitle {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 22px
+}
+
+.rightArea .helpCenterCommonDetail .helpCenterCommonTitle span {
+    color: #999;
+    font-size: 12px
+}
+
+.rightArea .helpCenterCommonDetail .helpCenterCommonContent {
+    margin-top: 30px;
+    line-height: 26px
+}
+.rightArea .helpCenterCommonDetail .helpCenterCommonContent span img{
+    width: 750px;
+}
+.rightArea .helpCenterCommonDetail .helpCenterCommonBtn {
+    position: absolute;
+    /*bottom: 30px;*/
+    text-align: center;
+    width: 780px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+    color: #999
+}
+
+.rightArea .helpCenterCommonDetail .helpCenterCommonBtn .btn {
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #AF3A31;
+    color: #fff;
+    border-radius: 15px;
+    background-image: -webkit-linear-gradient(top, #DE1E22 0, #B31E22 100%);
+    background-image: linear-gradient(top, #DE1E22 0, #B31E22 100%);
+    margin-left: 0;
+    margin-top: 10px
+}
+
+.rightArea .helpCenterCommonDetail .helpCenterCommonBtn .btn:active, .rightArea .helpCenterCommonDetail .helpCenterCommonBtn .btn:hover {
+    background-color: #DE1E22;
+    background-image: -webkit-linear-gradient(top, #f84150 0, #942b34 100%);
+    background-image: linear-gradient(top, #f84150 0, #942b34 100%)
+}

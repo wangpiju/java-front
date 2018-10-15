@@ -1,0 +1,544 @@
+/* 投注页面 */
+.btn {
+  background: #be0d34;
+  color: #fff;
+}
+
+.checkBtn {
+  background: #fff;
+  border-color: #099;
+  color: #099;
+  &:hover {
+    background: #099;
+    color: #fff;
+  }
+}
+
+/* 投注页 */
+.lotteryHeader .mainWidth {
+  background: rgba(255, 255, 255, .7);
+  color: #565a5c;
+  border-color: #cecece;
+}
+
+// 头部-开奖走势
+//.lotteryTrend {
+//	color: #00dde1;
+//}
+//
+// 剩余投注时间
+.countDown label {
+  background: url(../images/lottery/indexImg.png);
+  background-position: 0 0;
+  a {
+    color: #fff;
+  }
+}
+
+// 当前期开奖号码
+.lotteryNumBox {
+  background: url(../images/lottery/openNumBg.png) center no-repeat;
+}
+
+.lotteryNum [class^='bigNum'] {
+  background: url(../images/lottery/indexImg.png);
+  background-position: -140px -60px;
+  color: #fff;
+}
+
+//玩法组导航
+.lottNavBox {
+  background: none;
+}
+
+.lottNav {
+  background: rgba(218, 212, 206, .35);
+  .lottNavDetail {
+    a {
+      color: #555;
+      &:hover {
+        color: #be0d34;
+      }
+    }
+    &.active a {
+      color: #be0d34;
+      &:after {
+        background: #be0d34;
+      }
+    }
+  }
+}
+
+//玩法
+.lottTypeTitle {
+  color: #555;
+}
+
+.lottType {
+  .lottTypeDetail {
+    a {
+      color: #555;
+      border-color: #d2d2d2;
+      &:hover {
+        color: #be0d34;
+      }
+    }
+    &.active a {
+      color: #fff;
+      background: #be0d34;
+    }
+  }
+}
+
+//玩法说明
+.explainExample {
+  a {
+    i {
+      &.explainLogo {
+        background-position: -98px 0;
+      }
+      &.exampleLogo {
+        background-position: -121px 0;
+      }
+    }
+    span {
+      color: #be0d34;
+    }
+  }
+  .tips {
+    color: #555;
+    background: rgba(255, 255, 255, .7);
+    border-color: #cecece;
+  }
+}
+
+//选号
+.changeNumList {
+  color: #555;
+}
+
+.numList {
+  a[class^='smallNum'] {
+    background: url(../images/lottery/indexImg.png);
+    background-position: 0 -70px;
+    color: #777;
+  }
+  li a {
+    &:hover {
+      background-position: -80px -70px;
+      color: #aa1536;
+    }
+    &.active {
+      background-position: -40px -70px;
+      color: #fff;
+    }
+  }
+  .smallNum.smallNum-dd,
+  .smallNum.smallNum-xd,
+  .smallNum.smallNum-ds,
+  .smallNum.smallNum-xs {
+    background-position: 0 -110px;
+    &:hover {
+      background-position: -96px -110px;
+    }
+    &.active {
+      background-position: -48px -110px;
+    }
+  }
+}
+
+.btnList > li .numBtn {
+  &.active, &:hover {
+    border-color: #bdbdbd;
+    background-color: #dbdbdb;
+    color: #be0d34;
+  }
+}
+
+/* 单式投注 */
+.importBetList a.btn {
+  background: #c9aba9;
+  color: #fff;
+}
+
+.singleNum {
+  color: #555;
+  background: transparent;
+  border-color: #bdbdbd;
+}
+
+.singleBtns .btn {
+  background: #c9aba9;
+  color: #fff;
+}
+
+.confirmBetsBox {
+  color: #555;
+}
+
+select.betsInfoType {
+  color: #555;
+  background-color: #ece2e2;
+}
+
+.amountTypeDetail {
+  .amountType {
+    background-color: #ece2e2;
+    color: #555;
+  }
+}
+
+.reduceMult, .addMult {
+  background: url(../images/lottery/indexImg.png);
+}
+
+.reduceMult {
+  background-position: -95px -20px;
+}
+
+.addMult {
+  background-position: -119px -20px;
+}
+
+.betsInfoTipsNum {
+  color: #00dde1;
+}
+
+.inputSelectDiv .labelCond {
+  background: #ece2e2;
+  color: #555;
+}
+
+//.inputSelectArrow {
+//	background-color: #2d3658;
+//	border-color: #1b1a3b;
+//}
+//.inputOptions {
+//	background: #2d3658;
+//	border-color: #1b1a3b;
+//}
+//.inputOptions a {
+//	color: #00dde1;
+//}
+//.inputOptions a:hover {
+//	background: #55f;
+//}
+.appNumIcon {
+  width: 17px;
+  height: 17px;
+  background: url(../images/lottery/indexImg.png);
+  background-position: -172px 0;
+}
+
+.confirmBetsIcon {
+  width: 22px;
+  height: 22px;
+  background: url(../images/lottery/indexImg.png);
+  background-position: -142px -1px;
+}
+
+//追号区域
+.appNumArea {
+  color: #555;
+  .appNumBox {
+    border-color: #e5e5e5;
+  }
+}
+
+.appNumHeader {
+  background: #d9d2cf;
+  color: #555;
+  th {
+    font-weight: normal;
+  }
+  .appNumClear {
+    color: #be0d34;
+  }
+}
+
+.appNumDetail {
+  &:nth-child(odd) {
+    background: #f0f2f7;
+  }
+  &:nth-child(even) {
+    background: #e8eaef;
+  }
+  .appNumDetailClear {
+    background: url(../images/lottery/indexImg.png);
+    background-position: -140px -49px;
+    &:hover {
+      background-position: -122px -49px;
+    }
+  }
+}
+
+//确认追号按钮
+.confirmAppNumBox .btn.appendNumBtn {
+  background: #5f52a0;
+}
+
+//.btn.confirmAppNum {
+//	background: #e64c66;
+//}
+.modifyBets {
+  .reduceMult {
+    background-position: -152px -126px;
+  }
+  .addMult {
+    background-position: -176px -126px;
+  }
+}
+
+//最近开奖号码、中奖排行、最近投注、最近追号
+.lottRight {
+  background: #f0f2f7;
+  color: #555;
+  .beforeLottNumHeader {
+    color: #313131;
+    &.beforeLottery:before {
+      background: #4c79d1;
+    }
+    &.rewardListHead:before {
+      background: #b757b3;
+    }
+    &.accountLottInfo:before {
+      background: #eb9600;
+    }
+  }
+  .beforeLottNumList {
+    .listHeader {
+      background: #e8eaef;
+    }
+    .beforeLottNumDetail {
+      &:nth-child(odd) {
+        background: #f0f2f7;
+      }
+      &:nth-child(even) {
+        background: #e7eaef;
+      }
+    }
+  }
+}
+
+/* 投注页面底部 */
+.lottInfoNavDetail {
+  color: #555;
+  &:hover {
+    color: #eb9600;
+  }
+  &.active {
+    background: #eb9600;
+    color: #fff;
+  }
+}
+
+.appNumNavList {
+  border-color: #c9aba9;
+  li .appNumNav {
+    border-left-color: #c9aba9;
+    color: #555;
+    &.active {
+      background: #c9aba9;
+      color: #fff;
+    }
+  }
+}
+
+.appendIssue li a {
+  border-color: #ccc;
+  background: #f2f2f2;
+  color: #555;
+  &:hover, &.active {
+    background: #c9aba9;
+    color: #fff;
+    border-color: #c9aba9;
+  }
+}
+
+.createAppNumBar label .inputSelectDiv .labelCond {
+  background-color: #fff;
+  color: #333;
+  border-color: #d9d9d9;
+}
+
+/* 中奖弹窗 */
+.awardsMsgTitle {
+  background: #ddd2d2;
+  color: #555;
+}
+
+/* 走势图 */
+.lottsType-trend {
+  color: #099;
+}
+
+.lottsDetail-trend a {
+  color: #003;
+}
+
+.lottsDetail-trend a:hover {
+  color: #099;
+}
+
+.lottsDetail-trend.active {
+  background: #099;
+}
+
+.lottsDetail-trend.active a {
+  color: #fff;
+}
+
+.latelyIssue-trend.active {
+  color: #099;
+}
+
+/* 彩中彩 */
+.awardsLottDetail {
+  color: #000;
+  background: #146a6a;
+}
+
+.awardsLottDetail.active {
+  background: #099;
+  color: #fff;
+}
+
+.awardsLottDetail:hover {
+  background: #099;
+}
+
+.awardsLottDialog {
+  background: #099;
+}
+
+.awardsLottTitle {
+  color: #8affff;
+}
+
+.awardsLottContent {
+  background: #fff;
+}
+
+.awardsGameArea {
+  border-top-color: #d7d7d7;
+}
+
+.awardsGameTitle {
+  background: #ededed;
+  color: #bbb;
+}
+
+.gameAmountDetail {
+  border-color: #099;
+  background: #fff;
+  color: #099;
+}
+
+.awardsGameType:hover .gameAmountDetail {
+  background: #099;
+  color: #fff;
+}
+
+.awardsBtn {
+  background: #099;
+  color: #fff;
+  border-color: #099;
+}
+
+.awardsGameType:hover .awardsBtn {
+  background: #fff;
+  color: #099;
+}
+
+.awardsGameMultBox {
+  color: #000;
+}
+
+.awardsGameMult {
+  color: #fff;
+}
+
+.awardsGameResult {
+  color: #000;
+}
+
+.awardsResultAmount {
+  color: #c00;
+}
+
+.awardsGameResult .fontColorTheme,
+.awardsLottResultDetail .fontColorTheme {
+  color: #099;
+}
+
+.awardsLottResultDetail {
+  background: #ededed;
+  border-left-color: #d7d7d7;
+  color: #979292;
+}
+
+.currResultAmount {
+  color: #666;
+}
+
+.awardsGameRule {
+  color: #fff;
+}
+
+/* 彩中彩警告窗口 */
+.awardsWarnDialog.awardsLottContent {
+  color: #666;
+}
+
+.awardsLottBtn {
+  color: #999;
+}
+
+.btn.cancel {
+  background: #ccc;
+}
+
+/* 中奖弹窗，点击参加彩中彩游戏 */
+.awardsNoticeTitle {
+  color: #fff;
+}
+
+.playAwardsLottery {
+  background: url(../images/playAwardsBtn-b.gif) center no-repeat;
+}
+
+.awardsLottTips {
+  color: #8affff;
+}
+
+.afterAlert {
+  border-color: #8affff;
+  color: #033;
+}
+
+/* 彩中彩游戏，每日提醒一次 */
+.dialogBox .awardsLottNotice {
+  background: #099;
+}
+
+.awardsNoticeContent {
+  color: #fff;
+}
+
+.btn.playAwardsSwitch {
+  background: #f0816b;
+}
+
+.btn.stopAwardsSwitch {
+  background: #fff;
+  color: #099;
+}
+
+.awardsLottBtn label {
+  color: #333;
+}
+
+/* 如何充值 */
+.rechTeach:hover {
+  color: #099;
+}

@@ -1,0 +1,341 @@
+body {
+    /*background-image: url(../images/lott-k3/k3-bg.jpg)*/
+}
+
+#asideLeft {
+    display: none;
+}
+
+.lotteryHeader .mainWidth {
+    background: #EDF0F3;
+    background-size: contain;
+    color: #fff;
+    border-color: #393e6b
+}
+
+.lotteryLogo .betsType {
+    /*margin-top: 45px*/
+}
+
+.countDownBox .fontColorTheme, .lotteryNumArea .fontColorTheme {
+    color: #EC6800
+}
+
+.countDownBox:after, .countDownBox:before {
+    background: rgba(181, 181, 181, .3);
+    box-shadow: 1px 0 rgba(255, 255, 255, .15)
+}
+
+.countDown .tips {
+    color: #ffd3cf
+}
+
+.lotteryNumBox {
+    padding: 0;
+    border-radius: 50px;
+}
+
+.lotteryNumBox .lotteryNumList{
+    height: 70px;
+}
+.lotteryNum{
+    width:235px;
+    margin: 0 auto;
+    height: 70px;
+}
+.lotteryNum [class^=bigNum] {
+    width: 60px;
+    height: 60px;
+    /*background: url(../images/lott-k3/num.png) center no-repeat;*/
+    color: #FFFFFF;
+}
+.lotteryNum .lottNumDetailk3{
+    float: left;
+    margin: 0px  4px 0px;
+    width: 70px;
+    height: 70px;
+}
+.lotteryNum .lottNumDetailk3 img{
+    width: 70px;
+    height: 70px;
+}
+.lotteryNum .lottNumDetailk3None{
+    float: left;
+    margin: 0px  4px;
+    width: 70px;
+    height: 70px;
+    display: none;
+}
+.lotteryNum .lottNumDetailk3None img{
+    width: 70px;
+    height: 70px;
+}
+.lotteryNum .lottNumDetail p{
+    /*background: #FFF;*/
+    margin: 0px 4px;
+}
+.lotteryNum .lottNumDetail p span{
+    width: 60px;
+    height: 60px;
+    background-size: 100% 100%;
+}
+.lotteryNum.k3 .bigNum1{
+    background: url(../images/lott-k3/k3n1.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.lotteryNum.k3 .bigNum2{
+    background: url(../images/lott-k3/k3n2.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.lotteryNum.k3 .bigNum3{
+    background: url(../images/lott-k3/k3n3.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.lotteryNum.k3 .bigNum4{
+    background: url(../images/lott-k3/k3n4.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.lotteryNum.k3 .bigNum5{
+    background: url(../images/lott-k3/k3n5.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.lotteryNum.k3 .bigNum6{
+    background: url(../images/lott-k3/k3n6.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.lotteryNum.k3 .bigNum大{
+    background: url(../images/lott-k3/k3n3.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.lotteryNum.k3 .bigNum小{
+    background: url(../images/lott-k3/k3n4.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.lotteryNum.k3 .bigNum单{
+    background: url(../images/lott-k3/k3n5.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.lotteryNum.k3 .bigNum双{
+    background: url(../images/lott-k3/k3n6.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.lottNav {
+    background: #F5F5F5;
+}
+
+.lottNav .lottNavDetail a {
+    color: #505050;
+}
+
+.lottNav .lottNavDetail a:hover, .lottNav .lottNavDetail.active a {
+    color: #EC511E
+}
+
+.changeNumList.k3 {
+    display: table;
+    width: 100%;
+    padding: 20px 0
+}
+
+.changeNumList.k3 .changeNumCell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center
+}
+
+.changeNumList.k3 .changeNumDetail {
+    margin-top: 0
+}
+
+.changeNumList.k3 .changeNum {
+    float: none
+}
+
+.changeNumList.k3 li.last {
+    text-align: center;
+    font-size: 0;
+    margin-top: 15px
+}
+
+.changeNumList.k3 li.last .smallNumBtn {
+    display: inline-block
+}
+
+.changeNumList.k3 .last .smallNumBtn, .changeNumList.k3 .numList .smallNum {
+    width: auto;
+    height: 34px;
+    line-height: 34px;
+    color: #837485;
+    background: 0 0;
+    padding: 4px;
+    border: none;
+    border-radius: 0;
+    position: relative
+}
+
+.changeNumList.k3 .last .smallNumBtn span, .changeNumList.k3 .numList .smallNum span {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: url(../images/lott-k3/k3-3.png) center no-repeat;
+    background-size: 100%;
+    margin-left: 2px;
+    position: relative
+}
+
+.changeNumList.k3 .and, .changeNumList.k3 .single .numList > li {
+    margin-left: 3px
+}
+
+.changeNumList.k3 .single .smallNum {
+    width: 71px;
+    height: 71px;
+    line-height: 71px;
+    font-size: 36px;
+    color: #837485;
+    padding: 8px
+}
+
+.changeNumList.k3 .and .smallNum span, .changeNumList.k3 .single .smallNum span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    background: url(../images/lott-k3/k3-1.png) center no-repeat;
+    background-size: 100%
+}
+
+.changeNumList.k3 .single .smallNum span.k3-1:after {
+    background: url(../images/lott-k3/k3numB-1.png) center no-repeat
+}
+
+.changeNumList.k3 .single .smallNum span.k3-2:after {
+    background: url(../images/lott-k3/k3numB-2.png) center no-repeat
+}
+
+.changeNumList.k3 .single .smallNum span.k3-3:after {
+    background: url(../images/lott-k3/k3numB-3.png) center no-repeat
+}
+
+.changeNumList.k3 .single .smallNum span.k3-4:after {
+    background: url(../images/lott-k3/k3numB-4.png) center no-repeat
+}
+
+.changeNumList.k3 .single .smallNum span.k3-5:after {
+    background: url(../images/lott-k3/k3numB-5.png) center no-repeat
+}
+
+.changeNumList.k3 .single .smallNum span.k3-6:after {
+    background: url(../images/lott-k3/k3numB-6.png) center no-repeat
+}
+
+.changeNumList.k3 .and .smallNum {
+    display: flex;
+    flex-direction: column;
+    width: 71px;
+    height: 71px;
+    font-size: 36px;
+    color: #555;
+    background: url(../images/lott-k3/k3-1.png) center no-repeat;
+    padding: 5px
+}
+
+.changeNumList.k3 .and .smallNum b {
+    margin-top: 6px;
+}
+
+.changeNumList.k3 .and .smallNum i {
+    font-size: 13px;
+    font-style: inherit;
+}
+
+.changeNumList.k3 .and .smallNum i b {
+    /*color: #FE7A12;*/
+}
+
+.changeNumList.k3 .numList {
+    margin-left: 0
+}
+
+.changeNumList.k3 .numList a:hover {
+    border-radius: 10px;
+    background-color: #dcdcdc
+}
+
+.changeNumList.k3 .numList a.active {
+    border-radius: 10px;
+    background-color: #b5b5b5
+}
+
+.changeNumList.k3 .smallNum span:after, .changeNumList.k3 .smallNumBtn span:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.changeNumList.k3 .smallNum span.k3-1:after, .changeNumList.k3 .smallNumBtn span.k3-1:after {
+    background: url(../images/lott-k3/k3num-1.png) center no-repeat
+}
+
+.changeNumList.k3 .smallNum span.k3-2:after, .changeNumList.k3 .smallNumBtn span.k3-2:after {
+    background: url(../images/lott-k3/k3num-2.png) center no-repeat
+}
+
+.changeNumList.k3 .smallNum span.k3-3:after, .changeNumList.k3 .smallNumBtn span.k3-3:after {
+    background: url(../images/lott-k3/k3num-3.png) center no-repeat
+}
+
+.changeNumList.k3 .smallNum span.k3-4:after, .changeNumList.k3 .smallNumBtn span.k3-4:after {
+    background: url(../images/lott-k3/k3num-4.png) center no-repeat
+}
+
+.changeNumList.k3 .smallNum span.k3-5:after, .changeNumList.k3 .smallNumBtn span.k3-5:after {
+    background: url(../images/lott-k3/k3num-5.png) center no-repeat
+}
+
+.changeNumList.k3 .smallNum span.k3-6:after, .changeNumList.k3 .smallNumBtn span.k3-6:after {
+    background: url(../images/lott-k3/k3num-6.png) center no-repeat
+}
+
+.beforeLottNum.k3 {
+    line-height: 10px
+}
+
+.beforeLottNum.k3 span {
+    display: inline-block;
+    color: #FF961F;
+}
+
+.beforeLottNum.k3 span.k3-1:after {
+    background: url(../images/lott-k3/k3num-1.png) center no-repeat;
+    background-size: 100%
+}
+
+.beforeLottNum.k3 span.k3-2:after {
+    background: url(../images/lott-k3/k3num-2.png) center no-repeat;
+    background-size: 100%
+}
+
+.beforeLottNum.k3 span.k3-3:after {
+    background: url(../images/lott-k3/k3num-3.png) center no-repeat;
+    background-size: 100%
+}
+
+.beforeLottNum.k3 span.k3-4:after {
+    background: url(../images/lott-k3/k3num-4.png) center no-repeat;
+    background-size: 100%
+}
+
+.beforeLottNum.k3 span.k3-5:after {
+    background: url(../images/lott-k3/k3num-5.png) center no-repeat;
+    background-size: 100%
+}
+
+.beforeLottNum.k3 span.k3-6:after {
+    background: url(../images/lott-k3/k3num-6.png) center no-repeat;
+    background-size: 100%
+}
